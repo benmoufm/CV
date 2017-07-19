@@ -1,0 +1,73 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "2fe7d577_626b9b25",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 1
+      },
+      "lineNbr": 7,
+      "author": {
+        "id": 1011781
+      },
+      "writtenOn": "2017-07-19T15:50:21Z",
+      "side": 1,
+      "message": "Fais tes message de commit en anglais ce sera mieux",
+      "range": {
+        "startLine": 7,
+        "startChar": 0,
+        "endLine": 7,
+        "endChar": 33
+      },
+      "revId": "726b95db4ef829019c76f7413c1019eccaeacfec",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "8bd817a5_2fc3f1e6",
+        "filename": "CV/TabBarController.swift",
+        "patchSetId": 1
+      },
+      "lineNbr": 9,
+      "author": {
+        "id": 1011781
+      },
+      "writtenOn": "2017-07-19T15:50:21Z",
+      "side": 1,
+      "message": "poisson poisson",
+      "range": {
+        "startLine": 9,
+        "startChar": 0,
+        "endLine": 9,
+        "endChar": 17
+      },
+      "revId": "726b95db4ef829019c76f7413c1019eccaeacfec",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "727b2991_677e7b99",
+        "filename": "CV/TabBarController.swift",
+        "patchSetId": 1
+      },
+      "lineNbr": 11,
+      "author": {
+        "id": 1011781
+      },
+      "writtenOn": "2017-07-19T15:50:21Z",
+      "side": 1,
+      "message": "C\u0027est pas très impressionnant comme classe!!",
+      "range": {
+        "startLine": 11,
+        "startChar": 0,
+        "endLine": 11,
+        "endChar": 17
+      },
+      "revId": "726b95db4ef829019c76f7413c1019eccaeacfec",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    }
+  ]
+}
