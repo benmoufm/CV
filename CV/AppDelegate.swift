@@ -17,19 +17,19 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         window = UIWindow(frame: UIScreen.main.bounds)
         let home = UINavigationController()
-        home.tabBarItem = UITabBarItem(title: "Home", image: UIImage(named:"IconNav1"), tag: 1)
+        home.tabBarItem = UITabBarItem(title: "Home", image: nil, selectedImage: nil)
         
         let hobbies = UINavigationController()
-        hobbies.tabBarItem = UITabBarItem(title: "Hobbies", image: UIImage(named:"IconNav2"), tag: 1)
+        hobbies.tabBarItem = UITabBarItem(title: "Hobbies", image: nil, selectedImage: nil)
         
         let studies = UINavigationController()
-        studies.tabBarItem = UITabBarItem(title: "Studies", image: UIImage(named:"IconNav3"), tag: 1)
+        studies.tabBarItem = UITabBarItem(title: "Studies", image: nil, selectedImage: nil)
         
         let competences = UINavigationController()
-        competences.tabBarItem = UITabBarItem(title: "Competences", image: UIImage(named:"IconNav2"), tag: 1)
+        competences.tabBarItem = UITabBarItem(title: "Competences", image: nil, selectedImage: nil)
         
         let contact = UINavigationController()
-        contact.tabBarItem = UITabBarItem(title: "Contact", image: UIImage(named:"IconNav3"), tag: 1)
+        contact.tabBarItem = UITabBarItem(title: "Contact", image: nil, selectedImage: nil)
         
         let tabs = UITabBarController()
         tabs.viewControllers = [home, hobbies, studies, competences, contact]
