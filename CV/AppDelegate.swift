@@ -13,9 +13,30 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
 
-
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+        
+        window = UIWindow(frame: UIScreen.main.bounds)
+        let home = UINavigationController()
+        home.tabBarItem = UITabBarItem(title: "Home", image: UIImage(named:"IconNav1"), tag: 1)
+        
+        let hobbies = UINavigationController()
+        hobbies.tabBarItem = UITabBarItem(title: "Hobbies", image: UIImage(named:"IconNav2"), tag: 1)
+        
+        let studies = UINavigationController()
+        studies.tabBarItem = UITabBarItem(title: "Studies", image: UIImage(named:"IconNav3"), tag: 1)
+        
+        let competences = UINavigationController()
+        competences.tabBarItem = UITabBarItem(title: "Competences", image: UIImage(named:"IconNav2"), tag: 1)
+        
+        let contact = UINavigationController()
+        contact.tabBarItem = UITabBarItem(title: "Contact", image: UIImage(named:"IconNav3"), tag: 1)
+        
+        let tabs = UITabBarController()
+        tabs.viewControllers = [home, hobbies, studies, competences, contact]
+        
+        self.window!.rootViewController = tabs;
+        self.window?.makeKeyAndVisible();
+        
         return true
     }
 
