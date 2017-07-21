@@ -17,22 +17,33 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         window = UIWindow(frame: UIScreen.main.bounds)
         let home = UINavigationController()
+        let homeViewController = UIViewController(nibName: nil, bundle: nil)
+        home.viewControllers = [homeViewController]
         home.tabBarItem = UITabBarItem(title: "Home", image: nil, selectedImage: nil)
         
         let hobbies = UINavigationController()
+        let hobbiesViewController = UIViewController(nibName: nil, bundle: nil)
+        hobbies.viewControllers = [hobbiesViewController]
         hobbies.tabBarItem = UITabBarItem(title: "Hobbies", image: nil, selectedImage: nil)
         
         let studies = UINavigationController()
+        let studiesViewController = UIViewController(nibName: nil, bundle: nil)
+        studies.viewControllers = [studiesViewController]
         studies.tabBarItem = UITabBarItem(title: "Studies", image: nil, selectedImage: nil)
         
         let competences = UINavigationController()
+        let competencesViewController = UIViewController(nibName: nil, bundle: nil)
+        competences.viewControllers = [competencesViewController]
         competences.tabBarItem = UITabBarItem(title: "Competences", image: nil, selectedImage: nil)
         
         let contact = UINavigationController()
+        let contactViewController = UIViewController(nibName: nil, bundle: nil)
+        contact.viewControllers = [contactViewController]
         contact.tabBarItem = UITabBarItem(title: "Contact", image: nil, selectedImage: nil)
         
         let tabs = UITabBarController()
         tabs.viewControllers = [home, hobbies, studies, competences, contact]
+        tabs.selectedIndex = 0
         
         self.window!.rootViewController = tabs
         self.window?.makeKeyAndVisible()
