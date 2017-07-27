@@ -1,0 +1,50 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "26bb2dc2_8c3815a4",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 1
+      },
+      "lineNbr": 7,
+      "author": {
+        "id": 1011781
+      },
+      "writtenOn": "2017-07-27T05:51:22Z",
+      "side": 1,
+      "message": "C\u0027est pas une tabbarView que tu ajoute mais un TabBarController mais c\u0027est pas très grave en soit",
+      "range": {
+        "startLine": 7,
+        "startChar": 7,
+        "endLine": 7,
+        "endChar": 17
+      },
+      "revId": "a2f201f1d5e71c253467d997faec54d09df3740c",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "2fe2aee2_ecf25c0f",
+        "filename": "CV/AppDelegate.swift",
+        "patchSetId": 1
+      },
+      "lineNbr": 17,
+      "author": {
+        "id": 1011781
+      },
+      "writtenOn": "2017-07-27T05:51:22Z",
+      "side": 1,
+      "message": "il faut que tu enlève ça c\u0027est mal ( pas le saut de ligne les espaces à la fin de la ligne)",
+      "range": {
+        "startLine": 17,
+        "startChar": 0,
+        "endLine": 17,
+        "endChar": 8
+      },
+      "revId": "a2f201f1d5e71c253467d997faec54d09df3740c",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    }
+  ]
+}
