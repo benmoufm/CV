@@ -12,6 +12,13 @@
 		86CE0CB11F1BC64E00DA0916 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 86CE0CAF1F1BC64E00DA0916 /* LaunchScreen.storyboard */; };
 		86E4402B1F4A0FE70040BD55 /* MainCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86E4402A1F4A0FE70040BD55 /* MainCoordinator.swift */; };
 		86E4402E1F4A10DF0040BD55 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86E4402D1F4A10DF0040BD55 /* Coordinator.swift */; };
+		86E4403C1F4A163F0040BD55 /* HomeControllerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86E440361F4A163F0040BD55 /* HomeControllerViewModel.swift */; };
+		86E4403D1F4A163F0040BD55 /* HomeControllerViewModelMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86E440371F4A163F0040BD55 /* HomeControllerViewModelMapper.swift */; };
+		86E4403E1F4A163F0040BD55 /* HomePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86E440381F4A163F0040BD55 /* HomePresenter.swift */; };
+		86E4403F1F4A163F0040BD55 /* HomePresenterImplementation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86E440391F4A163F0040BD55 /* HomePresenterImplementation.swift */; };
+		86E440401F4A163F0040BD55 /* HomeViewContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86E4403A1F4A163F0040BD55 /* HomeViewContract.swift */; };
+		86E440411F4A163F0040BD55 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86E4403B1F4A163F0040BD55 /* HomeViewController.swift */; };
+		86E440441F4A16A40040BD55 /* Startable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86E440431F4A16A40040BD55 /* Startable.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +29,13 @@
 		86CE0CB21F1BC64E00DA0916 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		86E4402A1F4A0FE70040BD55 /* MainCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainCoordinator.swift; sourceTree = "<group>"; };
 		86E4402D1F4A10DF0040BD55 /* Coordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		86E440361F4A163F0040BD55 /* HomeControllerViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeControllerViewModel.swift; sourceTree = "<group>"; };
+		86E440371F4A163F0040BD55 /* HomeControllerViewModelMapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeControllerViewModelMapper.swift; sourceTree = "<group>"; };
+		86E440381F4A163F0040BD55 /* HomePresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomePresenter.swift; sourceTree = "<group>"; };
+		86E440391F4A163F0040BD55 /* HomePresenterImplementation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomePresenterImplementation.swift; sourceTree = "<group>"; };
+		86E4403A1F4A163F0040BD55 /* HomeViewContract.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewContract.swift; sourceTree = "<group>"; };
+		86E4403B1F4A163F0040BD55 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		86E440431F4A16A40040BD55 /* Startable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Startable.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +121,8 @@
 		86E4401E1F4A0EA50040BD55 /* App */ = {
 			isa = PBXGroup;
 			children = (
+				86E440421F4A16970040BD55 /* Shared */,
+				86E4402F1F4A13C70040BD55 /* Home */,
 			);
 			name = App;
 			sourceTree = "<group>";
@@ -124,6 +140,75 @@
 			isa = PBXGroup;
 			children = (
 				86E4402D1F4A10DF0040BD55 /* Coordinator.swift */,
+			);
+			name = Shared;
+			sourceTree = "<group>";
+		};
+		86E4402F1F4A13C70040BD55 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				86E440321F4A13D20040BD55 /* Model */,
+				86E440311F4A13D10040BD55 /* UI */,
+				86E4403A1F4A163F0040BD55 /* HomeViewContract.swift */,
+				86E440301F4A13CF0040BD55 /* Presenter */,
+			);
+			name = Home;
+			sourceTree = "<group>";
+		};
+		86E440301F4A13CF0040BD55 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				86E440381F4A163F0040BD55 /* HomePresenter.swift */,
+				86E440391F4A163F0040BD55 /* HomePresenterImplementation.swift */,
+			);
+			name = Presenter;
+			sourceTree = "<group>";
+		};
+		86E440311F4A13D10040BD55 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				86E440351F4A14060040BD55 /* ViewController */,
+			);
+			name = UI;
+			sourceTree = "<group>";
+		};
+		86E440321F4A13D20040BD55 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				86E440341F4A14000040BD55 /* Mapper */,
+				86E440331F4A13F90040BD55 /* ViewModel */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		86E440331F4A13F90040BD55 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				86E440361F4A163F0040BD55 /* HomeControllerViewModel.swift */,
+			);
+			name = ViewModel;
+			sourceTree = "<group>";
+		};
+		86E440341F4A14000040BD55 /* Mapper */ = {
+			isa = PBXGroup;
+			children = (
+				86E440371F4A163F0040BD55 /* HomeControllerViewModelMapper.swift */,
+			);
+			name = Mapper;
+			sourceTree = "<group>";
+		};
+		86E440351F4A14060040BD55 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				86E4403B1F4A163F0040BD55 /* HomeViewController.swift */,
+			);
+			name = ViewController;
+			sourceTree = "<group>";
+		};
+		86E440421F4A16970040BD55 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				86E440431F4A16A40040BD55 /* Startable.swift */,
 			);
 			name = Shared;
 			sourceTree = "<group>";
@@ -200,8 +285,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				86E440441F4A16A40040BD55 /* Startable.swift in Sources */,
 				86CE0CA71F1BC64D00DA0916 /* AppDelegate.swift in Sources */,
+				86E4403C1F4A163F0040BD55 /* HomeControllerViewModel.swift in Sources */,
+				86E4403F1F4A163F0040BD55 /* HomePresenterImplementation.swift in Sources */,
+				86E440401F4A163F0040BD55 /* HomeViewContract.swift in Sources */,
 				86E4402B1F4A0FE70040BD55 /* MainCoordinator.swift in Sources */,
+				86E440411F4A163F0040BD55 /* HomeViewController.swift in Sources */,
+				86E4403E1F4A163F0040BD55 /* HomePresenter.swift in Sources */,
+				86E4403D1F4A163F0040BD55 /* HomeControllerViewModelMapper.swift in Sources */,
 				86E4402E1F4A10DF0040BD55 /* Coordinator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
