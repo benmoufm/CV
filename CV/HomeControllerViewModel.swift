@@ -10,4 +10,5 @@ import Foundation
 
 struct HomeControllerViewModel {
 
+    let descriptionString: String = "Bonjour ! Ceci est une description."
 }
