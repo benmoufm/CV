@@ -18,7 +18,7 @@ class MainCoordinator: Coordinator {
     }
 
     func start() {
-        let viewController = UIViewController()
+        let viewController = ViewControllerFactory.sharedInstance.homeViewController()
         window.rootViewController = viewController
     }
 }

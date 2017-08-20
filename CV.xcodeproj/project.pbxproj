@@ -19,6 +19,7 @@
 		86E440401F4A163F0040BD55 /* HomeViewContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86E4403A1F4A163F0040BD55 /* HomeViewContract.swift */; };
 		86E440411F4A163F0040BD55 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86E4403B1F4A163F0040BD55 /* HomeViewController.swift */; };
 		86E440441F4A16A40040BD55 /* Startable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86E440431F4A16A40040BD55 /* Startable.swift */; };
+		86E440461F4A1A050040BD55 /* ViewControllerFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86E440451F4A1A050040BD55 /* ViewControllerFactory.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +37,7 @@
 		86E4403A1F4A163F0040BD55 /* HomeViewContract.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewContract.swift; sourceTree = "<group>"; };
 		86E4403B1F4A163F0040BD55 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		86E440431F4A16A40040BD55 /* Startable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Startable.swift; sourceTree = "<group>"; };
+		86E440451F4A1A050040BD55 /* ViewControllerFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllerFactory.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +102,7 @@
 		86E4401A1F4A0E960040BD55 /* Factory */ = {
 			isa = PBXGroup;
 			children = (
+				86E440451F4A1A050040BD55 /* ViewControllerFactory.swift */,
 			);
 			name = Factory;
 			sourceTree = "<group>";
@@ -295,6 +298,7 @@
 				86E4403E1F4A163F0040BD55 /* HomePresenter.swift in Sources */,
 				86E4403D1F4A163F0040BD55 /* HomeControllerViewModelMapper.swift in Sources */,
 				86E4402E1F4A10DF0040BD55 /* Coordinator.swift in Sources */,
+				86E440461F4A1A050040BD55 /* ViewControllerFactory.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
