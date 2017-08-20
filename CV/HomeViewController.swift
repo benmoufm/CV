@@ -12,6 +12,7 @@ import UIKit
 class HomeViewController: UIViewController, HomeViewContract {
 
     var presenter: HomePresenter?
+    let descriptionLabel = UILabel()
 
     override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?) {
         super.init(nibName: nil, bundle: nil)
@@ -38,6 +39,13 @@ class HomeViewController: UIViewController, HomeViewContract {
     // MARK: - Private methods
 
     private func setup() {
-        // TODO: (Mélodie Benmouffek) Setup subviews
+        view.backgroundColor = UIColor.white
+        descriptionLabel.text = "Bonjour !"
+        descriptionLabel.textColor = UIColor.red
+        view.addSubview(descriptionLabel)
+        descriptionLabel.translatesAutoresizingMaskIntoConstraints = false
+        descriptionLabel.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
+        descriptionLabel.centerYAnchor.constraint(equalTo: view.centerYAnchor).isActive = true
+
     }
 }
