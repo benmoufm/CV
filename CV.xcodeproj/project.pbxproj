@@ -288,6 +288,7 @@
 				86CE0CB71F1BC64E00DA0916 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
