@@ -10,6 +10,8 @@
 		86CE0CA71F1BC64D00DA0916 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86CE0CA61F1BC64D00DA0916 /* AppDelegate.swift */; };
 		86CE0CAE1F1BC64E00DA0916 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 86CE0CAD1F1BC64E00DA0916 /* Assets.xcassets */; };
 		86CE0CB11F1BC64E00DA0916 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 86CE0CAF1F1BC64E00DA0916 /* LaunchScreen.storyboard */; };
+		86E4402B1F4A0FE70040BD55 /* MainCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86E4402A1F4A0FE70040BD55 /* MainCoordinator.swift */; };
+		86E4402E1F4A10DF0040BD55 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86E4402D1F4A10DF0040BD55 /* Coordinator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -18,6 +20,8 @@
 		86CE0CAD1F1BC64E00DA0916 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		86CE0CB01F1BC64E00DA0916 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		86CE0CB21F1BC64E00DA0916 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		86E4402A1F4A0FE70040BD55 /* MainCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainCoordinator.swift; sourceTree = "<group>"; };
+		86E4402D1F4A10DF0040BD55 /* Coordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -50,12 +54,78 @@
 		86CE0CA51F1BC64D00DA0916 /* CV */ = {
 			isa = PBXGroup;
 			children = (
-				86CE0CA61F1BC64D00DA0916 /* AppDelegate.swift */,
+				86E440181F4A0D090040BD55 /* Source */,
+				86E440171F4A0CF10040BD55 /* Ressource */,
+			);
+			path = CV;
+			sourceTree = "<group>";
+		};
+		86E440171F4A0CF10040BD55 /* Ressource */ = {
+			isa = PBXGroup;
+			children = (
 				86CE0CAD1F1BC64E00DA0916 /* Assets.xcassets */,
 				86CE0CAF1F1BC64E00DA0916 /* LaunchScreen.storyboard */,
 				86CE0CB21F1BC64E00DA0916 /* Info.plist */,
 			);
-			path = CV;
+			name = Ressource;
+			sourceTree = "<group>";
+		};
+		86E440181F4A0D090040BD55 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				86CE0CA61F1BC64D00DA0916 /* AppDelegate.swift */,
+				86E440291F4A0FCA0040BD55 /* Coordinator */,
+				86E4401E1F4A0EA50040BD55 /* App */,
+				86E4401C1F4A0EA00040BD55 /* Core */,
+				86E4401B1F4A0E9C0040BD55 /* Data */,
+				86E4401A1F4A0E960040BD55 /* Factory */,
+			);
+			name = Source;
+			sourceTree = "<group>";
+		};
+		86E4401A1F4A0E960040BD55 /* Factory */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Factory;
+			sourceTree = "<group>";
+		};
+		86E4401B1F4A0E9C0040BD55 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Data;
+			sourceTree = "<group>";
+		};
+		86E4401C1F4A0EA00040BD55 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Core;
+			sourceTree = "<group>";
+		};
+		86E4401E1F4A0EA50040BD55 /* App */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = App;
+			sourceTree = "<group>";
+		};
+		86E440291F4A0FCA0040BD55 /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				86E4402C1F4A10D50040BD55 /* Shared */,
+				86E4402A1F4A0FE70040BD55 /* MainCoordinator.swift */,
+			);
+			name = Coordinator;
+			sourceTree = "<group>";
+		};
+		86E4402C1F4A10D50040BD55 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				86E4402D1F4A10DF0040BD55 /* Coordinator.swift */,
+			);
+			name = Shared;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -131,6 +201,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				86CE0CA71F1BC64D00DA0916 /* AppDelegate.swift in Sources */,
+				86E4402B1F4A0FE70040BD55 /* MainCoordinator.swift in Sources */,
+				86E4402E1F4A10DF0040BD55 /* Coordinator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
