@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "4f552a43_06979c14",
+        "filename": "CV/fr.lproj/Localizable.strings",
+        "patchSetId": 1
+      },
+      "lineNbr": 9,
+      "author": {
+        "id": 1011781
+      },
+      "writtenOn": "2017-08-21T17:03:49Z",
+      "side": 1,
+      "message": "Utilise des clées plus précises pour ton wording que tu puisse au nom savoir de quoi il est question\n\nhome_welcome_text\n\nIdéalement il faut que ton nom de clé reflette son contenu et pas juste l\u0027endroit ou c\u0027est utilisé mais certaines fois c\u0027est mieux de savoir ou le texte apparait que ce qu\u0027il contient...",
+      "range": {
+        "startLine": 9,
+        "startChar": 1,
+        "endLine": 9,
+        "endChar": 16
+      },
+      "revId": "b1f0a191d08cd493a6d38bff96e6197eacb758d3",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    }
+  ]
+}
