@@ -11,7 +11,8 @@ import Foundation
 struct HomeControllerViewModelMapper {
 
     func map() -> HomeControllerViewModel {
-        return HomeControllerViewModel()
+        let homeWelcomeText = "home_welcome_text".localized
+        return HomeControllerViewModel(homeWelcomeString: homeWelcomeText)
     }
 
 }
