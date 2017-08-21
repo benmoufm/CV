@@ -1,0 +1,142 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "361b6d91_ce7c1c61",
+        "filename": "CV/Color.swift",
+        "patchSetId": 2
+      },
+      "lineNbr": 18,
+      "author": {
+        "id": 1011781
+      },
+      "writtenOn": "2017-08-21T11:54:34Z",
+      "side": 1,
+      "message": "Nope, ce qu\u0027il faut que tu fasse c\u0027est une extension de UIColor\n\nclass Color \u003d\u003e extension UIColor\n\net tes variable ne doivent pas être des variable d\u0027instance mais de classe",
+      "range": {
+        "startLine": 12,
+        "startChar": 0,
+        "endLine": 18,
+        "endChar": 1
+      },
+      "revId": "2f3160f544d5381f2742fdd775b9761d8fe81d06",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "c12a7753_e9093a92",
+        "filename": "CV/HomeControllerViewModel.swift",
+        "patchSetId": 2
+      },
+      "lineNbr": 13,
+      "author": {
+        "id": 1011781
+      },
+      "writtenOn": "2017-08-21T11:54:34Z",
+      "side": 1,
+      "message": "Pour les string il faut utiliser des localizable strings\nhttps://www.raywenderlich.com/64401/internationalization-tutorial-for-ios-2014\n\npar ailleurs ton viewModel doit juste avoir une property descritptionString et c\u0027est ton mapper qui va l\u0027initialiser quand il en aura besoin",
+      "range": {
+        "startLine": 13,
+        "startChar": 36,
+        "endLine": 13,
+        "endChar": 73
+      },
+      "revId": "2f3160f544d5381f2742fdd775b9761d8fe81d06",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "a6b411df_97eb16cf",
+        "filename": "CV/HomeViewController.swift",
+        "patchSetId": 2
+      },
+      "lineNbr": 39,
+      "author": {
+        "id": 1011781
+      },
+      "writtenOn": "2017-08-21T11:54:34Z",
+      "side": 1,
+      "message": "pas besoin de commentaire si ton nom de méthode est assez explicite",
+      "range": {
+        "startLine": 39,
+        "startChar": 4,
+        "endLine": 39,
+        "endChar": 52
+      },
+      "revId": "2f3160f544d5381f2742fdd775b9761d8fe81d06",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "c176bba0_26c9f88f",
+        "filename": "CV/HomeViewController.swift",
+        "patchSetId": 2
+      },
+      "lineNbr": 45,
+      "author": {
+        "id": 1011781
+      },
+      "writtenOn": "2017-08-21T11:54:34Z",
+      "side": 1,
+      "message": "same here",
+      "range": {
+        "startLine": 45,
+        "startChar": 4,
+        "endLine": 45,
+        "endChar": 54
+      },
+      "revId": "2f3160f544d5381f2742fdd775b9761d8fe81d06",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "e3032300_da7b6c68",
+        "filename": "CV/HomeViewController.swift",
+        "patchSetId": 2
+      },
+      "lineNbr": 56,
+      "author": {
+        "id": 1011781
+      },
+      "writtenOn": "2017-08-21T11:54:34Z",
+      "side": 1,
+      "message": "Ta vue ne crée pas de viewModel c\u0027est ton presenter qui le fait et par ailleurs il le fait via un mapper dans la mesure du possible/raisonnable",
+      "range": {
+        "startLine": 56,
+        "startChar": 8,
+        "endLine": 56,
+        "endChar": 49
+      },
+      "revId": "2f3160f544d5381f2742fdd775b9761d8fe81d06",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "1d2852b3_7790cdc0",
+        "filename": "CV/HomeViewController.swift",
+        "patchSetId": 2
+      },
+      "lineNbr": 57,
+      "author": {
+        "id": 1011781
+      },
+      "writtenOn": "2017-08-21T11:54:34Z",
+      "side": 1,
+      "message": "met ça dans ton setupPosition",
+      "range": {
+        "startLine": 57,
+        "startChar": 8,
+        "endLine": 57,
+        "endChar": 41
+      },
+      "revId": "2f3160f544d5381f2742fdd775b9761d8fe81d06",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    }
+  ]
+}
