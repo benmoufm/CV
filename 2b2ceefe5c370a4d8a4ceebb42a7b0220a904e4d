@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "d98373b6_2b16a199",
+        "filename": "CV/Base.lproj/Localizable.strings",
+        "patchSetId": 1
+      },
+      "lineNbr": 1,
+      "author": {
+        "id": 1011781
+      },
+      "writtenOn": "2017-08-21T16:56:38Z",
+      "side": 1,
+      "message": "white space",
+      "range": {
+        "startLine": 1,
+        "startChar": 2,
+        "endLine": 1,
+        "endChar": 3
+      },
+      "revId": "2b2ceefe5c370a4d8a4ceebb42a7b0220a904e4d",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    }
+  ]
+}
