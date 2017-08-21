@@ -1,0 +1,96 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "4a55e62d_76b9fdda",
+        "filename": "CV/HomeControllerViewModelMapper.swift",
+        "patchSetId": 1
+      },
+      "lineNbr": 14,
+      "author": {
+        "id": 1011781
+      },
+      "writtenOn": "2017-08-21T17:09:40Z",
+      "side": 1,
+      "message": "Comme tu va très très souvent créer des localized string sans commentaire (voire tout le temps)\nC\u0027est bien de créer une extension de String qui a une méthode localized qui renvoie une localizedString",
+      "range": {
+        "startLine": 14,
+        "startChar": 30,
+        "endLine": 14,
+        "endChar": 79
+      },
+      "revId": "56946ae4a417fc48b10f9e77c71c592a28bc8b18",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "47859663_859bae5e",
+        "filename": "CV/HomeViewController.swift",
+        "patchSetId": 1
+      },
+      "lineNbr": 15,
+      "author": {
+        "id": 1011781
+      },
+      "writtenOn": "2017-08-21T17:09:40Z",
+      "side": 1,
+      "message": "naming? \u003d\u003e est-ce que c\u0027est un label qui décrit quelque chose",
+      "range": {
+        "startLine": 15,
+        "startChar": 8,
+        "endLine": 15,
+        "endChar": 24
+      },
+      "revId": "56946ae4a417fc48b10f9e77c71c592a28bc8b18",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "33f601cb_c9bccc67",
+        "filename": "CV/HomeViewController.swift",
+        "patchSetId": 1
+      },
+      "lineNbr": 39,
+      "author": {
+        "id": 1011781
+      },
+      "writtenOn": "2017-08-21T17:09:40Z",
+      "side": 1,
+      "message": "setupLeNomDeTonLabel() {",
+      "range": {
+        "startLine": 39,
+        "startChar": 9,
+        "endLine": 39,
+        "endChar": 20
+      },
+      "revId": "56946ae4a417fc48b10f9e77c71c592a28bc8b18",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "ff6183f0_7fc30385",
+        "filename": "CV/HomeViewController.swift",
+        "patchSetId": 1
+      },
+      "lineNbr": 44,
+      "author": {
+        "id": 1011781
+      },
+      "writtenOn": "2017-08-21T17:09:40Z",
+      "side": 1,
+      "message": "setupLayout serait un meilleur nom",
+      "range": {
+        "startLine": 44,
+        "startChar": 9,
+        "endLine": 44,
+        "endChar": 22
+      },
+      "revId": "56946ae4a417fc48b10f9e77c71c592a28bc8b18",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    }
+  ]
+}
