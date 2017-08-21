@@ -1,0 +1,73 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "988f6ab6_85634e65",
+        "filename": "CV/HomeViewController.swift",
+        "patchSetId": 1
+      },
+      "lineNbr": 43,
+      "author": {
+        "id": 1011781
+      },
+      "writtenOn": "2017-08-21T08:43:39Z",
+      "side": 1,
+      "message": "le text doit être défini par le viewModel pas en dur comme ça",
+      "range": {
+        "startLine": 43,
+        "startChar": 8,
+        "endLine": 43,
+        "endChar": 43
+      },
+      "revId": "e7a8a66efb2b74c45899abdc1fcb9b986e500868",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "7ab227d1_f68e14d0",
+        "filename": "CV/HomeViewController.swift",
+        "patchSetId": 1
+      },
+      "lineNbr": 44,
+      "author": {
+        "id": 1011781
+      },
+      "writtenOn": "2017-08-21T08:43:39Z",
+      "side": 1,
+      "message": "il faut que tu définisse des couleur que tu veux utiliser toi\ngenre une catégorie ou tu va définir mainColor, secondaryColor, backgroundColor ect.... comme ça si tu veux changer tout le thème de ton appli tu changera juste trois ligne à cet endroit là et pas tout dans toute l\u0027appli",
+      "range": {
+        "startLine": 44,
+        "startChar": 37,
+        "endLine": 44,
+        "endChar": 48
+      },
+      "revId": "e7a8a66efb2b74c45899abdc1fcb9b986e500868",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "e68cc66d_8b47d05b",
+        "filename": "CV/HomeViewController.swift",
+        "patchSetId": 1
+      },
+      "lineNbr": 44,
+      "author": {
+        "id": 1011781
+      },
+      "writtenOn": "2017-08-21T08:43:39Z",
+      "side": 1,
+      "message": "ici par ailleurs tu configure l\u0027affichage de ton label en même temps que ça position sur l\u0027écran : en soit c\u0027est pas une erreur mais en pratique ce serait mieux de séparer ça dans des méthodes différentes.",
+      "range": {
+        "startLine": 44,
+        "startChar": 8,
+        "endLine": 44,
+        "endChar": 48
+      },
+      "revId": "e7a8a66efb2b74c45899abdc1fcb9b986e500868",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    }
+  ]
+}
