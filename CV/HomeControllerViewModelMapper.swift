@@ -7,12 +7,14 @@
 //
 
 import Foundation
+import UIKit
 
 struct HomeControllerViewModelMapper {
 
     func map() -> HomeControllerViewModel {
+        let CVPictureImage = UIImage(named: "pictureCV")
         let homeWelcomeText = "home_welcome_text".localized
-        return HomeControllerViewModel(homeWelcomeString: homeWelcomeText)
+        return HomeControllerViewModel(CVPictureImage: CVPictureImage!, homeWelcomeString: homeWelcomeText)
     }
 
 }
