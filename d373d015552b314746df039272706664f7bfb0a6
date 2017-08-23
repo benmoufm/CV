@@ -1,0 +1,73 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "2356b8fa_fe92126d",
+        "filename": "CV/ImageRounded.swift",
+        "patchSetId": 2
+      },
+      "lineNbr": 12,
+      "author": {
+        "id": 1011781
+      },
+      "writtenOn": "2017-08-23T12:16:35Z",
+      "side": 1,
+      "message": "UIView\n\nCe que tu cherche à faire à du sens pour la superclasse et ne nécessite rien de plus que les properties de la super classe autant en profiter",
+      "range": {
+        "startLine": 12,
+        "startChar": 10,
+        "endLine": 12,
+        "endChar": 21
+      },
+      "revId": "d373d015552b314746df039272706664f7bfb0a6",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "3a29dbfc_771ace65",
+        "filename": "CV/ImageRounded.swift",
+        "patchSetId": 2
+      },
+      "lineNbr": 15,
+      "author": {
+        "id": 1011781
+      },
+      "writtenOn": "2017-08-23T12:16:35Z",
+      "side": 1,
+      "message": "ça donne quoi si l\u0027image est plus large que haute ?",
+      "range": {
+        "startLine": 15,
+        "startChar": 8,
+        "endLine": 15,
+        "endChar": 41
+      },
+      "revId": "d373d015552b314746df039272706664f7bfb0a6",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "6fac3c00_4fd6a75d",
+        "filename": "CV/ImageRounded.swift",
+        "patchSetId": 2
+      },
+      "lineNbr": 17,
+      "author": {
+        "id": 1011781
+      },
+      "writtenOn": "2017-08-23T12:16:35Z",
+      "side": 1,
+      "message": "pas besoin",
+      "range": {
+        "startLine": 17,
+        "startChar": 8,
+        "endLine": 17,
+        "endChar": 39
+      },
+      "revId": "d373d015552b314746df039272706664f7bfb0a6",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    }
+  ]
+}
