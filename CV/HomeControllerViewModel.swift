@@ -7,8 +7,10 @@
 //
 
 import Foundation
+import UIKit
 
 struct HomeControllerViewModel {
 
+    let cvPictureImage: UIImage
     let welcomeString: String
 }
