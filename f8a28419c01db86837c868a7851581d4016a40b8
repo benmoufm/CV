@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "f144bdc7_103c6208",
+        "filename": "CV/ImageResized.swift",
+        "patchSetId": 2
+      },
+      "lineNbr": 39,
+      "author": {
+        "id": 1011781
+      },
+      "writtenOn": "2017-08-23T12:19:17Z",
+      "side": 1,
+      "message": "Toujours bien trop compliqué pour ce que tu essaie de faire\ncf https://review.gerrithub.io/#/c/375300/\n\nen revanche c\u0027est bien de voir un peux comment fonctionnent les CGContext",
+      "range": {
+        "startLine": 14,
+        "startChar": 0,
+        "endLine": 39,
+        "endChar": 5
+      },
+      "revId": "f8a28419c01db86837c868a7851581d4016a40b8",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    }
+  ]
+}
