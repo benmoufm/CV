@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		862095C11F545E41005B1C7C /* StringLocalized.swift in Sources */ = {isa = PBXBuildFile; fileRef = 862095C01F545E41005B1C7C /* StringLocalized.swift */; };
+		862095BF1F4D7DB8005B1C7C /* ViewRounded.swift in Sources */ = {isa = PBXBuildFile; fileRef = 862095BE1F4D7DB8005B1C7C /* ViewRounded.swift */; };
 		86CE0CA71F1BC64D00DA0916 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86CE0CA61F1BC64D00DA0916 /* AppDelegate.swift */; };
 		86CE0CAE1F1BC64E00DA0916 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 86CE0CAD1F1BC64E00DA0916 /* Assets.xcassets */; };
 		86CE0CB11F1BC64E00DA0916 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 86CE0CAF1F1BC64E00DA0916 /* LaunchScreen.storyboard */; };
@@ -27,6 +28,7 @@
 
 /* Begin PBXFileReference section */
 		862095C01F545E41005B1C7C /* StringLocalized.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringLocalized.swift; sourceTree = "<group>"; };
+		862095BE1F4D7DB8005B1C7C /* ViewRounded.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewRounded.swift; sourceTree = "<group>"; };
 		86CE0CA31F1BC64D00DA0916 /* CV.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CV.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		86CE0CA61F1BC64D00DA0916 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		86CE0CAD1F1BC64E00DA0916 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -231,6 +233,7 @@
 			children = (
 				86E4404A1F4AE7810040BD55 /* Color.swift */,
 				862095C01F545E41005B1C7C /* StringLocalized.swift */,
+				862095BE1F4D7DB8005B1C7C /* ViewRounded.swift */,
 			);
 			name = Categories;
 			sourceTree = "<group>";
@@ -317,6 +320,7 @@
 				86E4402B1F4A0FE70040BD55 /* MainCoordinator.swift in Sources */,
 				86E440411F4A163F0040BD55 /* HomeViewController.swift in Sources */,
 				86E4403E1F4A163F0040BD55 /* HomePresenter.swift in Sources */,
+				862095BF1F4D7DB8005B1C7C /* ViewRounded.swift in Sources */,
 				86E4403D1F4A163F0040BD55 /* HomeControllerViewModelMapper.swift in Sources */,
 				86E4402E1F4A10DF0040BD55 /* Coordinator.swift in Sources */,
 				862095C11F545E41005B1C7C /* StringLocalized.swift in Sources */,
