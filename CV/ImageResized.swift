@@ -38,4 +38,30 @@ extension UIImage {
         return scaledImage
     }
 
+    func cropToSquare() -> UIImage {
+
+        let imageSize: CGSize = self.size
+        var rectCoordinate = CGPoint()
+        var rectSize = CGSize()
+
+        // Calculate dimensions for the square
+        if imageSize.width < imageSize.height {
+            let yCoordinate = (imageSize.height - imageSize.width) / 2.0
+            rectCoordinate = CGPoint(x: 0.0, y: yCoordinate)
+            rectSize = CGSize(width: imageSize.width, height: imageSize.width)
+        } else {
+            let xCoordinate = (imageSize.width - imageSize.height) / 2.0
+            rectCoordinate = CGPoint(x: xCoordinate, y: 0.0)
+            rectSize = CGSize(width: imageSize.height, height: imageSize.height)
+        }
+
+        // Draw square
+        let rect: CGRect = CGRect(x: rectCoordinate.x, y: rectCoordinate.y, width: rectSize.width, height: rectSize.height)
+        // Draw picture in square
+        let imageRef: CGImage = self.cgImage!.cropping(to: rect)!
+        let croppedImage = UIImage(cgImage: imageRef, scale: self.scale, orientation: self.imageOrientation)
+
+        return croppedImage
+    }
+
 }
