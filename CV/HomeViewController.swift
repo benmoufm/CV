@@ -14,6 +14,10 @@ class HomeViewController: UIViewController, HomeViewContract {
     var presenter: HomePresenter?
     let homeWelcomeLabel = UILabel()
 
+    // MARK: - Private properties
+
+    private let cvPictureImageView = UIImageView()
+
     override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?) {
         super.init(nibName: nil, bundle: nil)
     }
@@ -26,14 +30,24 @@ class HomeViewController: UIViewController, HomeViewContract {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        setup()
         presenter?.start()
+        setup()
+    }
+
+    override func viewDidLayoutSubviews() {
+        super.viewDidLayoutSubviews()
+        cvPictureImageView.rounded()
     }
 
     // MARK: - HomeViewContract
 
     func configure(with viewModel: HomeControllerViewModel) {
+        cvPictureImageView.image = viewModel.CVPictureImage
         homeWelcomeLabel.text = viewModel.homeWelcomeString
+    }
+
+    func setupCVPictureImage() {
+        cvPictureImageView.contentMode = .scaleAspectFill
     }
 
     func setupHomeWelcomeLabel() {
@@ -42,16 +56,25 @@ class HomeViewController: UIViewController, HomeViewContract {
 
     func setupLayout() {
         view.addSubview(homeWelcomeLabel)
+        view.addSubview(cvPictureImageView)
+
         homeWelcomeLabel.translatesAutoresizingMaskIntoConstraints = false
         homeWelcomeLabel.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
-        homeWelcomeLabel.centerYAnchor.constraint(equalTo: view.centerYAnchor).isActive = true
+        homeWelcomeLabel.topAnchor.constraint(equalTo: cvPictureImageView.bottomAnchor, constant: 10.0).isActive = true
+
+        cvPictureImageView.translatesAutoresizingMaskIntoConstraints = false
+        cvPictureImageView.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
+        cvPictureImageView.centerYAnchor.constraint(equalTo: view.centerYAnchor).isActive = true
+        cvPictureImageView.widthAnchor.constraint(equalToConstant: UIScreen.main.bounds.width / 3.0).isActive = true
+        cvPictureImageView.heightAnchor.constraint(equalToConstant: UIScreen.main.bounds.width / 3.0).isActive = true
     }
 
     // MARK: - Private methods
 
     private func setup() {
         view.backgroundColor = UIColor.backgroundColor
-        setupLayout()
+        setupCVPictureImage()
         setupHomeWelcomeLabel()
+        setupLayout()
     }
 }
