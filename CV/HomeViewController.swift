@@ -12,7 +12,12 @@ import UIKit
 class HomeViewController: UIViewController, HomeViewContract {
 
     var presenter: HomePresenter?
+    var CVPictureImage = UIImage()
     let homeWelcomeLabel = UILabel()
+
+    // MARK: - Private properties
+
+    private var CVPictureImageView = UIImageView()
 
     override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?) {
         super.init(nibName: nil, bundle: nil)
@@ -26,14 +31,24 @@ class HomeViewController: UIViewController, HomeViewContract {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        setup()
         presenter?.start()
+        setup()
     }
 
     // MARK: - HomeViewContract
 
     func configure(with viewModel: HomeControllerViewModel) {
+        CVPictureImage = viewModel.CVPictureImage
         homeWelcomeLabel.text = viewModel.homeWelcomeString
+    }
+
+    func setupCVPictureImage() {
+        let scaledImage = CVPictureImage.scaleToScreen(ratio: 3.0)
+        let croppedImage = scaledImage.cropToSquare()
+        CVPictureImageView = UIImageView(image: croppedImage)
+        CVPictureImageView.contentMode = .scaleAspectFill
+        CVPictureImageView.layer.masksToBounds = true
+        CVPictureImageView.rounded()
     }
 
     func setupHomeWelcomeLabel() {
@@ -43,15 +58,22 @@ class HomeViewController: UIViewController, HomeViewContract {
 
     func setupLayout() {
         view.addSubview(homeWelcomeLabel)
+        view.addSubview(CVPictureImageView)
+
         homeWelcomeLabel.translatesAutoresizingMaskIntoConstraints = false
         homeWelcomeLabel.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
-        homeWelcomeLabel.centerYAnchor.constraint(equalTo: view.centerYAnchor).isActive = true
+        homeWelcomeLabel.topAnchor.constraint(equalTo: CVPictureImageView.bottomAnchor, constant: 10.0).isActive = true
+
+        CVPictureImageView.translatesAutoresizingMaskIntoConstraints = false
+        CVPictureImageView.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
+        CVPictureImageView.centerYAnchor.constraint(equalTo: view.centerYAnchor).isActive = true
     }
 
     // MARK: - Private methods
 
     private func setup() {
-        setupLayout()
+        setupCVPictureImage()
         setupHomeWelcomeLabel()
+        setupLayout()
     }
 }
