@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "bc6a77e4_9a1c237b",
+        "filename": "CV/ImageResized.swift",
+        "patchSetId": 2
+      },
+      "lineNbr": 65,
+      "author": {
+        "id": 1011781
+      },
+      "writtenOn": "2017-08-23T12:17:43Z",
+      "side": 1,
+      "message": "Tu te complique bien trop la vie ici\ncf https://review.gerrithub.io/#/c/375300/",
+      "range": {
+        "startLine": 41,
+        "startChar": 0,
+        "endLine": 65,
+        "endChar": 5
+      },
+      "revId": "09a41a578098910f1ee39f25540a39676591f5e2",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    }
+  ]
+}
