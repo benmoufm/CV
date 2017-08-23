@@ -1,0 +1,165 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "7c4c7b70_ea996bdb",
+        "filename": "CV/HomeControllerViewModelMapper.swift",
+        "patchSetId": 1
+      },
+      "lineNbr": 15,
+      "author": {
+        "id": 1011781
+      },
+      "writtenOn": "2017-08-23T12:14:05Z",
+      "side": 1,
+      "message": "tu peux utiliser un imageLitéral",
+      "range": {
+        "startLine": 15,
+        "startChar": 29,
+        "endLine": 15,
+        "endChar": 56
+      },
+      "revId": "19bc56abf69a5a980ba92826bff4b921e2a850fd",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "13892f58_04d71a9e",
+        "filename": "CV/HomeControllerViewModelMapper.swift",
+        "patchSetId": 1
+      },
+      "lineNbr": 16,
+      "author": {
+        "id": 1011781
+      },
+      "writtenOn": "2017-08-23T12:14:05Z",
+      "side": 1,
+      "message": "C\u0027est pas vraiment necessaire ici de faire des variable intermediaire...",
+      "range": {
+        "startLine": 15,
+        "startChar": 0,
+        "endLine": 16,
+        "endChar": 59
+      },
+      "revId": "19bc56abf69a5a980ba92826bff4b921e2a850fd",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "890ec4a9_45ad44ae",
+        "filename": "CV/HomeControllerViewModelMapper.swift",
+        "patchSetId": 1
+      },
+      "lineNbr": 17,
+      "author": {
+        "id": 1011781
+      },
+      "writtenOn": "2017-08-23T12:14:05Z",
+      "side": 1,
+      "message": "A éviter au maximum",
+      "range": {
+        "startLine": 17,
+        "startChar": 69,
+        "endLine": 17,
+        "endChar": 70
+      },
+      "revId": "19bc56abf69a5a980ba92826bff4b921e2a850fd",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "90a0e575_9a7277cb",
+        "filename": "CV/HomeViewController.swift",
+        "patchSetId": 1
+      },
+      "lineNbr": 15,
+      "author": {
+        "id": 1011781
+      },
+      "writtenOn": "2017-08-23T12:14:05Z",
+      "side": 1,
+      "message": "pas utile cette variable",
+      "range": {
+        "startLine": 15,
+        "startChar": 4,
+        "endLine": 15,
+        "endChar": 34
+      },
+      "revId": "19bc56abf69a5a980ba92826bff4b921e2a850fd",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "6671244d_0a828f99",
+        "filename": "CV/HomeViewController.swift",
+        "patchSetId": 1
+      },
+      "lineNbr": 20,
+      "author": {
+        "id": 1011781
+      },
+      "writtenOn": "2017-08-23T12:14:05Z",
+      "side": 1,
+      "message": "Jamais de majuscule pour une instance de classe les majuscule en début sont réservées pour les types",
+      "range": {
+        "startLine": 20,
+        "startChar": 16,
+        "endLine": 20,
+        "endChar": 34
+      },
+      "revId": "19bc56abf69a5a980ba92826bff4b921e2a850fd",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "06b6596c_1454cdec",
+        "filename": "CV/HomeViewController.swift",
+        "patchSetId": 1
+      },
+      "lineNbr": 41,
+      "author": {
+        "id": 1011781
+      },
+      "writtenOn": "2017-08-23T12:14:05Z",
+      "side": 1,
+      "message": "imageView.image \u003d viewModel.image",
+      "range": {
+        "startLine": 41,
+        "startChar": 8,
+        "endLine": 41,
+        "endChar": 22
+      },
+      "revId": "19bc56abf69a5a980ba92826bff4b921e2a850fd",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "40fe2342_4372c98a",
+        "filename": "CV/HomeViewController.swift",
+        "patchSetId": 1
+      },
+      "lineNbr": 51,
+      "author": {
+        "id": 1011781
+      },
+      "writtenOn": "2017-08-23T12:14:05Z",
+      "side": 1,
+      "message": "Tu te complique la vie :\nL\u0027image que tu importe découpe la pour garder que ce que tu veux afficher\npuis tu set ton contentMode a aspectFill",
+      "range": {
+        "startLine": 46,
+        "startChar": 0,
+        "endLine": 51,
+        "endChar": 36
+      },
+      "revId": "19bc56abf69a5a980ba92826bff4b921e2a850fd",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    }
+  ]
+}
