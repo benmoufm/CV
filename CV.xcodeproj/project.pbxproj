@@ -20,6 +20,7 @@
 		86E440411F4A163F0040BD55 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86E4403B1F4A163F0040BD55 /* HomeViewController.swift */; };
 		86E440441F4A16A40040BD55 /* Startable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86E440431F4A16A40040BD55 /* Startable.swift */; };
 		86E440461F4A1A050040BD55 /* ViewControllerFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86E440451F4A1A050040BD55 /* ViewControllerFactory.swift */; };
+		86E4404B1F4AE7810040BD55 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86E4404A1F4AE7810040BD55 /* Color.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +39,7 @@
 		86E4403B1F4A163F0040BD55 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		86E440431F4A16A40040BD55 /* Startable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Startable.swift; sourceTree = "<group>"; };
 		86E440451F4A1A050040BD55 /* ViewControllerFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllerFactory.swift; sourceTree = "<group>"; };
+		86E4404A1F4AE7810040BD55 /* Color.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +91,7 @@
 		86E440181F4A0D090040BD55 /* Source */ = {
 			isa = PBXGroup;
 			children = (
+				86E440491F4AE6AF0040BD55 /* Categories */,
 				86CE0CA61F1BC64D00DA0916 /* AppDelegate.swift */,
 				86E440291F4A0FCA0040BD55 /* Coordinator */,
 				86E4401E1F4A0EA50040BD55 /* App */,
@@ -216,6 +219,14 @@
 			name = Shared;
 			sourceTree = "<group>";
 		};
+		86E440491F4AE6AF0040BD55 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				86E4404A1F4AE7810040BD55 /* Color.swift */,
+			);
+			name = Categories;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -293,6 +304,7 @@
 				86E4403C1F4A163F0040BD55 /* HomeControllerViewModel.swift in Sources */,
 				86E4403F1F4A163F0040BD55 /* HomePresenterImplementation.swift in Sources */,
 				86E440401F4A163F0040BD55 /* HomeViewContract.swift in Sources */,
+				86E4404B1F4AE7810040BD55 /* Color.swift in Sources */,
 				86E4402B1F4A0FE70040BD55 /* MainCoordinator.swift in Sources */,
 				86E440411F4A163F0040BD55 /* HomeViewController.swift in Sources */,
 				86E4403E1F4A163F0040BD55 /* HomePresenter.swift in Sources */,
