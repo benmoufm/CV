@@ -1,0 +1,73 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "978cbe6e_f7241119",
+        "filename": "CV/Base.lproj/Localizable.strings",
+        "patchSetId": 3
+      },
+      "lineNbr": 1,
+      "author": {
+        "id": 1011781
+      },
+      "writtenOn": "2017-08-23T12:04:41Z",
+      "side": 1,
+      "message": "whiteSpace",
+      "range": {
+        "startLine": 1,
+        "startChar": 2,
+        "endLine": 1,
+        "endChar": 3
+      },
+      "revId": "dc56ea3ceece9596adcbb1e117bf8dec6ad3cf4c",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "23bcc869_5dbbfe5e",
+        "filename": "CV/en.lproj/Localizable.strings",
+        "patchSetId": 3
+      },
+      "lineNbr": 1,
+      "author": {
+        "id": 1011781
+      },
+      "writtenOn": "2017-08-23T12:04:41Z",
+      "side": 1,
+      "message": "white space",
+      "range": {
+        "startLine": 1,
+        "startChar": 2,
+        "endLine": 1,
+        "endChar": 3
+      },
+      "revId": "dc56ea3ceece9596adcbb1e117bf8dec6ad3cf4c",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "cd05b3ed_ce38a9d8",
+        "filename": "CV/fr.lproj/LaunchScreen.strings",
+        "patchSetId": 3
+      },
+      "lineNbr": 1,
+      "author": {
+        "id": 1011781
+      },
+      "writtenOn": "2017-08-23T12:04:41Z",
+      "side": 1,
+      "message": "???",
+      "range": {
+        "startLine": 1,
+        "startChar": 0,
+        "endLine": 1,
+        "endChar": 0
+      },
+      "revId": "dc56ea3ceece9596adcbb1e117bf8dec6ad3cf4c",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    }
+  ]
+}
