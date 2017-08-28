@@ -12,6 +12,7 @@ import UIKit
 class HomeViewController: UIViewController, HomeViewContract {
 
     var presenter: HomePresenter?
+    let welcomeLabel = UILabel()
 
     override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?) {
         super.init(nibName: nil, bundle: nil)
@@ -32,12 +33,25 @@ class HomeViewController: UIViewController, HomeViewContract {
     // MARK: - HomeViewContract
 
     func configure(with viewModel: HomeControllerViewModel) {
-        // TODO: (Mélodie Benmouffek) Configure view
+        welcomeLabel.text = viewModel.welcomeString
+    }
+
+    func setupWelcomeLabel() {
+        welcomeLabel.textColor = UIColor.textColor
+    }
+
+    func setupLayout() {
+        view.addSubview(welcomeLabel)
+        welcomeLabel.translatesAutoresizingMaskIntoConstraints = false
+        welcomeLabel.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
+        welcomeLabel.centerYAnchor.constraint(equalTo: view.centerYAnchor).isActive = true
     }
 
     // MARK: - Private methods
 
     private func setup() {
-        // TODO: (Mélodie Benmouffek) Setup subviews
+        view.backgroundColor = UIColor.backgroundColor
+        setupLayout()
+        setupWelcomeLabel()
     }
 }
