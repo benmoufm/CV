@@ -10,4 +10,5 @@ import Foundation
 
 struct HomeControllerViewModel {
 
+    let welcomeString: String
 }

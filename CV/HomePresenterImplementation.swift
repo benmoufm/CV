@@ -21,6 +21,7 @@ class HomePresenterImplementation: HomePresenter {
     // MARK: - Startable
 
     func start() {
+        computeAndDisplayViewModel()
     }
 
     // MARK: - HomePresenter
