@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "c690b9ba_feccd35b",
+        "filename": "CV/HomeControllerViewModelMapper.swift",
+        "patchSetId": 10
+      },
+      "lineNbr": 16,
+      "author": {
+        "id": 1011781
+      },
+      "writtenOn": "2017-08-29T20:37:08Z",
+      "side": 1,
+      "message": "écrit le sur deux lignes\nC\u0027est bien quand ton code ne dépasse pas 100 charactères par ligne en général",
+      "range": {
+        "startLine": 15,
+        "startChar": 51,
+        "endLine": 16,
+        "endChar": 5
+      },
+      "revId": "1bbf06c6de2ccf536b7e292519753132f05bd9c4",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    }
+  ]
+}
