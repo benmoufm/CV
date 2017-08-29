@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "930c63e5_e07be2aa",
+        "filename": "CV/HomeViewController.swift",
+        "patchSetId": 3
+      },
+      "lineNbr": 43,
+      "author": {
+        "id": 1011781
+      },
+      "writtenOn": "2017-08-29T20:32:10Z",
+      "side": 1,
+      "message": "private functions",
+      "range": {
+        "startLine": 39,
+        "startChar": 4,
+        "endLine": 43,
+        "endChar": 23
+      },
+      "revId": "36b98e397a93db6f1915105a8a0ee63e53f810e5",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    }
+  ]
+}
