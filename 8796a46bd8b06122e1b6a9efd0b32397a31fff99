@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "86ef2624_853d1e8a",
+        "filename": "CV/ImageResized.swift",
+        "patchSetId": 7
+      },
+      "lineNbr": 39,
+      "author": {
+        "id": 1011781
+      },
+      "writtenOn": "2017-08-29T20:28:32Z",
+      "side": 1,
+      "message": "beuuuh",
+      "range": {
+        "startLine": 9,
+        "startChar": 0,
+        "endLine": 39,
+        "endChar": 5
+      },
+      "revId": "8796a46bd8b06122e1b6a9efd0b32397a31fff99",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    }
+  ]
+}
