@@ -11,7 +11,8 @@ import Foundation
 struct ContactControllerViewModelMapper {
 
     func map() -> ContactControllerViewModel {
-        return ContactControllerViewModel()
+        return ContactControllerViewModel(tableViewImages: [#imageLiteral(resourceName: "phoneIcon"), #imageLiteral(resourceName: "emailIcon"), #imageLiteral(resourceName: "linkdInIcon"), #imageLiteral(resourceName: "contactIcon")],
+                                          tableViewLabels: ["Téléphone", "Mail", "LinkdIn", "Nouveau contact"])
     }
 
 }

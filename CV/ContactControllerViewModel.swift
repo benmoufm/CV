@@ -7,7 +7,10 @@
 //
 
 import Foundation
+import UIKit
 
 struct ContactControllerViewModel {
 
+    let tableViewImages: [UIImage]
+    let tableViewLabels: [String]
 }

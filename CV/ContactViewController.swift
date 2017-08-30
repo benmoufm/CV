@@ -10,10 +10,15 @@ import Foundation
 import UIKit
 
 class ContactViewController: UIViewController,
-    ContactViewContract {
+    ContactViewContract,
+    UITableViewDelegate,
+    UITableViewDataSource {
 
     var presenter: ContactPresenter?
     let navigationBar = UINavigationBar()
+    let tableView = UITableView()
+    var tableViewImage: [UIImage] = [UIImage]()
+    var tableViewLabels: [String] = [String]()
 
     override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?) {
         super.init(nibName: nil, bundle: nil)
@@ -36,10 +41,36 @@ class ContactViewController: UIViewController,
     // MARK: - ContactViewContract
 
     func configure(with viewModel: ContactControllerViewModel) {
-        // TODO: (Mélodie Benmouffek) Configure view
+        tableViewImage = viewModel.tableViewImages
+        tableViewLabels = viewModel.tableViewLabels
+    }
+
+    // MARK: - UITableViewDataSource
+
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return tableViewLabels.count
+    }
+
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: "cell") else {return UITableViewCell()}
+        cell.textLabel?.text = tableViewLabels[indexPath.row]
+        cell.textLabel?.textColor = UIColor.textColor
+        cell.imageView?.image = tableViewImage[indexPath.row]
+        cell.backgroundColor = UIColor.black
+        return cell
+    }
+
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        print("You selected cell #\(indexPath.row)!")
     }
 
     // MARK: - Private methods
+
+    private func setupTableView() {
+        tableView.delegate = self
+        tableView.dataSource = self
+        tableView.register(UITableViewCell.self, forCellReuseIdentifier: "cell")
+    }
 
     private func setupNavigationBar() {
         navigationBar.setItems([navigationItem],
@@ -51,14 +82,25 @@ class ContactViewController: UIViewController,
 
     private func setupLayout() {
         view.addSubview(navigationBar)
+        view.addSubview(tableView)
 
         navigationBar.translatesAutoresizingMaskIntoConstraints = false
-        navigationBar.widthAnchor.constraint(equalTo: view.widthAnchor).isActive = true
+        navigationBar.leftAnchor.constraint(equalTo: view.leftAnchor).isActive = true
+        navigationBar.rightAnchor.constraint(equalTo: view.rightAnchor).isActive = true
+        navigationBar.topAnchor.constraint(equalTo: view.topAnchor).isActive = true
         navigationBar.heightAnchor.constraint(equalToConstant: 60.0).isActive = true
+
+        tableView.translatesAutoresizingMaskIntoConstraints = false
+        tableView.topAnchor.constraint(equalTo: navigationBar.bottomAnchor).isActive = true
+        tableView.leftAnchor.constraint(equalTo: view.leftAnchor).isActive = true
+        tableView.rightAnchor.constraint(equalTo: view.rightAnchor).isActive = true
+        tableView.bottomAnchor.constraint(equalTo: view.bottomAnchor).isActive = true
     }
 
     private func setup() {
+        view.backgroundColor = UIColor.backgroundColor
         setupNavigationBar()
         setupLayout()
+        setupTableView()
     }
 }
