@@ -1,0 +1,50 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "f909b136_34f75675",
+        "filename": "CV/HomeViewController.swift",
+        "patchSetId": 1
+      },
+      "lineNbr": 56,
+      "author": {
+        "id": 1011781
+      },
+      "writtenOn": "2017-08-30T12:08:28Z",
+      "side": 1,
+      "message": "pas besoin de ça",
+      "range": {
+        "startLine": 56,
+        "startChar": 7,
+        "endLine": 56,
+        "endChar": 32
+      },
+      "revId": "65e3162ae55b69a866c829ffeb910fb1bcb0f630",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "1c0ea1c8_fd2254ac",
+        "filename": "CV/HomeViewController.swift",
+        "patchSetId": 1
+      },
+      "lineNbr": 69,
+      "author": {
+        "id": 1011781
+      },
+      "writtenOn": "2017-08-30T12:08:28Z",
+      "side": 1,
+      "message": "même chose constraint to view.widthAnchor",
+      "range": {
+        "startLine": 69,
+        "startChar": 44,
+        "endLine": 69,
+        "endChar": 84
+      },
+      "revId": "65e3162ae55b69a866c829ffeb910fb1bcb0f630",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    }
+  ]
+}
