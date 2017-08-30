@@ -1,0 +1,165 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "5e7f76c3_7968ccf0",
+        "filename": "CV/HomeViewController.swift",
+        "patchSetId": 1
+      },
+      "lineNbr": 74,
+      "author": {
+        "id": 1011781
+      },
+      "writtenOn": "2017-08-30T12:13:47Z",
+      "side": 1,
+      "message": "est-ce que c\u0027est vraiment utile de définir cette constante\npourquoi ne pas l\u0027acceder directement ?",
+      "range": {
+        "startLine": 74,
+        "startChar": 12,
+        "endLine": 74,
+        "endChar": 20
+      },
+      "revId": "98382ec6acf83bc088c0a2c0442776a9beff7449",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "d8c659c6_e3756c64",
+        "filename": "CV/HomeViewController.swift",
+        "patchSetId": 1
+      },
+      "lineNbr": 75,
+      "author": {
+        "id": 1011781
+      },
+      "writtenOn": "2017-08-30T12:13:47Z",
+      "side": 1,
+      "message": "C\u0027est mieux d\u0027utiliser des contriantes pour définir la position et taille de ta bar",
+      "range": {
+        "startLine": 75,
+        "startChar": 37,
+        "endLine": 75,
+        "endChar": 98
+      },
+      "revId": "98382ec6acf83bc088c0a2c0442776a9beff7449",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "b669f582_f3561b91",
+        "filename": "CV/HomeViewController.swift",
+        "patchSetId": 1
+      },
+      "lineNbr": 75,
+      "author": {
+        "id": 1011781
+      },
+      "writtenOn": "2017-08-30T12:13:47Z",
+      "side": 1,
+      "message": "évite d\u0027avoir des abreviation dans tes noms de variable",
+      "range": {
+        "startLine": 75,
+        "startChar": 12,
+        "endLine": 75,
+        "endChar": 18
+      },
+      "revId": "98382ec6acf83bc088c0a2c0442776a9beff7449",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "77f3771f_9170ec74",
+        "filename": "CV/HomeViewController.swift",
+        "patchSetId": 1
+      },
+      "lineNbr": 76,
+      "author": {
+        "id": 1011781
+      },
+      "writtenOn": "2017-08-30T12:13:47Z",
+      "side": 1,
+      "message": "idem",
+      "range": {
+        "startLine": 76,
+        "startChar": 12,
+        "endLine": 76,
+        "endChar": 19
+      },
+      "revId": "98382ec6acf83bc088c0a2c0442776a9beff7449",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "7d3120d7_9bd35ce5",
+        "filename": "CV/HomeViewController.swift",
+        "patchSetId": 1
+      },
+      "lineNbr": 80,
+      "author": {
+        "id": 1011781
+      },
+      "writtenOn": "2017-08-30T12:13:47Z",
+      "side": 1,
+      "message": "c\u0027est mieux d\u0027ecrire \n[key: value]\nplus lisible",
+      "range": {
+        "startLine": 80,
+        "startChar": 37,
+        "endLine": 80,
+        "endChar": 83
+      },
+      "revId": "98382ec6acf83bc088c0a2c0442776a9beff7449",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "46c901f5_b58bc8d2",
+        "filename": "CV/HomeViewController.swift",
+        "patchSetId": 1
+      },
+      "lineNbr": 81,
+      "author": {
+        "id": 1011781
+      },
+      "writtenOn": "2017-08-30T12:13:47Z",
+      "side": 1,
+      "message": "self",
+      "range": {
+        "startLine": 81,
+        "startChar": 8,
+        "endLine": 81,
+        "endChar": 13
+      },
+      "revId": "98382ec6acf83bc088c0a2c0442776a9beff7449",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "8e682c56_98ee9777",
+        "filename": "CV/en.lproj/Localizable.strings",
+        "patchSetId": 1
+      },
+      "lineNbr": 11,
+      "author": {
+        "id": 1011781
+      },
+      "writtenOn": "2017-08-30T12:13:47Z",
+      "side": 1,
+      "message": "title suffit peut être pas necessaire d\u0027appeler ça title_text...",
+      "range": {
+        "startLine": 11,
+        "startChar": 22,
+        "endLine": 11,
+        "endChar": 27
+      },
+      "revId": "98382ec6acf83bc088c0a2c0442776a9beff7449",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    }
+  ]
+}
