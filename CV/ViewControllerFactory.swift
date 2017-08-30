@@ -31,4 +31,11 @@ final class ViewControllerFactory {
         contactViewController.presenter = presenter
         return contactViewController
     }
+
+    func presentationViewController() -> PresentationViewController {
+        let presentationViewController = PresentationViewController()
+        let presenter = PresentationPresenterImplementation(viewContract: presentationViewController)
+        presentationViewController.presenter = presenter
+        return presentationViewController
+    }
 }

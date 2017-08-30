@@ -27,6 +27,12 @@
 		867DA51F1F5CA536000C5AC2 /* RepositoryFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 867DA51E1F5CA536000C5AC2 /* RepositoryFactory.swift */; };
 		867DA5221F5D57CF000C5AC2 /* MailRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 867DA5201F5D57CF000C5AC2 /* MailRepository.swift */; };
 		867DA5231F5D57CF000C5AC2 /* LocalMailRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 867DA5211F5D57CF000C5AC2 /* LocalMailRepository.swift */; };
+		867DA53D1F5D9AB3000C5AC2 /* PresentationControllerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 867DA5371F5D9AB3000C5AC2 /* PresentationControllerViewModel.swift */; };
+		867DA53E1F5D9AB3000C5AC2 /* PresentationControllerViewModelMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 867DA5381F5D9AB3000C5AC2 /* PresentationControllerViewModelMapper.swift */; };
+		867DA53F1F5D9AB3000C5AC2 /* PresentationPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 867DA5391F5D9AB3000C5AC2 /* PresentationPresenter.swift */; };
+		867DA5401F5D9AB3000C5AC2 /* PresentationPresenterImplementation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 867DA53A1F5D9AB3000C5AC2 /* PresentationPresenterImplementation.swift */; };
+		867DA5411F5D9AB3000C5AC2 /* PresentationViewContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 867DA53B1F5D9AB3000C5AC2 /* PresentationViewContract.swift */; };
+		867DA5421F5D9AB3000C5AC2 /* PresentationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 867DA53C1F5D9AB3000C5AC2 /* PresentationViewController.swift */; };
 		86CE0CA71F1BC64D00DA0916 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86CE0CA61F1BC64D00DA0916 /* AppDelegate.swift */; };
 		86CE0CAE1F1BC64E00DA0916 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 86CE0CAD1F1BC64E00DA0916 /* Assets.xcassets */; };
 		86CE0CB11F1BC64E00DA0916 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 86CE0CAF1F1BC64E00DA0916 /* LaunchScreen.storyboard */; };
@@ -65,6 +71,12 @@
 		867DA51E1F5CA536000C5AC2 /* RepositoryFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RepositoryFactory.swift; sourceTree = "<group>"; };
 		867DA5201F5D57CF000C5AC2 /* MailRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MailRepository.swift; sourceTree = "<group>"; };
 		867DA5211F5D57CF000C5AC2 /* LocalMailRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocalMailRepository.swift; sourceTree = "<group>"; };
+		867DA5371F5D9AB3000C5AC2 /* PresentationControllerViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PresentationControllerViewModel.swift; sourceTree = "<group>"; };
+		867DA5381F5D9AB3000C5AC2 /* PresentationControllerViewModelMapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PresentationControllerViewModelMapper.swift; sourceTree = "<group>"; };
+		867DA5391F5D9AB3000C5AC2 /* PresentationPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PresentationPresenter.swift; sourceTree = "<group>"; };
+		867DA53A1F5D9AB3000C5AC2 /* PresentationPresenterImplementation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PresentationPresenterImplementation.swift; sourceTree = "<group>"; };
+		867DA53B1F5D9AB3000C5AC2 /* PresentationViewContract.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PresentationViewContract.swift; sourceTree = "<group>"; };
+		867DA53C1F5D9AB3000C5AC2 /* PresentationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PresentationViewController.swift; sourceTree = "<group>"; };
 		86CE0CA31F1BC64D00DA0916 /* CV.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CV.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		86CE0CA61F1BC64D00DA0916 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		86CE0CAD1F1BC64E00DA0916 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -179,6 +191,67 @@
 			name = Repositories;
 			sourceTree = "<group>";
 		};
+		867DA5241F5D965A000C5AC2 /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				867DA5451F5D9ADC000C5AC2 /* Model */,
+				867DA5441F5D9AD2000C5AC2 /* UI */,
+				867DA5431F5D9AC2000C5AC2 /* Presenter */,
+			);
+			name = Presentation;
+			sourceTree = "<group>";
+		};
+		867DA5431F5D9AC2000C5AC2 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				867DA5391F5D9AB3000C5AC2 /* PresentationPresenter.swift */,
+				867DA53A1F5D9AB3000C5AC2 /* PresentationPresenterImplementation.swift */,
+			);
+			name = Presenter;
+			sourceTree = "<group>";
+		};
+		867DA5441F5D9AD2000C5AC2 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				867DA5481F5D9B0C000C5AC2 /* ViewController */,
+				867DA53B1F5D9AB3000C5AC2 /* PresentationViewContract.swift */,
+			);
+			name = UI;
+			sourceTree = "<group>";
+		};
+		867DA5451F5D9ADC000C5AC2 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				867DA5471F5D9AF7000C5AC2 /* Mapper */,
+				867DA5461F5D9AEF000C5AC2 /* ViewModel */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		867DA5461F5D9AEF000C5AC2 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				867DA5371F5D9AB3000C5AC2 /* PresentationControllerViewModel.swift */,
+			);
+			name = ViewModel;
+			sourceTree = "<group>";
+		};
+		867DA5471F5D9AF7000C5AC2 /* Mapper */ = {
+			isa = PBXGroup;
+			children = (
+				867DA5381F5D9AB3000C5AC2 /* PresentationControllerViewModelMapper.swift */,
+			);
+			name = Mapper;
+			sourceTree = "<group>";
+		};
+		867DA5481F5D9B0C000C5AC2 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				867DA53C1F5D9AB3000C5AC2 /* PresentationViewController.swift */,
+			);
+			name = ViewController;
+			sourceTree = "<group>";
+		};
 		86CE0C9A1F1BC64D00DA0916 = {
 			isa = PBXGroup;
 			children = (
@@ -260,6 +333,7 @@
 			children = (
 				86E440421F4A16970040BD55 /* Shared */,
 				86E4402F1F4A13C70040BD55 /* Home */,
+				867DA5241F5D965A000C5AC2 /* Presentation */,
 				860AE2961F5741BC004B9F65 /* Contact */,
 			);
 			name = App;
@@ -437,14 +511,18 @@
 			files = (
 				86E440441F4A16A40040BD55 /* Startable.swift in Sources */,
 				86CE0CA71F1BC64D00DA0916 /* AppDelegate.swift in Sources */,
+				867DA53D1F5D9AB3000C5AC2 /* PresentationControllerViewModel.swift in Sources */,
 				867DA5231F5D57CF000C5AC2 /* LocalMailRepository.swift in Sources */,
 				860AE2A51F574305004B9F65 /* ContactPresenter.swift in Sources */,
 				867DA5221F5D57CF000C5AC2 /* MailRepository.swift in Sources */,
+				867DA5401F5D9AB3000C5AC2 /* PresentationPresenterImplementation.swift in Sources */,
 				860AE2A41F574305004B9F65 /* ContactControllerViewModelMapper.swift in Sources */,
 				86E4403C1F4A163F0040BD55 /* HomeControllerViewModel.swift in Sources */,
+				867DA53F1F5D9AB3000C5AC2 /* PresentationPresenter.swift in Sources */,
 				86E4403F1F4A163F0040BD55 /* HomePresenterImplementation.swift in Sources */,
 				860AE2B11F599DE5004B9F65 /* ContactTableViewCell.swift in Sources */,
 				86E440401F4A163F0040BD55 /* HomeViewContract.swift in Sources */,
+				867DA53E1F5D9AB3000C5AC2 /* PresentationControllerViewModelMapper.swift in Sources */,
 				860AE2B61F59B3A1004B9F65 /* ContactTableViewModelMapper.swift in Sources */,
 				860AE2A61F574305004B9F65 /* ContactPresenterImplementation.swift in Sources */,
 				860AE2AF1F599D56004B9F65 /* ContactTableViewDataSource.swift in Sources */,
@@ -453,10 +531,12 @@
 				860AE2B81F59B40D004B9F65 /* ContactCellViewModelMapper.swift in Sources */,
 				860AE2A81F574305004B9F65 /* ContactViewController.swift in Sources */,
 				86E4404B1F4AE7810040BD55 /* Color.swift in Sources */,
+				867DA5421F5D9AB3000C5AC2 /* PresentationViewController.swift in Sources */,
 				86E4402B1F4A0FE70040BD55 /* MainCoordinator.swift in Sources */,
 				86E440411F4A163F0040BD55 /* HomeViewController.swift in Sources */,
 				867DA51D1F5C9743000C5AC2 /* LocalContactRepository.swift in Sources */,
 				86E4403E1F4A163F0040BD55 /* HomePresenter.swift in Sources */,
+				867DA5411F5D9AB3000C5AC2 /* PresentationViewContract.swift in Sources */,
 				867DA5181F59DC0F000C5AC2 /* UITableView+Registerable.swift in Sources */,
 				862095BF1F4D7DB8005B1C7C /* ViewRounded.swift in Sources */,
 				860AE2A31F574305004B9F65 /* ContactControllerViewModel.swift in Sources */,
