@@ -13,6 +13,7 @@ class HomeViewController: UIViewController, HomeViewContract {
 
     var presenter: HomePresenter?
     let welcomeLabel = UILabel()
+    let navigationBar = UINavigationBar()
 
     // MARK: - Private properties
 
@@ -20,6 +21,7 @@ class HomeViewController: UIViewController, HomeViewContract {
 
     override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?) {
         super.init(nibName: nil, bundle: nil)
+        navigationItem.title = "home_navigation_title_text".localized
     }
 
     required init?(coder aDecoder: NSCoder) {
@@ -48,6 +50,14 @@ class HomeViewController: UIViewController, HomeViewContract {
 
     // MARK: - Private methods
 
+    private func setupNavigationBar() {
+        navigationBar.setItems([navigationItem],
+                               animated: false)
+        navigationBar.barTintColor = UIColor.mainColor
+        navigationBar.alpha = 0.7
+        navigationBar.titleTextAttributes = [NSForegroundColorAttributeName: UIColor.white]
+    }
+
     private func setupCVPictureImage() {
         cvPictureImageView.contentMode = .scaleAspectFill
     }
@@ -59,6 +69,7 @@ class HomeViewController: UIViewController, HomeViewContract {
     private func setupLayout() {
         view.addSubview(welcomeLabel)
         view.addSubview(cvPictureImageView)
+        view.addSubview(navigationBar)
 
         welcomeLabel.translatesAutoresizingMaskIntoConstraints = false
         welcomeLabel.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
@@ -69,10 +80,15 @@ class HomeViewController: UIViewController, HomeViewContract {
         cvPictureImageView.centerYAnchor.constraint(equalTo: view.centerYAnchor).isActive = true
         cvPictureImageView.widthAnchor.constraint(equalTo: view.widthAnchor, multiplier: 1 / 3.0).isActive = true
         cvPictureImageView.heightAnchor.constraint(equalTo: view.widthAnchor, multiplier: 1 / 3.0).isActive = true
+
+        navigationBar.translatesAutoresizingMaskIntoConstraints = false
+        navigationBar.widthAnchor.constraint(equalTo: view.widthAnchor).isActive = true
+        navigationBar.heightAnchor.constraint(equalToConstant: 60.0).isActive = true
     }
 
     private func setup() {
         view.backgroundColor = UIColor.backgroundColor
+        setupNavigationBar()
         setupCVPictureImage()
         setupWelcomeLabel()
         setupLayout()
