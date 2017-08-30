@@ -21,7 +21,8 @@ class MainCoordinator: Coordinator {
         let tabBarController = UITabBarController()
         tabBarController.view.tintColor = UIColor.mainColor
         let homeViewController = ViewControllerFactory.sharedInstance.homeViewController()
-        tabBarController.viewControllers = [homeViewController]
+        let contactViewController = ViewControllerFactory.sharedInstance.contactViewController()
+        tabBarController.viewControllers = [homeViewController, contactViewController]
         window.rootViewController = tabBarController
     }
 }

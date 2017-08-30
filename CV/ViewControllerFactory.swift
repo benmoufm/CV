@@ -20,4 +20,11 @@ final class ViewControllerFactory {
         homeViewController.presenter = presenter
         return homeViewController
     }
+
+    func contactViewController() -> ContactViewController {
+        let contactViewController = ContactViewController()
+        let presenter = ContactPresenterImplementation(viewContract: contactViewController)
+        contactViewController.presenter = presenter
+        return contactViewController
+    }
 }
