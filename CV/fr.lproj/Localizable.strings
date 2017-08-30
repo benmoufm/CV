@@ -6,6 +6,9 @@
  Copyright © 2017 Mélodie Benmouffek. All rights reserved.
 */
 
+// HOME
 "home_welcome_text" = "Bonjour !\nJe m'appelle Mélodie BENMOUFFEK et je suis à la recherche d'un poste de développeur mobile iOS.";
-
 "home_navigation_title_text" = "Accueil";
+
+// CONTACT
+"contact_navigation_title_text" = "Contact";
