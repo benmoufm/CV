@@ -13,9 +13,12 @@ class ContactViewController: UIViewController,
     ContactViewContract {
 
     var presenter: ContactPresenter?
+    let navigationBar = UINavigationBar()
 
     override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?) {
         super.init(nibName: nil, bundle: nil)
+        navigationItem.title = "contact_navigation_title_text".localized
+        tabBarItem.title = "contact_navigation_title_text".localized
     }
 
     required init?(coder aDecoder: NSCoder) {
@@ -38,7 +41,26 @@ class ContactViewController: UIViewController,
 
     // MARK: - Private methods
 
+    private func setupNavigationBar() {
+        navigationBar.setItems([navigationItem],
+                               animated: false)
+        navigationBar.barTintColor = UIColor.mainColor
+        navigationBar.alpha = 0.7
+        navigationBar.titleTextAttributes = [NSForegroundColorAttributeName: UIColor.white]
+    }
+
+    private func setupLayout() {
+        view.addSubview(navigationBar)
+
+        navigationBar.translatesAutoresizingMaskIntoConstraints = false
+        navigationBar.leftAnchor.constraint(equalTo: view.leftAnchor).isActive = true
+        navigationBar.rightAnchor.constraint(equalTo: view.rightAnchor).isActive = true
+        navigationBar.topAnchor.constraint(equalTo: view.topAnchor).isActive = true
+        navigationBar.heightAnchor.constraint(equalToConstant: 60.0).isActive = true
+    }
+
     private func setup() {
-        // TODO: (Mélodie Benmouffek) Setup subviews
+        setupNavigationBar()
+        setupLayout()
     }
 }
