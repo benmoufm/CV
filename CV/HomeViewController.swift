@@ -31,6 +31,7 @@ class HomeViewController: UIViewController, HomeViewContract {
     override func viewDidLoad() {
         super.viewDidLoad()
         presenter?.start()
+        setNavigationBar()
         setup()
     }
 
@@ -67,6 +68,17 @@ class HomeViewController: UIViewController, HomeViewContract {
         cvPictureImageView.centerYAnchor.constraint(equalTo: view.centerYAnchor).isActive = true
         cvPictureImageView.widthAnchor.constraint(equalToConstant: view.bounds.width / 3.0).isActive = true
         cvPictureImageView.heightAnchor.constraint(equalToConstant: view.bounds.width / 3.0).isActive = true
+    }
+
+    private func setNavigationBar() {
+        let viewSize: CGRect = view.bounds
+        let navBar = UINavigationBar(frame: CGRect(x: 0, y: 0, width: viewSize.width, height: 60))
+        let navItem = UINavigationItem(title: "home_navigation_title_text".localized)
+        navBar.setItems([navItem], animated: false)
+        navBar.barTintColor = UIColor.mainColor
+        navBar.alpha = 0.7
+        navBar.titleTextAttributes = [NSForegroundColorAttributeName:UIColor.white]
+        self.view.addSubview(navBar)
     }
 
     // MARK: - Private methods
