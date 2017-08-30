@@ -22,6 +22,7 @@ class HomeViewController: UIViewController, HomeViewContract {
     override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?) {
         super.init(nibName: nil, bundle: nil)
         navigationItem.title = "home_navigation_title_text".localized
+        tabBarItem.title = "home_navigation_title_text".localized
     }
 
     required init?(coder aDecoder: NSCoder) {
