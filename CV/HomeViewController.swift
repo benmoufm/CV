@@ -63,6 +63,9 @@ class HomeViewController: UIViewController, HomeViewContract {
     }
 
     private func setupWelcomeLabel() {
+        welcomeLabel.lineBreakMode = .byWordWrapping
+        welcomeLabel.numberOfLines = 0
+        welcomeLabel.textAlignment = .center
         welcomeLabel.textColor = UIColor.textColor
     }
 
@@ -73,11 +76,12 @@ class HomeViewController: UIViewController, HomeViewContract {
 
         welcomeLabel.translatesAutoresizingMaskIntoConstraints = false
         welcomeLabel.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
-        welcomeLabel.topAnchor.constraint(equalTo: cvPictureImageView.bottomAnchor, constant: 10.0).isActive = true
+        welcomeLabel.topAnchor.constraint(equalTo: cvPictureImageView.bottomAnchor, constant: 100.0).isActive = true
+        welcomeLabel.widthAnchor.constraint(equalTo: view.widthAnchor, multiplier: 2 / 3).isActive = true
 
         cvPictureImageView.translatesAutoresizingMaskIntoConstraints = false
         cvPictureImageView.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
-        cvPictureImageView.centerYAnchor.constraint(equalTo: view.centerYAnchor).isActive = true
+        cvPictureImageView.centerYAnchor.constraint(equalTo: view.centerYAnchor, constant: -100.0).isActive = true
         cvPictureImageView.widthAnchor.constraint(equalTo: view.widthAnchor, multiplier: 1 / 3.0).isActive = true
         cvPictureImageView.heightAnchor.constraint(equalTo: view.widthAnchor, multiplier: 1 / 3.0).isActive = true
 
