@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import UIKit
 
 class ContactPresenterImplementation: ContactPresenter {
 
@@ -23,6 +24,18 @@ class ContactPresenterImplementation: ContactPresenter {
     func start() {
         computeAndDisplayViewModel()
     }
+
+    // MARK: - ContactPresenter
+
+    func call(_ url: URL) {
+        guard UIApplication.shared.canOpenURL(url) else {
+            // TODO: add error message
+            return
+        }
+        UIApplication.shared.open(url)
+    }
+
+    // MARK: - Private methods
 
     private func computeAndDisplayViewModel() {
         // TODO: (Mélodie Benmouffek) Guard let required properties
