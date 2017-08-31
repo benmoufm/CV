@@ -1,0 +1,11 @@
+/*
+ Localizable.strings
+ CV
+
+ Created by Mélodie Benmouffek on 21/08/2017.
+ Copyright © 2017 Mélodie Benmouffek. All rights reserved.
+*/
+
+"home_welcome_text" = "Bonjour !\nJe m'appelle Mélodie BENMOUFFEK et je suis à la recherche d'un poste de développeur mobile iOS.";
+
+"home_navigation_title_text" = "Accueil";
