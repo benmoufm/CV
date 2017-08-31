@@ -1,0 +1,257 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "d226ed72_f3ffc9e9",
+        "filename": "CV/ContactControllerViewModel.swift",
+        "patchSetId": 1
+      },
+      "lineNbr": 12,
+      "author": {
+        "id": 1011781
+      },
+      "writtenOn": "2017-08-31T17:24:19Z",
+      "side": 1,
+      "message": "ce que je ferais moi à ta place c\u0027est creer un viewModel pour ton tableau et ici le viewModel de ton controller contiendrait une instance de viewModel de tables",
+      "range": {
+        "startLine": 12,
+        "startChar": 0,
+        "endLine": 12,
+        "endChar": 35
+      },
+      "revId": "ea45a3df881f2dd3c544826219ac05c0ec636430",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "0fd3195e_0c6ae65d",
+        "filename": "CV/ContactControllerViewModel.swift",
+        "patchSetId": 1
+      },
+      "lineNbr": 15,
+      "author": {
+        "id": 1011781
+      },
+      "writtenOn": "2017-08-31T17:24:19Z",
+      "side": 1,
+      "message": "Maintenant dans une tableView tu affiche des cellules du coup ce qu\u0027il faudrait faire c\u0027est avoir un viewModel qui défini une cellule et que ton viewModel de tableView contienne un tableau de viewModel de cellule",
+      "range": {
+        "startLine": 14,
+        "startChar": 4,
+        "endLine": 15,
+        "endChar": 33
+      },
+      "revId": "ea45a3df881f2dd3c544826219ac05c0ec636430",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "2fb180b5_be5e583f",
+        "filename": "CV/ContactViewController.swift",
+        "patchSetId": 1
+      },
+      "lineNbr": 14,
+      "author": {
+        "id": 1011781
+      },
+      "writtenOn": "2017-08-31T17:24:19Z",
+      "side": 1,
+      "message": "A enlever si tu ne t\u0027en sert pas cf commentaire suivant",
+      "range": {
+        "startLine": 14,
+        "startChar": 5,
+        "endLine": 14,
+        "endChar": 24
+      },
+      "revId": "ea45a3df881f2dd3c544826219ac05c0ec636430",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "244092b3_e514d064",
+        "filename": "CV/ContactViewController.swift",
+        "patchSetId": 1
+      },
+      "lineNbr": 15,
+      "author": {
+        "id": 1011781
+      },
+      "writtenOn": "2017-08-31T17:24:19Z",
+      "side": 1,
+      "message": "pour que ce soit plus propre il faudrait que tu crée un objet séparé qui s\u0027occupe de la gestion de ta tableView\nEn général c\u0027est un objet qui s\u0027appelle dataSource et que tu configure avec un viewModel qui sera la représentation de ta tableView",
+      "range": {
+        "startLine": 14,
+        "startChar": 0,
+        "endLine": 15,
+        "endChar": 25
+      },
+      "revId": "ea45a3df881f2dd3c544826219ac05c0ec636430",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "4d9d5003_bc17de19",
+        "filename": "CV/ContactViewController.swift",
+        "patchSetId": 1
+      },
+      "lineNbr": 20,
+      "author": {
+        "id": 1011781
+      },
+      "writtenOn": "2017-08-31T17:24:19Z",
+      "side": 1,
+      "message": "[] suffit",
+      "range": {
+        "startLine": 20,
+        "startChar": 36,
+        "endLine": 20,
+        "endChar": 47
+      },
+      "revId": "ea45a3df881f2dd3c544826219ac05c0ec636430",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "059e3ece_54e7786e",
+        "filename": "CV/ContactViewController.swift",
+        "patchSetId": 1
+      },
+      "lineNbr": 21,
+      "author": {
+        "id": 1011781
+      },
+      "writtenOn": "2017-08-31T17:24:19Z",
+      "side": 1,
+      "message": "idem",
+      "range": {
+        "startLine": 21,
+        "startChar": 36,
+        "endLine": 21,
+        "endChar": 46
+      },
+      "revId": "ea45a3df881f2dd3c544826219ac05c0ec636430",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "c70e00d1_a9349a99",
+        "filename": "CV/ContactViewController.swift",
+        "patchSetId": 1
+      },
+      "lineNbr": 58,
+      "author": {
+        "id": 1011781
+      },
+      "writtenOn": "2017-08-31T17:24:19Z",
+      "side": 1,
+      "message": "qu\u0027est-ce qu\u0027il se passe si tu a plus de labels que d\u0027images?",
+      "range": {
+        "startLine": 50,
+        "startChar": 0,
+        "endLine": 58,
+        "endChar": 61
+      },
+      "revId": "ea45a3df881f2dd3c544826219ac05c0ec636430",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "3435903a_6e3ded64",
+        "filename": "CV/ContactViewController.swift",
+        "patchSetId": 1
+      },
+      "lineNbr": 59,
+      "author": {
+        "id": 1011781
+      },
+      "writtenOn": "2017-08-31T17:24:19Z",
+      "side": 1,
+      "message": "Ce serait mieux de passer par une couleur que tu as définie dans ton Colors genre darkTableViewBackground, mais que si ça a du sens : si tu ne prévois pas d\u0027utiliser cette couleur plusieur fois (dans un thème) tu peux la laisser comme ça",
+      "range": {
+        "startLine": 59,
+        "startChar": 31,
+        "endLine": 59,
+        "endChar": 44
+      },
+      "revId": "ea45a3df881f2dd3c544826219ac05c0ec636430",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "7f2e57e1_2c2a9f0e",
+        "filename": "CV/ContactViewController.swift",
+        "patchSetId": 1
+      },
+      "lineNbr": 64,
+      "author": {
+        "id": 1011781
+      },
+      "writtenOn": "2017-08-31T17:24:19Z",
+      "side": 1,
+      "message": "Il faut l\u0027enlever si tu ne fait rien dedans pour l\u0027instant",
+      "range": {
+        "startLine": 63,
+        "startChar": 4,
+        "endLine": 64,
+        "endChar": 53
+      },
+      "revId": "ea45a3df881f2dd3c544826219ac05c0ec636430",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "f50a3fd9_4ac1c5c6",
+        "filename": "CV/ContactViewController.swift",
+        "patchSetId": 1
+      },
+      "lineNbr": 72,
+      "author": {
+        "id": 1011781
+      },
+      "writtenOn": "2017-08-31T17:24:19Z",
+      "side": 1,
+      "message": "oui mais non,\nCe qu\u0027il faut dans l\u0027idéal c\u0027est que le reuse identifier soit lié à la classe sauf cas particulier.\nNous on a une categorie qui fait register(type) et a partir du type defini un identifier qui est le nom de la classe",
+      "range": {
+        "startLine": 72,
+        "startChar": 73,
+        "endLine": 72,
+        "endChar": 79
+      },
+      "revId": "ea45a3df881f2dd3c544826219ac05c0ec636430",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "954ef152_62658a92",
+        "filename": "CV/ContactViewController.swift",
+        "patchSetId": 1
+      },
+      "lineNbr": 90,
+      "author": {
+        "id": 1011781
+      },
+      "writtenOn": "2017-08-31T17:24:19Z",
+      "side": 1,
+      "message": "ça ne devrait pas être dans le même commit",
+      "range": {
+        "startLine": 88,
+        "startChar": 22,
+        "endLine": 90,
+        "endChar": 60
+      },
+      "revId": "ea45a3df881f2dd3c544826219ac05c0ec636430",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    }
+  ]
+}
