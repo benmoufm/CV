@@ -14,12 +14,14 @@ struct ContactCellViewModelMapper {
     let image: UIImage
     let label: String
     let textColor: UIColor
+    let url: URL?
 
     func map() -> ContactCellViewModel {
         return ContactCellViewModel(
             image: image,
             label: label,
-            textColor: textColor
+            textColor: textColor,
+            url: url
         )
     }
     
