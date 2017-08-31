@@ -14,4 +14,5 @@ struct ContactCellViewModel {
     let image: UIImage
     let label: String
     let textColor: UIColor
+    let url: URL?
 }
