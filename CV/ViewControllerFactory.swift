@@ -23,7 +23,10 @@ final class ViewControllerFactory {
 
     func contactViewController() -> ContactViewController {
         let contactViewController = ContactViewController()
-        let presenter = ContactPresenterImplementation(viewContract: contactViewController)
+        let presenter = ContactPresenterImplementation(
+            viewContract: contactViewController,
+            contactRepository: RepositoryFactory.sharedInstance.contactRepository
+        )
         contactViewController.presenter = presenter
         return contactViewController
     }

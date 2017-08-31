@@ -8,15 +8,21 @@
 
 import Foundation
 import UIKit
+import Contacts
 
 class ContactPresenterImplementation: ContactPresenter {
 
     private unowned let viewContract: ContactViewContract
+    private let contactRepository: ContactRepository
+
+    var contactInfo: CNContact
 
     // MARK: LifeCycle
 
-    init(viewContract: ContactViewContract) {
+    init(viewContract: ContactViewContract, contactRepository: ContactRepository) {
         self.viewContract = viewContract
+        self.contactRepository = contactRepository
+        contactInfo = contactRepository.melodieContact
     }
 
     // MARK: - Startable
@@ -29,6 +35,16 @@ class ContactPresenterImplementation: ContactPresenter {
 
     func call(_ url: URL) {
         UIApplication.shared.open(url)
+    }
+
+    func createContact() {
+        contactRepository.createContact(contactInfo) { success -> Void in
+            if success {
+                // TODO : Faire pop up Success
+            } else {
+                // TODO : pop up Fail
+            }
+        }
     }
 
     // MARK: - Private methods
