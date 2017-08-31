@@ -15,27 +15,31 @@ struct ContactTableViewModelMapper {
         let phoneCell = ContactCellViewModelMapper(
             image: #imageLiteral(resourceName: "phoneIcon"),
             label: "Telephone : 06.61.04.25.95",
-            textColor: UIColor.textColor
+            textColor: UIColor.textColor,
+            url: URL(string: "tel://0661042595")
         ).map()
 
         let mailCell = ContactCellViewModelMapper(
             image: #imageLiteral(resourceName: "emailIcon"),
             label: "Email : m.benmouffek@gmail.com",
-            textColor: UIColor.textColor
-            ).map()
+            textColor: UIColor.textColor,
+            url: nil
+        ).map()
 
 
         let linkdInCell = ContactCellViewModelMapper(
             image: #imageLiteral(resourceName: "linkdInIcon"),
             label: "Profil LinkedIn",
-            textColor: UIColor.textColor
-            ).map()
+            textColor: UIColor.textColor,
+            url: nil
+        ).map()
 
         let newContactCell = ContactCellViewModelMapper(
             image: #imageLiteral(resourceName: "contactIcon"),
             label: "Ajouter le contact",
-            textColor: UIColor.textColor
-            ).map()
+            textColor: UIColor.textColor,
+            url: nil
+        ).map()
 
         return ContactTableViewModel(tableCells: [phoneCell, mailCell, linkdInCell, newContactCell])
     }
