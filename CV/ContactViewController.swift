@@ -8,6 +8,7 @@
 
 import Foundation
 import UIKit
+import Contacts
 
 class ContactViewController: UIViewController,
     ContactViewContract,
@@ -45,9 +46,14 @@ class ContactViewController: UIViewController,
 
     // MARK: - ContactTableViewDataSourceDelegate
 
+
     func contactTableViewDataSource(_ dataSource: ContactTableViewDataSource,
                                     didSelectCellWithUrl url: URL) {
         presenter?.call(url)
+    }
+
+    func contactTableViewDataSourceRequestCreateContact(_ dataSource: ContactTableViewDataSource) {
+        presenter?.createContact()
     }
 
     // MARK: - Private methods

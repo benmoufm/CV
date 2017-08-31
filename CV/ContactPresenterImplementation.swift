@@ -8,15 +8,26 @@
 
 import Foundation
 import UIKit
+import Contacts
 
-class ContactPresenterImplementation: ContactPresenter {
+class ContactPresenterImplementation: UIViewController, ContactPresenter {
 
     private unowned let viewContract: ContactViewContract
+    private let contactRepository: ContactRepository
+
+    var contactInfo: CNContact
 
     // MARK: LifeCycle
 
-    init(viewContract: ContactViewContract) {
+    init(viewContract: ContactViewContract, contactRepository: ContactRepository) {
         self.viewContract = viewContract
+        self.contactRepository = contactRepository
+        contactInfo = contactRepository.melodieContact
+        super.init(nibName: nil, bundle: nil)
+    }
+
+    required init?(coder aDecoder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
     }
 
     // MARK: - Startable
@@ -29,6 +40,20 @@ class ContactPresenterImplementation: ContactPresenter {
 
     func call(_ url: URL) {
         UIApplication.shared.open(url)
+    }
+
+    func createContact() {
+        contactRepository.createContact(contactInfo) { success -> Void in
+            var message: String
+            if success {
+                message = "Le contact a bien été ajouté."
+            } else {
+                message = "Erreur. Le contact n'a pas pu être ajouté."
+            }
+            let alert = UIAlertController(title: "Ajout contact", message: message, preferredStyle: UIAlertControllerStyle.alert)
+            alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler: nil))
+            self.present(alert, animated: true, completion: nil)
+        }
     }
 
     // MARK: - Private methods

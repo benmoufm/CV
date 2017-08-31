@@ -12,6 +12,7 @@ import UIKit
 protocol ContactTableViewDataSourceDelegate: class {
     func contactTableViewDataSource(_ dataSource: ContactTableViewDataSource,
                                     didSelectCellWithUrl url: URL)
+    func contactTableViewDataSourceRequestCreateContact(_ dataSource: ContactTableViewDataSource)
 }
 
 class ContactTableViewDataSource: NSObject,
@@ -49,8 +50,12 @@ class ContactTableViewDataSource: NSObject,
 
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let cellViewModel = viewModel.tableCells[indexPath.row]
-        guard let url = cellViewModel.url else { return }
-        delegate?.contactTableViewDataSource(self, didSelectCellWithUrl: url)
+        if let url = cellViewModel.url {
+            delegate?.contactTableViewDataSource(self, didSelectCellWithUrl: url)
+        }
+        if cellViewModel.shouldCreateContactOnSelect {
+            delegate?.contactTableViewDataSourceRequestCreateContact(self)
+        }
     }
 
 }
