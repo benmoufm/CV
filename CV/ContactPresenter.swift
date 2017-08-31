@@ -10,4 +10,5 @@ import Foundation
 
 protocol ContactPresenter: Startable {
     func call(_ url: URL)
+    func createContact()
 }
