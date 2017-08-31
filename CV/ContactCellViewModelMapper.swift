@@ -15,13 +15,15 @@ struct ContactCellViewModelMapper {
     let label: String
     let textColor: UIColor
     let backgroundColor: UIColor
+    let url: URL?
 
     func map() -> ContactCellViewModel {
         return ContactCellViewModel(
             image: image,
             label: label,
             textColor: textColor,
-            backgroundColor: backgroundColor
+            backgroundColor: backgroundColor,
+            url: url
         )
     }
     

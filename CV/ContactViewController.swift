@@ -10,7 +10,8 @@ import Foundation
 import UIKit
 
 class ContactViewController: UIViewController,
-    ContactViewContract {
+    ContactViewContract,
+    ContactTableViewDataSourceDelegate {
 
     var presenter: ContactPresenter?
     let navigationBar = UINavigationBar()
@@ -42,10 +43,18 @@ class ContactViewController: UIViewController,
         tableView.reloadData()
     }
 
+    // MARK: - ContactTableViewDataSourceDelegate
+
+    func contactTableViewDataSource(_ dataSource: ContactTableViewDataSource,
+                                    didSelectCellWithUrl url: URL) {
+        presenter?.call(url)
+    }
+
     // MARK: - Private methods
 
     private func setupTableView() {
         dataSource.configure(tableView)
+        dataSource.delegate = self
         tableView.delegate = dataSource
         tableView.dataSource = dataSource
     }

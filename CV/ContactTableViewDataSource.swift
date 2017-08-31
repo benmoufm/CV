@@ -9,9 +9,16 @@
 import Foundation
 import UIKit
 
+protocol ContactTableViewDataSourceDelegate: class {
+    func contactTableViewDataSource(_ dataSource: ContactTableViewDataSource,
+                                    didSelectCellWithUrl url: URL)
+}
+
 class ContactTableViewDataSource: NSObject,
     UITableViewDelegate,
     UITableViewDataSource {
+
+    weak var delegate: ContactTableViewDataSourceDelegate?
 
     var viewModel: ContactTableViewModel = .empty
 
@@ -36,6 +43,14 @@ class ContactTableViewDataSource: NSObject,
         cell.configure(with: viewModel.tableCells[indexPath.row])
         return cell
 
+    }
+
+    // MARK: - UITableViewDelegate
+
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let cellViewModel = viewModel.tableCells[indexPath.row]
+        guard let url = cellViewModel.url else { return }
+        delegate?.contactTableViewDataSource(self, didSelectCellWithUrl: url)
     }
 
 }
