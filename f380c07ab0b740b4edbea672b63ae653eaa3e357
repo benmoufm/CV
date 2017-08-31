@@ -1,0 +1,50 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "d336cd1d_1704d10d",
+        "filename": "CV/Base.lproj/Localizable.strings",
+        "patchSetId": 1
+      },
+      "lineNbr": 13,
+      "author": {
+        "id": 1011781
+      },
+      "writtenOn": "2017-08-31T17:27:24Z",
+      "side": 1,
+      "message": "pas besoin de sauter des lignes entre chaque clé\n en revanche ça peu être pas mal de mettre des commentaires qui découpent en section (Home/Contact/Presentation)",
+      "range": {
+        "startLine": 9,
+        "startChar": 1,
+        "endLine": 13,
+        "endChar": 44
+      },
+      "revId": "f380c07ab0b740b4edbea672b63ae653eaa3e357",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "27668e0f_7cab979f",
+        "filename": "CV/fr.lproj/Localizable.strings",
+        "patchSetId": 1
+      },
+      "lineNbr": 13,
+      "author": {
+        "id": 1011781
+      },
+      "writtenOn": "2017-08-31T17:27:24Z",
+      "side": 1,
+      "message": "l\u0027idéal serait presque d\u0027avoir un seul fichier de wordin (français ou anglais et une fois que tu aura fini toute ton app tu fera tout le wording en autant de langues que tu veux",
+      "range": {
+        "startLine": 10,
+        "startChar": 0,
+        "endLine": 13,
+        "endChar": 43
+      },
+      "revId": "f380c07ab0b740b4edbea672b63ae653eaa3e357",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    }
+  ]
+}
