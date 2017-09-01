@@ -13,8 +13,15 @@
 		860AE2A61F574305004B9F65 /* ContactPresenterImplementation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 860AE2A01F574305004B9F65 /* ContactPresenterImplementation.swift */; };
 		860AE2A71F574305004B9F65 /* ContactViewContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 860AE2A11F574305004B9F65 /* ContactViewContract.swift */; };
 		860AE2A81F574305004B9F65 /* ContactViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 860AE2A21F574305004B9F65 /* ContactViewController.swift */; };
+		860AE2AD1F599C88004B9F65 /* ContactTableViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 860AE2AC1F599C88004B9F65 /* ContactTableViewModel.swift */; };
+		860AE2AF1F599D56004B9F65 /* ContactTableViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 860AE2AE1F599D56004B9F65 /* ContactTableViewDataSource.swift */; };
+		860AE2B11F599DE5004B9F65 /* ContactTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 860AE2B01F599DE5004B9F65 /* ContactTableViewCell.swift */; };
+		860AE2B41F59A258004B9F65 /* ContactCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 860AE2B31F59A258004B9F65 /* ContactCellViewModel.swift */; };
+		860AE2B61F59B3A1004B9F65 /* ContactTableViewModelMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 860AE2B51F59B3A1004B9F65 /* ContactTableViewModelMapper.swift */; };
+		860AE2B81F59B40D004B9F65 /* ContactCellViewModelMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 860AE2B71F59B40D004B9F65 /* ContactCellViewModelMapper.swift */; };
 		862095BF1F4D7DB8005B1C7C /* ViewRounded.swift in Sources */ = {isa = PBXBuildFile; fileRef = 862095BE1F4D7DB8005B1C7C /* ViewRounded.swift */; };
 		862095C11F545E41005B1C7C /* StringLocalized.swift in Sources */ = {isa = PBXBuildFile; fileRef = 862095C01F545E41005B1C7C /* StringLocalized.swift */; };
+		867DA5181F59DC0F000C5AC2 /* UITableView+Registerable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 867DA5171F59DC0F000C5AC2 /* UITableView+Registerable.swift */; };
 		86CE0CA71F1BC64D00DA0916 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86CE0CA61F1BC64D00DA0916 /* AppDelegate.swift */; };
 		86CE0CAE1F1BC64E00DA0916 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 86CE0CAD1F1BC64E00DA0916 /* Assets.xcassets */; };
 		86CE0CB11F1BC64E00DA0916 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 86CE0CAF1F1BC64E00DA0916 /* LaunchScreen.storyboard */; };
@@ -39,8 +46,15 @@
 		860AE2A01F574305004B9F65 /* ContactPresenterImplementation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactPresenterImplementation.swift; sourceTree = "<group>"; };
 		860AE2A11F574305004B9F65 /* ContactViewContract.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactViewContract.swift; sourceTree = "<group>"; };
 		860AE2A21F574305004B9F65 /* ContactViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactViewController.swift; sourceTree = "<group>"; };
+		860AE2AC1F599C88004B9F65 /* ContactTableViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactTableViewModel.swift; sourceTree = "<group>"; };
+		860AE2AE1F599D56004B9F65 /* ContactTableViewDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactTableViewDataSource.swift; sourceTree = "<group>"; };
+		860AE2B01F599DE5004B9F65 /* ContactTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactTableViewCell.swift; sourceTree = "<group>"; };
+		860AE2B31F59A258004B9F65 /* ContactCellViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactCellViewModel.swift; sourceTree = "<group>"; };
+		860AE2B51F59B3A1004B9F65 /* ContactTableViewModelMapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactTableViewModelMapper.swift; sourceTree = "<group>"; };
+		860AE2B71F59B40D004B9F65 /* ContactCellViewModelMapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactCellViewModelMapper.swift; sourceTree = "<group>"; };
 		862095BE1F4D7DB8005B1C7C /* ViewRounded.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewRounded.swift; sourceTree = "<group>"; };
 		862095C01F545E41005B1C7C /* StringLocalized.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringLocalized.swift; sourceTree = "<group>"; };
+		867DA5171F59DC0F000C5AC2 /* UITableView+Registerable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITableView+Registerable.swift"; sourceTree = "<group>"; };
 		86CE0CA31F1BC64D00DA0916 /* CV.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CV.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		86CE0CA61F1BC64D00DA0916 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		86CE0CAD1F1BC64E00DA0916 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -93,6 +107,7 @@
 		860AE2981F574220004B9F65 /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				867DA5161F59DA55000C5AC2 /* View */,
 				860AE29C1F57429B004B9F65 /* ViewController */,
 				860AE2A11F574305004B9F65 /* ContactViewContract.swift */,
 			);
@@ -104,6 +119,7 @@
 			children = (
 				860AE29B1F574290004B9F65 /* Mapper */,
 				860AE29A1F574286004B9F65 /* ViewModel */,
+				860AE2AE1F599D56004B9F65 /* ContactTableViewDataSource.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -112,6 +128,8 @@
 			isa = PBXGroup;
 			children = (
 				860AE29D1F574305004B9F65 /* ContactControllerViewModel.swift */,
+				860AE2AC1F599C88004B9F65 /* ContactTableViewModel.swift */,
+				860AE2B31F59A258004B9F65 /* ContactCellViewModel.swift */,
 			);
 			name = ViewModel;
 			sourceTree = "<group>";
@@ -120,6 +138,8 @@
 			isa = PBXGroup;
 			children = (
 				860AE29E1F574305004B9F65 /* ContactControllerViewModelMapper.swift */,
+				860AE2B51F59B3A1004B9F65 /* ContactTableViewModelMapper.swift */,
+				860AE2B71F59B40D004B9F65 /* ContactCellViewModelMapper.swift */,
 			);
 			name = Mapper;
 			sourceTree = "<group>";
@@ -130,6 +150,14 @@
 				860AE2A21F574305004B9F65 /* ContactViewController.swift */,
 			);
 			name = ViewController;
+			sourceTree = "<group>";
+		};
+		867DA5161F59DA55000C5AC2 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				860AE2B01F599DE5004B9F65 /* ContactTableViewCell.swift */,
+			);
+			name = View;
 			sourceTree = "<group>";
 		};
 		86CE0C9A1F1BC64D00DA0916 = {
@@ -306,6 +334,7 @@
 				86E4404A1F4AE7810040BD55 /* Color.swift */,
 				862095C01F545E41005B1C7C /* StringLocalized.swift */,
 				862095BE1F4D7DB8005B1C7C /* ViewRounded.swift */,
+				867DA5171F59DC0F000C5AC2 /* UITableView+Registerable.swift */,
 			);
 			name = Categories;
 			sourceTree = "<group>";
@@ -389,18 +418,25 @@
 				860AE2A41F574305004B9F65 /* ContactControllerViewModelMapper.swift in Sources */,
 				86E4403C1F4A163F0040BD55 /* HomeControllerViewModel.swift in Sources */,
 				86E4403F1F4A163F0040BD55 /* HomePresenterImplementation.swift in Sources */,
+				860AE2B11F599DE5004B9F65 /* ContactTableViewCell.swift in Sources */,
 				86E440401F4A163F0040BD55 /* HomeViewContract.swift in Sources */,
+				860AE2B61F59B3A1004B9F65 /* ContactTableViewModelMapper.swift in Sources */,
 				860AE2A61F574305004B9F65 /* ContactPresenterImplementation.swift in Sources */,
+				860AE2AF1F599D56004B9F65 /* ContactTableViewDataSource.swift in Sources */,
 				860AE2A71F574305004B9F65 /* ContactViewContract.swift in Sources */,
+				860AE2B81F59B40D004B9F65 /* ContactCellViewModelMapper.swift in Sources */,
 				860AE2A81F574305004B9F65 /* ContactViewController.swift in Sources */,
 				86E4404B1F4AE7810040BD55 /* Color.swift in Sources */,
 				86E4402B1F4A0FE70040BD55 /* MainCoordinator.swift in Sources */,
 				86E440411F4A163F0040BD55 /* HomeViewController.swift in Sources */,
 				86E4403E1F4A163F0040BD55 /* HomePresenter.swift in Sources */,
+				867DA5181F59DC0F000C5AC2 /* UITableView+Registerable.swift in Sources */,
 				862095BF1F4D7DB8005B1C7C /* ViewRounded.swift in Sources */,
 				860AE2A31F574305004B9F65 /* ContactControllerViewModel.swift in Sources */,
+				860AE2AD1F599C88004B9F65 /* ContactTableViewModel.swift in Sources */,
 				86E4403D1F4A163F0040BD55 /* HomeControllerViewModelMapper.swift in Sources */,
 				86E4402E1F4A10DF0040BD55 /* Coordinator.swift in Sources */,
+				860AE2B41F59A258004B9F65 /* ContactCellViewModel.swift in Sources */,
 				862095C11F545E41005B1C7C /* StringLocalized.swift in Sources */,
 				86E440461F4A1A050040BD55 /* ViewControllerFactory.swift in Sources */,
 			);
