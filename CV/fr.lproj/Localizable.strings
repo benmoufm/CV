@@ -12,3 +12,7 @@
 
 // CONTACT
 "contact_navigation_title_text" = "Contact";
+"contact_creation_success_message_popup" = "Le contact a bien ajouté.";
+"contact_creation_error_message_popup" = "Erreur.\nLe contact n'a pas pu être ajouté.";
+"contact_creation_title_popup" = "Ajout contact";
+"ok" = "OK";
