@@ -22,6 +22,9 @@
 		862095BF1F4D7DB8005B1C7C /* ViewRounded.swift in Sources */ = {isa = PBXBuildFile; fileRef = 862095BE1F4D7DB8005B1C7C /* ViewRounded.swift */; };
 		862095C11F545E41005B1C7C /* StringLocalized.swift in Sources */ = {isa = PBXBuildFile; fileRef = 862095C01F545E41005B1C7C /* StringLocalized.swift */; };
 		867DA5181F59DC0F000C5AC2 /* UITableView+Registerable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 867DA5171F59DC0F000C5AC2 /* UITableView+Registerable.swift */; };
+		867DA51C1F5C9743000C5AC2 /* ContactRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 867DA51A1F5C9743000C5AC2 /* ContactRepository.swift */; };
+		867DA51D1F5C9743000C5AC2 /* LocalContactRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 867DA51B1F5C9743000C5AC2 /* LocalContactRepository.swift */; };
+		867DA51F1F5CA536000C5AC2 /* RepositoryFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 867DA51E1F5CA536000C5AC2 /* RepositoryFactory.swift */; };
 		86CE0CA71F1BC64D00DA0916 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86CE0CA61F1BC64D00DA0916 /* AppDelegate.swift */; };
 		86CE0CAE1F1BC64E00DA0916 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 86CE0CAD1F1BC64E00DA0916 /* Assets.xcassets */; };
 		86CE0CB11F1BC64E00DA0916 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 86CE0CAF1F1BC64E00DA0916 /* LaunchScreen.storyboard */; };
@@ -55,6 +58,9 @@
 		862095BE1F4D7DB8005B1C7C /* ViewRounded.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewRounded.swift; sourceTree = "<group>"; };
 		862095C01F545E41005B1C7C /* StringLocalized.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringLocalized.swift; sourceTree = "<group>"; };
 		867DA5171F59DC0F000C5AC2 /* UITableView+Registerable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITableView+Registerable.swift"; sourceTree = "<group>"; };
+		867DA51A1F5C9743000C5AC2 /* ContactRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactRepository.swift; sourceTree = "<group>"; };
+		867DA51B1F5C9743000C5AC2 /* LocalContactRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocalContactRepository.swift; sourceTree = "<group>"; };
+		867DA51E1F5CA536000C5AC2 /* RepositoryFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RepositoryFactory.swift; sourceTree = "<group>"; };
 		86CE0CA31F1BC64D00DA0916 /* CV.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CV.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		86CE0CA61F1BC64D00DA0916 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		86CE0CAD1F1BC64E00DA0916 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -160,6 +166,14 @@
 			name = View;
 			sourceTree = "<group>";
 		};
+		867DA5191F5C9711000C5AC2 /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+				867DA51A1F5C9743000C5AC2 /* ContactRepository.swift */,
+			);
+			name = Repositories;
+			sourceTree = "<group>";
+		};
 		86CE0C9A1F1BC64D00DA0916 = {
 			isa = PBXGroup;
 			children = (
@@ -214,6 +228,7 @@
 			isa = PBXGroup;
 			children = (
 				86E440451F4A1A050040BD55 /* ViewControllerFactory.swift */,
+				867DA51E1F5CA536000C5AC2 /* RepositoryFactory.swift */,
 			);
 			name = Factory;
 			sourceTree = "<group>";
@@ -221,6 +236,7 @@
 		86E4401B1F4A0E9C0040BD55 /* Data */ = {
 			isa = PBXGroup;
 			children = (
+				867DA51B1F5C9743000C5AC2 /* LocalContactRepository.swift */,
 			);
 			name = Data;
 			sourceTree = "<group>";
@@ -228,6 +244,7 @@
 		86E4401C1F4A0EA00040BD55 /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				867DA5191F5C9711000C5AC2 /* Repositories */,
 			);
 			name = Core;
 			sourceTree = "<group>";
@@ -423,12 +440,14 @@
 				860AE2B61F59B3A1004B9F65 /* ContactTableViewModelMapper.swift in Sources */,
 				860AE2A61F574305004B9F65 /* ContactPresenterImplementation.swift in Sources */,
 				860AE2AF1F599D56004B9F65 /* ContactTableViewDataSource.swift in Sources */,
+				867DA51F1F5CA536000C5AC2 /* RepositoryFactory.swift in Sources */,
 				860AE2A71F574305004B9F65 /* ContactViewContract.swift in Sources */,
 				860AE2B81F59B40D004B9F65 /* ContactCellViewModelMapper.swift in Sources */,
 				860AE2A81F574305004B9F65 /* ContactViewController.swift in Sources */,
 				86E4404B1F4AE7810040BD55 /* Color.swift in Sources */,
 				86E4402B1F4A0FE70040BD55 /* MainCoordinator.swift in Sources */,
 				86E440411F4A163F0040BD55 /* HomeViewController.swift in Sources */,
+				867DA51D1F5C9743000C5AC2 /* LocalContactRepository.swift in Sources */,
 				86E4403E1F4A163F0040BD55 /* HomePresenter.swift in Sources */,
 				867DA5181F59DC0F000C5AC2 /* UITableView+Registerable.swift in Sources */,
 				862095BF1F4D7DB8005B1C7C /* ViewRounded.swift in Sources */,
@@ -438,6 +457,7 @@
 				86E4402E1F4A10DF0040BD55 /* Coordinator.swift in Sources */,
 				860AE2B41F59A258004B9F65 /* ContactCellViewModel.swift in Sources */,
 				862095C11F545E41005B1C7C /* StringLocalized.swift in Sources */,
+				867DA51C1F5C9743000C5AC2 /* ContactRepository.swift in Sources */,
 				86E440461F4A1A050040BD55 /* ViewControllerFactory.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
