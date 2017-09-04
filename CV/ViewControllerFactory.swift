@@ -25,7 +25,8 @@ final class ViewControllerFactory {
         let contactViewController = ContactViewController()
         let presenter = ContactPresenterImplementation(
             viewContract: contactViewController,
-            contactRepository: RepositoryFactory.sharedInstance.contactRepository
+            contactRepository: RepositoryFactory.sharedInstance.contactRepository,
+            mailRepository: RepositoryFactory.sharedInstance.mailRepository
         )
         contactViewController.presenter = presenter
         return contactViewController
