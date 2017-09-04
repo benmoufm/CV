@@ -20,8 +20,9 @@ class MainCoordinator: Coordinator {
     func start() {
         let tabBarController = UITabBarController()
         let homeViewController = ViewControllerFactory.sharedInstance.homeViewController()
+        let presentationViewController = ViewControllerFactory.sharedInstance.presentationViewController()
         let contactViewController = ViewControllerFactory.sharedInstance.contactViewController()
-        tabBarController.viewControllers = [homeViewController, contactViewController]
+        tabBarController.viewControllers = [homeViewController, presentationViewController, contactViewController]
         window.rootViewController = tabBarController
     }
 }
