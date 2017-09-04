@@ -1,0 +1,67 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "99b80863_e3d4e931",
+        "filename": "CV/ContactTableViewDataSource.swift",
+        "patchSetId": 1
+      },
+      "lineNbr": 14,
+      "author": {
+        "id": 1011781
+      },
+      "writtenOn": "2017-09-04T11:10:32Z",
+      "side": 1,
+      "message": "manque un espace ici",
+      "revId": "728a2c595d42d45b1c6a9a4d813a1f19e75d1781",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "0153d264_449dd3c2",
+        "filename": "CV/ContactTableViewModelMapper.swift",
+        "patchSetId": 1
+      },
+      "lineNbr": 46,
+      "author": {
+        "id": 1011781
+      },
+      "writtenOn": "2017-09-04T11:10:32Z",
+      "side": 1,
+      "message": "white space",
+      "range": {
+        "startLine": 46,
+        "startChar": 0,
+        "endLine": 46,
+        "endChar": 4
+      },
+      "revId": "728a2c595d42d45b1c6a9a4d813a1f19e75d1781",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "c64214d1_44b10377",
+        "filename": "CV/UITableView+Registerable.swift",
+        "patchSetId": 1
+      },
+      "lineNbr": 30,
+      "author": {
+        "id": 1011781
+      },
+      "writtenOn": "2017-09-04T11:10:32Z",
+      "side": 1,
+      "message": "Dans un commit appart",
+      "range": {
+        "startLine": 1,
+        "startChar": 2,
+        "endLine": 30,
+        "endChar": 1
+      },
+      "revId": "728a2c595d42d45b1c6a9a4d813a1f19e75d1781",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    }
+  ]
+}
