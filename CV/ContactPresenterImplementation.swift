@@ -14,14 +14,18 @@ class ContactPresenterImplementation: UIViewController, ContactPresenter {
 
     private unowned let viewContract: ContactViewContract
     private let contactRepository: ContactRepository
+    private let mailRepository: MailRepository
 
     var contactInfo: CNContact
 
     // MARK: LifeCycle
 
-    init(viewContract: ContactViewContract, contactRepository: ContactRepository) {
+    init(viewContract: ContactViewContract,
+         contactRepository: ContactRepository,
+         mailRepository: MailRepository) {
         self.viewContract = viewContract
         self.contactRepository = contactRepository
+        self.mailRepository = mailRepository
         contactInfo = contactRepository.melodieContact
         super.init(nibName: nil, bundle: nil)
     }
@@ -56,6 +60,16 @@ class ContactPresenterImplementation: UIViewController, ContactPresenter {
             alert.addAction(UIAlertAction(title: "contact_creation_button_text_popup".localized,
                                           style: UIAlertActionStyle.default, handler: nil))
             self.present(alert, animated: true, completion: nil)
+        }
+    }
+
+    func sendMail() {
+        mailRepository.sendMail(contactInfo) { success -> Void in
+            if success {
+                // TODO : Success
+            } else {
+                // TODO : Fail
+            }
         }
     }
 
