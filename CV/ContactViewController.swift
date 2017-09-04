@@ -12,7 +12,7 @@ import Contacts
 
 class ContactViewController: UIViewController,
     ContactViewContract,
-    ContactTableViewDataSourceDelegate {
+ContactTableViewDataSourceDelegate {
 
     var presenter: ContactPresenter?
     let navigationBar = UINavigationBar()
@@ -54,6 +54,10 @@ class ContactViewController: UIViewController,
 
     func contactTableViewDataSourceRequestCreateContact(_ dataSource: ContactTableViewDataSource) {
         presenter?.createContact()
+    }
+
+    func contactTableViewDateSourceRequestSendMail(_ dataSource: ContactTableViewDataSource) {
+        presenter?.sendMail()
     }
 
     // MARK: - Private methods

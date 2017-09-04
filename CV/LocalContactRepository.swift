@@ -8,16 +8,13 @@
 
 import Foundation
 import Contacts
+import MessageUI
 
 class LocalContactRepository: ContactRepository {
 
     lazy var melodieContact: CNContact = self.intializeMelodieContact()
 
     // MARK: LifeCycle
-
-    init() {
-        // TODO: (Mélodie Benmouffek) Initialize with repository dependencies
-    }
 
     // MARK: - ContactRepository
 
