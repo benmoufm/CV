@@ -8,6 +8,7 @@
 
 import Foundation
 import UIKit
+import Contacts
 
 class ContactViewController: UIViewController,
     ContactViewContract,
@@ -44,11 +45,24 @@ class ContactViewController: UIViewController,
         tableView.reloadData()
     }
 
+    func displayPopup(_ title: String, _ message: String) {
+        let alert = UIAlertController(title: title,
+                                      message: message,
+                                      preferredStyle: UIAlertControllerStyle.alert)
+        alert.addAction(UIAlertAction(title: "OK".localized,
+                                      style: UIAlertActionStyle.default, handler: nil))
+        present(alert, animated: true, completion: nil)
+    }
+
     // MARK: - ContactTableViewDataSourceDelegate
 
     func contactTableViewDataSource(_ dataSource: ContactTableViewDataSource,
                                     didSelectCellWithUrl url: URL) {
         presenter?.call(url)
+    }
+
+    func contactTableViewDataSourceRequestCreateContact(_ dataSource: ContactTableViewDataSource) {
+        presenter?.createContact()
     }
 
     // MARK: - Private methods

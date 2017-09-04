@@ -38,6 +38,7 @@ class LocalContactRepository: ContactRepository {
             saveRequest.add(mutableContact, toContainerWithIdentifier:nil)
             do {
                 try store.execute(saveRequest)
+                completion?(true)
             } catch {
                 completion?(false)
             }
