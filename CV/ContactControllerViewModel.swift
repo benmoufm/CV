@@ -7,7 +7,9 @@
 //
 
 import Foundation
+import UIKit
 
 struct ContactControllerViewModel {
 
+    let tableView: ContactTableViewModel
 }
