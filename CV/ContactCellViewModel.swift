@@ -16,4 +16,5 @@ struct ContactCellViewModel {
     let textColor: UIColor
     let backgroundColor: UIColor
     let url: URL?
+    let shouldCreateContactOnSelect: Bool
 }
