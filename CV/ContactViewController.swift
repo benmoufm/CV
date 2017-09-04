@@ -56,6 +56,10 @@ class ContactViewController: UIViewController,
         presenter?.createContact()
     }
 
+    func contactTableViewDateSourceRequestSendMail(_ dataSource: ContactTableViewDataSource) {
+        presenter?.sendMail()
+    }
+
     // MARK: - Private methods
 
     private func setupTableView() {

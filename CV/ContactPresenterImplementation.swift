@@ -14,14 +14,18 @@ class ContactPresenterImplementation: ContactPresenter {
 
     private unowned let viewContract: ContactViewContract
     private let contactRepository: ContactRepository
+    private let mailRepository: MailRepository
 
     var contactInfo: CNContact
 
     // MARK: LifeCycle
 
-    init(viewContract: ContactViewContract, contactRepository: ContactRepository) {
+    init(viewContract: ContactViewContract,
+         contactRepository: ContactRepository,
+         mailRepository: MailRepository) {
         self.viewContract = viewContract
         self.contactRepository = contactRepository
+        self.mailRepository = mailRepository
         contactInfo = contactRepository.melodieContact
     }
 
@@ -47,6 +51,16 @@ class ContactPresenterImplementation: ContactPresenter {
             }
             let popupCreationContact = PopUpController()
             popupCreationContact.showPopUp(title: "contact_creation_title_popup".localized, message: message)
+        }
+    }
+
+    func sendMail() {
+        mailRepository.sendMail(contactInfo) { success -> Void in
+            if success {
+                // TODO : Success
+            } else {
+                // TODO : Fail
+            }
         }
     }
 
