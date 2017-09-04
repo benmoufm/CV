@@ -17,4 +17,5 @@ struct ContactCellViewModel {
     let backgroundColor: UIColor
     let url: URL?
     let shouldCreateContactOnSelect: Bool
+    let shouldSendMailOnSelect: Bool
 }
