@@ -45,5 +45,7 @@
 	<array>
 		<string>tel</string>
 	</array>
+    <key>NSContactsUsageDescription</key>
+    <string>$(PRODUCT_NAME) contact use</string>
 </dict>
 </plist>
