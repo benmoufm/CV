@@ -13,6 +13,7 @@ protocol ContactTableViewDataSourceDelegate: class {
     func contactTableViewDataSource(_ dataSource: ContactTableViewDataSource,
                                     didSelectCellWithUrl url: URL)
     func contactTableViewDataSourceRequestCreateContact(_ dataSource: ContactTableViewDataSource)
+    func contactTableViewDateSourceRequestSendMail(_ dataSource: ContactTableViewDataSource)
 }
 
 class ContactTableViewDataSource: NSObject,
@@ -55,6 +56,9 @@ class ContactTableViewDataSource: NSObject,
         }
         if cellViewModel.shouldCreateContactOnSelect {
             delegate?.contactTableViewDataSourceRequestCreateContact(self)
+        }
+        if cellViewModel.shouldSendMailOnSelect {
+            delegate?.contactTableViewDateSourceRequestSendMail(self)
         }
     }
 

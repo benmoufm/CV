@@ -10,5 +10,5 @@ import Foundation
 import Contacts
 
 protocol MailRepository {
-    func sendMail(_ contact: CNContact, _ completion: ((Bool) -> Void)?)
+    func sendMail(_ contact: CNContact, _ completion: ((String) -> Void)?)
 }

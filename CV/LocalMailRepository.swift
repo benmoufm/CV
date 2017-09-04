@@ -10,39 +10,45 @@ import Foundation
 import Contacts
 import MessageUI
 
-class LocalMailRepository: UIViewController, MFMailComposeViewControllerDelegate, MailRepository {
+class LocalMailRepository: MailRepository {
 
     // MARK: LifeCycle
 
     init() {
-        super.init(nibName: nil, bundle: nil)
+        // TODO: (Mélodie Benmouffek) Initialize with repository dependencies
     }
 
     required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
 
-    func mailComposeController(_ controller: MFMailComposeViewController, didFinishWith result: MFMailComposeResult, error: Error?) {
+    func mailComposeController(_ controller: MFMailComposeViewController,
+                               didFinishWith result: MFMailComposeResult, error: Error?) {
         controller.dismiss(animated: true)
     }
 
     // MARK: - MailRepository
 
-    func sendMail(_ contact: CNContact, _ completion: ((Bool) -> Void)?) {
-        if MFMailComposeViewController.canSendMail() {
-            let mail = MFMailComposeViewController()
-            mail.mailComposeDelegate = self
-            guard let emailAddress = contact.emailAddresses[0].label else {
-                completion?(false)
+    func sendMail(_ contact: CNContact, _ completion: ((String) -> Void)?) {
+        let mailSubject = "mail_subject_text".localized
+        let mailBody = "mail_body_text".localized
+        guard let mailTo = contact.emailAddresses.first?.value else {
+            completion?("mail_error_address".localized)
+            return
+        }
+        guard let encodedParameters = "mailto:\(mailTo)?subject=\(mailSubject)&body=\(mailBody)"
+            .addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed) else {
+                completion?("mail_error_encoding".localized)
                 return
-            }
-            mail.setToRecipients([emailAddress])
-            mail.setSubject("mail_subject_text".localized)
-            mail.setMessageBody("mail_body_text".localized, isHTML: true)
-
-            self.present(mail, animated: true)
+        }
+        guard let url = URL(string: encodedParameters) else {
+            completion?("mail_error_url".localized)
+            return
+        }
+        if UIApplication.shared.canOpenURL(url) {
+            UIApplication.shared.open(url)
         } else {
-            completion?(false)
+            completion?("mail_error_cannot_open_url".localized)
         }
     }
 

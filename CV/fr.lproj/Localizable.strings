@@ -18,3 +18,8 @@
 "contact_creation_button_text_popup" = "OK";
 "mail_subject_text" = "Test";
 "mail_body_text" = "Ceci est un test";
+"mail_error_address" = "Erreur. Adresse mail non renseignée.";
+"mail_error_encoding" = "Erreur d'encodage.";
+"mail_error_url" = "Erreur URL.";
+"mail_error_cannot_open_url" = "Erreur. Impossible d'ouvrir l'URL";
+"mail_error_title_popup" = "Envoi mail";
