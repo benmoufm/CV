@@ -11,7 +11,9 @@ import Foundation
 struct ContactControllerViewModelMapper {
 
     func map() -> ContactControllerViewModel {
-        return ContactControllerViewModel()
+        return ContactControllerViewModel(
+            tableView: ContactTableViewModelMapper().map()
+        )
     }
 
 }
