@@ -21,6 +21,7 @@
 		860AE2B81F59B40D004B9F65 /* ContactCellViewModelMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 860AE2B71F59B40D004B9F65 /* ContactCellViewModelMapper.swift */; };
 		862095BF1F4D7DB8005B1C7C /* ViewRounded.swift in Sources */ = {isa = PBXBuildFile; fileRef = 862095BE1F4D7DB8005B1C7C /* ViewRounded.swift */; };
 		862095C11F545E41005B1C7C /* StringLocalized.swift in Sources */ = {isa = PBXBuildFile; fileRef = 862095C01F545E41005B1C7C /* StringLocalized.swift */; };
+		86273D3F1F5EAF2F00DC19E4 /* PopUpController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86273D3E1F5EAF2F00DC19E4 /* PopUpController.swift */; };
 		867DA5181F59DC0F000C5AC2 /* UITableView+Registerable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 867DA5171F59DC0F000C5AC2 /* UITableView+Registerable.swift */; };
 		867DA51C1F5C9743000C5AC2 /* ContactRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 867DA51A1F5C9743000C5AC2 /* ContactRepository.swift */; };
 		867DA51D1F5C9743000C5AC2 /* LocalContactRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 867DA51B1F5C9743000C5AC2 /* LocalContactRepository.swift */; };
@@ -57,6 +58,7 @@
 		860AE2B71F59B40D004B9F65 /* ContactCellViewModelMapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactCellViewModelMapper.swift; sourceTree = "<group>"; };
 		862095BE1F4D7DB8005B1C7C /* ViewRounded.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewRounded.swift; sourceTree = "<group>"; };
 		862095C01F545E41005B1C7C /* StringLocalized.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringLocalized.swift; sourceTree = "<group>"; };
+		86273D3E1F5EAF2F00DC19E4 /* PopUpController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PopUpController.swift; sourceTree = "<group>"; };
 		867DA5171F59DC0F000C5AC2 /* UITableView+Registerable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITableView+Registerable.swift"; sourceTree = "<group>"; };
 		867DA51A1F5C9743000C5AC2 /* ContactRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactRepository.swift; sourceTree = "<group>"; };
 		867DA51B1F5C9743000C5AC2 /* LocalContactRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocalContactRepository.swift; sourceTree = "<group>"; };
@@ -341,6 +343,7 @@
 			isa = PBXGroup;
 			children = (
 				86E440431F4A16A40040BD55 /* Startable.swift */,
+				86273D3E1F5EAF2F00DC19E4 /* PopUpController.swift */,
 			);
 			name = Shared;
 			sourceTree = "<group>";
@@ -451,6 +454,7 @@
 				86E4403E1F4A163F0040BD55 /* HomePresenter.swift in Sources */,
 				867DA5181F59DC0F000C5AC2 /* UITableView+Registerable.swift in Sources */,
 				862095BF1F4D7DB8005B1C7C /* ViewRounded.swift in Sources */,
+				86273D3F1F5EAF2F00DC19E4 /* PopUpController.swift in Sources */,
 				860AE2A31F574305004B9F65 /* ContactControllerViewModel.swift in Sources */,
 				860AE2AD1F599C88004B9F65 /* ContactTableViewModel.swift in Sources */,
 				86E4403D1F4A163F0040BD55 /* HomeControllerViewModelMapper.swift in Sources */,
