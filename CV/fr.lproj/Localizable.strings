@@ -10,6 +10,9 @@
 "home_welcome_text" = "Bonjour !\nJe m'appelle Mélodie BENMOUFFEK et je suis à la recherche d'un poste de développeur mobile iOS.";
 "home_navigation_title_text" = "Accueil";
 
+// PRESENTATION
+"presentation_navigation_title_text" = "Présentation";
+
 // CONTACT
 "contact_navigation_title_text" = "Contact";
 "contact_creation_success_message_popup" = "Le contact a bien ajouté.";
