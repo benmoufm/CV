@@ -14,6 +14,8 @@ class ContactViewController: UIViewController,
 
     var presenter: ContactPresenter?
     let navigationBar = UINavigationBar()
+    var tableView = UITableView()
+    let dataSource = ContactTableViewDataSource()
 
     override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?) {
         super.init(nibName: nil, bundle: nil)
@@ -37,10 +39,17 @@ class ContactViewController: UIViewController,
     // MARK: - ContactViewContract
 
     func configure(with viewModel: ContactControllerViewModel) {
-        // TODO: (Mélodie Benmouffek) Configure view
+        dataSource.update(with: viewModel.tableView)
+        tableView.reloadData()
     }
 
     // MARK: - Private methods
+
+    private func setupTableView() {
+        dataSource.configure(tableView)
+        tableView.delegate = dataSource
+        tableView.dataSource = dataSource
+    }
 
     private func setupNavigationBar() {
         navigationBar.setItems([navigationItem],
@@ -53,16 +62,25 @@ class ContactViewController: UIViewController,
 
     private func setupLayout() {
         view.addSubview(navigationBar)
+        view.addSubview(tableView)
 
         navigationBar.translatesAutoresizingMaskIntoConstraints = false
         navigationBar.leftAnchor.constraint(equalTo: view.leftAnchor).isActive = true
         navigationBar.rightAnchor.constraint(equalTo: view.rightAnchor).isActive = true
         navigationBar.topAnchor.constraint(equalTo: view.topAnchor).isActive = true
         navigationBar.heightAnchor.constraint(equalToConstant: 60.0).isActive = true
+
+        tableView.translatesAutoresizingMaskIntoConstraints = false
+        tableView.topAnchor.constraint(equalTo: navigationBar.bottomAnchor).isActive = true
+        tableView.leftAnchor.constraint(equalTo: view.leftAnchor).isActive = true
+        tableView.rightAnchor.constraint(equalTo: view.rightAnchor).isActive = true
+        tableView.bottomAnchor.constraint(equalTo: view.bottomAnchor).isActive = true
     }
 
     private func setup() {
+        view.backgroundColor = UIColor.backgroundColor
         setupNavigationBar()
         setupLayout()
+        setupTableView()
     }
 }
