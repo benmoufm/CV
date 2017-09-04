@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "c6f9bd5e_29a01a38",
+        "filename": "CV/ContactTableViewModelMapper.swift",
+        "patchSetId": 1
+      },
+      "lineNbr": 19,
+      "author": {
+        "id": 1011781
+      },
+      "writtenOn": "2017-09-04T11:12:37Z",
+      "side": 1,
+      "message": "white space",
+      "range": {
+        "startLine": 19,
+        "startChar": 43,
+        "endLine": 19,
+        "endChar": 44
+      },
+      "revId": "701f9666eeaa6d7e51e24553325d5d948b4e5665",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    }
+  ]
+}
