@@ -12,6 +12,7 @@ final class RepositoryFactory {
 
     static let sharedInstance = RepositoryFactory()
     private(set) lazy var contactRepository: ContactRepository = LocalContactRepository()
+    private(set) lazy var mailRepository: MailRepository = RequestAccessAndOpenMailAppWithTemplateRepository()
 
     private init() {}
 
