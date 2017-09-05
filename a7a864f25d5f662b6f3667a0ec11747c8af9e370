@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "a730d5e3_25a31726",
+        "filename": "CV/LocalContactRepository.swift",
+        "patchSetId": 2
+      },
+      "lineNbr": 65,
+      "author": {
+        "id": 1011781
+      },
+      "writtenOn": "2017-09-05T06:41:27Z",
+      "side": 1,
+      "message": "c\u0027est peut être plus dans country mais je ne suis pas certain",
+      "range": {
+        "startLine": 65,
+        "startChar": 20,
+        "endLine": 65,
+        "endChar": 25
+      },
+      "revId": "a7a864f25d5f662b6f3667a0ec11747c8af9e370",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    }
+  ]
+}
