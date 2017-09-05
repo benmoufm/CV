@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "7e6d01d6_e7db7e96",
+        "filename": "CV/PresentationViewController.swift",
+        "patchSetId": 2
+      },
+      "lineNbr": 50,
+      "author": {
+        "id": 1011781
+      },
+      "writtenOn": "2017-09-05T06:42:29Z",
+      "side": 1,
+      "message": "ce serait mieux si tu utilisait quelque chose comme UIColor.navigationTitleColor",
+      "range": {
+        "startLine": 50,
+        "startChar": 77,
+        "endLine": 50,
+        "endChar": 90
+      },
+      "revId": "f272583e583e961af232f732893658922831cdc4",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    }
+  ]
+}
