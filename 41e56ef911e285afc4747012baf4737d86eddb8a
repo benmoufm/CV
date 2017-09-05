@@ -1,0 +1,50 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "4b01e615_d99fdb0f",
+        "filename": "CV/LocalMailRepository.swift",
+        "patchSetId": 4
+      },
+      "lineNbr": 28,
+      "author": {
+        "id": 1011781
+      },
+      "writtenOn": "2017-09-05T20:07:47Z",
+      "side": 1,
+      "message": "beuuuuh",
+      "range": {
+        "startLine": 25,
+        "startChar": 0,
+        "endLine": 28,
+        "endChar": 5
+      },
+      "revId": "41e56ef911e285afc4747012baf4737d86eddb8a",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "5a1624d0_ff047fda",
+        "filename": "CV/LocalMailRepository.swift",
+        "patchSetId": 4
+      },
+      "lineNbr": 41,
+      "author": {
+        "id": 1011781
+      },
+      "writtenOn": "2017-09-05T20:07:47Z",
+      "side": 1,
+      "message": "il faudrait que tu crée\nenum Result\u003cT\u003e {\n    case result(_: T)\n    case error(_: Error)\n}\n\net que tes complétions aient des paramètre Result\u003cLe type du résultat que tu attent\u003e\n\net ici tu renverai une erreur plutot que un texte",
+      "range": {
+        "startLine": 41,
+        "startChar": 28,
+        "endLine": 41,
+        "endChar": 49
+      },
+      "revId": "41e56ef911e285afc4747012baf4737d86eddb8a",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    }
+  ]
+}
