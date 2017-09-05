@@ -1,0 +1,50 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "10d11546_1e668892",
+        "filename": "CV/LocalMailRepository.swift",
+        "patchSetId": 2
+      },
+      "lineNbr": 13,
+      "author": {
+        "id": 1011781
+      },
+      "writtenOn": "2017-09-05T06:27:31Z",
+      "side": 1,
+      "message": "ça me parrait étrange que ton repository soit un viewController",
+      "range": {
+        "startLine": 13,
+        "startChar": 27,
+        "endLine": 13,
+        "endChar": 44
+      },
+      "revId": "ec0c8f9755765ff996670aa4d582b0df92e5ca06",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "4e8e12dd_5c7805af",
+        "filename": "CV/LocalMailRepository.swift",
+        "patchSetId": 2
+      },
+      "lineNbr": 35,
+      "author": {
+        "id": 1011781
+      },
+      "writtenOn": "2017-09-05T06:27:31Z",
+      "side": 1,
+      "message": ".first au lieu de [0]",
+      "range": {
+        "startLine": 35,
+        "startChar": 59,
+        "endLine": 35,
+        "endChar": 62
+      },
+      "revId": "ec0c8f9755765ff996670aa4d582b0df92e5ca06",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    }
+  ]
+}
