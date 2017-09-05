@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "78b8abf4_5ec54c4c",
+        "filename": "CV/LocalMailRepository.swift",
+        "patchSetId": 4
+      },
+      "lineNbr": 13,
+      "author": {
+        "id": 1011781
+      },
+      "writtenOn": "2017-09-05T19:57:20Z",
+      "side": 1,
+      "message": "nope",
+      "range": {
+        "startLine": 13,
+        "startChar": 27,
+        "endLine": 13,
+        "endChar": 43
+      },
+      "revId": "2ff9c161c1139f0c9947a5cc7906d4a92ec72986",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    }
+  ]
+}
