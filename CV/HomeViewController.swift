@@ -57,7 +57,8 @@ class HomeViewController: UIViewController, HomeViewContract {
                                animated: false)
         navigationBar.barTintColor = UIColor.mainColor
         navigationBar.alpha = 0.7
-        navigationBar.titleTextAttributes = [NSForegroundColorAttributeName: UIColor.white]
+        navigationBar.titleTextAttributes =
+            [NSForegroundColorAttributeName: UIColor.navigationTitleTextColor]
     }
 
     private func setupCVPictureImage() {
