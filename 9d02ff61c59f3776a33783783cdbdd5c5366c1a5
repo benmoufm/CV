@@ -1,0 +1,50 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "16dd7eec_06c3234b",
+        "filename": "CV/ContactViewController.swift",
+        "patchSetId": 4
+      },
+      "lineNbr": 52,
+      "author": {
+        "id": 1011781
+      },
+      "writtenOn": "2017-09-05T19:56:18Z",
+      "side": 1,
+      "message": "ok",
+      "range": {
+        "startLine": 52,
+        "startChar": 46,
+        "endLine": 52,
+        "endChar": 80
+      },
+      "revId": "9d02ff61c59f3776a33783783cdbdd5c5366c1a5",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "f555a914_d4117ef3",
+        "filename": "CV/ContactViewController.swift",
+        "patchSetId": 4
+      },
+      "lineNbr": 54,
+      "author": {
+        "id": 1011781
+      },
+      "writtenOn": "2017-09-05T19:56:18Z",
+      "side": 1,
+      "message": "pas besoin",
+      "range": {
+        "startLine": 54,
+        "startChar": 8,
+        "endLine": 54,
+        "endChar": 13
+      },
+      "revId": "9d02ff61c59f3776a33783783cdbdd5c5366c1a5",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    }
+  ]
+}
