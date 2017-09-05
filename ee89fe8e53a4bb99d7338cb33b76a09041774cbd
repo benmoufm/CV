@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "d8d1a454_3ce9c75f",
+        "filename": "CV/ContactPresenterImplementation.swift",
+        "patchSetId": 2
+      },
+      "lineNbr": 13,
+      "author": {
+        "id": 1011781
+      },
+      "writtenOn": "2017-09-05T06:29:50Z",
+      "side": 1,
+      "message": "Non ton presenter ne doit pas être un viewController",
+      "range": {
+        "startLine": 13,
+        "startChar": 38,
+        "endLine": 13,
+        "endChar": 54
+      },
+      "revId": "ee89fe8e53a4bb99d7338cb33b76a09041774cbd",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    }
+  ]
+}
