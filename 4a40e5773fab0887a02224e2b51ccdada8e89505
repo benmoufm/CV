@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "0c4a5b2f_020949e8",
+        "filename": "CV/Base.lproj/Localizable.strings",
+        "patchSetId": 3
+      },
+      "lineNbr": 1,
+      "author": {
+        "id": 1011781
+      },
+      "writtenOn": "2017-09-05T06:36:42Z",
+      "side": 1,
+      "message": "Est-ce que c\u0027est le bon commit pour faire ça?",
+      "revId": "4a40e5773fab0887a02224e2b51ccdada8e89505",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    }
+  ]
+}
