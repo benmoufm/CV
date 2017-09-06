@@ -43,9 +43,10 @@
 	</array>
 	<key>LSApplicationQueriesSchemes</key>
 	<array>
+		<string>mailto</string>
 		<string>tel</string>
 	</array>
-    <key>NSContactsUsageDescription</key>
-    <string>$(PRODUCT_NAME) contact use</string>
+	<key>NSContactsUsageDescription</key>
+	<string>$(PRODUCT_NAME) contact use</string>
 </dict>
 </plist>
