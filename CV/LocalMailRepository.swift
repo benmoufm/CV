@@ -22,11 +22,6 @@ class LocalMailRepository: MailRepository {
         fatalError("init(coder:) has not been implemented")
     }
 
-    func mailComposeController(_ controller: MFMailComposeViewController,
-                               didFinishWith result: MFMailComposeResult, error: Error?) {
-        controller.dismiss(animated: true)
-    }
-
     // MARK: - MailRepository
 
     func sendMail(_ contact: CNContact, _ completion: ((String) -> Void)?) {

@@ -16,6 +16,7 @@ struct ContactCellViewModelMapper {
     let textColor: UIColor
     let url: URL?
     let shouldCreateContactOnSelect: Bool
+    let shouldSendMailOnSelect: Bool
 
     func map() -> ContactCellViewModel {
         return ContactCellViewModel(
@@ -23,7 +24,8 @@ struct ContactCellViewModelMapper {
             label: label,
             textColor: textColor,
             url: url,
-            shouldCreateContactOnSelect: shouldCreateContactOnSelect
+            shouldCreateContactOnSelect: shouldCreateContactOnSelect,
+            shouldSendMailOnSelect: shouldSendMailOnSelect
         )
     }
 }
