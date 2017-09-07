@@ -17,4 +17,5 @@ struct ContactCellViewModel {
     let url: URL?
     let shouldCreateContactOnSelect: Bool
     let shouldSendMailOnSelect: Bool
+    let linkedInUrl: URL?
 }
