@@ -11,5 +11,6 @@ import UIKit
 
 struct ContactControllerViewModel {
 
+    let cardImage: UIImage
     let tableView: ContactTableViewModel
 }
