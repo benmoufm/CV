@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "82210732_9a10df2b",
+        "filename": "CV/en.lproj/Localizable.strings",
+        "patchSetId": 1
+      },
+      "lineNbr": 13,
+      "author": {
+        "id": 1011781
+      },
+      "writtenOn": "2017-09-07T08:03:00Z",
+      "side": 1,
+      "message": "garde peut être tes mark dans les deux fichiers",
+      "range": {
+        "startLine": 13,
+        "startChar": 0,
+        "endLine": 13,
+        "endChar": 44
+      },
+      "revId": "7ffb5d87eb14282f368a827ff5c2d99d322f34da",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    }
+  ]
+}
