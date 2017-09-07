@@ -1,0 +1,73 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "94368125_a96f7e13",
+        "filename": "CV/LocalMailRepository.swift",
+        "patchSetId": 6
+      },
+      "lineNbr": 19,
+      "author": {
+        "id": 1011781
+      },
+      "writtenOn": "2017-09-07T13:20:23Z",
+      "side": 1,
+      "message": "ça aussi si tu n\u0027en a pas besoin",
+      "range": {
+        "startLine": 15,
+        "startChar": 0,
+        "endLine": 19,
+        "endChar": 5
+      },
+      "revId": "d99eb4ed9ed242500782d88cbd02e52ea804d7b0",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "526fe406_48adf78d",
+        "filename": "CV/LocalMailRepository.swift",
+        "patchSetId": 6
+      },
+      "lineNbr": 23,
+      "author": {
+        "id": 1011781
+      },
+      "writtenOn": "2017-09-07T13:20:23Z",
+      "side": 1,
+      "message": "à enlever",
+      "range": {
+        "startLine": 21,
+        "startChar": 0,
+        "endLine": 23,
+        "endChar": 5
+      },
+      "revId": "d99eb4ed9ed242500782d88cbd02e52ea804d7b0",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "2a8e019c_e0782c69",
+        "filename": "CV/LocalMailRepository.swift",
+        "patchSetId": 6
+      },
+      "lineNbr": 28,
+      "author": {
+        "id": 1011781
+      },
+      "writtenOn": "2017-09-07T13:20:23Z",
+      "side": 1,
+      "message": "à enlever?",
+      "range": {
+        "startLine": 25,
+        "startChar": 0,
+        "endLine": 28,
+        "endChar": 5
+      },
+      "revId": "d99eb4ed9ed242500782d88cbd02e52ea804d7b0",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    }
+  ]
+}
