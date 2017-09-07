@@ -71,6 +71,10 @@ class ContactViewController: UIViewController,
         presenter?.sendMail()
     }
 
+    func contactTableViewDataSourceRequestOpenLinledIn(_ dataSource: ContactTableViewDataSource, didSelectCellWithLinkedInUrl url: URL) {
+        presenter?.openLinkedIn(url)
+    }
+
     // MARK: - Private methods
 
     private func setupCardImageView() {
