@@ -18,6 +18,7 @@ class ContactViewController: UIViewController,
     let navigationBar = UINavigationBar()
     var tableView = UITableView()
     let dataSource = ContactTableViewDataSource()
+    let cardImageView = UIImageView()
 
     override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?) {
         super.init(nibName: nil, bundle: nil)
@@ -41,6 +42,7 @@ class ContactViewController: UIViewController,
     // MARK: - ContactViewContract
 
     func configure(with viewModel: ContactControllerViewModel) {
+        cardImageView.image = viewModel.cardImage
         dataSource.update(with: viewModel.tableView)
         tableView.reloadData()
     }
@@ -71,6 +73,10 @@ class ContactViewController: UIViewController,
 
     // MARK: - Private methods
 
+    private func setupCardImageView() {
+        cardImageView.contentMode = .scaleAspectFill
+    }
+
     private func setupTableView() {
         dataSource.configure(tableView)
         dataSource.delegate = self
@@ -89,6 +95,7 @@ class ContactViewController: UIViewController,
     private func setupLayout() {
         view.addSubview(navigationBar)
         view.addSubview(tableView)
+        view.addSubview(cardImageView)
 
         navigationBar.translatesAutoresizingMaskIntoConstraints = false
         navigationBar.leftAnchor.constraint(equalTo: view.leftAnchor).isActive = true
@@ -96,8 +103,14 @@ class ContactViewController: UIViewController,
         navigationBar.topAnchor.constraint(equalTo: view.topAnchor).isActive = true
         navigationBar.heightAnchor.constraint(equalToConstant: 60.0).isActive = true
 
+        cardImageView.translatesAutoresizingMaskIntoConstraints = false
+        cardImageView.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
+        cardImageView.topAnchor.constraint(equalTo: navigationBar.bottomAnchor, constant: 100.0).isActive = true
+        cardImageView.heightAnchor.constraint(equalToConstant: min(view.frame.width, view.frame.height) - 250.0).isActive = true
+        cardImageView.widthAnchor.constraint(equalToConstant: min(view.frame.width, view.frame.height) - 250.0).isActive = true
+
         tableView.translatesAutoresizingMaskIntoConstraints = false
-        tableView.topAnchor.constraint(equalTo: navigationBar.bottomAnchor).isActive = true
+        tableView.topAnchor.constraint(equalTo: cardImageView.bottomAnchor, constant: 100.0).isActive = true
         tableView.leftAnchor.constraint(equalTo: view.leftAnchor).isActive = true
         tableView.rightAnchor.constraint(equalTo: view.rightAnchor).isActive = true
         tableView.bottomAnchor.constraint(equalTo: view.bottomAnchor).isActive = true

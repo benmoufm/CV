@@ -12,6 +12,7 @@ struct ContactControllerViewModelMapper {
 
     func map() -> ContactControllerViewModel {
         return ContactControllerViewModel(
+            cardImage: #imageLiteral(resourceName: "cardIcon"),
             tableView: ContactTableViewModelMapper().map()
         )
     }
