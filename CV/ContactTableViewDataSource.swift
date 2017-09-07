@@ -14,6 +14,8 @@ protocol ContactTableViewDataSourceDelegate: class {
                                     didSelectCellWithUrl url: URL)
     func contactTableViewDataSourceRequestCreateContact(_ dataSource: ContactTableViewDataSource)
     func contactTableViewDateSourceRequestSendMail(_ dataSource: ContactTableViewDataSource)
+    func contactTableViewDataSourceRequestOpenLinledIn(_ dataSource: ContactTableViewDataSource,
+                                                       didSelectCellWithLinkedInUrl url: URL)
 }
 
 class ContactTableViewDataSource: NSObject,
@@ -59,6 +61,9 @@ class ContactTableViewDataSource: NSObject,
         }
         if cellViewModel.shouldSendMailOnSelect {
             delegate?.contactTableViewDateSourceRequestSendMail(self)
+        }
+        if let url = cellViewModel.linkedInUrl {
+            delegate?.contactTableViewDataSourceRequestOpenLinledIn(self, didSelectCellWithLinkedInUrl: url)
         }
     }
 

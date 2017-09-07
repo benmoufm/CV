@@ -46,6 +46,14 @@ class ContactPresenterImplementation: ContactPresenter {
         UIApplication.shared.open(url)
     }
 
+    func openLinkedIn(_ url: URL) {
+        if UIApplication.shared.canOpenURL(url) {
+            UIApplication.shared.open(url)
+        } else {
+            self.viewContract.displayPopup("linkedin_error_title_popup".localized,
+                                           "linkedin_error_popup".localized)
+        }    }
+
     func createContact() {
         contactRepository.createContact(contactInfo) { success -> Void in
             var message: String
