@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "976e64a1_d0eaf392",
+        "filename": "CV/ContactViewController.swift",
+        "patchSetId": 2
+      },
+      "lineNbr": 110,
+      "author": {
+        "id": 1011781
+      },
+      "writtenOn": "2017-09-07T08:14:52Z",
+      "side": 1,
+      "message": "ça va pas bien marcher ça parce que ce sera égal au minimum des deux pour les valeur qu\u0027il ont au moment ou tu appelle cette fonction\n\nce que tu veux si je comprend bien c\u0027est que ton image soit un carré\ndu coup height.constraint(equalTo:width)\net ensuite tu veux que ton carré ai un côté qui est de la taille du plus petit côté de ta superView - 250\nEt ça c\u0027est pas forcément simple mais si on y refléchit bien ça doit pouvoir se faire.\nJe te redis quand j\u0027aurais le temps d\u0027y refflechir sérieusement",
+      "range": {
+        "startLine": 110,
+        "startChar": 62,
+        "endLine": 110,
+        "endChar": 103
+      },
+      "revId": "11c3272d6a15d90af9b1aaf997c8f5756d8c6e9a",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    }
+  ]
+}
