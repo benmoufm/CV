@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "69706d06_2368a0e7",
+        "filename": "CV/ContactViewController.swift",
+        "patchSetId": 1
+      },
+      "lineNbr": 47,
+      "author": {
+        "id": 1011781
+      },
+      "writtenOn": "2017-09-07T08:04:31Z",
+      "side": 1,
+      "message": "pas besoin de retourner à la ligne ici",
+      "range": {
+        "startLine": 47,
+        "startChar": 29,
+        "endLine": 47,
+        "endChar": 37
+      },
+      "revId": "111e9f0a6fb76f17f245d7ae1fde22fa997cda1b",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    }
+  ]
+}
