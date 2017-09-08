@@ -53,17 +53,25 @@ class ContactTableViewDataSource: NSObject,
 
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let cellViewModel = viewModel.tableCells[indexPath.row]
-        if let url = cellViewModel.url {
+        switch cellViewModel.cellType {
+        case .phone:
+            guard let url = cellViewModel.url else {
+                break
+            }
             delegate?.contactTableViewDataSource(self, didSelectCellWithUrl: url)
-        }
-        if cellViewModel.shouldCreateContactOnSelect {
-            delegate?.contactTableViewDataSourceRequestCreateContact(self)
-        }
-        if cellViewModel.shouldSendMailOnSelect {
+            break
+        case .mail:
             delegate?.contactTableViewDateSourceRequestSendMail(self)
-        }
-        if let url = cellViewModel.linkedInUrl {
+            break
+        case .linkedin:
+            guard let url = cellViewModel.url else {
+                break
+            }
             delegate?.contactTableViewDataSourceRequestOpenLinledIn(self, didSelectCellWithLinkedInUrl: url)
+            break
+        case .contact:
+            delegate?.contactTableViewDataSourceRequestCreateContact(self)
+            break
         }
     }
 

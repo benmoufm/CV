@@ -17,9 +17,7 @@ struct ContactTableViewModelMapper {
             label: "Telephone : 06.61.04.25.95",
             textColor: UIColor.textColor,
             url: URL(string: "tel://0661042595"),
-            shouldCreateContactOnSelect: false,
-            shouldSendMailOnSelect: false,
-            linkedInUrl: nil
+            cellType: .phone
         ).map()
 
         let mailCell = ContactCellViewModelMapper(
@@ -27,9 +25,7 @@ struct ContactTableViewModelMapper {
             label: "Email : m.benmouffek@gmail.com",
             textColor: UIColor.textColor,
             url: nil,
-            shouldCreateContactOnSelect: false,
-            shouldSendMailOnSelect: true,
-            linkedInUrl: nil
+            cellType: .mail
         ).map()
 
 
@@ -37,10 +33,8 @@ struct ContactTableViewModelMapper {
             image: #imageLiteral(resourceName: "linkdInIcon"),
             label: "Profil LinkedIn",
             textColor: UIColor.textColor,
-            url: nil,
-            shouldCreateContactOnSelect: false,
-            shouldSendMailOnSelect: false,
-            linkedInUrl: URL(string: "linkedin://profile?id=60930a124")
+            url: URL(string: "linkedin://profile?id=60930a124"),
+            cellType: .linkedin
         ).map()
 
         let newContactCell = ContactCellViewModelMapper(
@@ -48,9 +42,7 @@ struct ContactTableViewModelMapper {
             label: "Ajouter le contact",
             textColor: UIColor.textColor,
             url: nil,
-            shouldCreateContactOnSelect: true,
-            shouldSendMailOnSelect: false,
-            linkedInUrl: nil
+            cellType: .contact
         ).map()
 
         return ContactTableViewModel(tableCells: [phoneCell, mailCell, linkdInCell, newContactCell])

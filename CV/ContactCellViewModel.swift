@@ -9,13 +9,18 @@
 import Foundation
 import UIKit
 
+enum CellType {
+    case phone
+    case mail
+    case linkedin
+    case contact
+}
+
 struct ContactCellViewModel {
 
     let image: UIImage
     let label: String
     let textColor: UIColor
     let url: URL?
-    let shouldCreateContactOnSelect: Bool
-    let shouldSendMailOnSelect: Bool
-    let linkedInUrl: URL?
+    let cellType: CellType
 }
