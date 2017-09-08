@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "083ea0e5_dbe4bf4e",
+        "filename": "CV/ContactPresenterImplementation.swift",
+        "patchSetId": 6
+      },
+      "lineNbr": 35,
+      "author": {
+        "id": 1011781
+      },
+      "writtenOn": "2017-09-08T06:30:23Z",
+      "side": 1,
+      "message": "guard canOpenUrl else {\nerror\n}\nopenUrl",
+      "range": {
+        "startLine": 31,
+        "startChar": 8,
+        "endLine": 35,
+        "endChar": 9
+      },
+      "revId": "247746666db2cf94193fdf7155acaa931a5263bc",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    }
+  ]
+}
