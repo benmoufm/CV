@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "5a771036_b9b1d9e0",
+        "filename": "CV/LocalMailRepository.swift",
+        "patchSetId": 9
+      },
+      "lineNbr": 13,
+      "author": {
+        "id": 1011781
+      },
+      "writtenOn": "2017-09-11T11:12:55Z",
+      "side": 1,
+      "message": "Pourquoi Local\nle nom de la class d\u0027implémentation doit refleter la particularité de cette implementation",
+      "range": {
+        "startLine": 13,
+        "startChar": 6,
+        "endLine": 13,
+        "endChar": 11
+      },
+      "revId": "46ff2f839f5f55936487586c94eb0ab80579d991",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    }
+  ]
+}
