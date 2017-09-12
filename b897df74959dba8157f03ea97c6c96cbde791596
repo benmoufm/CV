@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "fe2f370f_cf2bcaea",
+        "filename": "CV/ContactPresenterImplementation.swift",
+        "patchSetId": 4
+      },
+      "lineNbr": 55,
+      "author": {
+        "id": 1011781
+      },
+      "writtenOn": "2017-09-12T14:49:29Z",
+      "side": 1,
+      "message": "eol",
+      "range": {
+        "startLine": 55,
+        "startChar": 9,
+        "endLine": 55,
+        "endChar": 13
+      },
+      "revId": "b897df74959dba8157f03ea97c6c96cbde791596",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    }
+  ]
+}
