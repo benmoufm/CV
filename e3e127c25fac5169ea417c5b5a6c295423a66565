@@ -1,0 +1,119 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "f8f39395_35c723d9",
+        "filename": "CV/ContactTableViewDataSource.swift",
+        "patchSetId": 2
+      },
+      "lineNbr": 60,
+      "author": {
+        "id": 1011781
+      },
+      "writtenOn": "2017-09-12T14:52:10Z",
+      "side": 1,
+      "message": "tu peux tout écrire sur une même ligne ici comme c\u0027est pas trop long",
+      "range": {
+        "startLine": 58,
+        "startChar": 0,
+        "endLine": 60,
+        "endChar": 13
+      },
+      "revId": "e3e127c25fac5169ea417c5b5a6c295423a66565",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "1857e248_f21efc3d",
+        "filename": "CV/ContactTableViewDataSource.swift",
+        "patchSetId": 2
+      },
+      "lineNbr": 62,
+      "author": {
+        "id": 1011781
+      },
+      "writtenOn": "2017-09-12T14:52:10Z",
+      "side": 1,
+      "message": "pas besoin",
+      "range": {
+        "startLine": 62,
+        "startChar": 12,
+        "endLine": 62,
+        "endChar": 17
+      },
+      "revId": "e3e127c25fac5169ea417c5b5a6c295423a66565",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "2788ee19_be1ffb1f",
+        "filename": "CV/ContactTableViewDataSource.swift",
+        "patchSetId": 2
+      },
+      "lineNbr": 69,
+      "author": {
+        "id": 1011781
+      },
+      "writtenOn": "2017-09-12T14:52:10Z",
+      "side": 1,
+      "message": "idem",
+      "range": {
+        "startLine": 68,
+        "startChar": 0,
+        "endLine": 69,
+        "endChar": 13
+      },
+      "revId": "e3e127c25fac5169ea417c5b5a6c295423a66565",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "ca6954c8_b644ea93",
+        "filename": "CV/ContactTableViewDataSource.swift",
+        "patchSetId": 2
+      },
+      "lineNbr": 71,
+      "author": {
+        "id": 1011781
+      },
+      "writtenOn": "2017-09-12T14:52:10Z",
+      "side": 1,
+      "message": "pas besoin",
+      "range": {
+        "startLine": 71,
+        "startChar": 12,
+        "endLine": 71,
+        "endChar": 17
+      },
+      "revId": "e3e127c25fac5169ea417c5b5a6c295423a66565",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "ea327dd6_cd35c201",
+        "filename": "CV/ContactTableViewDataSource.swift",
+        "patchSetId": 2
+      },
+      "lineNbr": 74,
+      "author": {
+        "id": 1011781
+      },
+      "writtenOn": "2017-09-12T14:52:10Z",
+      "side": 1,
+      "message": "pas besoin",
+      "range": {
+        "startLine": 74,
+        "startChar": 12,
+        "endLine": 74,
+        "endChar": 17
+      },
+      "revId": "e3e127c25fac5169ea417c5b5a6c295423a66565",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    }
+  ]
+}
