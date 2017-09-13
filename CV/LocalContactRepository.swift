@@ -22,25 +22,28 @@ class LocalContactRepository: ContactRepository {
 
     // MARK: - ContactRepository
 
-    func createContact(_ contact: CNContact, _ completion: ((Bool) -> Void)?) {
+    func createContact(_ contact: CNContact, _ completion: ((Result<Void>) -> Void)?) {
         let contactStore = CNContactStore()
+        var result = Result<Void>()
+        defer {
+            completion?(result)
+        }
         contactStore.requestAccess(for: CNEntityType.contacts) { (granted, error) -> Void in
             if !granted || error != nil {
-                completion?(false)
+                result = .error(CVError.contactAccessDeniedError as NSError)
                 return
             }
             let store = CNContactStore()
             let saveRequest = CNSaveRequest()
             guard let mutableContact = contact.mutableCopy() as? CNMutableContact else {
-                completion?(false)
+                result = .error(CVError.contactCreationError as NSError)
                 return
             }
             saveRequest.add(mutableContact, toContainerWithIdentifier:nil)
             do {
                 try store.execute(saveRequest)
-                completion?(true)
             } catch {
-                completion?(false)
+                result = .error(CVError.contactCreationError as NSError)
             }
         }
     }
