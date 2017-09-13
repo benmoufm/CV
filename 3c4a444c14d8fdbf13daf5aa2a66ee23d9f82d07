@@ -1,0 +1,50 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "863233f3_102072f1",
+        "filename": "CV/ContactPresenterImplementation.swift",
+        "patchSetId": 1
+      },
+      "lineNbr": 61,
+      "author": {
+        "id": 1011781
+      },
+      "writtenOn": "2017-09-13T19:57:52Z",
+      "side": 1,
+      "message": "if let",
+      "range": {
+        "startLine": 61,
+        "startChar": 15,
+        "endLine": 61,
+        "endChar": 34
+      },
+      "revId": "3c4a444c14d8fdbf13daf5aa2a66ee23d9f82d07",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "29b2747a_a6b36fd3",
+        "filename": "CV/ContactPresenterImplementation.swift",
+        "patchSetId": 1
+      },
+      "lineNbr": 73,
+      "author": {
+        "id": 1011781
+      },
+      "writtenOn": "2017-09-13T19:57:52Z",
+      "side": 1,
+      "message": "ça fait beaucoup d\u0027erreur",
+      "range": {
+        "startLine": 72,
+        "startChar": 12,
+        "endLine": 73,
+        "endChar": 8
+      },
+      "revId": "3c4a444c14d8fdbf13daf5aa2a66ee23d9f82d07",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    }
+  ]
+}
