@@ -16,26 +16,26 @@ class TemplateMailRepository: MailRepository {
 
     // MARK: - MailRepository
 
-    func sendMail(_ contact: CNContact, _ completion: ((String) -> Void)?) {
+    func sendMail(_ contact: CNContact, _ completion: ((Result<Void>) -> Void)?) {
         let mailSubject = "mail_subject_text".localized
         let mailBody = "mail_body_text".localized
         guard let mailTo = contact.emailAddresses.first?.value else {
-            completion?("mail_error_address".localized)
+            completion?(.error(CVError.mailNoAddressError as NSError))
             return
         }
         guard let encodedParameters = "mailto:\(mailTo)?subject=\(mailSubject)&body=\(mailBody)"
             .addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed) else {
-                completion?("mail_error_encoding".localized)
+                completion?(.error(CVError.mailEncodingTemplateError as NSError))
                 return
         }
         guard let url = URL(string: encodedParameters) else {
-            completion?("mail_error_url".localized)
+            completion?(.error(CVError.mailEncodingUrlError as NSError))
             return
         }
         if UIApplication.shared.canOpenURL(url) {
             UIApplication.shared.open(url)
         } else {
-            completion?("mail_error_cannot_open_url".localized)
+            completion?(.error(CVError.mailOpenUrlError as NSError))
         }
     }
 
