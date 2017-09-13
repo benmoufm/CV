@@ -11,5 +11,5 @@ import Contacts
 
 protocol ContactRepository {
     var melodieContact: CNContact { get }
-    func createContact(_ contact: CNContact, _ completion: ((Bool) -> Void)?)
+    func createContact(_ contact: CNContact, _ completion: ((Result<Void>) -> Void)?)
 }

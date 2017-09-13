@@ -56,20 +56,22 @@ class ContactPresenterImplementation: ContactPresenter {
     }
 
     func createContact() {
-        contactRepository.createContact(contactInfo) { success -> Void in
+        contactRepository.createContact(contactInfo) { result -> Void in
             var message: String
-            if success {
-                message = "contact_creation_success_message_popup".localized
+            if let resultingError = result.error {
+                message = resultingError.localizedDescription
             } else {
-                message = "contact_creation_error_message_popup".localized
+                message = "contact_creation_success_message_popup".localized
             }
             self.viewContract.displayPopup("contact_creation_title_popup".localized, message)
         }
     }
 
     func sendMail() {
-        mailRepository.sendMail(contactInfo) { message -> Void in
-            self.viewContract.displayPopup("mail_error_title_popup".localized, message)
+        mailRepository.sendMail(contactInfo) { result -> Void in
+            if let resultingError = result.error {
+                self.viewContract.displayPopup("mail_error_title_popup".localized, resultingError.localizedDescription)
+            }
         }
     }
 
