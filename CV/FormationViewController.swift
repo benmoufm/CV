@@ -13,9 +13,13 @@ class FormationViewController: UIViewController,
     FormationViewContract {
 
     var presenter: FormationPresenter?
+    let navigationBar = UINavigationBar()
 
     override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?) {
         super.init(nibName: nil, bundle: nil)
+        navigationItem.title = "formation_navigation_title_text".localized
+        tabBarItem.title = "formation_navigation_title_text".localized
+        tabBarItem.image = #imageLiteral(resourceName: "schoolIcon")
     }
 
     required init?(coder aDecoder: NSCoder) {
@@ -38,7 +42,26 @@ class FormationViewController: UIViewController,
 
     // MARK: - Private methods
 
+    private func setupNavigationBar() {
+        navigationBar.setItems([navigationItem],
+                               animated: false)
+        navigationBar.barTintColor = UIColor.mainColor
+        navigationBar.alpha = 0.7
+        navigationBar.titleTextAttributes =
+            [NSForegroundColorAttributeName: UIColor.navigationTitleTextColor]
+    }
+
+    private func setupLayout() {
+        view.addSubview(navigationBar)
+
+        navigationBar.translatesAutoresizingMaskIntoConstraints = false
+        navigationBar.widthAnchor.constraint(equalTo: view.widthAnchor).isActive = true
+        navigationBar.heightAnchor.constraint(equalToConstant: 60.0).isActive = true
+    }
+
     private func setup() {
-        // TODO: (Mélodie Benmouffek) 14/09/2017 Setup subviews
+        view.backgroundColor = UIColor.backgroundColor
+        setupNavigationBar()
+        setupLayout()
     }
 }
