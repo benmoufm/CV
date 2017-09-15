@@ -12,6 +12,7 @@
 
 // FORMATION
 "formation_navigation_title_text" = "Formation";
+"formation_introduction_text" = "Résumé de mon parcours scolaire ainsi que de mes expériences en entreprise.";
 
 // CONTACT
 "contact_navigation_title_text" = "Contact";

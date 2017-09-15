@@ -9,5 +9,5 @@
 import Foundation
 
 struct FormationControllerViewModel {
-
+    let formationIntroductionText: String
 }
