@@ -15,13 +15,15 @@ struct ContactCellViewModelMapper {
     let label: String
     let textColor: UIColor
     let cellType: CellType
+    let isSelected: Bool
 
     func map() -> ContactCellViewModel {
         return ContactCellViewModel(
             image: image,
             label: label,
             textColor: textColor,
-            cellType: cellType
+            cellType: cellType,
+            isSelected: isSelected
         )
     }
 }

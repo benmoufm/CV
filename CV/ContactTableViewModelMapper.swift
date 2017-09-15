@@ -11,19 +11,24 @@ import UIKit
 
 struct ContactTableViewModelMapper {
 
+    let hasAlreadyCreatedContact: Bool
+    let hasAlreadyAddedLinkedInProfile: Bool
+
     func map() -> ContactTableViewModel {
         let phoneCell = ContactCellViewModelMapper(
             image: #imageLiteral(resourceName: "phoneIcon"),
             label: "Telephone : 06.61.04.25.95",
             textColor: UIColor.textColor,
-            cellType: .phone(url: URL(string: "tel://0661042595"))
+            cellType: .phone(url: URL(string: "tel://0661042595")),
+            isSelected: false
         ).map()
 
         let mailCell = ContactCellViewModelMapper(
             image: #imageLiteral(resourceName: "emailIcon"),
             label: "Email : m.benmouffek@gmail.com",
             textColor: UIColor.textColor,
-            cellType: .mail
+            cellType: .mail,
+            isSelected: false
         ).map()
 
 
@@ -31,14 +36,16 @@ struct ContactTableViewModelMapper {
             image: #imageLiteral(resourceName: "linkdInIcon"),
             label: "Profil LinkedIn",
             textColor: UIColor.textColor,
-            cellType: .linkedin(url: URL(string: "linkedin://profile?id=60930a124"))
+            cellType: .linkedin(url: URL(string: "linkedin://profile?id=60930a124")),
+            isSelected: hasAlreadyAddedLinkedInProfile
         ).map()
 
         let newContactCell = ContactCellViewModelMapper(
             image: #imageLiteral(resourceName: "contactIcon"),
             label: "Ajouter le contact",
             textColor: UIColor.textColor,
-            cellType: .contact
+            cellType: .contact,
+            isSelected: hasAlreadyCreatedContact
         ).map()
 
         return ContactTableViewModel(tableCells: [phoneCell, mailCell, linkdInCell, newContactCell])
