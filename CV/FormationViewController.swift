@@ -14,6 +14,7 @@ class FormationViewController: UIViewController,
 
     var presenter: FormationPresenter?
     let navigationBar = UINavigationBar()
+    let formationIntroductionLabel = UILabel()
 
     override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?) {
         super.init(nibName: nil, bundle: nil)
@@ -37,7 +38,7 @@ class FormationViewController: UIViewController,
     // MARK: - FormationViewContract
 
     func configure(with viewModel: FormationControllerViewModel) {
-        // TODO: (Mélodie Benmouffek) 14/09/2017 Configure view
+        formationIntroductionLabel.text = viewModel.formationIntroductionText
     }
 
     // MARK: - Private methods
@@ -51,17 +52,29 @@ class FormationViewController: UIViewController,
             [NSForegroundColorAttributeName: UIColor.navigationTitleTextColor]
     }
 
+    private func setupFormationIntroductionLabel() {
+        formationIntroductionLabel.numberOfLines = 0
+        formationIntroductionLabel.textAlignment = .center
+        formationIntroductionLabel.textColor = UIColor.textColor
+    }
+
     private func setupLayout() {
         view.addSubview(navigationBar)
+        view.addSubview(formationIntroductionLabel)
 
         navigationBar.translatesAutoresizingMaskIntoConstraints = false
         navigationBar.widthAnchor.constraint(equalTo: view.widthAnchor).isActive = true
         navigationBar.heightAnchor.constraint(equalToConstant: 60.0).isActive = true
+
+        formationIntroductionLabel.translatesAutoresizingMaskIntoConstraints = false
+        formationIntroductionLabel.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
+        formationIntroductionLabel.centerYAnchor.constraint(equalTo: view.centerYAnchor).isActive = true
     }
 
     private func setup() {
         view.backgroundColor = UIColor.backgroundColor
         setupNavigationBar()
+        setupFormationIntroductionLabel()
         setupLayout()
     }
 }
