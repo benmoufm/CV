@@ -22,4 +22,5 @@ struct ContactCellViewModel {
     let label: String
     let textColor: UIColor
     let cellType: CellType
+    let isSelected: Bool
 }
