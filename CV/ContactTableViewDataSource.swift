@@ -65,6 +65,7 @@ class ContactTableViewDataSource: NSObject,
         case .contact:
             delegate?.contactTableViewDataSourceRequestCreateContact(self)
         }
+        tableView.deselectRow(at: indexPath, animated: true)
     }
 
 }
