@@ -15,6 +15,7 @@ class ContactPresenterImplementation: ContactPresenter {
     private unowned let viewContract: ContactViewContract
     private let contactRepository: ContactRepository
     private let mailRepository: MailRepository
+    private var hasAlreadyCreatedContact = false
 
     var contactInfo: CNContact
 
@@ -56,14 +57,14 @@ class ContactPresenterImplementation: ContactPresenter {
     }
 
     func createContact() {
+        guard !hasAlreadyCreatedContact else { return }
         contactRepository.createContact(contactInfo) { result -> Void in
-            var message: String
             if let resultingError = result.error {
-                message = resultingError.localizedDescription
+                self.viewContract.displayPopup("contact_creation_title_popup".localized, resultingError.localizedDescription)
             } else {
-                message = "contact_creation_success_message_popup".localized
+                self.hasAlreadyCreatedContact = true
             }
-            self.viewContract.displayPopup("contact_creation_title_popup".localized, message)
+            self.computeAndDisplayViewModel()
         }
     }
 
@@ -78,8 +79,7 @@ class ContactPresenterImplementation: ContactPresenter {
     // MARK: - Private methods
 
     private func computeAndDisplayViewModel() {
-        // TODO: (Mélodie Benmouffek) Guard let required properties
-        let viewModel = ContactControllerViewModelMapper().map()
+        let viewModel = ContactControllerViewModelMapper(hasAlreadyCretedContact: hasAlreadyCreatedContact).map()
         viewContract.configure(with: viewModel)
     }
 }

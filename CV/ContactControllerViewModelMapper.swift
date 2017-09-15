@@ -9,11 +9,14 @@
 import Foundation
 
 struct ContactControllerViewModelMapper {
+    let hasAlreadyCretedContact: Bool
 
     func map() -> ContactControllerViewModel {
         return ContactControllerViewModel(
             cardImage: #imageLiteral(resourceName: "cardIcon"),
-            tableView: ContactTableViewModelMapper().map()
+            tableView: ContactTableViewModelMapper(
+                hasAlreadyCreatedContact: hasAlreadyCretedContact
+                ).map()
         )
     }
 

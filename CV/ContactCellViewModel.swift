@@ -13,7 +13,7 @@ enum CellType {
     case phone(url: URL?)
     case mail
     case linkedin(url: URL?)
-    case contact
+    case contact(isSelected: Bool)
 }
 
 struct ContactCellViewModel {

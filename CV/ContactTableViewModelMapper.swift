@@ -11,6 +11,8 @@ import UIKit
 
 struct ContactTableViewModelMapper {
 
+    let hasAlreadyCreatedContact: Bool
+
     func map() -> ContactTableViewModel {
         let phoneCell = ContactCellViewModelMapper(
             image: #imageLiteral(resourceName: "phoneIcon"),
@@ -38,7 +40,7 @@ struct ContactTableViewModelMapper {
             image: #imageLiteral(resourceName: "contactIcon"),
             label: "Ajouter le contact",
             textColor: UIColor.textColor,
-            cellType: .contact
+            cellType: .contact(isSelected: hasAlreadyCreatedContact)
         ).map()
 
         return ContactTableViewModel(tableCells: [phoneCell, mailCell, linkdInCell, newContactCell])
