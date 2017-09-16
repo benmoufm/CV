@@ -35,6 +35,7 @@
 		867DA51F1F5CA536000C5AC2 /* RepositoryFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 867DA51E1F5CA536000C5AC2 /* RepositoryFactory.swift */; };
 		867DA5221F5D57CF000C5AC2 /* MailRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 867DA5201F5D57CF000C5AC2 /* MailRepository.swift */; };
 		867DA5231F5D57CF000C5AC2 /* TemplateMailRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 867DA5211F5D57CF000C5AC2 /* TemplateMailRepository.swift */; };
+		867FF32C1F6C3BED0085A80D /* UICollectionView+Registerable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 867FF32B1F6C3BED0085A80D /* UICollectionView+Registerable.swift */; };
 		86CE0CA71F1BC64D00DA0916 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86CE0CA61F1BC64D00DA0916 /* AppDelegate.swift */; };
 		86CE0CAE1F1BC64E00DA0916 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 86CE0CAD1F1BC64E00DA0916 /* Assets.xcassets */; };
 		86CE0CB11F1BC64E00DA0916 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 86CE0CAF1F1BC64E00DA0916 /* LaunchScreen.storyboard */; };
