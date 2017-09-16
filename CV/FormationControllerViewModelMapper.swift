@@ -11,7 +11,9 @@ import Foundation
 struct FormationControllerViewModelMapper {
 
     func map() -> FormationControllerViewModel {
-        return FormationControllerViewModel(formationIntroductionText: "formation_introduction_text".localized)
+        return FormationControllerViewModel(
+            collectionView: FormationCollectionViewModelMapper().map(),
+            formationIntroductionText: "formation_introduction_text".localized)
     }
 
 }

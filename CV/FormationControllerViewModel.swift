@@ -7,7 +7,9 @@
 //
 
 import Foundation
+import UIKit
 
 struct FormationControllerViewModel {
+    let collectionView: FormationCollectionViewModel
     let formationIntroductionText: String
 }
