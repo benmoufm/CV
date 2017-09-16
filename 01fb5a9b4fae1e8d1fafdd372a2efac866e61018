@@ -1,0 +1,50 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "16b05409_fd88d201",
+        "filename": "CV/ContactCellViewModel.swift",
+        "patchSetId": 1
+      },
+      "lineNbr": 16,
+      "author": {
+        "id": 1011781
+      },
+      "writtenOn": "2017-09-16T12:57:58Z",
+      "side": 1,
+      "message": "Met le directement dans ton ContactCellViewModel : \nTu pourra pareil mettre un check mark quand on t\u0027ajoute sur linkedIn.",
+      "range": {
+        "startLine": 16,
+        "startChar": 17,
+        "endLine": 16,
+        "endChar": 33
+      },
+      "revId": "01fb5a9b4fae1e8d1fafdd372a2efac866e61018",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "a339b61b_1363d7ef",
+        "filename": "CV/ContactControllerViewModelMapper.swift",
+        "patchSetId": 1
+      },
+      "lineNbr": 12,
+      "author": {
+        "id": 1011781
+      },
+      "writtenOn": "2017-09-16T12:57:58Z",
+      "side": 1,
+      "message": "typo",
+      "range": {
+        "startLine": 12,
+        "startChar": 20,
+        "endLine": 12,
+        "endChar": 22
+      },
+      "revId": "01fb5a9b4fae1e8d1fafdd372a2efac866e61018",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    }
+  ]
+}
