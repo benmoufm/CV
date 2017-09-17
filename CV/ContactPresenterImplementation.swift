@@ -60,11 +60,15 @@ class ContactPresenterImplementation: ContactPresenter {
     func createContact() {
         guard !hasAlreadyCreatedContact else { return }
         contactRepository.createContact(contactInfo) { result -> Void in
+            self.viewContract.startLoading()
             if let resultingError = result.error {
+                self.viewContract.stopLoading()
+                self.computeAndDisplayViewModel()
                 self.viewContract.displayPopup("contact_creation_title_popup".localized, resultingError.localizedDescription)
             } else {
                 self.hasAlreadyCreatedContact = true
             }
+            self.viewContract.stopLoading()
             self.computeAndDisplayViewModel()
         }
     }
@@ -82,7 +86,8 @@ class ContactPresenterImplementation: ContactPresenter {
     private func computeAndDisplayViewModel() {
         let viewModel = ContactControllerViewModelMapper(
             hasAlreadyCreatedContact: hasAlreadyCreatedContact,
-            hasAlreadyAddedLinkedInProfile: hasAlreadyAddedLinkedInProfile).map()
+            hasAlreadyAddedLinkedInProfile: hasAlreadyAddedLinkedInProfile
+            ).map()
         viewContract.configure(with: viewModel)
     }
 }

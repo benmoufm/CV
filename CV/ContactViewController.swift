@@ -19,6 +19,7 @@ class ContactViewController: UIViewController,
     var tableView = UITableView()
     let dataSource = ContactTableViewDataSource()
     let cardImageView = UIImageView()
+    let loadingView = LoadingView()
 
     override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?) {
         super.init(nibName: nil, bundle: nil)
@@ -56,6 +57,14 @@ class ContactViewController: UIViewController,
         present(alert, animated: true, completion: nil)
     }
 
+    func startLoading() {
+        loadingView.startLoading()
+    }
+
+    func stopLoading() {
+        loadingView.stopLoading()
+    }
+
     // MARK: - ContactTableViewDataSourceDelegate
 
     func contactTableViewDataSource(_ dataSource: ContactTableViewDataSource,
@@ -76,6 +85,10 @@ class ContactViewController: UIViewController,
     }
 
     // MARK: - Private methods
+
+    private func setupLoadingView() {
+        loadingView.loadingView.backgroundColor = UIColor.transparentBackgroundColor
+    }
 
     private func setupCardImageView() {
         cardImageView.contentMode = .scaleAspectFill
@@ -100,6 +113,7 @@ class ContactViewController: UIViewController,
         view.addSubview(navigationBar)
         view.addSubview(tableView)
         view.addSubview(cardImageView)
+        view.addSubview(loadingView.loadingView)
 
         navigationBar.translatesAutoresizingMaskIntoConstraints = false
         navigationBar.leftAnchor.constraint(equalTo: view.leftAnchor).isActive = true
@@ -118,6 +132,12 @@ class ContactViewController: UIViewController,
         tableView.leftAnchor.constraint(equalTo: view.leftAnchor).isActive = true
         tableView.rightAnchor.constraint(equalTo: view.rightAnchor).isActive = true
         tableView.bottomAnchor.constraint(equalTo: view.bottomAnchor).isActive = true
+
+        loadingView.loadingView.translatesAutoresizingMaskIntoConstraints = false
+        loadingView.loadingView.rightAnchor.constraint(equalTo: view.rightAnchor).isActive = true
+        loadingView.loadingView.leftAnchor.constraint(equalTo: view.leftAnchor).isActive = true
+        loadingView.loadingView.topAnchor.constraint(equalTo: view.topAnchor).isActive = true
+        loadingView.loadingView.bottomAnchor.constraint(equalTo: view.bottomAnchor).isActive = true
     }
 
     private func setup() {
@@ -125,5 +145,6 @@ class ContactViewController: UIViewController,
         setupNavigationBar()
         setupLayout()
         setupTableView()
+        setupLoadingView()
     }
 }

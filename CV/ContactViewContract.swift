@@ -8,7 +8,7 @@
 
 import Foundation
 
-protocol ContactViewContract: class {
+protocol ContactViewContract: class, Loadable {
 
     func configure(with viewModel: ContactControllerViewModel)
     func displayPopup(_ title: String, _ message: String)
