@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "04fb2434_c058e5f2",
+        "filename": "CV/UICollectionView+Registerable.swift",
+        "patchSetId": 1
+      },
+      "lineNbr": 29,
+      "author": {
+        "id": 1011781
+      },
+      "writtenOn": "2017-09-17T19:41:00Z",
+      "side": 1,
+      "message": "white space",
+      "range": {
+        "startLine": 29,
+        "startChar": 0,
+        "endLine": 29,
+        "endChar": 4
+      },
+      "revId": "4af1b16f32b4c2f1549fa8ef7d3ba1ef75ce71f5",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    }
+  ]
+}
