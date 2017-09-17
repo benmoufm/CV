@@ -19,6 +19,8 @@ class ContactViewController: UIViewController,
     var tableView = UITableView()
     let dataSource = ContactTableViewDataSource()
     let cardImageView = UIImageView()
+    let loadingView = UIView()
+    let activityIndicatorView = UIActivityIndicatorView()
 
     override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?) {
         super.init(nibName: nil, bundle: nil)
@@ -43,6 +45,7 @@ class ContactViewController: UIViewController,
 
     func configure(with viewModel: ContactControllerViewModel) {
         cardImageView.image = viewModel.cardImage
+        loadingView.isHidden = !viewModel.isLoading
         dataSource.update(with: viewModel.tableView)
         tableView.reloadData()
     }
@@ -64,7 +67,9 @@ class ContactViewController: UIViewController,
     }
 
     func contactTableViewDataSourceRequestCreateContact(_ dataSource: ContactTableViewDataSource) {
+        loadingView.isHidden = false
         presenter?.createContact()
+
     }
 
     func contactTableViewDateSourceRequestSendMail(_ dataSource: ContactTableViewDataSource) {
@@ -76,6 +81,17 @@ class ContactViewController: UIViewController,
     }
 
     // MARK: - Private methods
+
+    private func setupLoadingView() {
+        loadingView.backgroundColor = UIColor.gray
+        loadingView.backgroundColor?.withAlphaComponent(0.7)
+        loadingView.clipsToBounds = true
+        loadingView.layer.cornerRadius = 10
+
+        activityIndicatorView.hidesWhenStopped = false
+        activityIndicatorView.activityIndicatorViewStyle = UIActivityIndicatorViewStyle.whiteLarge
+        activityIndicatorView.startAnimating()
+    }
 
     private func setupCardImageView() {
         cardImageView.contentMode = .scaleAspectFill
@@ -100,6 +116,8 @@ class ContactViewController: UIViewController,
         view.addSubview(navigationBar)
         view.addSubview(tableView)
         view.addSubview(cardImageView)
+        view.addSubview(loadingView)
+        loadingView.addSubview(activityIndicatorView)
 
         navigationBar.translatesAutoresizingMaskIntoConstraints = false
         navigationBar.leftAnchor.constraint(equalTo: view.leftAnchor).isActive = true
@@ -118,6 +136,18 @@ class ContactViewController: UIViewController,
         tableView.leftAnchor.constraint(equalTo: view.leftAnchor).isActive = true
         tableView.rightAnchor.constraint(equalTo: view.rightAnchor).isActive = true
         tableView.bottomAnchor.constraint(equalTo: view.bottomAnchor).isActive = true
+
+        loadingView.translatesAutoresizingMaskIntoConstraints = false
+        loadingView.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
+        loadingView.centerYAnchor.constraint(equalTo: view.centerYAnchor).isActive = true
+        loadingView.heightAnchor.constraint(equalToConstant: 80.0).isActive = true
+        loadingView.widthAnchor.constraint(equalToConstant: 80.0).isActive = true
+
+        activityIndicatorView.translatesAutoresizingMaskIntoConstraints = false
+        activityIndicatorView.centerXAnchor.constraint(equalTo: loadingView.centerXAnchor).isActive = true
+        activityIndicatorView.centerYAnchor.constraint(equalTo: loadingView.centerYAnchor).isActive = true
+        activityIndicatorView.heightAnchor.constraint(equalToConstant: 50.0).isActive = true
+        activityIndicatorView.widthAnchor.constraint(equalToConstant: 50.0).isActive = true
     }
 
     private func setup() {
@@ -125,5 +155,6 @@ class ContactViewController: UIViewController,
         setupNavigationBar()
         setupLayout()
         setupTableView()
+        setupLoadingView()
     }
 }
