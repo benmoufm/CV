@@ -11,6 +11,7 @@ import Foundation
 struct ContactControllerViewModelMapper {
     let hasAlreadyCreatedContact: Bool
     let hasAlreadyAddedLinkedInProfile: Bool
+    let isLoading: Bool
 
     func map() -> ContactControllerViewModel {
         return ContactControllerViewModel(
@@ -18,7 +19,8 @@ struct ContactControllerViewModelMapper {
             tableView: ContactTableViewModelMapper(
                 hasAlreadyCreatedContact: hasAlreadyCreatedContact,
                 hasAlreadyAddedLinkedInProfile: hasAlreadyAddedLinkedInProfile
-                ).map()
+                ).map(),
+            isLoading: isLoading
         )
     }
 

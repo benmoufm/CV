@@ -13,4 +13,5 @@ struct ContactControllerViewModel {
 
     let cardImage: UIImage
     let tableView: ContactTableViewModel
+    let isLoading: Bool
 }
