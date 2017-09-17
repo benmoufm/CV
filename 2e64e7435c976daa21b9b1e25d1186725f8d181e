@@ -1,0 +1,44 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "0664b813_d4753d14",
+        "filename": "CV/ContactTableViewCell.swift",
+        "patchSetId": 2
+      },
+      "lineNbr": 37,
+      "author": {
+        "id": 1011781
+      },
+      "writtenOn": "2017-09-17T19:49:27Z",
+      "side": 1,
+      "message": "mets des MARKS",
+      "revId": "2e64e7435c976daa21b9b1e25d1186725f8d181e",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "67c6d08d_2e69c51e",
+        "filename": "CV/ContactTableViewCell.swift",
+        "patchSetId": 2
+      },
+      "lineNbr": 38,
+      "author": {
+        "id": 1011781
+      },
+      "writtenOn": "2017-09-17T19:49:27Z",
+      "side": 1,
+      "message": "garde le même naming dans toutes tes vues comme ça on sait directement à quoi s\u0027attendre rien qu\u0027en voyant le nom de ta méthode",
+      "range": {
+        "startLine": 38,
+        "startChar": 17,
+        "endLine": 38,
+        "endChar": 26
+      },
+      "revId": "2e64e7435c976daa21b9b1e25d1186725f8d181e",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    }
+  ]
+}
