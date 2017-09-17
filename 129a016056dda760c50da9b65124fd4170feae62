@@ -1,0 +1,44 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "4de1c6eb_3a4a8ed3",
+        "filename": "CV/FormationCollectionViewCell.swift",
+        "patchSetId": 1
+      },
+      "lineNbr": 20,
+      "author": {
+        "id": 1011781
+      },
+      "writtenOn": "2017-09-17T19:45:56Z",
+      "side": 1,
+      "message": "white space",
+      "range": {
+        "startLine": 20,
+        "startChar": 0,
+        "endLine": 20,
+        "endChar": 4
+      },
+      "revId": "129a016056dda760c50da9b65124fd4170feae62",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "6537c358_94e32eca",
+        "filename": "CV/FormationCollectionViewDataSource.swift",
+        "patchSetId": 1
+      },
+      "lineNbr": 28,
+      "author": {
+        "id": 1011781
+      },
+      "writtenOn": "2017-09-17T19:45:56Z",
+      "side": 1,
+      "message": "rajoute une ligne vide en dessous",
+      "revId": "129a016056dda760c50da9b65124fd4170feae62",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    }
+  ]
+}
