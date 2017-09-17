@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "310fdf71_8bd4460e",
+        "filename": "CV/FormationViewController.swift",
+        "patchSetId": 1
+      },
+      "lineNbr": 56,
+      "author": {
+        "id": 1011781
+      },
+      "writtenOn": "2017-09-17T19:39:51Z",
+      "side": 1,
+      "message": "Tu n\u0027as pas vraiment besoin de te soucier de ça puisque tu mets le nombre de lignes à 0",
+      "range": {
+        "startLine": 56,
+        "startChar": 8,
+        "endLine": 56,
+        "endChar": 66
+      },
+      "revId": "b5cc6bd725748922f4214cfbe75e3fedf5d0bfa7",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    }
+  ]
+}
