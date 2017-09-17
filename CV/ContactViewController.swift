@@ -14,11 +14,13 @@ class ContactViewController: UIViewController,
     ContactViewContract,
     ContactTableViewDataSourceDelegate {
 
+
     var presenter: ContactPresenter?
     let navigationBar = UINavigationBar()
     var tableView = UITableView()
     let dataSource = ContactTableViewDataSource()
     let cardImageView = UIImageView()
+    let loadingViewContainer = LoadingView()
 
     override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?) {
         super.init(nibName: nil, bundle: nil)
@@ -42,6 +44,7 @@ class ContactViewController: UIViewController,
     // MARK: - ContactViewContract
 
     func configure(with viewModel: ContactControllerViewModel) {
+        loadingViewContainer.loadingView.isHidden = !loadingViewContainer.isLoading
         cardImageView.image = viewModel.cardImage
         dataSource.update(with: viewModel.tableView)
         tableView.reloadData()
@@ -54,6 +57,14 @@ class ContactViewController: UIViewController,
         alert.addAction(UIAlertAction(title: "ok".localized,
                                       style: UIAlertActionStyle.default, handler: nil))
         present(alert, animated: true, completion: nil)
+    }
+
+    func startLoading() {
+        loadingViewContainer.startLoading()
+    }
+
+    func stopLoading() {
+        loadingViewContainer.stopLoading()
     }
 
     // MARK: - ContactTableViewDataSourceDelegate
@@ -76,6 +87,10 @@ class ContactViewController: UIViewController,
     }
 
     // MARK: - Private methods
+
+    private func setupLoadingView() {
+        loadingViewContainer.loadingView.backgroundColor = UIColor.transparentBackgroundColor
+    }
 
     private func setupCardImageView() {
         cardImageView.contentMode = .scaleAspectFill
@@ -100,6 +115,7 @@ class ContactViewController: UIViewController,
         view.addSubview(navigationBar)
         view.addSubview(tableView)
         view.addSubview(cardImageView)
+        view.addSubview(loadingViewContainer.loadingView)
 
         navigationBar.translatesAutoresizingMaskIntoConstraints = false
         navigationBar.leftAnchor.constraint(equalTo: view.leftAnchor).isActive = true
@@ -118,6 +134,12 @@ class ContactViewController: UIViewController,
         tableView.leftAnchor.constraint(equalTo: view.leftAnchor).isActive = true
         tableView.rightAnchor.constraint(equalTo: view.rightAnchor).isActive = true
         tableView.bottomAnchor.constraint(equalTo: view.bottomAnchor).isActive = true
+
+        loadingViewContainer.loadingView.translatesAutoresizingMaskIntoConstraints = false
+        loadingViewContainer.loadingView.rightAnchor.constraint(equalTo: view.rightAnchor).isActive = true
+        loadingViewContainer.loadingView.leftAnchor.constraint(equalTo: view.leftAnchor).isActive = true
+        loadingViewContainer.loadingView.topAnchor.constraint(equalTo: view.topAnchor).isActive = true
+        loadingViewContainer.loadingView.bottomAnchor.constraint(equalTo: view.bottomAnchor).isActive = true
     }
 
     private func setup() {
@@ -125,5 +147,6 @@ class ContactViewController: UIViewController,
         setupNavigationBar()
         setupLayout()
         setupTableView()
+        setupLoadingView()
     }
 }
