@@ -19,6 +19,9 @@ class ContactViewController: UIViewController,
     var tableView = UITableView()
     let dataSource = ContactTableViewDataSource()
     let cardImageView = UIImageView()
+    let loadingView = UIView()
+    let activityIndicatorBackgroundView = UIView()
+    let activityIndicatorView = UIActivityIndicatorView()
 
     override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?) {
         super.init(nibName: nil, bundle: nil)
@@ -43,6 +46,7 @@ class ContactViewController: UIViewController,
 
     func configure(with viewModel: ContactControllerViewModel) {
         cardImageView.image = viewModel.cardImage
+        loadingView.isHidden = !viewModel.isLoading
         dataSource.update(with: viewModel.tableView)
         tableView.reloadData()
     }
@@ -54,6 +58,10 @@ class ContactViewController: UIViewController,
         alert.addAction(UIAlertAction(title: "ok".localized,
                                       style: UIAlertActionStyle.default, handler: nil))
         present(alert, animated: true, completion: nil)
+    }
+
+    func displayLoadingView() {
+        loadingView.isHidden = false
     }
 
     // MARK: - ContactTableViewDataSourceDelegate
@@ -76,6 +84,18 @@ class ContactViewController: UIViewController,
     }
 
     // MARK: - Private methods
+
+    private func setupLoadingView() {
+        loadingView.backgroundColor = UIColor.gray.withAlphaComponent(0.3)
+
+        activityIndicatorBackgroundView.backgroundColor = UIColor.transparentBackgroundColor
+        activityIndicatorBackgroundView.clipsToBounds = true
+        activityIndicatorBackgroundView.layer.cornerRadius = 10
+
+        activityIndicatorView.hidesWhenStopped = false
+        activityIndicatorView.activityIndicatorViewStyle = UIActivityIndicatorViewStyle.whiteLarge
+        activityIndicatorView.startAnimating()
+    }
 
     private func setupCardImageView() {
         cardImageView.contentMode = .scaleAspectFill
@@ -100,6 +120,9 @@ class ContactViewController: UIViewController,
         view.addSubview(navigationBar)
         view.addSubview(tableView)
         view.addSubview(cardImageView)
+        view.addSubview(loadingView)
+        loadingView.addSubview(activityIndicatorBackgroundView)
+        activityIndicatorBackgroundView.addSubview(activityIndicatorView)
 
         navigationBar.translatesAutoresizingMaskIntoConstraints = false
         navigationBar.leftAnchor.constraint(equalTo: view.leftAnchor).isActive = true
@@ -118,6 +141,24 @@ class ContactViewController: UIViewController,
         tableView.leftAnchor.constraint(equalTo: view.leftAnchor).isActive = true
         tableView.rightAnchor.constraint(equalTo: view.rightAnchor).isActive = true
         tableView.bottomAnchor.constraint(equalTo: view.bottomAnchor).isActive = true
+
+        loadingView.translatesAutoresizingMaskIntoConstraints = false
+        loadingView.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
+        loadingView.centerYAnchor.constraint(equalTo: view.centerYAnchor).isActive = true
+        loadingView.topAnchor.constraint(equalTo: view.topAnchor).isActive = true
+        loadingView.bottomAnchor.constraint(equalTo: view.bottomAnchor).isActive = true
+
+        activityIndicatorBackgroundView.translatesAutoresizingMaskIntoConstraints = false
+        activityIndicatorBackgroundView.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
+        activityIndicatorBackgroundView.centerYAnchor.constraint(equalTo: view.centerYAnchor).isActive = true
+        activityIndicatorBackgroundView.heightAnchor.constraint(equalToConstant: 80.0).isActive = true
+        activityIndicatorBackgroundView.widthAnchor.constraint(equalToConstant: 80.0).isActive = true
+
+        activityIndicatorView.translatesAutoresizingMaskIntoConstraints = false
+        activityIndicatorView.centerXAnchor.constraint(equalTo: loadingView.centerXAnchor).isActive = true
+        activityIndicatorView.centerYAnchor.constraint(equalTo: loadingView.centerYAnchor).isActive = true
+        activityIndicatorView.heightAnchor.constraint(equalToConstant: 50.0).isActive = true
+        activityIndicatorView.widthAnchor.constraint(equalToConstant: 50.0).isActive = true
     }
 
     private func setup() {
@@ -125,5 +166,6 @@ class ContactViewController: UIViewController,
         setupNavigationBar()
         setupLayout()
         setupTableView()
+        setupLoadingView()
     }
 }

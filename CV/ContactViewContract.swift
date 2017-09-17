@@ -12,4 +12,5 @@ protocol ContactViewContract: class {
 
     func configure(with viewModel: ContactControllerViewModel)
     func displayPopup(_ title: String, _ message: String)
+    func displayLoadingView()
 }
