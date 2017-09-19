@@ -24,6 +24,12 @@
 		863ECEA11F69378700817C6D /* Results.swift in Sources */ = {isa = PBXBuildFile; fileRef = 863ECEA01F69378700817C6D /* Results.swift */; };
 		863ECEA31F69645500817C6D /* CVError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 863ECEA21F69645500817C6D /* CVError.swift */; };
 		864F5EBA1F714131001E7064 /* FormationCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 864F5EB91F714131001E7064 /* FormationCoordinator.swift */; };
+		864F5ECB1F71512D001E7064 /* FormationDetailControllerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 864F5EC51F71512D001E7064 /* FormationDetailControllerViewModel.swift */; };
+		864F5ECC1F71512D001E7064 /* FormationDetailControllerViewModelMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 864F5EC61F71512D001E7064 /* FormationDetailControllerViewModelMapper.swift */; };
+		864F5ECD1F71512D001E7064 /* FormationDetailPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 864F5EC71F71512D001E7064 /* FormationDetailPresenter.swift */; };
+		864F5ECE1F71512D001E7064 /* FormationDetailPresenterImplementation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 864F5EC81F71512D001E7064 /* FormationDetailPresenterImplementation.swift */; };
+		864F5ECF1F71512D001E7064 /* FormationDetailViewContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 864F5EC91F71512D001E7064 /* FormationDetailViewContract.swift */; };
+		864F5ED01F71512D001E7064 /* FormationDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 864F5ECA1F71512D001E7064 /* FormationDetailViewController.swift */; };
 		865F30F61F6A75F400F41B5C /* FormationControllerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 865F30F01F6A75F400F41B5C /* FormationControllerViewModel.swift */; };
 		865F30F71F6A75F400F41B5C /* FormationControllerViewModelMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 865F30F11F6A75F400F41B5C /* FormationControllerViewModelMapper.swift */; };
 		865F30F81F6A75F400F41B5C /* FormationPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 865F30F21F6A75F400F41B5C /* FormationPresenter.swift */; };
@@ -78,6 +84,12 @@
 		863ECEA01F69378700817C6D /* Results.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Results.swift; sourceTree = "<group>"; };
 		863ECEA21F69645500817C6D /* CVError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CVError.swift; sourceTree = "<group>"; };
 		864F5EB91F714131001E7064 /* FormationCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FormationCoordinator.swift; sourceTree = "<group>"; };
+		864F5EC51F71512D001E7064 /* FormationDetailControllerViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FormationDetailControllerViewModel.swift; sourceTree = "<group>"; };
+		864F5EC61F71512D001E7064 /* FormationDetailControllerViewModelMapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FormationDetailControllerViewModelMapper.swift; sourceTree = "<group>"; };
+		864F5EC71F71512D001E7064 /* FormationDetailPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FormationDetailPresenter.swift; sourceTree = "<group>"; };
+		864F5EC81F71512D001E7064 /* FormationDetailPresenterImplementation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FormationDetailPresenterImplementation.swift; sourceTree = "<group>"; };
+		864F5EC91F71512D001E7064 /* FormationDetailViewContract.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FormationDetailViewContract.swift; sourceTree = "<group>"; };
+		864F5ECA1F71512D001E7064 /* FormationDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FormationDetailViewController.swift; sourceTree = "<group>"; };
 		865F30F01F6A75F400F41B5C /* FormationControllerViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FormationControllerViewModel.swift; sourceTree = "<group>"; };
 		865F30F11F6A75F400F41B5C /* FormationControllerViewModelMapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FormationControllerViewModelMapper.swift; sourceTree = "<group>"; };
 		865F30F21F6A75F400F41B5C /* FormationPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FormationPresenter.swift; sourceTree = "<group>"; };
@@ -190,6 +202,67 @@
 			isa = PBXGroup;
 			children = (
 				860AE2A21F574305004B9F65 /* ContactViewController.swift */,
+			);
+			name = ViewController;
+			sourceTree = "<group>";
+		};
+		864F5EBE1F7150CE001E7064 /* FormationDetail */ = {
+			isa = PBXGroup;
+			children = (
+				864F5EC11F7150FF001E7064 /* Model */,
+				864F5EC01F7150F8001E7064 /* UI */,
+				864F5EC91F71512D001E7064 /* FormationDetailViewContract.swift */,
+				864F5EBF1F7150E5001E7064 /* Presenter */,
+			);
+			name = FormationDetail;
+			sourceTree = "<group>";
+		};
+		864F5EBF1F7150E5001E7064 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				864F5EC71F71512D001E7064 /* FormationDetailPresenter.swift */,
+				864F5EC81F71512D001E7064 /* FormationDetailPresenterImplementation.swift */,
+			);
+			name = Presenter;
+			sourceTree = "<group>";
+		};
+		864F5EC01F7150F8001E7064 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				864F5EC41F715118001E7064 /* ViewController */,
+			);
+			name = UI;
+			sourceTree = "<group>";
+		};
+		864F5EC11F7150FF001E7064 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				864F5EC31F71510E001E7064 /* Mapper */,
+				864F5EC21F715107001E7064 /* ViewModel */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		864F5EC21F715107001E7064 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				864F5EC51F71512D001E7064 /* FormationDetailControllerViewModel.swift */,
+			);
+			name = ViewModel;
+			sourceTree = "<group>";
+		};
+		864F5EC31F71510E001E7064 /* Mapper */ = {
+			isa = PBXGroup;
+			children = (
+				864F5EC61F71512D001E7064 /* FormationDetailControllerViewModelMapper.swift */,
+			);
+			name = Mapper;
+			sourceTree = "<group>";
+		};
+		864F5EC41F715118001E7064 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				864F5ECA1F71512D001E7064 /* FormationDetailViewController.swift */,
 			);
 			name = ViewController;
 			sourceTree = "<group>";
@@ -368,6 +441,7 @@
 				86E440421F4A16970040BD55 /* Shared */,
 				86E4402F1F4A13C70040BD55 /* Home */,
 				865F30E91F6A74CC00F41B5C /* Formation */,
+				864F5EBE1F7150CE001E7064 /* FormationDetail */,
 				860AE2961F5741BC004B9F65 /* Contact */,
 			);
 			name = App;
@@ -553,30 +627,36 @@
 				867DA5231F5D57CF000C5AC2 /* TemplateMailRepository.swift in Sources */,
 				860AE2A51F574305004B9F65 /* ContactPresenter.swift in Sources */,
 				867FF3211F6C34680085A80D /* FormationCollectionViewModelMapper.swift in Sources */,
+				864F5ECB1F71512D001E7064 /* FormationDetailControllerViewModel.swift in Sources */,
 				867DA5221F5D57CF000C5AC2 /* MailRepository.swift in Sources */,
 				860AE2A41F574305004B9F65 /* ContactControllerViewModelMapper.swift in Sources */,
 				86E4403C1F4A163F0040BD55 /* HomeControllerViewModel.swift in Sources */,
 				864F5EBA1F714131001E7064 /* FormationCoordinator.swift in Sources */,
+				864F5ECE1F71512D001E7064 /* FormationDetailPresenterImplementation.swift in Sources */,
 				867FF32C1F6C3BED0085A80D /* UICollectionView+Registerable.swift in Sources */,
 				86E4403F1F4A163F0040BD55 /* HomePresenterImplementation.swift in Sources */,
 				865F30F81F6A75F400F41B5C /* FormationPresenter.swift in Sources */,
+				864F5ECC1F71512D001E7064 /* FormationDetailControllerViewModelMapper.swift in Sources */,
 				860AE2B11F599DE5004B9F65 /* ContactTableViewCell.swift in Sources */,
 				867FF3281F6C39DD0085A80D /* FormationCollectionViewCell.swift in Sources */,
 				86E440401F4A163F0040BD55 /* HomeViewContract.swift in Sources */,
 				860AE2B61F59B3A1004B9F65 /* ContactTableViewModelMapper.swift in Sources */,
 				860AE2A61F574305004B9F65 /* ContactPresenterImplementation.swift in Sources */,
+				864F5ED01F71512D001E7064 /* FormationDetailViewController.swift in Sources */,
 				860AE2AF1F599D56004B9F65 /* ContactTableViewDataSource.swift in Sources */,
 				865F30FB1F6A75F400F41B5C /* FormationViewController.swift in Sources */,
 				867DA51F1F5CA536000C5AC2 /* RepositoryFactory.swift in Sources */,
 				860AE2A71F574305004B9F65 /* ContactViewContract.swift in Sources */,
 				865F30F91F6A75F400F41B5C /* FormationPresenterImplementation.swift in Sources */,
 				867FF3251F6C38E70085A80D /* FormationCollectionViewDataSource.swift in Sources */,
+				864F5ECD1F71512D001E7064 /* FormationDetailPresenter.swift in Sources */,
 				860AE2B81F59B40D004B9F65 /* ContactCellViewModelMapper.swift in Sources */,
 				860AE2A81F574305004B9F65 /* ContactViewController.swift in Sources */,
 				86E4404B1F4AE7810040BD55 /* Color.swift in Sources */,
 				865F30F61F6A75F400F41B5C /* FormationControllerViewModel.swift in Sources */,
 				865F30F71F6A75F400F41B5C /* FormationControllerViewModelMapper.swift in Sources */,
 				867FF3231F6C36810085A80D /* FormationCellViewModelMapper.swift in Sources */,
+				864F5ECF1F71512D001E7064 /* FormationDetailViewContract.swift in Sources */,
 				863ECEA11F69378700817C6D /* Results.swift in Sources */,
 				86E4402B1F4A0FE70040BD55 /* MainCoordinator.swift in Sources */,
 				86E440411F4A163F0040BD55 /* HomeViewController.swift in Sources */,
