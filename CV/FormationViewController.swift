@@ -10,7 +10,8 @@ import Foundation
 import UIKit
 
 class FormationViewController: UIViewController,
-    FormationViewContract {
+    FormationViewContract,
+    FormationCollectionViewDataSourceDelegate {
 
     var presenter: FormationPresenter?
     let navigationBar = UINavigationBar()
@@ -46,6 +47,13 @@ class FormationViewController: UIViewController,
         collectionView.reloadData()
     }
 
+    // MARK: - FormationCollectionViewDataSourceDelegate
+
+    func formationCollectionViewDataSource(_ dataSource: FormationCollectionViewDataSource) {
+        let formationDetailViewController = ViewControllerFactory.sharedInstance.formationDetailViewController()
+        navigationController?.pushViewController(formationDetailViewController, animated: true)
+    }
+
     // MARK: - Private methods
 
     private func setupNavigationBar() {
@@ -65,6 +73,7 @@ class FormationViewController: UIViewController,
         layout.itemSize = CGSize(width: 60, height: 50)
         collectionView.backgroundColor = view.backgroundColor
         dataSource.configure(collectionView)
+        dataSource.delegate = self
         collectionView.delegate = dataSource
         collectionView.dataSource = dataSource
     }
