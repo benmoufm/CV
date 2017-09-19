@@ -28,6 +28,13 @@ final class ViewControllerFactory {
         return formationViewController
     }
 
+    func formationDetailViewController() -> FormationDetailViewController {
+        let formationDetailViewController = FormationDetailViewController()
+        let presenter = FormationDetailPresenterImplementation(viewContract: formationDetailViewController)
+        formationDetailViewController.presenter = presenter
+        return formationDetailViewController
+    }
+
     func contactViewController() -> ContactViewController {
         let contactViewController = ContactViewController()
         let presenter = ContactPresenterImplementation(
