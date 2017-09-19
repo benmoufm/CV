@@ -9,9 +9,15 @@
 import Foundation
 import UIKit
 
+protocol FormationCollectionViewDataSourceDelegate: class {
+    func formationCollectionViewDataSource(_ dataSource: FormationCollectionViewDataSource)
+}
+
 class FormationCollectionViewDataSource: NSObject,
     UICollectionViewDelegate,
     UICollectionViewDataSource {
+
+    weak var delegate: FormationCollectionViewDataSourceDelegate?
 
     var viewModel: FormationCollectionViewModel = .empty
 
@@ -40,6 +46,6 @@ class FormationCollectionViewDataSource: NSObject,
     // MARK: - UITableViewDelegate
 
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        // TODO : Add actions
+        delegate?.formationCollectionViewDataSource(self)
     }
 }
