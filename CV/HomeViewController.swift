@@ -56,7 +56,6 @@ class HomeViewController: UIViewController, HomeViewContract {
         navigationBar.setItems([navigationItem],
                                animated: false)
         navigationBar.barTintColor = UIColor.mainColor
-        navigationBar.alpha = 0.7
         navigationBar.titleTextAttributes =
             [NSForegroundColorAttributeName: UIColor.navigationTitleTextColor]
     }
