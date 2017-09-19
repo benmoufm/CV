@@ -49,11 +49,8 @@ class FormationViewController: UIViewController,
     // MARK: - Private methods
 
     private func setupNavigationBar() {
-        navigationBar.setItems([navigationItem],
-                               animated: false)
-        navigationBar.barTintColor = UIColor.mainColor
-        navigationBar.alpha = 0.7
-        navigationBar.titleTextAttributes =
+        navigationController?.navigationBar.barTintColor = UIColor.mainColor
+        navigationController?.navigationBar.titleTextAttributes =
             [NSForegroundColorAttributeName: UIColor.navigationTitleTextColor]
     }
 
