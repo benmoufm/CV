@@ -16,6 +16,9 @@
 
 // FORMATION DETAIL
 "formation_detail_navigation_title_text" = "Formation Détail";
+"formation_detail_title" = "Titre école";
+"formation_detail_information" = "Information pratique école";
+"formation_detail_history" = "Histoire de l'école";
 
 // CONTACT
 "contact_navigation_title_text" = "Contact";

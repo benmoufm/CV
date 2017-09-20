@@ -7,7 +7,12 @@
 //
 
 import Foundation
+import UIKit
 
 struct FormationDetailControllerViewModel {
 
+    let titleString: String
+    let image: UIImage
+    let informationString: String
+    let historyString: String
 }
