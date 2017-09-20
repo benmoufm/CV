@@ -11,7 +11,11 @@ import Foundation
 struct FormationDetailControllerViewModelMapper {
 
     func map() -> FormationDetailControllerViewModel {
-        return FormationDetailControllerViewModel()
+        return FormationDetailControllerViewModel(
+            titleString: "formation_detail_title".localized,
+            image: #imageLiteral(resourceName: "pictureCV"),
+            informationString: "formation_detail_information".localized,
+            historyString: "formation_detail_history".localized)
     }
 
 }
