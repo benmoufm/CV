@@ -1,0 +1,50 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "85775392_849a8f4b",
+        "filename": "CV/FormationCoordinator.swift",
+        "patchSetId": 1
+      },
+      "lineNbr": 17,
+      "author": {
+        "id": 1011781
+      },
+      "writtenOn": "2017-09-20T12:24:42Z",
+      "side": 1,
+      "message": "whiteMark",
+      "range": {
+        "startLine": 17,
+        "startChar": 0,
+        "endLine": 17,
+        "endChar": 4
+      },
+      "revId": "29fe59ffcea881a03a9e681d09cf69e797d7daf7",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "a7a26017_459916de",
+        "filename": "CV/FormationCoordinator.swift",
+        "patchSetId": 1
+      },
+      "lineNbr": 26,
+      "author": {
+        "id": 1011781
+      },
+      "writtenOn": "2017-09-20T12:24:42Z",
+      "side": 1,
+      "message": "false ici tu veux pas avoir une animation c\u0027est pour set le rootViewController.",
+      "range": {
+        "startLine": 26,
+        "startChar": 83,
+        "endLine": 26,
+        "endChar": 87
+      },
+      "revId": "29fe59ffcea881a03a9e681d09cf69e797d7daf7",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    }
+  ]
+}
