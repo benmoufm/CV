@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "4ac0205c_0a44849e",
+        "filename": "CV/CVError.swift",
+        "patchSetId": 3
+      },
+      "lineNbr": 20,
+      "author": {
+        "id": 1011781
+      },
+      "writtenOn": "2017-09-20T12:28:57Z",
+      "side": 1,
+      "message": "ne fait pas une extension fait direct \nenum CVError: LocalizedError {\n   case\n   case \n   case\n\n   var ....\n\n}",
+      "range": {
+        "startLine": 18,
+        "startChar": 0,
+        "endLine": 20,
+        "endChar": 17
+      },
+      "revId": "ed54188181a40189cd1d3b05b6267c3597ae3fcf",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    }
+  ]
+}
