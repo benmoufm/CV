@@ -54,6 +54,10 @@ class FormationViewController: UIViewController,
         navigationController?.pushViewController(formationDetailViewController, animated: true)
     }
 
+    func reloadFormationCollectionViewDataSource(_ dataSource: FormationCollectionViewDataSource) {
+        collectionView.reloadData()
+    }
+
     // MARK: - Private methods
 
     private func setupNavigationBar() {
@@ -70,7 +74,8 @@ class FormationViewController: UIViewController,
 
     private func setupCollectionView() {
         layout.sectionInset = UIEdgeInsets(top: 20, left: 10, bottom: 10, right: 10)
-        layout.itemSize = CGSize(width: 60, height: 50)
+        layout.itemSize = CGSize(width: 100, height: 100)
+        layout.scrollDirection = .horizontal
         collectionView.backgroundColor = view.backgroundColor
         dataSource.configure(collectionView)
         dataSource.delegate = self
@@ -90,8 +95,8 @@ class FormationViewController: UIViewController,
         collectionView.translatesAutoresizingMaskIntoConstraints = false
         collectionView.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
         collectionView.topAnchor.constraint(equalTo: navigationBar.bottomAnchor).isActive = true
-        collectionView.heightAnchor.constraint(equalToConstant: 100.0).isActive = true
-        collectionView.widthAnchor.constraint(equalTo: view.widthAnchor, multiplier: 0.85).isActive = true
+        collectionView.heightAnchor.constraint(equalToConstant: 130.0).isActive = true
+        collectionView.widthAnchor.constraint(equalTo: view.widthAnchor).isActive = true
 
         formationIntroductionLabel.translatesAutoresizingMaskIntoConstraints = false
         formationIntroductionLabel.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
