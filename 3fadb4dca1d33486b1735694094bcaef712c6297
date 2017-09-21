@@ -1,0 +1,50 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "b2921f6a_7b6bea38",
+        "filename": "CV/Color.swift",
+        "patchSetId": 5
+      },
+      "lineNbr": 19,
+      "author": {
+        "id": 1011781
+      },
+      "writtenOn": "2017-09-21T16:03:00Z",
+      "side": 1,
+      "message": "mauvais naming",
+      "range": {
+        "startLine": 19,
+        "startChar": 15,
+        "endLine": 19,
+        "endChar": 28
+      },
+      "revId": "3fadb4dca1d33486b1735694094bcaef712c6297",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "4fa57546_accfcfc2",
+        "filename": "CV/ContactPresenterImplementation.swift",
+        "patchSetId": 5
+      },
+      "lineNbr": 68,
+      "author": {
+        "id": 1011781
+      },
+      "writtenOn": "2017-09-21T16:03:00Z",
+      "side": 1,
+      "message": "tu dismiss pas le loader si il y a une erreur?",
+      "range": {
+        "startLine": 68,
+        "startChar": 16,
+        "endLine": 68,
+        "endChar": 33
+      },
+      "revId": "3fadb4dca1d33486b1735694094bcaef712c6297",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    }
+  ]
+}
