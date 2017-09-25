@@ -99,6 +99,9 @@ class ContactViewController: UIViewController,
         dataSource.delegate = self
         tableView.delegate = dataSource
         tableView.dataSource = dataSource
+        let footerView = UIView()
+        footerView.backgroundColor = UIColor.backgroundColor
+        tableView.tableFooterView = footerView
     }
 
     private func setupNavigationBar() {
