@@ -1,0 +1,159 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "1b64872d_e8476db2",
+        "filename": "CV/ContactViewContract.swift",
+        "patchSetId": 8
+      },
+      "lineNbr": 15,
+      "author": {
+        "id": 1011781
+      },
+      "writtenOn": "2017-09-25T10:57:44Z",
+      "side": 1,
+      "message": "enlève ça",
+      "range": {
+        "startLine": 15,
+        "startChar": 0,
+        "endLine": 15,
+        "endChar": 31
+      },
+      "revId": "b1f1de154250abaf6d2c9d9a3a2e5aecd975adf5",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "7464f75c_50c7a644",
+        "filename": "CV/ContactViewController.swift",
+        "patchSetId": 8
+      },
+      "lineNbr": 17,
+      "author": {
+        "id": 1011781
+      },
+      "writtenOn": "2017-09-25T10:57:44Z",
+      "side": 1,
+      "message": "ligne vide",
+      "revId": "b1f1de154250abaf6d2c9d9a3a2e5aecd975adf5",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "949dc63a_484f8dea",
+        "filename": "CV/ContactViewController.swift",
+        "patchSetId": 8
+      },
+      "lineNbr": 23,
+      "author": {
+        "id": 1011781
+      },
+      "writtenOn": "2017-09-25T10:57:44Z",
+      "side": 1,
+      "message": "appelle ça loadingView  pourquoi container?",
+      "range": {
+        "startLine": 23,
+        "startChar": 8,
+        "endLine": 23,
+        "endChar": 28
+      },
+      "revId": "b1f1de154250abaf6d2c9d9a3a2e5aecd975adf5",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "7c7f0f50_4417b4df",
+        "filename": "CV/ContactViewController.swift",
+        "patchSetId": 8
+      },
+      "lineNbr": 47,
+      "author": {
+        "id": 1011781
+      },
+      "writtenOn": "2017-09-25T10:57:44Z",
+      "side": 1,
+      "message": "il faut pas faire ça ici mais dans tes méthodes start and stop loading",
+      "range": {
+        "startLine": 47,
+        "startChar": 8,
+        "endLine": 47,
+        "endChar": 83
+      },
+      "revId": "b1f1de154250abaf6d2c9d9a3a2e5aecd975adf5",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "27958607_0120085b",
+        "filename": "CV/ContactViewController.swift",
+        "patchSetId": 8
+      },
+      "lineNbr": 67,
+      "author": {
+        "id": 1011781
+      },
+      "writtenOn": "2017-09-25T10:57:44Z",
+      "side": 1,
+      "message": "ici il faut que tu set a hidden ou pas ta loadingView en plus de faire ça",
+      "range": {
+        "startLine": 63,
+        "startChar": 0,
+        "endLine": 67,
+        "endChar": 42
+      },
+      "revId": "b1f1de154250abaf6d2c9d9a3a2e5aecd975adf5",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "e2874000_3c9f7dd9",
+        "filename": "CV/LoadingView.swift",
+        "patchSetId": 8
+      },
+      "lineNbr": 12,
+      "author": {
+        "id": 1011781
+      },
+      "writtenOn": "2017-09-25T10:57:44Z",
+      "side": 1,
+      "message": "Appelle ça loadable plutôt",
+      "range": {
+        "startLine": 12,
+        "startChar": 9,
+        "endLine": 12,
+        "endChar": 28
+      },
+      "revId": "b1f1de154250abaf6d2c9d9a3a2e5aecd975adf5",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "8fce881e_1217c8b2",
+        "filename": "CV/LoadingView.swift",
+        "patchSetId": 8
+      },
+      "lineNbr": 15,
+      "author": {
+        "id": 1011781
+      },
+      "writtenOn": "2017-09-25T10:57:44Z",
+      "side": 1,
+      "message": "crée ça dans un fichier à part",
+      "range": {
+        "startLine": 12,
+        "startChar": 0,
+        "endLine": 15,
+        "endChar": 1
+      },
+      "revId": "b1f1de154250abaf6d2c9d9a3a2e5aecd975adf5",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    }
+  ]
+}
