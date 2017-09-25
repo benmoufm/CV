@@ -1,0 +1,50 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "96c779b3_2b1148c8",
+        "filename": "CV/ContactControllerViewModelMapper.swift",
+        "patchSetId": 9
+      },
+      "lineNbr": 14,
+      "author": {
+        "id": 1011781
+      },
+      "writtenOn": "2017-09-25T13:08:19Z",
+      "side": 1,
+      "message": "pas ici",
+      "range": {
+        "startLine": 14,
+        "startChar": 1,
+        "endLine": 14,
+        "endChar": 23
+      },
+      "revId": "d3bd843682ca2378393d08a694ad5202c30b11b2",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "40dfb103_0e3cb909",
+        "filename": "CV/ContactPresenterImplementation.swift",
+        "patchSetId": 9
+      },
+      "lineNbr": 20,
+      "author": {
+        "id": 1011781
+      },
+      "writtenOn": "2017-09-25T13:08:19Z",
+      "side": 1,
+      "message": "tu n\u0027en a pas vriament besoin",
+      "range": {
+        "startLine": 20,
+        "startChar": 4,
+        "endLine": 20,
+        "endChar": 33
+      },
+      "revId": "d3bd843682ca2378393d08a694ad5202c30b11b2",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    }
+  ]
+}
