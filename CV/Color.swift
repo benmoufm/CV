@@ -15,4 +15,6 @@ extension UIColor {
     static let secondaryColor = UIColor.red
     static let backgroundColor = UIColor.white
     static let textColor = UIColor.gray
+    static let navigationTitleTextColor = UIColor.white
+    static let transparentBackgroundColor = UIColor.gray.withAlphaComponent(0.7)
 }

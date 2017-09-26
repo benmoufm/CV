@@ -6,6 +6,9 @@
   Copyright © 2017 Mélodie Benmouffek. All rights reserved.
 */
 
+// HOME
 "home_welcome_text" = "Hello !\nMy name is Mélodie BENMOUFFEK and I am searching for a position of iOS mobile developper.";
-
 "home_navigation_title_text" = "Home";
+
+// CONTACT
+"contact_navigation_title_text" = "Contact";

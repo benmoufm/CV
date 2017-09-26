@@ -18,7 +18,11 @@ class MainCoordinator: Coordinator {
     }
 
     func start() {
-        let viewController = ViewControllerFactory.sharedInstance.homeViewController()
-        window.rootViewController = viewController
+        let tabBarController = UITabBarController()
+        tabBarController.view.tintColor = UIColor.mainColor
+        let homeViewController = ViewControllerFactory.sharedInstance.homeViewController()
+        let contactViewController = ViewControllerFactory.sharedInstance.contactViewController()
+        tabBarController.viewControllers = [homeViewController, contactViewController]
+        window.rootViewController = tabBarController
     }
 }

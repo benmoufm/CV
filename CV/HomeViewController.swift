@@ -22,6 +22,8 @@ class HomeViewController: UIViewController, HomeViewContract {
     override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?) {
         super.init(nibName: nil, bundle: nil)
         navigationItem.title = "home_navigation_title_text".localized
+        tabBarItem.title = "home_navigation_title_text".localized
+        tabBarItem.image = #imageLiteral(resourceName: "homeIcon")
     }
 
     required init?(coder aDecoder: NSCoder) {
@@ -55,7 +57,8 @@ class HomeViewController: UIViewController, HomeViewContract {
                                animated: false)
         navigationBar.barTintColor = UIColor.mainColor
         navigationBar.alpha = 0.7
-        navigationBar.titleTextAttributes = [NSForegroundColorAttributeName: UIColor.white]
+        navigationBar.titleTextAttributes =
+            [NSForegroundColorAttributeName: UIColor.navigationTitleTextColor]
     }
 
     private func setupCVPictureImage() {
