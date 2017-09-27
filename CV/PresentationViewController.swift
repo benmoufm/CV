@@ -53,6 +53,16 @@ class PresentationViewController: UIViewController,
         thirdPictureImageView.image = viewModel.thirdPictureImage
     }
 
+    // MARK: - Animation on gesture recognition
+
+    func moveImageToTheRight() {
+        print("TODO : Animate to the right")
+    }
+
+    func moveImageToTheLeft() {
+        print("TODO : Animate to the left")
+    }
+
     // MARK: - Private methods
 
     private func setupNavigationBar() {
@@ -65,14 +75,23 @@ class PresentationViewController: UIViewController,
 
     private func setupFirstActivityImage() {
         firstPictureImageView.contentMode = .scaleAspectFill
+        let tapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(moveImageToTheRight))
+        firstPictureImageView.isUserInteractionEnabled = true
+        firstPictureImageView.addGestureRecognizer(tapGestureRecognizer)
     }
 
     private func setupSecondActivityImage() {
         secondPictureImageView.contentMode = .scaleAspectFill
+        let tapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(moveImageToTheLeft))
+        secondPictureImageView.isUserInteractionEnabled = true
+        secondPictureImageView.addGestureRecognizer(tapGestureRecognizer)
     }
 
     private func setupThirdActivityImage() {
         thirdPictureImageView.contentMode = .scaleAspectFill
+        let tapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(moveImageToTheRight))
+        thirdPictureImageView.isUserInteractionEnabled = true
+        thirdPictureImageView.addGestureRecognizer(tapGestureRecognizer)
     }
 
     private func setupLayout() {
