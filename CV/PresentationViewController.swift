@@ -53,6 +53,16 @@ class PresentationViewController: UIViewController,
         thirdActivityButton.setImage(viewModel.thirdPictureImage, for: .normal)
     }
 
+    // MARK: - Animation on gesture recognition
+
+    func moveImageToTheRight() {
+        print("TODO : Animate to the right")
+    }
+
+    func moveImageToTheLeft() {
+        print("TODO : Animate to the left")
+    }
+
     // MARK: - Private methods
 
     private func setupNavigationBar() {
@@ -64,14 +74,23 @@ class PresentationViewController: UIViewController,
 
     private func setupFirstActivityButton() {
         firstActivityButton.imageView?.contentMode = .scaleAspectFill
+        firstActivityButton.addTarget(self,
+                                      action: #selector(moveImageToTheRight),
+                                      for: UIControlEvents.touchUpInside)
     }
 
     private func setupSecondActivityButton() {
         secondActivityButton.imageView?.contentMode = .scaleAspectFill
+        secondActivityButton.addTarget(self,
+                                      action: #selector(moveImageToTheLeft),
+                                      for: UIControlEvents.touchUpInside)
     }
 
     private func setupThirdActivityButton() {
         thirdActivityButton.imageView?.contentMode = .scaleAspectFill
+        thirdActivityButton.addTarget(self,
+                                      action: #selector(moveImageToTheRight),
+                                      for: UIControlEvents.touchUpInside)
     }
 
     private func setupLayout() {
