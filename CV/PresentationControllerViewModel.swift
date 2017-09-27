@@ -7,7 +7,11 @@
 //
 
 import Foundation
+import UIKit
 
 struct PresentationControllerViewModel {
 
+    let firstPictureImage: UIImage
+    let secondPictureImage: UIImage
+    let thirdPictureImage: UIImage
 }

@@ -14,6 +14,9 @@ class PresentationViewController: UIViewController,
 
     var presenter: PresentationPresenter?
     let navigationBar = UINavigationBar()
+    let firstActivityButton = UIButton()
+    let secondActivityButton = UIButton()
+    let thirdActivityButton = UIButton()
 
     override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?) {
         super.init(nibName: nil, bundle: nil)
@@ -35,10 +38,19 @@ class PresentationViewController: UIViewController,
         presenter?.start()
     }
 
+    override func viewDidLayoutSubviews() {
+        super.viewDidLayoutSubviews()
+        firstActivityButton.imageView?.rounded()
+        secondActivityButton.imageView?.rounded()
+        thirdActivityButton.imageView?.rounded()
+    }
+
     // MARK: - PresentationViewContract
 
     func configure(with viewModel: PresentationControllerViewModel) {
-        // TODO: (Mélodie Benmouffek) 27/09/2017 Configure view
+        firstActivityButton.setImage(viewModel.firstPictureImage, for: .normal)
+        secondActivityButton.setImage(viewModel.secondPictureImage, for: .normal)
+        thirdActivityButton.setImage(viewModel.thirdPictureImage, for: .normal)
     }
 
     // MARK: - Private methods
@@ -50,17 +62,74 @@ class PresentationViewController: UIViewController,
             [NSForegroundColorAttributeName: UIColor.navigationTitleTextColor]
     }
 
+    private func setupFirstActivityButton() {
+        firstActivityButton.imageView?.contentMode = .scaleAspectFill
+    }
+
+    private func setupSecondActivityButton() {
+        secondActivityButton.imageView?.contentMode = .scaleAspectFill
+    }
+
+    private func setupThirdActivityButton() {
+        thirdActivityButton.imageView?.contentMode = .scaleAspectFill
+    }
+
     private func setupLayout() {
         view.addSubview(navigationBar)
+        view.addSubview(firstActivityButton)
+        view.addSubview(secondActivityButton)
+        view.addSubview(thirdActivityButton)
 
         navigationBar.translatesAutoresizingMaskIntoConstraints = false
         navigationBar.widthAnchor.constraint(equalTo: view.widthAnchor).isActive = true
         navigationBar.heightAnchor.constraint(equalToConstant: 60.0).isActive = true
+
+        secondActivityButton.translatesAutoresizingMaskIntoConstraints = false
+        secondActivityButton.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
+        secondActivityButton.centerYAnchor.constraint(equalTo: view.centerYAnchor).isActive = true
+        secondActivityButton.leftAnchor.constraint(equalTo: view.leftAnchor).isActive = true
+        secondActivityButton.rightAnchor.constraint(equalTo: view.rightAnchor).isActive = true
+        secondActivityButton.heightAnchor.constraint(equalToConstant: 100.0).isActive = true
+
+        secondActivityButton.imageView?.translatesAutoresizingMaskIntoConstraints = false
+        secondActivityButton.imageView?.centerXAnchor.constraint(equalTo: secondActivityButton.centerXAnchor).isActive = true
+        secondActivityButton.imageView?.centerYAnchor.constraint(equalTo: secondActivityButton.centerYAnchor).isActive = true
+        secondActivityButton.imageView?.widthAnchor.constraint(equalToConstant: 100.0).isActive = true
+        secondActivityButton.imageView?.heightAnchor.constraint(equalToConstant: 100.0).isActive = true
+
+        firstActivityButton.translatesAutoresizingMaskIntoConstraints = false
+        firstActivityButton.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
+        firstActivityButton.bottomAnchor.constraint(equalTo: secondActivityButton.topAnchor, constant: -50.0).isActive = true
+        firstActivityButton.leftAnchor.constraint(equalTo: view.leftAnchor).isActive = true
+        firstActivityButton.rightAnchor.constraint(equalTo: view.rightAnchor).isActive = true
+        firstActivityButton.heightAnchor.constraint(equalToConstant: 100.0).isActive = true
+
+        firstActivityButton.imageView?.translatesAutoresizingMaskIntoConstraints = false
+        firstActivityButton.imageView?.centerXAnchor.constraint(equalTo: firstActivityButton.centerXAnchor).isActive = true
+        firstActivityButton.imageView?.centerYAnchor.constraint(equalTo: firstActivityButton.centerYAnchor).isActive = true
+        firstActivityButton.imageView?.widthAnchor.constraint(equalToConstant: 100.0).isActive = true
+        firstActivityButton.imageView?.heightAnchor.constraint(equalToConstant: 100.0).isActive = true
+
+        thirdActivityButton.translatesAutoresizingMaskIntoConstraints = false
+        thirdActivityButton.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
+        thirdActivityButton.topAnchor.constraint(equalTo: secondActivityButton.bottomAnchor, constant: 50.0).isActive = true
+        thirdActivityButton.leftAnchor.constraint(equalTo: view.leftAnchor).isActive = true
+        thirdActivityButton.rightAnchor.constraint(equalTo: view.rightAnchor).isActive = true
+        thirdActivityButton.heightAnchor.constraint(equalToConstant: 100.0).isActive = true
+
+        thirdActivityButton.imageView?.translatesAutoresizingMaskIntoConstraints = false
+        thirdActivityButton.imageView?.centerXAnchor.constraint(equalTo: thirdActivityButton.centerXAnchor).isActive = true
+        thirdActivityButton.imageView?.centerYAnchor.constraint(equalTo: thirdActivityButton.centerYAnchor).isActive = true
+        thirdActivityButton.imageView?.widthAnchor.constraint(equalToConstant: 100.0).isActive = true
+        thirdActivityButton.imageView?.heightAnchor.constraint(equalToConstant: 100.0).isActive = true
     }
 
     private func setup() {
         view.backgroundColor = UIColor.backgroundColor
         setupNavigationBar()
+        setupFirstActivityButton()
+        setupSecondActivityButton()
+        setupThirdActivityButton()
         setupLayout()
     }
 }
