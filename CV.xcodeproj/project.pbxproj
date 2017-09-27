@@ -24,6 +24,19 @@
 		8622BBD51F7904E2000642E8 /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8622BBD41F7904E2000642E8 /* LoadingView.swift */; };
 		863ECEA11F69378700817C6D /* Results.swift in Sources */ = {isa = PBXBuildFile; fileRef = 863ECEA01F69378700817C6D /* Results.swift */; };
 		863ECEA31F69645500817C6D /* CVError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 863ECEA21F69645500817C6D /* CVError.swift */; };
+		864F5EBA1F714131001E7064 /* FormationCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 864F5EB91F714131001E7064 /* FormationCoordinator.swift */; };
+		864F5ECB1F71512D001E7064 /* FormationDetailControllerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 864F5EC51F71512D001E7064 /* FormationDetailControllerViewModel.swift */; };
+		864F5ECC1F71512D001E7064 /* FormationDetailControllerViewModelMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 864F5EC61F71512D001E7064 /* FormationDetailControllerViewModelMapper.swift */; };
+		864F5ECD1F71512D001E7064 /* FormationDetailPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 864F5EC71F71512D001E7064 /* FormationDetailPresenter.swift */; };
+		864F5ECE1F71512D001E7064 /* FormationDetailPresenterImplementation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 864F5EC81F71512D001E7064 /* FormationDetailPresenterImplementation.swift */; };
+		864F5ECF1F71512D001E7064 /* FormationDetailViewContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 864F5EC91F71512D001E7064 /* FormationDetailViewContract.swift */; };
+		864F5ED01F71512D001E7064 /* FormationDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 864F5ECA1F71512D001E7064 /* FormationDetailViewController.swift */; };
+		865F30F61F6A75F400F41B5C /* FormationControllerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 865F30F01F6A75F400F41B5C /* FormationControllerViewModel.swift */; };
+		865F30F71F6A75F400F41B5C /* FormationControllerViewModelMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 865F30F11F6A75F400F41B5C /* FormationControllerViewModelMapper.swift */; };
+		865F30F81F6A75F400F41B5C /* FormationPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 865F30F21F6A75F400F41B5C /* FormationPresenter.swift */; };
+		865F30F91F6A75F400F41B5C /* FormationPresenterImplementation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 865F30F31F6A75F400F41B5C /* FormationPresenterImplementation.swift */; };
+		865F30FA1F6A75F400F41B5C /* FormationViewContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 865F30F41F6A75F400F41B5C /* FormationViewContract.swift */; };
+		865F30FB1F6A75F400F41B5C /* FormationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 865F30F51F6A75F400F41B5C /* FormationViewController.swift */; };
 		867DA5181F59DC0F000C5AC2 /* UITableView+Registerable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 867DA5171F59DC0F000C5AC2 /* UITableView+Registerable.swift */; };
 		867DA51C1F5C9743000C5AC2 /* ContactRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 867DA51A1F5C9743000C5AC2 /* ContactRepository.swift */; };
 		867DA51D1F5C9743000C5AC2 /* LocalContactRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 867DA51B1F5C9743000C5AC2 /* LocalContactRepository.swift */; };
@@ -31,6 +44,13 @@
 		867DA5221F5D57CF000C5AC2 /* MailRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 867DA5201F5D57CF000C5AC2 /* MailRepository.swift */; };
 		867DA5231F5D57CF000C5AC2 /* TemplateMailRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 867DA5211F5D57CF000C5AC2 /* TemplateMailRepository.swift */; };
 		86B29C491F79277F00C63902 /* Loadable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86B29C481F79277F00C63902 /* Loadable.swift */; };
+		867FF31D1F6C33620085A80D /* FormationCollectionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 867FF31C1F6C33620085A80D /* FormationCollectionViewModel.swift */; };
+		867FF31F1F6C33AB0085A80D /* FormationCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 867FF31E1F6C33AB0085A80D /* FormationCellViewModel.swift */; };
+		867FF3211F6C34680085A80D /* FormationCollectionViewModelMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 867FF3201F6C34680085A80D /* FormationCollectionViewModelMapper.swift */; };
+		867FF3231F6C36810085A80D /* FormationCellViewModelMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 867FF3221F6C36810085A80D /* FormationCellViewModelMapper.swift */; };
+		867FF3251F6C38E70085A80D /* FormationCollectionViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 867FF3241F6C38E70085A80D /* FormationCollectionViewDataSource.swift */; };
+		867FF3281F6C39DD0085A80D /* FormationCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 867FF3271F6C39DD0085A80D /* FormationCollectionViewCell.swift */; };
+		867FF32C1F6C3BED0085A80D /* UICollectionView+Registerable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 867FF32B1F6C3BED0085A80D /* UICollectionView+Registerable.swift */; };
 		86CE0CA71F1BC64D00DA0916 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86CE0CA61F1BC64D00DA0916 /* AppDelegate.swift */; };
 		86CE0CAE1F1BC64E00DA0916 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 86CE0CAD1F1BC64E00DA0916 /* Assets.xcassets */; };
 		86CE0CB11F1BC64E00DA0916 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 86CE0CAF1F1BC64E00DA0916 /* LaunchScreen.storyboard */; };
@@ -66,6 +86,19 @@
 		8622BBD41F7904E2000642E8 /* LoadingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
 		863ECEA01F69378700817C6D /* Results.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Results.swift; sourceTree = "<group>"; };
 		863ECEA21F69645500817C6D /* CVError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CVError.swift; sourceTree = "<group>"; };
+		864F5EB91F714131001E7064 /* FormationCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FormationCoordinator.swift; sourceTree = "<group>"; };
+		864F5EC51F71512D001E7064 /* FormationDetailControllerViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FormationDetailControllerViewModel.swift; sourceTree = "<group>"; };
+		864F5EC61F71512D001E7064 /* FormationDetailControllerViewModelMapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FormationDetailControllerViewModelMapper.swift; sourceTree = "<group>"; };
+		864F5EC71F71512D001E7064 /* FormationDetailPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FormationDetailPresenter.swift; sourceTree = "<group>"; };
+		864F5EC81F71512D001E7064 /* FormationDetailPresenterImplementation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FormationDetailPresenterImplementation.swift; sourceTree = "<group>"; };
+		864F5EC91F71512D001E7064 /* FormationDetailViewContract.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FormationDetailViewContract.swift; sourceTree = "<group>"; };
+		864F5ECA1F71512D001E7064 /* FormationDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FormationDetailViewController.swift; sourceTree = "<group>"; };
+		865F30F01F6A75F400F41B5C /* FormationControllerViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FormationControllerViewModel.swift; sourceTree = "<group>"; };
+		865F30F11F6A75F400F41B5C /* FormationControllerViewModelMapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FormationControllerViewModelMapper.swift; sourceTree = "<group>"; };
+		865F30F21F6A75F400F41B5C /* FormationPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FormationPresenter.swift; sourceTree = "<group>"; };
+		865F30F31F6A75F400F41B5C /* FormationPresenterImplementation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FormationPresenterImplementation.swift; sourceTree = "<group>"; };
+		865F30F41F6A75F400F41B5C /* FormationViewContract.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FormationViewContract.swift; sourceTree = "<group>"; };
+		865F30F51F6A75F400F41B5C /* FormationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FormationViewController.swift; sourceTree = "<group>"; };
 		867DA5171F59DC0F000C5AC2 /* UITableView+Registerable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITableView+Registerable.swift"; sourceTree = "<group>"; };
 		867DA51A1F5C9743000C5AC2 /* ContactRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactRepository.swift; sourceTree = "<group>"; };
 		867DA51B1F5C9743000C5AC2 /* LocalContactRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocalContactRepository.swift; sourceTree = "<group>"; };
@@ -73,6 +106,13 @@
 		867DA5201F5D57CF000C5AC2 /* MailRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MailRepository.swift; sourceTree = "<group>"; };
 		867DA5211F5D57CF000C5AC2 /* TemplateMailRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TemplateMailRepository.swift; sourceTree = "<group>"; };
 		86B29C481F79277F00C63902 /* Loadable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Loadable.swift; sourceTree = "<group>"; };
+		867FF31C1F6C33620085A80D /* FormationCollectionViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FormationCollectionViewModel.swift; sourceTree = "<group>"; };
+		867FF31E1F6C33AB0085A80D /* FormationCellViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FormationCellViewModel.swift; sourceTree = "<group>"; };
+		867FF3201F6C34680085A80D /* FormationCollectionViewModelMapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FormationCollectionViewModelMapper.swift; sourceTree = "<group>"; };
+		867FF3221F6C36810085A80D /* FormationCellViewModelMapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FormationCellViewModelMapper.swift; sourceTree = "<group>"; };
+		867FF3241F6C38E70085A80D /* FormationCollectionViewDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FormationCollectionViewDataSource.swift; sourceTree = "<group>"; };
+		867FF3271F6C39DD0085A80D /* FormationCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FormationCollectionViewCell.swift; sourceTree = "<group>"; };
+		867FF32B1F6C3BED0085A80D /* UICollectionView+Registerable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UICollectionView+Registerable.swift"; sourceTree = "<group>"; };
 		86CE0CA31F1BC64D00DA0916 /* CV.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CV.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		86CE0CA61F1BC64D00DA0916 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		86CE0CAD1F1BC64E00DA0916 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -170,6 +210,134 @@
 			name = ViewController;
 			sourceTree = "<group>";
 		};
+		864F5EBE1F7150CE001E7064 /* FormationDetail */ = {
+			isa = PBXGroup;
+			children = (
+				864F5EC11F7150FF001E7064 /* Model */,
+				864F5EC01F7150F8001E7064 /* UI */,
+				864F5EC91F71512D001E7064 /* FormationDetailViewContract.swift */,
+				864F5EBF1F7150E5001E7064 /* Presenter */,
+			);
+			name = FormationDetail;
+			sourceTree = "<group>";
+		};
+		864F5EBF1F7150E5001E7064 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				864F5EC71F71512D001E7064 /* FormationDetailPresenter.swift */,
+				864F5EC81F71512D001E7064 /* FormationDetailPresenterImplementation.swift */,
+			);
+			name = Presenter;
+			sourceTree = "<group>";
+		};
+		864F5EC01F7150F8001E7064 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				864F5EC41F715118001E7064 /* ViewController */,
+			);
+			name = UI;
+			sourceTree = "<group>";
+		};
+		864F5EC11F7150FF001E7064 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				864F5EC31F71510E001E7064 /* Mapper */,
+				864F5EC21F715107001E7064 /* ViewModel */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		864F5EC21F715107001E7064 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				864F5EC51F71512D001E7064 /* FormationDetailControllerViewModel.swift */,
+			);
+			name = ViewModel;
+			sourceTree = "<group>";
+		};
+		864F5EC31F71510E001E7064 /* Mapper */ = {
+			isa = PBXGroup;
+			children = (
+				864F5EC61F71512D001E7064 /* FormationDetailControllerViewModelMapper.swift */,
+			);
+			name = Mapper;
+			sourceTree = "<group>";
+		};
+		864F5EC41F715118001E7064 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				864F5ECA1F71512D001E7064 /* FormationDetailViewController.swift */,
+			);
+			name = ViewController;
+			sourceTree = "<group>";
+		};
+		865F30E91F6A74CC00F41B5C /* Formation */ = {
+			isa = PBXGroup;
+			children = (
+				865F30EC1F6A751000F41B5C /* Model */,
+				865F30EB1F6A750A00F41B5C /* UI */,
+				865F30F41F6A75F400F41B5C /* FormationViewContract.swift */,
+				865F30EA1F6A74F900F41B5C /* Presenter */,
+			);
+			name = Formation;
+			sourceTree = "<group>";
+		};
+		865F30EA1F6A74F900F41B5C /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				865F30F21F6A75F400F41B5C /* FormationPresenter.swift */,
+				865F30F31F6A75F400F41B5C /* FormationPresenterImplementation.swift */,
+			);
+			name = Presenter;
+			sourceTree = "<group>";
+		};
+		865F30EB1F6A750A00F41B5C /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				867FF3261F6C39CB0085A80D /* View */,
+				865F30EF1F6A757B00F41B5C /* ViewController */,
+			);
+			name = UI;
+			sourceTree = "<group>";
+		};
+		865F30EC1F6A751000F41B5C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				865F30EE1F6A756E00F41B5C /* Mapper */,
+				865F30ED1F6A756700F41B5C /* ViewModel */,
+				867FF3241F6C38E70085A80D /* FormationCollectionViewDataSource.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		865F30ED1F6A756700F41B5C /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				865F30F01F6A75F400F41B5C /* FormationControllerViewModel.swift */,
+				867FF31C1F6C33620085A80D /* FormationCollectionViewModel.swift */,
+				867FF31E1F6C33AB0085A80D /* FormationCellViewModel.swift */,
+			);
+			name = ViewModel;
+			sourceTree = "<group>";
+		};
+		865F30EE1F6A756E00F41B5C /* Mapper */ = {
+			isa = PBXGroup;
+			children = (
+				865F30F11F6A75F400F41B5C /* FormationControllerViewModelMapper.swift */,
+				867FF3201F6C34680085A80D /* FormationCollectionViewModelMapper.swift */,
+				867FF3221F6C36810085A80D /* FormationCellViewModelMapper.swift */,
+			);
+			name = Mapper;
+			sourceTree = "<group>";
+		};
+		865F30EF1F6A757B00F41B5C /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				865F30F51F6A75F400F41B5C /* FormationViewController.swift */,
+			);
+			name = ViewController;
+			sourceTree = "<group>";
+		};
 		867DA5161F59DA55000C5AC2 /* View */ = {
 			isa = PBXGroup;
 			children = (
@@ -185,6 +353,14 @@
 				867DA5201F5D57CF000C5AC2 /* MailRepository.swift */,
 			);
 			name = Repositories;
+			sourceTree = "<group>";
+		};
+		867FF3261F6C39CB0085A80D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				867FF3271F6C39DD0085A80D /* FormationCollectionViewCell.swift */,
+			);
+			name = View;
 			sourceTree = "<group>";
 		};
 		86CE0C9A1F1BC64D00DA0916 = {
@@ -268,6 +444,8 @@
 			children = (
 				86E440421F4A16970040BD55 /* Shared */,
 				86E4402F1F4A13C70040BD55 /* Home */,
+				865F30E91F6A74CC00F41B5C /* Formation */,
+				864F5EBE1F7150CE001E7064 /* FormationDetail */,
 				860AE2961F5741BC004B9F65 /* Contact */,
 			);
 			name = App;
@@ -278,6 +456,7 @@
 			children = (
 				86E4402C1F4A10D50040BD55 /* Shared */,
 				86E4402A1F4A0FE70040BD55 /* MainCoordinator.swift */,
+				864F5EB91F714131001E7064 /* FormationCoordinator.swift */,
 			);
 			name = Coordinator;
 			sourceTree = "<group>";
@@ -370,6 +549,7 @@
 				863ECEA21F69645500817C6D /* CVError.swift */,
 				8622BBD41F7904E2000642E8 /* LoadingView.swift */,
 				86B29C481F79277F00C63902 /* Loadable.swift */,
+				867FF32B1F6C3BED0085A80D /* UICollectionView+Registerable.swift */,
 			);
 			name = Categories;
 			sourceTree = "<group>";
@@ -447,24 +627,42 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				867FF31F1F6C33AB0085A80D /* FormationCellViewModel.swift in Sources */,
 				86E440441F4A16A40040BD55 /* Startable.swift in Sources */,
 				86CE0CA71F1BC64D00DA0916 /* AppDelegate.swift in Sources */,
 				867DA5231F5D57CF000C5AC2 /* TemplateMailRepository.swift in Sources */,
 				860AE2A51F574305004B9F65 /* ContactPresenter.swift in Sources */,
+				867FF3211F6C34680085A80D /* FormationCollectionViewModelMapper.swift in Sources */,
+				864F5ECB1F71512D001E7064 /* FormationDetailControllerViewModel.swift in Sources */,
 				867DA5221F5D57CF000C5AC2 /* MailRepository.swift in Sources */,
 				860AE2A41F574305004B9F65 /* ContactControllerViewModelMapper.swift in Sources */,
 				86E4403C1F4A163F0040BD55 /* HomeControllerViewModel.swift in Sources */,
+				864F5EBA1F714131001E7064 /* FormationCoordinator.swift in Sources */,
+				864F5ECE1F71512D001E7064 /* FormationDetailPresenterImplementation.swift in Sources */,
+				867FF32C1F6C3BED0085A80D /* UICollectionView+Registerable.swift in Sources */,
 				86E4403F1F4A163F0040BD55 /* HomePresenterImplementation.swift in Sources */,
+				865F30F81F6A75F400F41B5C /* FormationPresenter.swift in Sources */,
+				864F5ECC1F71512D001E7064 /* FormationDetailControllerViewModelMapper.swift in Sources */,
 				860AE2B11F599DE5004B9F65 /* ContactTableViewCell.swift in Sources */,
+				867FF3281F6C39DD0085A80D /* FormationCollectionViewCell.swift in Sources */,
 				86E440401F4A163F0040BD55 /* HomeViewContract.swift in Sources */,
 				860AE2B61F59B3A1004B9F65 /* ContactTableViewModelMapper.swift in Sources */,
 				860AE2A61F574305004B9F65 /* ContactPresenterImplementation.swift in Sources */,
+				864F5ED01F71512D001E7064 /* FormationDetailViewController.swift in Sources */,
 				860AE2AF1F599D56004B9F65 /* ContactTableViewDataSource.swift in Sources */,
+				865F30FB1F6A75F400F41B5C /* FormationViewController.swift in Sources */,
 				867DA51F1F5CA536000C5AC2 /* RepositoryFactory.swift in Sources */,
 				860AE2A71F574305004B9F65 /* ContactViewContract.swift in Sources */,
+				865F30F91F6A75F400F41B5C /* FormationPresenterImplementation.swift in Sources */,
+				867FF3251F6C38E70085A80D /* FormationCollectionViewDataSource.swift in Sources */,
+				864F5ECD1F71512D001E7064 /* FormationDetailPresenter.swift in Sources */,
 				860AE2B81F59B40D004B9F65 /* ContactCellViewModelMapper.swift in Sources */,
 				860AE2A81F574305004B9F65 /* ContactViewController.swift in Sources */,
 				86E4404B1F4AE7810040BD55 /* Color.swift in Sources */,
+				865F30F61F6A75F400F41B5C /* FormationControllerViewModel.swift in Sources */,
+				865F30F71F6A75F400F41B5C /* FormationControllerViewModelMapper.swift in Sources */,
+				867FF3231F6C36810085A80D /* FormationCellViewModelMapper.swift in Sources */,
+				864F5ECF1F71512D001E7064 /* FormationDetailViewContract.swift in Sources */,
 				863ECEA11F69378700817C6D /* Results.swift in Sources */,
 				86E4402B1F4A0FE70040BD55 /* MainCoordinator.swift in Sources */,
 				86E440411F4A163F0040BD55 /* HomeViewController.swift in Sources */,
@@ -478,8 +676,10 @@
 				86E4403D1F4A163F0040BD55 /* HomeControllerViewModelMapper.swift in Sources */,
 				86B29C491F79277F00C63902 /* Loadable.swift in Sources */,
 				86E4402E1F4A10DF0040BD55 /* Coordinator.swift in Sources */,
+				867FF31D1F6C33620085A80D /* FormationCollectionViewModel.swift in Sources */,
 				860AE2B41F59A258004B9F65 /* ContactCellViewModel.swift in Sources */,
 				862095C11F545E41005B1C7C /* StringLocalized.swift in Sources */,
+				865F30FA1F6A75F400F41B5C /* FormationViewContract.swift in Sources */,
 				867DA51C1F5C9743000C5AC2 /* ContactRepository.swift in Sources */,
 				8622BBD51F7904E2000642E8 /* LoadingView.swift in Sources */,
 				86E440461F4A1A050040BD55 /* ViewControllerFactory.swift in Sources */,
