@@ -21,12 +21,13 @@ class MainCoordinator: Coordinator {
         let tabBarController = UITabBarController()
         tabBarController.view.tintColor = UIColor.mainColor
         let homeViewController = ViewControllerFactory.sharedInstance.homeViewController()
+        let presentationViewController = ViewControllerFactory.sharedInstance.presentationViewController()
         let formationCoordinator = FormationCoordinator(navigationController: UINavigationController())
         addChild(formationCoordinator)
         formationCoordinator.start()
         let formationNavigationController = formationCoordinator.navigationController
         let contactViewController = ViewControllerFactory.sharedInstance.contactViewController()
-        tabBarController.viewControllers = [homeViewController, formationNavigationController, contactViewController]
+        tabBarController.viewControllers = [homeViewController, presentationViewController, formationNavigationController, contactViewController]
         window.rootViewController = tabBarController
     }
 }
