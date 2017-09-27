@@ -14,6 +14,9 @@ class PresentationViewController: UIViewController,
 
     var presenter: PresentationPresenter?
     let navigationBar = UINavigationBar()
+    let firstPictureImageView = UIImageView()
+    let secondPictureImageView = UIImageView()
+    let thirdPictureImageView = UIImageView()
 
     override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?) {
         super.init(nibName: nil, bundle: nil)
@@ -35,10 +38,19 @@ class PresentationViewController: UIViewController,
         presenter?.start()
     }
 
+    override func viewDidLayoutSubviews() {
+        super.viewDidLayoutSubviews()
+        firstPictureImageView.rounded()
+        secondPictureImageView.rounded()
+        thirdPictureImageView.rounded()
+    }
+
     // MARK: - PresentationViewContract
 
     func configure(with viewModel: PresentationControllerViewModel) {
-        // TODO: (Mélodie Benmouffek) 27/09/2017 Configure view
+        firstPictureImageView.image = viewModel.firstPictureImage
+        secondPictureImageView.image = viewModel.secondPictureImage
+        thirdPictureImageView.image = viewModel.thirdPictureImage
     }
 
     // MARK: - Private methods
@@ -51,17 +63,45 @@ class PresentationViewController: UIViewController,
             [NSForegroundColorAttributeName: UIColor.navigationTitleTextColor]
     }
 
+    private func setupImages() {
+        firstPictureImageView.contentMode = .scaleAspectFill
+        secondPictureImageView.contentMode = .scaleAspectFill
+        thirdPictureImageView.contentMode = .scaleAspectFill
+    }
+
     private func setupLayout() {
         view.addSubview(navigationBar)
+        view.addSubview(firstPictureImageView)
+        view.addSubview(secondPictureImageView)
+        view.addSubview(thirdPictureImageView)
 
         navigationBar.translatesAutoresizingMaskIntoConstraints = false
         navigationBar.widthAnchor.constraint(equalTo: view.widthAnchor).isActive = true
         navigationBar.heightAnchor.constraint(equalToConstant: 60.0).isActive = true
+
+        secondPictureImageView.translatesAutoresizingMaskIntoConstraints = false
+        secondPictureImageView.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
+        secondPictureImageView.centerYAnchor.constraint(equalTo: view.centerYAnchor).isActive = true
+        secondPictureImageView.widthAnchor.constraint(equalToConstant: 100.0).isActive = true
+        secondPictureImageView.heightAnchor.constraint(equalToConstant: 100.0).isActive = true
+
+        firstPictureImageView.translatesAutoresizingMaskIntoConstraints = false
+        firstPictureImageView.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
+        firstPictureImageView.bottomAnchor.constraint(equalTo: secondPictureImageView.topAnchor, constant: -50.0).isActive = true
+        firstPictureImageView.widthAnchor.constraint(equalToConstant: 100.0).isActive = true
+        firstPictureImageView.heightAnchor.constraint(equalToConstant: 100.0).isActive = true
+
+        thirdPictureImageView.translatesAutoresizingMaskIntoConstraints = false
+        thirdPictureImageView.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
+        thirdPictureImageView.topAnchor.constraint(equalTo: secondPictureImageView.bottomAnchor, constant: 50.0).isActive = true
+        thirdPictureImageView.widthAnchor.constraint(equalToConstant: 100.0).isActive = true
+        thirdPictureImageView.heightAnchor.constraint(equalToConstant: 100.0).isActive = true
     }
 
     private func setup() {
         view.backgroundColor = UIColor.backgroundColor
         setupNavigationBar()
+        setupImages()
         setupLayout()
     }
 }
