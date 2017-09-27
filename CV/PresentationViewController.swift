@@ -13,9 +13,13 @@ class PresentationViewController: UIViewController,
     PresentationViewContract {
 
     var presenter: PresentationPresenter?
+    let navigationBar = UINavigationBar()
 
     override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?) {
         super.init(nibName: nil, bundle: nil)
+        navigationItem.title = "presentation_navigation_title_text".localized
+        tabBarItem.title = "presentation_navigation_title_text".localized
+        tabBarItem.image = #imageLiteral(resourceName: "presentationIcon")
     }
 
     @available(*, unavailable)
@@ -39,7 +43,25 @@ class PresentationViewController: UIViewController,
 
     // MARK: - Private methods
 
+    private func setupNavigationBar() {
+        navigationBar.setItems([navigationItem],
+                               animated: false)
+        navigationBar.barTintColor = UIColor.mainColor
+        navigationBar.titleTextAttributes =
+            [NSForegroundColorAttributeName: UIColor.navigationTitleTextColor]
+    }
+
+    private func setupLayout() {
+        view.addSubview(navigationBar)
+
+        navigationBar.translatesAutoresizingMaskIntoConstraints = false
+        navigationBar.widthAnchor.constraint(equalTo: view.widthAnchor).isActive = true
+        navigationBar.heightAnchor.constraint(equalToConstant: 60.0).isActive = true
+    }
+
     private func setup() {
-        // TODO: (Mélodie Benmouffek) 27/09/2017 Setup subviews
+        view.backgroundColor = UIColor.backgroundColor
+        setupNavigationBar()
+        setupLayout()
     }
 }

@@ -10,6 +10,9 @@
 "home_welcome_text" = "Bonjour !\nJe m'appelle Mélodie BENMOUFFEK et je suis à la recherche d'un poste de développeur mobile iOS.";
 "home_navigation_title_text" = "Accueil";
 
+// PRESENTATION
+"presentation_navigation_title_text" = "Présentation";
+
 // FORMATION
 "formation_navigation_title_text" = "Formation";
 "formation_introduction_text" = "Résumé de mon parcours scolaire ainsi que de mes expériences en entreprise.";
