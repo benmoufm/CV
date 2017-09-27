@@ -11,7 +11,9 @@ import Foundation
 struct PresentationControllerViewModelMapper {
 
     func map() -> PresentationControllerViewModel {
-        return PresentationControllerViewModel()
+        return PresentationControllerViewModel(firstPictureImage: #imageLiteral(resourceName: "firstActivityIcon"),
+                                               secondPictureImage: #imageLiteral(resourceName: "secondActivityIcon"),
+                                               thirdPictureImage: #imageLiteral(resourceName: "thirdActivityIcon"))
     }
 
 }
