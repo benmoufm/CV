@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "01b8eb0d_c66373e6",
+        "filename": "CV/PresentationViewController.swift",
+        "patchSetId": 2
+      },
+      "lineNbr": 48,
+      "author": {
+        "id": 1011781
+      },
+      "writtenOn": "2017-09-28T17:23:27Z",
+      "side": 1,
+      "message": "pas besoin de retourner à la ligne",
+      "range": {
+        "startLine": 47,
+        "startChar": 34,
+        "endLine": 48,
+        "endChar": 31
+      },
+      "revId": "9dc8b671597311af91ff3b560793bf7f09fc0032",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    }
+  ]
+}
