@@ -18,6 +18,10 @@ class PresentationViewController: UIViewController,
     let secondActivityButton = UIButton()
     let thirdActivityButton = UIButton()
 
+    var firstActivityDetailCollapsed = false
+    var secondActivityDetailCollapsed = false
+    var thirdActivityDetailCollapsed = false
+
     override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?) {
         super.init(nibName: nil, bundle: nil)
         navigationItem.title = "presentation_navigation_title_text".localized
@@ -55,12 +59,50 @@ class PresentationViewController: UIViewController,
 
     // MARK: - Animation on gesture recognition
 
-    func moveImageToTheRight() {
-        print("TODO : Animate to the right")
+    func animateImage(buttonToMove: UIButton, distance: CGFloat, reverse: Bool) {
+        if reverse {
+            buttonToMove.inflate()
+            buttonToMove.translateBack()
+        } else {
+            buttonToMove.deflate()
+            buttonToMove.translate(distance: distance)
+        }
     }
 
-    func moveImageToTheLeft() {
-        print("TODO : Animate to the left")
+    func moveFirstImage() {
+        if !firstActivityDetailCollapsed {
+            animateImage(buttonToMove: firstActivityButton, distance: 100, reverse: false)
+            firstActivityDetailCollapsed = true
+            if secondActivityDetailCollapsed {moveSecondImage()}
+            if thirdActivityDetailCollapsed {moveThirdImage()}
+        } else {
+            animateImage(buttonToMove: firstActivityButton, distance: -100, reverse: true)
+            firstActivityDetailCollapsed = false
+        }
+    }
+
+    func moveSecondImage() {
+        if !secondActivityDetailCollapsed {
+            animateImage(buttonToMove: secondActivityButton, distance: -100, reverse: false)
+            secondActivityDetailCollapsed = true
+            if firstActivityDetailCollapsed {moveFirstImage()}
+            if thirdActivityDetailCollapsed {moveThirdImage()}
+        } else {
+            animateImage(buttonToMove: secondActivityButton, distance: 100, reverse: true)
+            secondActivityDetailCollapsed = false
+        }
+    }
+
+    func moveThirdImage() {
+        if !thirdActivityDetailCollapsed {
+            animateImage(buttonToMove: thirdActivityButton, distance: 100, reverse: false)
+            thirdActivityDetailCollapsed = true
+            if secondActivityDetailCollapsed {moveSecondImage()}
+            if firstActivityDetailCollapsed {moveFirstImage()}
+        } else {
+            animateImage(buttonToMove: thirdActivityButton, distance: -100, reverse: true)
+            thirdActivityDetailCollapsed = false
+        }
     }
 
     // MARK: - Private methods
@@ -75,21 +117,21 @@ class PresentationViewController: UIViewController,
     private func setupFirstActivityButton() {
         firstActivityButton.imageView?.contentMode = .scaleAspectFill
         firstActivityButton.addTarget(self,
-                                      action: #selector(moveImageToTheRight),
+                                      action: #selector(moveFirstImage),
                                       for: UIControlEvents.touchUpInside)
     }
 
     private func setupSecondActivityButton() {
         secondActivityButton.imageView?.contentMode = .scaleAspectFill
         secondActivityButton.addTarget(self,
-                                      action: #selector(moveImageToTheLeft),
+                                      action: #selector(moveSecondImage),
                                       for: UIControlEvents.touchUpInside)
     }
 
     private func setupThirdActivityButton() {
         thirdActivityButton.imageView?.contentMode = .scaleAspectFill
         thirdActivityButton.addTarget(self,
-                                      action: #selector(moveImageToTheRight),
+                                      action: #selector(moveThirdImage),
                                       for: UIControlEvents.touchUpInside)
     }
 
