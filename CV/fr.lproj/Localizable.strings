@@ -12,6 +12,9 @@
 
 // PRESENTATION
 "presentation_navigation_title_text" = "Présentation";
+"presentation_first_activity_label" = "Je suis une dev intéressée par le développement mobile et le code en général.";
+"presentation_second_activity_label" = "Je suis une personne assez sportive, je pratique actuellement la boxe anglaise et le running.";
+"presentation_third_activity_label" = "Je suis également passionnée par l'art, que ce soit la musique, ou bien le dessin, je pratique les deux pendant mon temps libre. Je joue du violon depuis que j'ai 6 ans, et dès que j'ai un papier sous la main, je dessine, ce qui m'aide à réflechir.";
 
 // FORMATION
 "formation_navigation_title_text" = "Formation";
