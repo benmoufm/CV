@@ -15,8 +15,11 @@ class PresentationViewController: UIViewController,
     var presenter: PresentationPresenter?
     let navigationBar = UINavigationBar()
     let firstActivityButton = UIButton()
+    let firstActivityLabel = UILabel()
     let secondActivityButton = UIButton()
+    let secondActivityLabel = UILabel()
     let thirdActivityButton = UIButton()
+    let thirdActivityLabel = UILabel()
 
     var firstActivityDetailCollapsed = false
     var secondActivityDetailCollapsed = false
@@ -55,6 +58,9 @@ class PresentationViewController: UIViewController,
         firstActivityButton.setImage(viewModel.firstPictureImage, for: .normal)
         secondActivityButton.setImage(viewModel.secondPictureImage, for: .normal)
         thirdActivityButton.setImage(viewModel.thirdPictureImage, for: .normal)
+        firstActivityLabel.text = viewModel.firstLabel
+        secondActivityLabel.text = viewModel.secondLabel
+        thirdActivityLabel.text = viewModel.thirdLabel
     }
 
     // MARK: - Animation on gesture recognition
@@ -135,11 +141,28 @@ class PresentationViewController: UIViewController,
                                       for: UIControlEvents.touchUpInside)
     }
 
+    private func setupLabels() {
+        firstActivityLabel.numberOfLines = 0
+        firstActivityLabel.textAlignment = .center
+        firstActivityLabel.textColor = UIColor.textColor
+
+        secondActivityLabel.numberOfLines = 0
+        secondActivityLabel.textAlignment = .center
+        secondActivityLabel.textColor = UIColor.textColor
+
+        thirdActivityLabel.numberOfLines = 0
+        thirdActivityLabel.textAlignment = .center
+        thirdActivityLabel.textColor = UIColor.textColor
+    }
+
     private func setupLayout() {
         view.addSubview(navigationBar)
         view.addSubview(firstActivityButton)
         view.addSubview(secondActivityButton)
         view.addSubview(thirdActivityButton)
+        view.addSubview(firstActivityLabel)
+        view.addSubview(secondActivityLabel)
+        view.addSubview(thirdActivityLabel)
 
         navigationBar.translatesAutoresizingMaskIntoConstraints = false
         navigationBar.widthAnchor.constraint(equalTo: view.widthAnchor).isActive = true
@@ -183,6 +206,24 @@ class PresentationViewController: UIViewController,
         thirdActivityButton.imageView?.centerYAnchor.constraint(equalTo: thirdActivityButton.centerYAnchor).isActive = true
         thirdActivityButton.imageView?.widthAnchor.constraint(equalToConstant: 100.0).isActive = true
         thirdActivityButton.imageView?.heightAnchor.constraint(equalToConstant: 100.0).isActive = true
+
+        firstActivityLabel.translatesAutoresizingMaskIntoConstraints = false
+        firstActivityLabel.centerYAnchor.constraint(equalTo: firstActivityButton.centerYAnchor).isActive = true
+        firstActivityLabel.rightAnchor.constraint(equalTo: view.leftAnchor).isActive = true
+        firstActivityLabel.heightAnchor.constraint(equalTo: firstActivityButton.heightAnchor).isActive = true
+        firstActivityLabel.widthAnchor.constraint(equalToConstant: 150.0).isActive = true
+
+        secondActivityLabel.translatesAutoresizingMaskIntoConstraints = false
+        secondActivityLabel.centerYAnchor.constraint(equalTo: secondActivityButton.centerYAnchor).isActive = true
+        secondActivityLabel.leftAnchor.constraint(equalTo: view.rightAnchor).isActive = true
+        secondActivityLabel.heightAnchor.constraint(equalTo: secondActivityButton.heightAnchor).isActive = true
+        secondActivityLabel.widthAnchor.constraint(equalToConstant: 150.0).isActive = true
+
+        thirdActivityLabel.translatesAutoresizingMaskIntoConstraints = false
+        thirdActivityLabel.centerYAnchor.constraint(equalTo: thirdActivityButton.centerYAnchor).isActive = true
+        thirdActivityLabel.rightAnchor.constraint(equalTo: view.leftAnchor).isActive = true
+        thirdActivityLabel.heightAnchor.constraint(equalTo: thirdActivityButton.heightAnchor).isActive = true
+        thirdActivityLabel.widthAnchor.constraint(equalToConstant: 150.0).isActive = true
     }
 
     private func setup() {
@@ -191,6 +232,7 @@ class PresentationViewController: UIViewController,
         setupFirstActivityButton()
         setupSecondActivityButton()
         setupThirdActivityButton()
+        setupLabels()
         setupLayout()
     }
 }
