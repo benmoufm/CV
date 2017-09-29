@@ -14,4 +14,8 @@ struct PresentationControllerViewModel {
     let firstPictureImage: UIImage
     let secondPictureImage: UIImage
     let thirdPictureImage: UIImage
+
+    let firstLabel: String
+    let secondLabel: String
+    let thirdLabel: String
 }
