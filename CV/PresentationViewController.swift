@@ -75,38 +75,52 @@ class PresentationViewController: UIViewController,
         }
     }
 
+    func animateLabels(labelToMove: UILabel, distance: CGFloat, reverse: Bool) {
+        if reverse {
+            labelToMove.translateBack()
+        } else {
+            labelToMove.translate(distance: distance)
+        }
+    }
+
     func moveFirstImage() {
         if !firstActivityDetailCollapsed {
-            animateImage(buttonToMove: firstActivityButton, distance: 125, reverse: false)
+            animateImage(buttonToMove: firstActivityButton, distance: 125, reverse: firstActivityDetailCollapsed)
+            animateLabels(labelToMove: firstActivityLabel, distance: 275, reverse: firstActivityDetailCollapsed)
             firstActivityDetailCollapsed = true
             if secondActivityDetailCollapsed {moveSecondImage()}
             if thirdActivityDetailCollapsed {moveThirdImage()}
         } else {
-            animateImage(buttonToMove: firstActivityButton, distance: -125, reverse: true)
+            animateImage(buttonToMove: firstActivityButton, distance: -125, reverse: firstActivityDetailCollapsed)
+            animateLabels(labelToMove: firstActivityLabel, distance: -275, reverse: firstActivityDetailCollapsed)
             firstActivityDetailCollapsed = false
         }
     }
 
     func moveSecondImage() {
         if !secondActivityDetailCollapsed {
-            animateImage(buttonToMove: secondActivityButton, distance: -125, reverse: false)
+            animateImage(buttonToMove: secondActivityButton, distance: -125, reverse: secondActivityDetailCollapsed)
+            animateLabels(labelToMove: secondActivityLabel, distance: -275, reverse: secondActivityDetailCollapsed)
             secondActivityDetailCollapsed = true
             if firstActivityDetailCollapsed {moveFirstImage()}
             if thirdActivityDetailCollapsed {moveThirdImage()}
         } else {
-            animateImage(buttonToMove: secondActivityButton, distance: 125, reverse: true)
+            animateImage(buttonToMove: secondActivityButton, distance: 125, reverse: secondActivityDetailCollapsed)
+            animateLabels(labelToMove: secondActivityLabel, distance: 275, reverse: secondActivityDetailCollapsed)
             secondActivityDetailCollapsed = false
         }
     }
 
     func moveThirdImage() {
         if !thirdActivityDetailCollapsed {
-            animateImage(buttonToMove: thirdActivityButton, distance: 125, reverse: false)
+            animateImage(buttonToMove: thirdActivityButton, distance: 125, reverse: thirdActivityDetailCollapsed)
+            animateLabels(labelToMove: thirdActivityLabel, distance: 275, reverse: thirdActivityDetailCollapsed)
             thirdActivityDetailCollapsed = true
             if secondActivityDetailCollapsed {moveSecondImage()}
             if firstActivityDetailCollapsed {moveFirstImage()}
         } else {
-            animateImage(buttonToMove: thirdActivityButton, distance: -125, reverse: true)
+            animateImage(buttonToMove: thirdActivityButton, distance: -125, reverse: thirdActivityDetailCollapsed)
+            animateLabels(labelToMove: thirdActivityLabel, distance: -275, reverse: thirdActivityDetailCollapsed)
             thirdActivityDetailCollapsed = false
         }
     }
@@ -211,19 +225,19 @@ class PresentationViewController: UIViewController,
         firstActivityLabel.centerYAnchor.constraint(equalTo: firstActivityButton.centerYAnchor).isActive = true
         firstActivityLabel.rightAnchor.constraint(equalTo: view.leftAnchor).isActive = true
         firstActivityLabel.heightAnchor.constraint(equalTo: firstActivityButton.heightAnchor).isActive = true
-        firstActivityLabel.widthAnchor.constraint(equalToConstant: 150.0).isActive = true
+        firstActivityLabel.widthAnchor.constraint(equalToConstant: 250.0).isActive = true
 
         secondActivityLabel.translatesAutoresizingMaskIntoConstraints = false
         secondActivityLabel.centerYAnchor.constraint(equalTo: secondActivityButton.centerYAnchor).isActive = true
         secondActivityLabel.leftAnchor.constraint(equalTo: view.rightAnchor).isActive = true
         secondActivityLabel.heightAnchor.constraint(equalTo: secondActivityButton.heightAnchor).isActive = true
-        secondActivityLabel.widthAnchor.constraint(equalToConstant: 150.0).isActive = true
+        secondActivityLabel.widthAnchor.constraint(equalToConstant: 250.0).isActive = true
 
         thirdActivityLabel.translatesAutoresizingMaskIntoConstraints = false
         thirdActivityLabel.centerYAnchor.constraint(equalTo: thirdActivityButton.centerYAnchor).isActive = true
         thirdActivityLabel.rightAnchor.constraint(equalTo: view.leftAnchor).isActive = true
         thirdActivityLabel.heightAnchor.constraint(equalTo: thirdActivityButton.heightAnchor).isActive = true
-        thirdActivityLabel.widthAnchor.constraint(equalToConstant: 150.0).isActive = true
+        thirdActivityLabel.widthAnchor.constraint(equalToConstant: 250.0).isActive = true
     }
 
     private func setup() {
