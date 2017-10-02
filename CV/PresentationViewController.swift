@@ -75,38 +75,52 @@ class PresentationViewController: UIViewController,
         }
     }
 
+    func animateLabels(labelToMove: UILabel, distance: CGFloat, reverse: Bool) {
+        if reverse {
+            labelToMove.translateBack()
+        } else {
+            labelToMove.translate(distance: distance)
+        }
+    }
+
     func moveFirstImage() {
         if !firstActivityDetailCollapsed {
-            animateImage(buttonToMove: firstActivityButton, distance: 100, reverse: false)
+            animateImage(buttonToMove: firstActivityButton, distance: 100, reverse: firstActivityDetailCollapsed)
+            animateLabels(labelToMove: firstActivityLabel, distance: 200, reverse: firstActivityDetailCollapsed)
             firstActivityDetailCollapsed = true
             if secondActivityDetailCollapsed {moveSecondImage()}
             if thirdActivityDetailCollapsed {moveThirdImage()}
         } else {
-            animateImage(buttonToMove: firstActivityButton, distance: -100, reverse: true)
+            animateImage(buttonToMove: firstActivityButton, distance: -100, reverse: firstActivityDetailCollapsed)
+            animateLabels(labelToMove: firstActivityLabel, distance: -200, reverse: firstActivityDetailCollapsed)
             firstActivityDetailCollapsed = false
         }
     }
 
     func moveSecondImage() {
         if !secondActivityDetailCollapsed {
-            animateImage(buttonToMove: secondActivityButton, distance: -100, reverse: false)
+            animateImage(buttonToMove: secondActivityButton, distance: -100, reverse: secondActivityDetailCollapsed)
+            animateLabels(labelToMove: secondActivityLabel, distance: -200, reverse: secondActivityDetailCollapsed)
             secondActivityDetailCollapsed = true
             if firstActivityDetailCollapsed {moveFirstImage()}
             if thirdActivityDetailCollapsed {moveThirdImage()}
         } else {
-            animateImage(buttonToMove: secondActivityButton, distance: 100, reverse: true)
+            animateImage(buttonToMove: secondActivityButton, distance: 100, reverse: secondActivityDetailCollapsed)
+            animateLabels(labelToMove: secondActivityLabel, distance: 200, reverse: secondActivityDetailCollapsed)
             secondActivityDetailCollapsed = false
         }
     }
 
     func moveThirdImage() {
         if !thirdActivityDetailCollapsed {
-            animateImage(buttonToMove: thirdActivityButton, distance: 100, reverse: false)
+            animateImage(buttonToMove: thirdActivityButton, distance: 100, reverse: thirdActivityDetailCollapsed)
+            animateLabels(labelToMove: thirdActivityLabel, distance: 200, reverse: thirdActivityDetailCollapsed)
             thirdActivityDetailCollapsed = true
             if secondActivityDetailCollapsed {moveSecondImage()}
             if firstActivityDetailCollapsed {moveFirstImage()}
         } else {
-            animateImage(buttonToMove: thirdActivityButton, distance: -100, reverse: true)
+            animateImage(buttonToMove: thirdActivityButton, distance: -100, reverse: thirdActivityDetailCollapsed)
+            animateLabels(labelToMove: thirdActivityLabel, distance: -200, reverse: thirdActivityDetailCollapsed)
             thirdActivityDetailCollapsed = false
         }
     }
