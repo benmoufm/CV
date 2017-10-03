@@ -20,6 +20,9 @@
 "formation_detail_information" = "Information pratique école";
 "formation_detail_history" = "Histoire de l'école";
 
+// COMPETENCE
+"competence_navigation_title_text" = "Compétences";
+
 // CONTACT
 "contact_navigation_title_text" = "Contact";
 "contact_access_denied" = "Accès impossible";
