@@ -42,6 +42,13 @@ final class ViewControllerFactory {
         return formationDetailViewController
     }
 
+    func competenceViewController() -> CompetenceViewController {
+        let competenceViewController = CompetenceViewController()
+        let presenter = CompetencePresenterImplementation(viewContract: competenceViewController)
+        competenceViewController.presenter = presenter
+        return competenceViewController
+    }
+
     func contactViewController() -> ContactViewController {
         let contactViewController = ContactViewController()
         let presenter = ContactPresenterImplementation(
