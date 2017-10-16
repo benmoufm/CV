@@ -29,7 +29,7 @@ class FormationCollectionViewCell: UICollectionViewCell {
 
     private func setup() {
         contentView.addSubview(imageView)
-        imageView.contentMode = .scaleAspectFill
+        imageView.contentMode = .scaleAspectFit
         imageView.translatesAutoresizingMaskIntoConstraints = false
         imageView.centerXAnchor.constraint(equalTo: centerXAnchor).isActive = true
         imageView.centerYAnchor.constraint(equalTo: centerYAnchor).isActive = true
