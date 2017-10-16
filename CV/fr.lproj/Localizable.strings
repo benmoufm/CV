@@ -18,7 +18,7 @@
 
 // FORMATION
 "formation_navigation_title_text" = "Formation";
-"formation_introduction_text" = "Résumé de mon parcours scolaire ainsi que de mes expériences en entreprise.";
+"formation_introduction_text" = "Après une formation scientifique du collège au lycée, j'ai intégré une prépa MPSI pour ensuite m'orienter vers une école d'ingénieur spécialisée en informatique. Je suis diplomée de l'ENSIMAG depuis septembre 2016 et je travaille en tant qu'ingénieur d'étude et développement depuis octobre de cette même année. J'ai réalisé de nombreux stages et missions au cours de mes études et après mon embauche, celles-ci seront détaillées dans l'onglet suivant.";
 
 // FORMATION DETAIL
 "formation_detail_navigation_title_text" = "Formation Détail";
