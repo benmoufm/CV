@@ -30,6 +30,26 @@
 "container_navigation_title_text" = "XP";
 "container_competence_segment" = "Compétences";
 "container_experience_segment" = "Expériences";
+"development_cells" = "Développement";
+"swift_cell" = "Swift";
+"java_cell" = "Java";
+"c_sharp_cell" = "C#";
+"html_cell" = "JS, CSS, HTML";
+"development_tools_cells" = "Outils de développement";
+"xcode_cell" = "XCode";
+"android_studio_cell" = "Android Studio";
+"pattern_cells" = "Patterns";
+"mvc_cell" = "MVC";
+"clean_code_cell" = "Clean Code";
+"methods_cells" = "Méthodes et versionning";
+"git_cell" = "Git";
+"gerrit_cell" = "Gerrit";
+"agile_cell" = "Agile Scrum";
+"languages_cells" = "Langues";
+"english_cell" = "Anglais";
+"spanish_cell" = "Espagnol";
+"italian_cell" = "Italien";
+"korean_cell" = "Coréen";
 
 // CONTACT
 "contact_navigation_title_text" = "Contact";
