@@ -27,7 +27,16 @@ class CompetenceTableViewCell: UITableViewCell {
         textLabel?.text = viewModel.label
         if viewModel.isTitleCell {
             selectionStyle = .none
-            tintColor = UIColor.secondaryColor
+            textLabel?.backgroundColor = UIColor.secondaryColor
+            textLabel?.textAlignment = .center
+            textLabel?.font = UIFont.boldSystemFont(ofSize: 15.0)
+            textLabel?.textColor = UIColor.mainColor
+        } else {
+            selectionStyle = .gray
+            textLabel?.backgroundColor = UIColor.backgroundColor
+            textLabel?.textAlignment = .natural
+            textLabel?.font = UIFont.systemFont(ofSize: 13.0)
+            textLabel?.textColor = UIColor.textColor
         }
     }
 }
