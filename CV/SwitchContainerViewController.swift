@@ -14,8 +14,8 @@ class SwitchContainerViewController: UIViewController {
     let navigationBar = UINavigationBar()
     var tableView = UITableView()
     let segmentedControl = UISegmentedControl()
-    let competenceViewController = UIViewController()
-    let experienceViewController = UIViewController()
+    var competenceViewController = UIViewController()
+    var experienceViewController = UIViewController()
 
     override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?) {
         super.init(nibName: nil, bundle: nil)
@@ -32,8 +32,6 @@ class SwitchContainerViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        addChildViewController(competenceViewController)
-        addChildViewController(experienceViewController)
         setup()
     }
 
