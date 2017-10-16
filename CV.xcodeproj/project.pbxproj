@@ -86,6 +86,7 @@
 		86F1A5A21F94D21D00D8D1BF /* ExperiencePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86F1A59D1F94D21D00D8D1BF /* ExperiencePresenter.swift */; };
 		86F1A5A31F94D21D00D8D1BF /* ExperiencePresenterImplementation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86F1A59E1F94D21D00D8D1BF /* ExperiencePresenterImplementation.swift */; };
 		86F1A5A41F94D21D00D8D1BF /* ExperienceViewContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86F1A59F1F94D21D00D8D1BF /* ExperienceViewContract.swift */; };
+		86F1A5AE1F94DC0600D8D1BF /* XPCompetenceCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86F1A5AD1F94DC0600D8D1BF /* XPCompetenceCoordinator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -170,6 +171,7 @@
 		86F1A59D1F94D21D00D8D1BF /* ExperiencePresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExperiencePresenter.swift; sourceTree = "<group>"; };
 		86F1A59E1F94D21D00D8D1BF /* ExperiencePresenterImplementation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExperiencePresenterImplementation.swift; sourceTree = "<group>"; };
 		86F1A59F1F94D21D00D8D1BF /* ExperienceViewContract.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExperienceViewContract.swift; sourceTree = "<group>"; };
+		86F1A5AD1F94DC0600D8D1BF /* XPCompetenceCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XPCompetenceCoordinator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -622,6 +624,7 @@
 				86E4402C1F4A10D50040BD55 /* Shared */,
 				86E4402A1F4A0FE70040BD55 /* MainCoordinator.swift */,
 				864F5EB91F714131001E7064 /* FormationCoordinator.swift */,
+				86F1A5AD1F94DC0600D8D1BF /* XPCompetenceCoordinator.swift */,
 			);
 			name = Coordinator;
 			sourceTree = "<group>";
@@ -721,14 +724,6 @@
 			name = Categories;
 			sourceTree = "<group>";
 		};
-		86F1A5AC1F94D88A00D8D1BF /* ViewController */ = {
-			isa = PBXGroup;
-			children = (
-				862D56711F83E1B80090BA0B /* SwitchContainerViewController.swift */,
-			);
-                        name = ViewController;
-                        sourceTree = "<group>";
-		};
 		86F1A5A51F94D24D00D8D1BF /* Experience */ = {
 			isa = PBXGroup;
 			children = (
@@ -788,6 +783,14 @@
 				86F1A59C1F94D21D00D8D1BF /* ExperienceControllerViewModelMapper.swift */,
 			);
 			name = Mapper;
+			sourceTree = "<group>";
+		};
+		86F1A5AC1F94D88A00D8D1BF /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				862D56711F83E1B80090BA0B /* SwitchContainerViewController.swift */,
+			);
+			name = ViewController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -880,6 +883,7 @@
 				86E4403C1F4A163F0040BD55 /* HomeControllerViewModel.swift in Sources */,
 				86F1A5A11F94D21D00D8D1BF /* ExperienceControllerViewModelMapper.swift in Sources */,
 				864F5EBA1F714131001E7064 /* FormationCoordinator.swift in Sources */,
+				86F1A5AE1F94DC0600D8D1BF /* XPCompetenceCoordinator.swift in Sources */,
 				864F5ECE1F71512D001E7064 /* FormationDetailPresenterImplementation.swift in Sources */,
 				867FF32C1F6C3BED0085A80D /* UICollectionView+Registerable.swift in Sources */,
 				86F1A5961F94B0B500D8D1BF /* CompetenceViewController.swift in Sources */,
