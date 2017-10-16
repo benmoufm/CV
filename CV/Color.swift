@@ -12,7 +12,7 @@ import UIKit
 extension UIColor {
 
     static let mainColor = UIColor.orange
-    static let secondaryColor = UIColor.red
+    static let secondaryColor = UIColor.orange.withAlphaComponent(0.2)
     static let backgroundColor = UIColor.white
     static let textColor = UIColor.gray
     static let navigationTitleTextColor = UIColor.white
