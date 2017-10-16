@@ -11,7 +11,7 @@ import Foundation
 struct CompetenceControllerViewModelMapper {
 
     func map() -> CompetenceControllerViewModel {
-        return CompetenceControllerViewModel()
+        return CompetenceControllerViewModel(tableView: CompetenceTableViewModelMapper().map())
     }
 
 }
