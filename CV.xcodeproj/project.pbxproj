@@ -34,7 +34,7 @@
 		862D56741F83E1B80090BA0B /* CompetencePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 862D566E1F83E1B80090BA0B /* CompetencePresenter.swift */; };
 		862D56751F83E1B80090BA0B /* CompetencePresenterImplementation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 862D566F1F83E1B80090BA0B /* CompetencePresenterImplementation.swift */; };
 		862D56761F83E1B80090BA0B /* CompetenceViewContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 862D56701F83E1B80090BA0B /* CompetenceViewContract.swift */; };
-		862D56771F83E1B80090BA0B /* CompetenceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 862D56711F83E1B80090BA0B /* CompetenceViewController.swift */; };
+		862D56771F83E1B80090BA0B /* SwitchContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 862D56711F83E1B80090BA0B /* SwitchContainerViewController.swift */; };
 		863ECEA11F69378700817C6D /* Results.swift in Sources */ = {isa = PBXBuildFile; fileRef = 863ECEA01F69378700817C6D /* Results.swift */; };
 		863ECEA31F69645500817C6D /* CVError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 863ECEA21F69645500817C6D /* CVError.swift */; };
 		864F5EBA1F714131001E7064 /* FormationCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 864F5EB91F714131001E7064 /* FormationCoordinator.swift */; };
@@ -79,6 +79,7 @@
 		86E440461F4A1A050040BD55 /* ViewControllerFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86E440451F4A1A050040BD55 /* ViewControllerFactory.swift */; };
 		86E4404B1F4AE7810040BD55 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86E4404A1F4AE7810040BD55 /* Color.swift */; };
 		86E440511F4B2C8D0040BD55 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 86E4404F1F4B2C8D0040BD55 /* Localizable.strings */; };
+		86F1A5961F94B0B500D8D1BF /* CompetenceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86F1A5951F94B0B500D8D1BF /* CompetenceViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -109,7 +110,7 @@
 		862D566E1F83E1B80090BA0B /* CompetencePresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CompetencePresenter.swift; sourceTree = "<group>"; };
 		862D566F1F83E1B80090BA0B /* CompetencePresenterImplementation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CompetencePresenterImplementation.swift; sourceTree = "<group>"; };
 		862D56701F83E1B80090BA0B /* CompetenceViewContract.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CompetenceViewContract.swift; sourceTree = "<group>"; };
-		862D56711F83E1B80090BA0B /* CompetenceViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CompetenceViewController.swift; sourceTree = "<group>"; };
+		862D56711F83E1B80090BA0B /* SwitchContainerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwitchContainerViewController.swift; sourceTree = "<group>"; };
 		863ECEA01F69378700817C6D /* Results.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Results.swift; sourceTree = "<group>"; };
 		863ECEA21F69645500817C6D /* CVError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CVError.swift; sourceTree = "<group>"; };
 		864F5EB91F714131001E7064 /* FormationCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FormationCoordinator.swift; sourceTree = "<group>"; };
@@ -156,6 +157,7 @@
 		86E440431F4A16A40040BD55 /* Startable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Startable.swift; sourceTree = "<group>"; };
 		86E440451F4A1A050040BD55 /* ViewControllerFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllerFactory.swift; sourceTree = "<group>"; };
 		86E4404A1F4AE7810040BD55 /* Color.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
+		86F1A5951F94B0B500D8D1BF /* CompetenceViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CompetenceViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -353,7 +355,7 @@
 		862D566B1F83E1660090BA0B /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
-				862D56711F83E1B80090BA0B /* CompetenceViewController.swift */,
+				86F1A5951F94B0B500D8D1BF /* CompetenceViewController.swift */,
 			);
 			name = ViewController;
 			sourceTree = "<group>";
@@ -683,6 +685,7 @@
 		86E440421F4A16970040BD55 /* Shared */ = {
 			isa = PBXGroup;
 			children = (
+				86F1A5AC1F94D88A00D8D1BF /* ViewController */,
 				86E440431F4A16A40040BD55 /* Startable.swift */,
 			);
 			name = Shared;
@@ -703,6 +706,14 @@
 				862D56501F826D360090BA0B /* Animation.swift */,
 			);
 			name = Categories;
+			sourceTree = "<group>";
+		};
+		86F1A5AC1F94D88A00D8D1BF /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				862D56711F83E1B80090BA0B /* SwitchContainerViewController.swift */,
+			);
+			name = ViewController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -788,13 +799,14 @@
 				8600EA981F7BAEFF0037AFD3 /* PresentationPresenterImplementation.swift in Sources */,
 				864F5ECB1F71512D001E7064 /* FormationDetailControllerViewModel.swift in Sources */,
 				867DA5221F5D57CF000C5AC2 /* MailRepository.swift in Sources */,
-				862D56771F83E1B80090BA0B /* CompetenceViewController.swift in Sources */,
+				862D56771F83E1B80090BA0B /* SwitchContainerViewController.swift in Sources */,
 				860AE2A41F574305004B9F65 /* ContactControllerViewModelMapper.swift in Sources */,
 				8600EA961F7BAEFF0037AFD3 /* PresentationControllerViewModelMapper.swift in Sources */,
 				86E4403C1F4A163F0040BD55 /* HomeControllerViewModel.swift in Sources */,
 				864F5EBA1F714131001E7064 /* FormationCoordinator.swift in Sources */,
 				864F5ECE1F71512D001E7064 /* FormationDetailPresenterImplementation.swift in Sources */,
 				867FF32C1F6C3BED0085A80D /* UICollectionView+Registerable.swift in Sources */,
+				86F1A5961F94B0B500D8D1BF /* CompetenceViewController.swift in Sources */,
 				86E4403F1F4A163F0040BD55 /* HomePresenterImplementation.swift in Sources */,
 				862D56721F83E1B80090BA0B /* CompetenceControllerViewModel.swift in Sources */,
 				865F30F81F6A75F400F41B5C /* FormationPresenter.swift in Sources */,
