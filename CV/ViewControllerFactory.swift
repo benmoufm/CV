@@ -47,6 +47,20 @@ final class ViewControllerFactory {
         return containerViewController
     }
 
+    func competenceViewController() -> CompetenceViewController {
+        let competenceViewController = CompetenceViewController()
+        let presenter = CompetencePresenterImplementation(viewContract: competenceViewController)
+        competenceViewController.presenter = presenter
+        return competenceViewController
+    }
+
+    func experienceViewController() -> ExperienceViewController {
+        let experienceViewController = ExperienceViewController()
+        let presenter = ExperiencePresenterImplementation(viewContract: experienceViewController)
+        experienceViewController.presenter = presenter
+        return experienceViewController
+    }
+
     func contactViewController() -> ContactViewController {
         let contactViewController = ContactViewController()
         let presenter = ContactPresenterImplementation(
