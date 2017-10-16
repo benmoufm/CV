@@ -9,5 +9,5 @@
 import Foundation
 
 struct CompetenceControllerViewModel {
-
+    let tableView: CompetenceTableViewModel
 }
