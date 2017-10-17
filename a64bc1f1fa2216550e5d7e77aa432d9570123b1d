@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "fac31feb_7fc61f26",
+        "filename": "CV/fr.lproj/Localizable.strings",
+        "patchSetId": 1
+      },
+      "lineNbr": 52,
+      "author": {
+        "id": 1011781
+      },
+      "writtenOn": "2017-10-17T10:36:37Z",
+      "side": 1,
+      "message": "mauvais naming",
+      "range": {
+        "startLine": 33,
+        "startChar": 1,
+        "endLine": 52,
+        "endChar": 13
+      },
+      "revId": "a64bc1f1fa2216550e5d7e77aa432d9570123b1d",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    }
+  ]
+}
