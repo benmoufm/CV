@@ -1,0 +1,153 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "a4505342_4db94a3e",
+        "filename": "CV/CompetenceViewController.swift",
+        "patchSetId": 1
+      },
+      "lineNbr": 15,
+      "author": {
+        "id": 1011781
+      },
+      "writtenOn": "2017-10-17T10:05:04Z",
+      "side": 1,
+      "message": "rollback du commit précédent?",
+      "revId": "146bff0ab1884961d6d2a07154b84bd63454119f",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "e35406f0_ba383cff",
+        "filename": "CV/SwitchContainerViewController.swift",
+        "patchSetId": 1
+      },
+      "lineNbr": 15,
+      "author": {
+        "id": 1011781
+      },
+      "writtenOn": "2017-10-17T10:05:04Z",
+      "side": 1,
+      "message": "pourquoi tu as une tableView ici",
+      "revId": "146bff0ab1884961d6d2a07154b84bd63454119f",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "b9a19fe2_a0a47262",
+        "filename": "CV/SwitchContainerViewController.swift",
+        "patchSetId": 1
+      },
+      "lineNbr": 16,
+      "author": {
+        "id": 1011781
+      },
+      "writtenOn": "2017-10-17T10:05:04Z",
+      "side": 1,
+      "message": "lazy var",
+      "range": {
+        "startLine": 16,
+        "startChar": 0,
+        "endLine": 16,
+        "endChar": 47
+      },
+      "revId": "146bff0ab1884961d6d2a07154b84bd63454119f",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "b206591a_8e70e9b8",
+        "filename": "CV/SwitchContainerViewController.swift",
+        "patchSetId": 1
+      },
+      "lineNbr": 18,
+      "author": {
+        "id": 1011781
+      },
+      "writtenOn": "2017-10-17T10:05:04Z",
+      "side": 1,
+      "message": "il faudrait que tu update ton setup quand ces var sont changées",
+      "range": {
+        "startLine": 17,
+        "startChar": 0,
+        "endLine": 18,
+        "endChar": 53
+      },
+      "revId": "146bff0ab1884961d6d2a07154b84bd63454119f",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "11bb72c2_b7152fe0",
+        "filename": "CV/SwitchContainerViewController.swift",
+        "patchSetId": 1
+      },
+      "lineNbr": 40,
+      "author": {
+        "id": 1011781
+      },
+      "writtenOn": "2017-10-17T10:05:04Z",
+      "side": 1,
+      "message": "private?",
+      "range": {
+        "startLine": 40,
+        "startChar": 4,
+        "endLine": 40,
+        "endChar": 22
+      },
+      "revId": "146bff0ab1884961d6d2a07154b84bd63454119f",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "dce5457e_af9e3312",
+        "filename": "CV/SwitchContainerViewController.swift",
+        "patchSetId": 1
+      },
+      "lineNbr": 47,
+      "author": {
+        "id": 1011781
+      },
+      "writtenOn": "2017-10-17T10:05:04Z",
+      "side": 1,
+      "message": "pas idéal du tout, tes viewController ne vont pas recevoir les callback viewWillAppear ect...\nIl faut que tu remove et insère tes vues à chaque fois plutôt que de jouer avec un hidden",
+      "range": {
+        "startLine": 42,
+        "startChar": 8,
+        "endLine": 47,
+        "endChar": 57
+      },
+      "revId": "146bff0ab1884961d6d2a07154b84bd63454119f",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "75d38683_d6a2f237",
+        "filename": "CV/SwitchContainerViewController.swift",
+        "patchSetId": 1
+      },
+      "lineNbr": 61,
+      "author": {
+        "id": 1011781
+      },
+      "writtenOn": "2017-10-17T10:05:04Z",
+      "side": 1,
+      "message": "utilise les title des viewControllers",
+      "range": {
+        "startLine": 61,
+        "startChar": 50,
+        "endLine": 61,
+        "endChar": 80
+      },
+      "revId": "146bff0ab1884961d6d2a07154b84bd63454119f",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    }
+  ]
+}
