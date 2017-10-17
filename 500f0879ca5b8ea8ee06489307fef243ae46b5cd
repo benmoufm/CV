@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "c7369041_7f4d9c45",
+        "filename": "CV/XPCompetenceCoordinator.swift",
+        "patchSetId": 1
+      },
+      "lineNbr": 14,
+      "author": {
+        "id": 1011781
+      },
+      "writtenOn": "2017-10-17T10:25:13Z",
+      "side": 1,
+      "message": "switchContainerViewController",
+      "range": {
+        "startLine": 14,
+        "startChar": 8,
+        "endLine": 14,
+        "endChar": 31
+      },
+      "revId": "500f0879ca5b8ea8ee06489307fef243ae46b5cd",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    }
+  ]
+}
