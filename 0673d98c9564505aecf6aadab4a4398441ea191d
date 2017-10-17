@@ -1,0 +1,73 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "68fb1e8c_07fa8b27",
+        "filename": "CV/CompetenceViewController.swift",
+        "patchSetId": 3
+      },
+      "lineNbr": 17,
+      "author": {
+        "id": 1011781
+      },
+      "writtenOn": "2017-10-17T09:45:24Z",
+      "side": 1,
+      "message": "tu ne l\u0027utilise pas?",
+      "range": {
+        "startLine": 17,
+        "startChar": 4,
+        "endLine": 17,
+        "endChar": 33
+      },
+      "revId": "0673d98c9564505aecf6aadab4a4398441ea191d",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "5fe22bfa_1614e0db",
+        "filename": "CV/CompetenceViewController.swift",
+        "patchSetId": 3
+      },
+      "lineNbr": 17,
+      "author": {
+        "id": 1011781
+      },
+      "writtenOn": "2017-10-17T09:45:24Z",
+      "side": 1,
+      "message": "ce serait mieux d\u0027avoir des lazy var",
+      "range": {
+        "startLine": 16,
+        "startChar": 4,
+        "endLine": 17,
+        "endChar": 33
+      },
+      "revId": "0673d98c9564505aecf6aadab4a4398441ea191d",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "450db8bc_25a38ba7",
+        "filename": "CV/MainCoordinator.swift",
+        "patchSetId": 3
+      },
+      "lineNbr": 32,
+      "author": {
+        "id": 1011781
+      },
+      "writtenOn": "2017-10-17T09:45:24Z",
+      "side": 1,
+      "message": "alignement",
+      "range": {
+        "startLine": 32,
+        "startChar": 11,
+        "endLine": 32,
+        "endChar": 17
+      },
+      "revId": "0673d98c9564505aecf6aadab4a4398441ea191d",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    }
+  ]
+}
