@@ -35,6 +35,13 @@
 		862D56751F83E1B80090BA0B /* CompetencePresenterImplementation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 862D566F1F83E1B80090BA0B /* CompetencePresenterImplementation.swift */; };
 		862D56761F83E1B80090BA0B /* CompetenceViewContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 862D56701F83E1B80090BA0B /* CompetenceViewContract.swift */; };
 		862D56771F83E1B80090BA0B /* SwitchContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 862D56711F83E1B80090BA0B /* SwitchContainerViewController.swift */; };
+		8639DB5C1F9A477600BFC0BC /* CompetenceCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8639DB551F9A477600BFC0BC /* CompetenceCellViewModel.swift */; };
+		8639DB5D1F9A477600BFC0BC /* CompetenceCellViewModelMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8639DB561F9A477600BFC0BC /* CompetenceCellViewModelMapper.swift */; };
+		8639DB5E1F9A477600BFC0BC /* CompetenceTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8639DB571F9A477600BFC0BC /* CompetenceTableViewCell.swift */; };
+		8639DB5F1F9A477600BFC0BC /* CompetenceTableViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8639DB581F9A477600BFC0BC /* CompetenceTableViewDataSource.swift */; };
+		8639DB601F9A477600BFC0BC /* CompetenceTableViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8639DB591F9A477600BFC0BC /* CompetenceTableViewModel.swift */; };
+		8639DB611F9A477600BFC0BC /* CompetenceTableViewModelMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8639DB5A1F9A477600BFC0BC /* CompetenceTableViewModelMapper.swift */; };
+		8639DB621F9A477600BFC0BC /* XPCompetenceCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8639DB5B1F9A477600BFC0BC /* XPCompetenceCoordinator.swift */; };
 		863ECEA11F69378700817C6D /* Results.swift in Sources */ = {isa = PBXBuildFile; fileRef = 863ECEA01F69378700817C6D /* Results.swift */; };
 		863ECEA31F69645500817C6D /* CVError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 863ECEA21F69645500817C6D /* CVError.swift */; };
 		864F5EBA1F714131001E7064 /* FormationCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 864F5EB91F714131001E7064 /* FormationCoordinator.swift */; };
@@ -86,13 +93,6 @@
 		86F1A5A21F94D21D00D8D1BF /* ExperiencePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86F1A59D1F94D21D00D8D1BF /* ExperiencePresenter.swift */; };
 		86F1A5A31F94D21D00D8D1BF /* ExperiencePresenterImplementation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86F1A59E1F94D21D00D8D1BF /* ExperiencePresenterImplementation.swift */; };
 		86F1A5A41F94D21D00D8D1BF /* ExperienceViewContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86F1A59F1F94D21D00D8D1BF /* ExperienceViewContract.swift */; };
-		86F1A5AE1F94DC0600D8D1BF /* XPCompetenceCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86F1A5AD1F94DC0600D8D1BF /* XPCompetenceCoordinator.swift */; };
-		86F1A5B01F94E7F400D8D1BF /* CompetenceTableViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86F1A5AF1F94E7F400D8D1BF /* CompetenceTableViewDataSource.swift */; };
-		86F1A5B31F94E97E00D8D1BF /* CompetenceTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86F1A5B21F94E97E00D8D1BF /* CompetenceTableViewCell.swift */; };
-		86F1A5B51F94E9F000D8D1BF /* CompetenceTableViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86F1A5B41F94E9F000D8D1BF /* CompetenceTableViewModel.swift */; };
-		86F1A5B71F94EA3700D8D1BF /* CompetenceCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86F1A5B61F94EA3700D8D1BF /* CompetenceCellViewModel.swift */; };
-		86F1A5B91F94ECAD00D8D1BF /* CompetenceTableViewModelMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86F1A5B81F94ECAD00D8D1BF /* CompetenceTableViewModelMapper.swift */; };
-		86F1A5BB1F94ECC500D8D1BF /* CompetenceCellViewModelMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86F1A5BA1F94ECC500D8D1BF /* CompetenceCellViewModelMapper.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -124,6 +124,13 @@
 		862D566F1F83E1B80090BA0B /* CompetencePresenterImplementation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CompetencePresenterImplementation.swift; sourceTree = "<group>"; };
 		862D56701F83E1B80090BA0B /* CompetenceViewContract.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CompetenceViewContract.swift; sourceTree = "<group>"; };
 		862D56711F83E1B80090BA0B /* SwitchContainerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwitchContainerViewController.swift; sourceTree = "<group>"; };
+		8639DB551F9A477600BFC0BC /* CompetenceCellViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CompetenceCellViewModel.swift; sourceTree = "<group>"; };
+		8639DB561F9A477600BFC0BC /* CompetenceCellViewModelMapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CompetenceCellViewModelMapper.swift; sourceTree = "<group>"; };
+		8639DB571F9A477600BFC0BC /* CompetenceTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CompetenceTableViewCell.swift; sourceTree = "<group>"; };
+		8639DB581F9A477600BFC0BC /* CompetenceTableViewDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CompetenceTableViewDataSource.swift; sourceTree = "<group>"; };
+		8639DB591F9A477600BFC0BC /* CompetenceTableViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CompetenceTableViewModel.swift; sourceTree = "<group>"; };
+		8639DB5A1F9A477600BFC0BC /* CompetenceTableViewModelMapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CompetenceTableViewModelMapper.swift; sourceTree = "<group>"; };
+		8639DB5B1F9A477600BFC0BC /* XPCompetenceCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XPCompetenceCoordinator.swift; sourceTree = "<group>"; };
 		863ECEA01F69378700817C6D /* Results.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Results.swift; sourceTree = "<group>"; };
 		863ECEA21F69645500817C6D /* CVError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CVError.swift; sourceTree = "<group>"; };
 		864F5EB91F714131001E7064 /* FormationCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FormationCoordinator.swift; sourceTree = "<group>"; };
@@ -177,13 +184,6 @@
 		86F1A59D1F94D21D00D8D1BF /* ExperiencePresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExperiencePresenter.swift; sourceTree = "<group>"; };
 		86F1A59E1F94D21D00D8D1BF /* ExperiencePresenterImplementation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExperiencePresenterImplementation.swift; sourceTree = "<group>"; };
 		86F1A59F1F94D21D00D8D1BF /* ExperienceViewContract.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExperienceViewContract.swift; sourceTree = "<group>"; };
-		86F1A5AD1F94DC0600D8D1BF /* XPCompetenceCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XPCompetenceCoordinator.swift; sourceTree = "<group>"; };
-		86F1A5AF1F94E7F400D8D1BF /* CompetenceTableViewDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CompetenceTableViewDataSource.swift; sourceTree = "<group>"; };
-		86F1A5B21F94E97E00D8D1BF /* CompetenceTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CompetenceTableViewCell.swift; sourceTree = "<group>"; };
-		86F1A5B41F94E9F000D8D1BF /* CompetenceTableViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CompetenceTableViewModel.swift; sourceTree = "<group>"; };
-		86F1A5B61F94EA3700D8D1BF /* CompetenceCellViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CompetenceCellViewModel.swift; sourceTree = "<group>"; };
-		86F1A5B81F94ECAD00D8D1BF /* CompetenceTableViewModelMapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CompetenceTableViewModelMapper.swift; sourceTree = "<group>"; };
-		86F1A5BA1F94ECC500D8D1BF /* CompetenceCellViewModelMapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CompetenceCellViewModelMapper.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -347,7 +347,7 @@
 		862D56671F83E13C0090BA0B /* UI */ = {
 			isa = PBXGroup;
 			children = (
-				86F1A5B11F94E96E00D8D1BF /* View */,
+				8639DB631F9A47D500BFC0BC /* View */,
 				862D566B1F83E1660090BA0B /* ViewController */,
 				862D56701F83E1B80090BA0B /* CompetenceViewContract.swift */,
 			);
@@ -359,7 +359,7 @@
 			children = (
 				862D566A1F83E1590090BA0B /* Mapper */,
 				862D56691F83E14A0090BA0B /* ViewModel */,
-				86F1A5AF1F94E7F400D8D1BF /* CompetenceTableViewDataSource.swift */,
+				8639DB581F9A477600BFC0BC /* CompetenceTableViewDataSource.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -367,9 +367,9 @@
 		862D56691F83E14A0090BA0B /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				8639DB551F9A477600BFC0BC /* CompetenceCellViewModel.swift */,
+				8639DB591F9A477600BFC0BC /* CompetenceTableViewModel.swift */,
 				862D566C1F83E1B80090BA0B /* CompetenceControllerViewModel.swift */,
-				86F1A5B41F94E9F000D8D1BF /* CompetenceTableViewModel.swift */,
-				86F1A5B61F94EA3700D8D1BF /* CompetenceCellViewModel.swift */,
 			);
 			name = ViewModel;
 			sourceTree = "<group>";
@@ -377,9 +377,9 @@
 		862D566A1F83E1590090BA0B /* Mapper */ = {
 			isa = PBXGroup;
 			children = (
+				8639DB561F9A477600BFC0BC /* CompetenceCellViewModelMapper.swift */,
+				8639DB5A1F9A477600BFC0BC /* CompetenceTableViewModelMapper.swift */,
 				862D566D1F83E1B80090BA0B /* CompetenceControllerViewModelMapper.swift */,
-				86F1A5B81F94ECAD00D8D1BF /* CompetenceTableViewModelMapper.swift */,
-				86F1A5BA1F94ECC500D8D1BF /* CompetenceCellViewModelMapper.swift */,
 			);
 			name = Mapper;
 			sourceTree = "<group>";
@@ -390,6 +390,14 @@
 				86F1A5951F94B0B500D8D1BF /* CompetenceViewController.swift */,
 			);
 			name = ViewController;
+			sourceTree = "<group>";
+		};
+		8639DB631F9A47D500BFC0BC /* View */ = {
+			isa = PBXGroup;
+			children = (
+				8639DB571F9A477600BFC0BC /* CompetenceTableViewCell.swift */,
+			);
+			name = View;
 			sourceTree = "<group>";
 		};
 		864F5EBE1F7150CE001E7064 /* FormationDetail */ = {
@@ -642,7 +650,7 @@
 				86E4402C1F4A10D50040BD55 /* Shared */,
 				86E4402A1F4A0FE70040BD55 /* MainCoordinator.swift */,
 				864F5EB91F714131001E7064 /* FormationCoordinator.swift */,
-				86F1A5AD1F94DC0600D8D1BF /* XPCompetenceCoordinator.swift */,
+				8639DB5B1F9A477600BFC0BC /* XPCompetenceCoordinator.swift */,
 			);
 			name = Coordinator;
 			sourceTree = "<group>";
@@ -811,14 +819,6 @@
 			name = ViewController;
 			sourceTree = "<group>";
 		};
-		86F1A5B11F94E96E00D8D1BF /* View */ = {
-			isa = PBXGroup;
-			children = (
-				86F1A5B21F94E97E00D8D1BF /* CompetenceTableViewCell.swift */,
-			);
-			name = View;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -892,12 +892,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				86F1A5B71F94EA3700D8D1BF /* CompetenceCellViewModel.swift in Sources */,
-				86F1A5B51F94E9F000D8D1BF /* CompetenceTableViewModel.swift in Sources */,
 				862D56731F83E1B80090BA0B /* CompetenceControllerViewModelMapper.swift in Sources */,
 				867FF31F1F6C33AB0085A80D /* FormationCellViewModel.swift in Sources */,
 				86E440441F4A16A40040BD55 /* Startable.swift in Sources */,
 				86CE0CA71F1BC64D00DA0916 /* AppDelegate.swift in Sources */,
+				8639DB621F9A477600BFC0BC /* XPCompetenceCoordinator.swift in Sources */,
 				867DA5231F5D57CF000C5AC2 /* TemplateMailRepository.swift in Sources */,
 				860AE2A51F574305004B9F65 /* ContactPresenter.swift in Sources */,
 				867FF3211F6C34680085A80D /* FormationCollectionViewModelMapper.swift in Sources */,
@@ -911,7 +910,6 @@
 				86E4403C1F4A163F0040BD55 /* HomeControllerViewModel.swift in Sources */,
 				86F1A5A11F94D21D00D8D1BF /* ExperienceControllerViewModelMapper.swift in Sources */,
 				864F5EBA1F714131001E7064 /* FormationCoordinator.swift in Sources */,
-				86F1A5AE1F94DC0600D8D1BF /* XPCompetenceCoordinator.swift in Sources */,
 				864F5ECE1F71512D001E7064 /* FormationDetailPresenterImplementation.swift in Sources */,
 				867FF32C1F6C3BED0085A80D /* UICollectionView+Registerable.swift in Sources */,
 				86F1A5961F94B0B500D8D1BF /* CompetenceViewController.swift in Sources */,
@@ -923,10 +921,10 @@
 				860AE2B11F599DE5004B9F65 /* ContactTableViewCell.swift in Sources */,
 				867FF3281F6C39DD0085A80D /* FormationCollectionViewCell.swift in Sources */,
 				86E440401F4A163F0040BD55 /* HomeViewContract.swift in Sources */,
-				86F1A5B91F94ECAD00D8D1BF /* CompetenceTableViewModelMapper.swift in Sources */,
 				86F1A5A31F94D21D00D8D1BF /* ExperiencePresenterImplementation.swift in Sources */,
 				860AE2B61F59B3A1004B9F65 /* ContactTableViewModelMapper.swift in Sources */,
 				8600EA9A1F7BAEFF0037AFD3 /* PresentationViewController.swift in Sources */,
+				8639DB611F9A477600BFC0BC /* CompetenceTableViewModelMapper.swift in Sources */,
 				860AE2A61F574305004B9F65 /* ContactPresenterImplementation.swift in Sources */,
 				864F5ED01F71512D001E7064 /* FormationDetailViewController.swift in Sources */,
 				860AE2AF1F599D56004B9F65 /* ContactTableViewDataSource.swift in Sources */,
@@ -939,9 +937,9 @@
 				865F30F91F6A75F400F41B5C /* FormationPresenterImplementation.swift in Sources */,
 				867FF3251F6C38E70085A80D /* FormationCollectionViewDataSource.swift in Sources */,
 				864F5ECD1F71512D001E7064 /* FormationDetailPresenter.swift in Sources */,
+				8639DB5C1F9A477600BFC0BC /* CompetenceCellViewModel.swift in Sources */,
 				86F1A59A1F94CC9500D8D1BF /* ExperienceViewController.swift in Sources */,
 				862D56751F83E1B80090BA0B /* CompetencePresenterImplementation.swift in Sources */,
-				86F1A5BB1F94ECC500D8D1BF /* CompetenceCellViewModelMapper.swift in Sources */,
 				860AE2B81F59B40D004B9F65 /* ContactCellViewModelMapper.swift in Sources */,
 				860AE2A81F574305004B9F65 /* ContactViewController.swift in Sources */,
 				86E4404B1F4AE7810040BD55 /* Color.swift in Sources */,
@@ -950,6 +948,8 @@
 				867FF3231F6C36810085A80D /* FormationCellViewModelMapper.swift in Sources */,
 				864F5ECF1F71512D001E7064 /* FormationDetailViewContract.swift in Sources */,
 				863ECEA11F69378700817C6D /* Results.swift in Sources */,
+				8639DB5D1F9A477600BFC0BC /* CompetenceCellViewModelMapper.swift in Sources */,
+				8639DB5F1F9A477600BFC0BC /* CompetenceTableViewDataSource.swift in Sources */,
 				86E4402B1F4A0FE70040BD55 /* MainCoordinator.swift in Sources */,
 				86E440411F4A163F0040BD55 /* HomeViewController.swift in Sources */,
 				8600EA991F7BAEFF0037AFD3 /* PresentationViewContract.swift in Sources */,
@@ -957,8 +957,8 @@
 				86E4403E1F4A163F0040BD55 /* HomePresenter.swift in Sources */,
 				862D56741F83E1B80090BA0B /* CompetencePresenter.swift in Sources */,
 				867DA5181F59DC0F000C5AC2 /* UITableView+Registerable.swift in Sources */,
-				86F1A5B01F94E7F400D8D1BF /* CompetenceTableViewDataSource.swift in Sources */,
 				86F1A5A41F94D21D00D8D1BF /* ExperienceViewContract.swift in Sources */,
+				8639DB601F9A477600BFC0BC /* CompetenceTableViewModel.swift in Sources */,
 				8600EA971F7BAEFF0037AFD3 /* PresentationPresenter.swift in Sources */,
 				862095BF1F4D7DB8005B1C7C /* ViewRounded.swift in Sources */,
 				860AE2A31F574305004B9F65 /* ContactControllerViewModel.swift in Sources */,
@@ -966,7 +966,7 @@
 				860AE2AD1F599C88004B9F65 /* ContactTableViewModel.swift in Sources */,
 				86E4403D1F4A163F0040BD55 /* HomeControllerViewModelMapper.swift in Sources */,
 				86B29C491F79277F00C63902 /* Loadable.swift in Sources */,
-				86F1A5B31F94E97E00D8D1BF /* CompetenceTableViewCell.swift in Sources */,
+				8639DB5E1F9A477600BFC0BC /* CompetenceTableViewCell.swift in Sources */,
 				86E4402E1F4A10DF0040BD55 /* Coordinator.swift in Sources */,
 				867FF31D1F6C33620085A80D /* FormationCollectionViewModel.swift in Sources */,
 				860AE2B41F59A258004B9F65 /* ContactCellViewModel.swift in Sources */,
