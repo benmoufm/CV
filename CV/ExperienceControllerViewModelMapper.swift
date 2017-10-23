@@ -11,7 +11,7 @@ import Foundation
 struct ExperienceControllerViewModelMapper {
 
     func map() -> ExperienceControllerViewModel {
-        return ExperienceControllerViewModel()
+        return ExperienceControllerViewModel(tableView: ExperienceTableViewModelMapper().map())
     }
 
 }
