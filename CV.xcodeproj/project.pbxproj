@@ -70,13 +70,15 @@
 		867FF3251F6C38E70085A80D /* FormationCollectionViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 867FF3241F6C38E70085A80D /* FormationCollectionViewDataSource.swift */; };
 		867FF3281F6C39DD0085A80D /* FormationCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 867FF3271F6C39DD0085A80D /* FormationCollectionViewCell.swift */; };
 		867FF32C1F6C3BED0085A80D /* UICollectionView+Registerable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 867FF32B1F6C3BED0085A80D /* UICollectionView+Registerable.swift */; };
-		869163B01FA23C4000EC1323 /* ExperienceCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 869163AA1FA23C4000EC1323 /* ExperienceCellViewModel.swift */; };
-		869163B11FA23C4000EC1323 /* ExperienceCellViewModelMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 869163AB1FA23C4000EC1323 /* ExperienceCellViewModelMapper.swift */; };
-		869163B21FA23C4000EC1323 /* ExperienceTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 869163AC1FA23C4000EC1323 /* ExperienceTableViewCell.swift */; };
-		869163B31FA23C4000EC1323 /* ExperienceTableViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 869163AD1FA23C4000EC1323 /* ExperienceTableViewDataSource.swift */; };
-		869163B41FA23C4000EC1323 /* ExperienceTableViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 869163AE1FA23C4000EC1323 /* ExperienceTableViewModel.swift */; };
-		869163B51FA23C4000EC1323 /* ExperienceTableViewModelMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 869163AF1FA23C4000EC1323 /* ExperienceTableViewModelMapper.swift */; };
+		869F91F41F9E934D00C05DEF /* Skill.swift in Sources */ = {isa = PBXBuildFile; fileRef = 869F91F31F9E934D00C05DEF /* Skill.swift */; };
+		869F91F61F9E949000C05DEF /* SkillCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 869F91F51F9E949000C05DEF /* SkillCategory.swift */; };
 		86B29C491F79277F00C63902 /* Loadable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86B29C481F79277F00C63902 /* Loadable.swift */; };
+		86BDE6B51FA634E600CA970E /* ExperienceTableViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86BDE6AF1FA634E600CA970E /* ExperienceTableViewDataSource.swift */; };
+		86BDE6B61FA634E600CA970E /* ExperienceCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86BDE6B01FA634E600CA970E /* ExperienceCellViewModel.swift */; };
+		86BDE6B71FA634E600CA970E /* ExperienceCellViewModelMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86BDE6B11FA634E600CA970E /* ExperienceCellViewModelMapper.swift */; };
+		86BDE6B81FA634E600CA970E /* ExperienceTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86BDE6B21FA634E600CA970E /* ExperienceTableViewCell.swift */; };
+		86BDE6B91FA634E600CA970E /* ExperienceTableViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86BDE6B31FA634E600CA970E /* ExperienceTableViewModel.swift */; };
+		86BDE6BA1FA634E600CA970E /* ExperienceTableViewModelMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86BDE6B41FA634E600CA970E /* ExperienceTableViewModelMapper.swift */; };
 		86CE0CA71F1BC64D00DA0916 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86CE0CA61F1BC64D00DA0916 /* AppDelegate.swift */; };
 		86CE0CAE1F1BC64E00DA0916 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 86CE0CAD1F1BC64E00DA0916 /* Assets.xcassets */; };
 		86CE0CB11F1BC64E00DA0916 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 86CE0CAF1F1BC64E00DA0916 /* LaunchScreen.storyboard */; };
@@ -165,13 +167,15 @@
 		867FF3241F6C38E70085A80D /* FormationCollectionViewDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FormationCollectionViewDataSource.swift; sourceTree = "<group>"; };
 		867FF3271F6C39DD0085A80D /* FormationCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FormationCollectionViewCell.swift; sourceTree = "<group>"; };
 		867FF32B1F6C3BED0085A80D /* UICollectionView+Registerable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UICollectionView+Registerable.swift"; sourceTree = "<group>"; };
-		869163AA1FA23C4000EC1323 /* ExperienceCellViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExperienceCellViewModel.swift; sourceTree = "<group>"; };
-		869163AB1FA23C4000EC1323 /* ExperienceCellViewModelMapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExperienceCellViewModelMapper.swift; sourceTree = "<group>"; };
-		869163AC1FA23C4000EC1323 /* ExperienceTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExperienceTableViewCell.swift; sourceTree = "<group>"; };
-		869163AD1FA23C4000EC1323 /* ExperienceTableViewDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExperienceTableViewDataSource.swift; sourceTree = "<group>"; };
-		869163AE1FA23C4000EC1323 /* ExperienceTableViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExperienceTableViewModel.swift; sourceTree = "<group>"; };
-		869163AF1FA23C4000EC1323 /* ExperienceTableViewModelMapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExperienceTableViewModelMapper.swift; sourceTree = "<group>"; };
+		869F91F31F9E934D00C05DEF /* Skill.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Skill.swift; sourceTree = "<group>"; };
+		869F91F51F9E949000C05DEF /* SkillCategory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SkillCategory.swift; sourceTree = "<group>"; };
 		86B29C481F79277F00C63902 /* Loadable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Loadable.swift; sourceTree = "<group>"; };
+		86BDE6AF1FA634E600CA970E /* ExperienceTableViewDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExperienceTableViewDataSource.swift; sourceTree = "<group>"; };
+		86BDE6B01FA634E600CA970E /* ExperienceCellViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExperienceCellViewModel.swift; sourceTree = "<group>"; };
+		86BDE6B11FA634E600CA970E /* ExperienceCellViewModelMapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExperienceCellViewModelMapper.swift; sourceTree = "<group>"; };
+		86BDE6B21FA634E600CA970E /* ExperienceTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExperienceTableViewCell.swift; sourceTree = "<group>"; };
+		86BDE6B31FA634E600CA970E /* ExperienceTableViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExperienceTableViewModel.swift; sourceTree = "<group>"; };
+		86BDE6B41FA634E600CA970E /* ExperienceTableViewModelMapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExperienceTableViewModelMapper.swift; sourceTree = "<group>"; };
 		86CE0CA31F1BC64D00DA0916 /* CV.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CV.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		86CE0CA61F1BC64D00DA0916 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		86CE0CAD1F1BC64E00DA0916 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -568,9 +572,18 @@
 		869163B61FA23C7700EC1323 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				869163AC1FA23C4000EC1323 /* ExperienceTableViewCell.swift */,
+				86BDE6B21FA634E600CA970E /* ExperienceTableViewCell.swift */,
 			);
 			name = View;
+			sourceTree = "<group>";
+		};
+		869F91F21F9E926A00C05DEF /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				869F91F31F9E934D00C05DEF /* Skill.swift */,
+				869F91F51F9E949000C05DEF /* SkillCategory.swift */,
+			);
+			name = Entities;
 			sourceTree = "<group>";
 		};
 		86CE0C9A1F1BC64D00DA0916 = {
@@ -644,6 +657,7 @@
 		86E4401C1F4A0EA00040BD55 /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				869F91F21F9E926A00C05DEF /* Entities */,
 				867DA5191F5C9711000C5AC2 /* Repositories */,
 			);
 			name = Core;
@@ -804,7 +818,7 @@
 			children = (
 				86F1A5AB1F94D2D300D8D1BF /* Mapper */,
 				86F1A5AA1F94D2CD00D8D1BF /* ViewModel */,
-				869163AD1FA23C4000EC1323 /* ExperienceTableViewDataSource.swift */,
+				86BDE6AF1FA634E600CA970E /* ExperienceTableViewDataSource.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -820,8 +834,8 @@
 		86F1A5AA1F94D2CD00D8D1BF /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
-				869163AA1FA23C4000EC1323 /* ExperienceCellViewModel.swift */,
-				869163AE1FA23C4000EC1323 /* ExperienceTableViewModel.swift */,
+				86BDE6B01FA634E600CA970E /* ExperienceCellViewModel.swift */,
+				86BDE6B31FA634E600CA970E /* ExperienceTableViewModel.swift */,
 				86F1A59B1F94D21D00D8D1BF /* ExperienceControllerViewModel.swift */,
 			);
 			name = ViewModel;
@@ -830,8 +844,8 @@
 		86F1A5AB1F94D2D300D8D1BF /* Mapper */ = {
 			isa = PBXGroup;
 			children = (
-				869163AB1FA23C4000EC1323 /* ExperienceCellViewModelMapper.swift */,
-				869163AF1FA23C4000EC1323 /* ExperienceTableViewModelMapper.swift */,
+				86BDE6B11FA634E600CA970E /* ExperienceCellViewModelMapper.swift */,
+				86BDE6B41FA634E600CA970E /* ExperienceTableViewModelMapper.swift */,
 				86F1A59C1F94D21D00D8D1BF /* ExperienceControllerViewModelMapper.swift */,
 			);
 			name = Mapper;
@@ -918,21 +932,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				869163B01FA23C4000EC1323 /* ExperienceCellViewModel.swift in Sources */,
 				862D56731F83E1B80090BA0B /* CompetenceControllerViewModelMapper.swift in Sources */,
 				867FF31F1F6C33AB0085A80D /* FormationCellViewModel.swift in Sources */,
-				869163B31FA23C4000EC1323 /* ExperienceTableViewDataSource.swift in Sources */,
-				869163B21FA23C4000EC1323 /* ExperienceTableViewCell.swift in Sources */,
 				86E440441F4A16A40040BD55 /* Startable.swift in Sources */,
+				869F91F61F9E949000C05DEF /* SkillCategory.swift in Sources */,
 				86CE0CA71F1BC64D00DA0916 /* AppDelegate.swift in Sources */,
+				86BDE6BA1FA634E600CA970E /* ExperienceTableViewModelMapper.swift in Sources */,
 				8639DB621F9A477600BFC0BC /* XPCompetenceCoordinator.swift in Sources */,
+				86BDE6B81FA634E600CA970E /* ExperienceTableViewCell.swift in Sources */,
 				867DA5231F5D57CF000C5AC2 /* TemplateMailRepository.swift in Sources */,
 				860AE2A51F574305004B9F65 /* ContactPresenter.swift in Sources */,
 				867FF3211F6C34680085A80D /* FormationCollectionViewModelMapper.swift in Sources */,
 				8600EA981F7BAEFF0037AFD3 /* PresentationPresenterImplementation.swift in Sources */,
-				869163B51FA23C4000EC1323 /* ExperienceTableViewModelMapper.swift in Sources */,
 				864F5ECB1F71512D001E7064 /* FormationDetailControllerViewModel.swift in Sources */,
-				869163B41FA23C4000EC1323 /* ExperienceTableViewModel.swift in Sources */,
 				867DA5221F5D57CF000C5AC2 /* MailRepository.swift in Sources */,
 				862D56771F83E1B80090BA0B /* SwitchContainerViewController.swift in Sources */,
 				860AE2A41F574305004B9F65 /* ContactControllerViewModelMapper.swift in Sources */,
@@ -969,16 +981,18 @@
 				867FF3251F6C38E70085A80D /* FormationCollectionViewDataSource.swift in Sources */,
 				864F5ECD1F71512D001E7064 /* FormationDetailPresenter.swift in Sources */,
 				8639DB5C1F9A477600BFC0BC /* CompetenceCellViewModel.swift in Sources */,
+				86BDE6B71FA634E600CA970E /* ExperienceCellViewModelMapper.swift in Sources */,
 				86F1A59A1F94CC9500D8D1BF /* ExperienceViewController.swift in Sources */,
 				862D56751F83E1B80090BA0B /* CompetencePresenterImplementation.swift in Sources */,
+				86BDE6B91FA634E600CA970E /* ExperienceTableViewModel.swift in Sources */,
 				860AE2B81F59B40D004B9F65 /* ContactCellViewModelMapper.swift in Sources */,
 				860AE2A81F574305004B9F65 /* ContactViewController.swift in Sources */,
 				86E4404B1F4AE7810040BD55 /* Color.swift in Sources */,
 				865F30F61F6A75F400F41B5C /* FormationControllerViewModel.swift in Sources */,
+				869F91F41F9E934D00C05DEF /* Skill.swift in Sources */,
 				865F30F71F6A75F400F41B5C /* FormationControllerViewModelMapper.swift in Sources */,
 				867FF3231F6C36810085A80D /* FormationCellViewModelMapper.swift in Sources */,
 				864F5ECF1F71512D001E7064 /* FormationDetailViewContract.swift in Sources */,
-				869163B11FA23C4000EC1323 /* ExperienceCellViewModelMapper.swift in Sources */,
 				863ECEA11F69378700817C6D /* Results.swift in Sources */,
 				8639DB5D1F9A477600BFC0BC /* CompetenceCellViewModelMapper.swift in Sources */,
 				8639DB5F1F9A477600BFC0BC /* CompetenceTableViewDataSource.swift in Sources */,
@@ -996,6 +1010,7 @@
 				860AE2A31F574305004B9F65 /* ContactControllerViewModel.swift in Sources */,
 				863ECEA31F69645500817C6D /* CVError.swift in Sources */,
 				860AE2AD1F599C88004B9F65 /* ContactTableViewModel.swift in Sources */,
+				86BDE6B51FA634E600CA970E /* ExperienceTableViewDataSource.swift in Sources */,
 				86E4403D1F4A163F0040BD55 /* HomeControllerViewModelMapper.swift in Sources */,
 				86B29C491F79277F00C63902 /* Loadable.swift in Sources */,
 				8639DB5E1F9A477600BFC0BC /* CompetenceTableViewCell.swift in Sources */,
@@ -1005,6 +1020,7 @@
 				862095C11F545E41005B1C7C /* StringLocalized.swift in Sources */,
 				865F30FA1F6A75F400F41B5C /* FormationViewContract.swift in Sources */,
 				867DA51C1F5C9743000C5AC2 /* ContactRepository.swift in Sources */,
+				86BDE6B61FA634E600CA970E /* ExperienceCellViewModel.swift in Sources */,
 				8622BBD51F7904E2000642E8 /* LoadingView.swift in Sources */,
 				86E440461F4A1A050040BD55 /* ViewControllerFactory.swift in Sources */,
 			);
