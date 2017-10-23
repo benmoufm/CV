@@ -76,6 +76,8 @@
 		869F91ED1F9E1EA700C05DEF /* ExperienceCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 869F91EC1F9E1EA700C05DEF /* ExperienceCellViewModel.swift */; };
 		869F91EF1F9E1F8100C05DEF /* ExperienceTableViewModelMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 869F91EE1F9E1F8100C05DEF /* ExperienceTableViewModelMapper.swift */; };
 		869F91F11F9E1F9200C05DEF /* ExperienceCellViewModelMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 869F91F01F9E1F9200C05DEF /* ExperienceCellViewModelMapper.swift */; };
+		869F91F41F9E934D00C05DEF /* Skill.swift in Sources */ = {isa = PBXBuildFile; fileRef = 869F91F31F9E934D00C05DEF /* Skill.swift */; };
+		869F91F61F9E949000C05DEF /* SkillCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 869F91F51F9E949000C05DEF /* SkillCategory.swift */; };
 		86B29C491F79277F00C63902 /* Loadable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86B29C481F79277F00C63902 /* Loadable.swift */; };
 		86CE0CA71F1BC64D00DA0916 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86CE0CA61F1BC64D00DA0916 /* AppDelegate.swift */; };
 		86CE0CAE1F1BC64E00DA0916 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 86CE0CAD1F1BC64E00DA0916 /* Assets.xcassets */; };
@@ -171,6 +173,8 @@
 		869F91EC1F9E1EA700C05DEF /* ExperienceCellViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExperienceCellViewModel.swift; sourceTree = "<group>"; };
 		869F91EE1F9E1F8100C05DEF /* ExperienceTableViewModelMapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExperienceTableViewModelMapper.swift; sourceTree = "<group>"; };
 		869F91F01F9E1F9200C05DEF /* ExperienceCellViewModelMapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExperienceCellViewModelMapper.swift; sourceTree = "<group>"; };
+		869F91F31F9E934D00C05DEF /* Skill.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Skill.swift; sourceTree = "<group>"; };
+		869F91F51F9E949000C05DEF /* SkillCategory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SkillCategory.swift; sourceTree = "<group>"; };
 		86B29C481F79277F00C63902 /* Loadable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Loadable.swift; sourceTree = "<group>"; };
 		86CE0CA31F1BC64D00DA0916 /* CV.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CV.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		86CE0CA61F1BC64D00DA0916 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -573,6 +577,15 @@
 			name = View;
 			sourceTree = "<group>";
 		};
+		869F91F21F9E926A00C05DEF /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				869F91F31F9E934D00C05DEF /* Skill.swift */,
+				869F91F51F9E949000C05DEF /* SkillCategory.swift */,
+			);
+			name = Entities;
+			sourceTree = "<group>";
+		};
 		86CE0C9A1F1BC64D00DA0916 = {
 			isa = PBXGroup;
 			children = (
@@ -644,6 +657,7 @@
 		86E4401C1F4A0EA00040BD55 /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				869F91F21F9E926A00C05DEF /* Entities */,
 				867DA5191F5C9711000C5AC2 /* Repositories */,
 			);
 			name = Core;
@@ -921,6 +935,7 @@
 				862D56731F83E1B80090BA0B /* CompetenceControllerViewModelMapper.swift in Sources */,
 				867FF31F1F6C33AB0085A80D /* FormationCellViewModel.swift in Sources */,
 				86E440441F4A16A40040BD55 /* Startable.swift in Sources */,
+				869F91F61F9E949000C05DEF /* SkillCategory.swift in Sources */,
 				86CE0CA71F1BC64D00DA0916 /* AppDelegate.swift in Sources */,
 				8639DB621F9A477600BFC0BC /* XPCompetenceCoordinator.swift in Sources */,
 				869F91EB1F9E1E9200C05DEF /* ExperienceTableViewModel.swift in Sources */,
@@ -975,6 +990,7 @@
 				860AE2A81F574305004B9F65 /* ContactViewController.swift in Sources */,
 				86E4404B1F4AE7810040BD55 /* Color.swift in Sources */,
 				865F30F61F6A75F400F41B5C /* FormationControllerViewModel.swift in Sources */,
+				869F91F41F9E934D00C05DEF /* Skill.swift in Sources */,
 				865F30F71F6A75F400F41B5C /* FormationControllerViewModelMapper.swift in Sources */,
 				867FF3231F6C36810085A80D /* FormationCellViewModelMapper.swift in Sources */,
 				864F5ECF1F71512D001E7064 /* FormationDetailViewContract.swift in Sources */,
