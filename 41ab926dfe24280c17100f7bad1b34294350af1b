@@ -1,0 +1,119 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "47b473b9_6729672a",
+        "filename": "CV/SwitchContainerViewController.swift",
+        "patchSetId": 3
+      },
+      "lineNbr": 22,
+      "author": {
+        "id": 1011781
+      },
+      "writtenOn": "2017-10-25T12:44:33Z",
+      "side": 1,
+      "message": "il faudrait que ce soit configurer dans le coordinator on a dit",
+      "range": {
+        "startLine": 20,
+        "startChar": 8,
+        "endLine": 22,
+        "endChar": 72
+      },
+      "revId": "41ab926dfe24280c17100f7bad1b34294350af1b",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "bdd1e867_0c432115",
+        "filename": "CV/SwitchContainerViewController.swift",
+        "patchSetId": 3
+      },
+      "lineNbr": 45,
+      "author": {
+        "id": 1011781
+      },
+      "writtenOn": "2017-10-25T12:44:33Z",
+      "side": 1,
+      "message": "il manque certainnement un will move to parentViewController",
+      "range": {
+        "startLine": 45,
+        "startChar": 8,
+        "endLine": 45,
+        "endChar": 75
+      },
+      "revId": "41ab926dfe24280c17100f7bad1b34294350af1b",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "1c519949_70215fa2",
+        "filename": "CV/SwitchContainerViewController.swift",
+        "patchSetId": 3
+      },
+      "lineNbr": 45,
+      "author": {
+        "id": 1011781
+      },
+      "writtenOn": "2017-10-25T12:44:33Z",
+      "side": 1,
+      "message": "dans l\u0027absolu ce serait pas plus mal de garder une référence sur celui qui est affiché.",
+      "range": {
+        "startLine": 44,
+        "startChar": 8,
+        "endLine": 45,
+        "endChar": 76
+      },
+      "revId": "41ab926dfe24280c17100f7bad1b34294350af1b",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "347c5d3f_5118e675",
+        "filename": "CV/SwitchContainerViewController.swift",
+        "patchSetId": 3
+      },
+      "lineNbr": 73,
+      "author": {
+        "id": 1011781
+      },
+      "writtenOn": "2017-10-25T12:44:33Z",
+      "side": 1,
+      "message": "nom de la method un peu chelou",
+      "range": {
+        "startLine": 73,
+        "startChar": 17,
+        "endLine": 73,
+        "endChar": 42
+      },
+      "revId": "41ab926dfe24280c17100f7bad1b34294350af1b",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "450c1350_f482f54d",
+        "filename": "CV/SwitchContainerViewController.swift",
+        "patchSetId": 3
+      },
+      "lineNbr": 76,
+      "author": {
+        "id": 1011781
+      },
+      "writtenOn": "2017-10-25T12:44:33Z",
+      "side": 1,
+      "message": "il manque certainnement un will move to parentViewController",
+      "range": {
+        "startLine": 76,
+        "startChar": 0,
+        "endLine": 76,
+        "endChar": 51
+      },
+      "revId": "41ab926dfe24280c17100f7bad1b34294350af1b",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    }
+  ]
+}
