@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "ec70c428_d5732be6",
+        "filename": "CV/ExperiencePresenterImplementation.swift",
+        "patchSetId": 3
+      },
+      "lineNbr": 33,
+      "author": {
+        "id": 1011781
+      },
+      "writtenOn": "2017-10-25T12:45:46Z",
+      "side": 1,
+      "message": "à enlever",
+      "range": {
+        "startLine": 31,
+        "startChar": 0,
+        "endLine": 33,
+        "endChar": 5
+      },
+      "revId": "5ecf94f9c8405de3362b4354cd08610bc76445f5",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    }
+  ]
+}
