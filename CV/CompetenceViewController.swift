@@ -13,13 +13,9 @@ class CompetenceViewController: UIViewController,
     CompetenceViewContract {
 
     var presenter: CompetencePresenter?
-    lazy var navigationBar = UINavigationBar()
 
     override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?) {
         super.init(nibName: nil, bundle: nil)
-        navigationItem.title = "competence_navigation_title_text".localized
-        tabBarItem.title = "competence_navigation_title_text".localized
-        tabBarItem.image = #imageLiteral(resourceName: "competenceIcon")
     }
 
     required init?(coder aDecoder: NSCoder) {
@@ -42,26 +38,7 @@ class CompetenceViewController: UIViewController,
 
     // MARK: - Private methods
 
-    private func setupNavigationBar() {
-        navigationBar.setItems([navigationItem], animated: false)
-        navigationBar.barTintColor = UIColor.mainColor
-        navigationBar.titleTextAttributes =
-            [NSForegroundColorAttributeName: UIColor.navigationTitleTextColor]
-    }
-
-    private func setupLayout() {
-        view.addSubview(navigationBar)
-
-        navigationBar.translatesAutoresizingMaskIntoConstraints = false
-        navigationBar.leftAnchor.constraint(equalTo: view.leftAnchor).isActive = true
-        navigationBar.rightAnchor.constraint(equalTo: view.rightAnchor).isActive = true
-        navigationBar.topAnchor.constraint(equalTo: view.topAnchor).isActive = true
-        navigationBar.heightAnchor.constraint(equalToConstant: 60.0).isActive = true
-    }
-
     private func setup() {
         view.backgroundColor = UIColor.backgroundColor
-        setupLayout()
-        setupNavigationBar()
     }
 }
