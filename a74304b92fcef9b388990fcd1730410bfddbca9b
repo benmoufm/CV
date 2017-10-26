@@ -1,0 +1,130 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "4c1c9b53_b5d0054a",
+        "filename": "CV/SwitchContainerViewController.swift",
+        "patchSetId": 4
+      },
+      "lineNbr": 17,
+      "author": {
+        "id": 1011781
+      },
+      "writtenOn": "2017-10-26T09:38:53Z",
+      "side": 1,
+      "message": "displayedViewController",
+      "range": {
+        "startLine": 17,
+        "startChar": 21,
+        "endLine": 17,
+        "endChar": 44
+      },
+      "revId": "a74304b92fcef9b388990fcd1730410bfddbca9b",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "d43736f4_a2a498e7",
+        "filename": "CV/SwitchContainerViewController.swift",
+        "patchSetId": 4
+      },
+      "lineNbr": 35,
+      "author": {
+        "id": 1011781
+      },
+      "writtenOn": "2017-10-26T09:38:53Z",
+      "side": 1,
+      "message": "willMoveToParentViewController(nil)",
+      "revId": "a74304b92fcef9b388990fcd1730410bfddbca9b",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "e6387ae8_a59912fb",
+        "filename": "CV/SwitchContainerViewController.swift",
+        "patchSetId": 4
+      },
+      "lineNbr": 43,
+      "author": {
+        "id": 1011781
+      },
+      "writtenOn": "2017-10-26T09:38:53Z",
+      "side": 1,
+      "message": "dans l\u0027autre sens les appels je pense",
+      "range": {
+        "startLine": 42,
+        "startChar": 15,
+        "endLine": 43,
+        "endChar": 19
+      },
+      "revId": "a74304b92fcef9b388990fcd1730410bfddbca9b",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "40abdd69_1a305c6a",
+        "filename": "CV/SwitchContainerViewController.swift",
+        "patchSetId": 4
+      },
+      "lineNbr": 72,
+      "author": {
+        "id": 1011781
+      },
+      "writtenOn": "2017-10-26T09:38:53Z",
+      "side": 1,
+      "message": "c\u0027est pas du setup.\ndisplayFirstViewController",
+      "range": {
+        "startLine": 72,
+        "startChar": 17,
+        "endLine": 72,
+        "endChar": 46
+      },
+      "revId": "a74304b92fcef9b388990fcd1730410bfddbca9b",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "0f14fb80_62d58685",
+        "filename": "CV/SwitchContainerViewController.swift",
+        "patchSetId": 4
+      },
+      "lineNbr": 79,
+      "author": {
+        "id": 1011781
+      },
+      "writtenOn": "2017-10-26T09:38:53Z",
+      "side": 1,
+      "message": "_ viewController: UIViewController\n\nLe nom de la fonction est assez explicite pour que tu n\u0027aies pas besoin d\u0027explicité le paramètre dans ta méthode",
+      "range": {
+        "startLine": 79,
+        "startChar": 39,
+        "endLine": 79,
+        "endChar": 71
+      },
+      "revId": "a74304b92fcef9b388990fcd1730410bfddbca9b",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "e1349e74_55fe25e4",
+        "filename": "CV/SwitchContainerViewController.swift",
+        "patchSetId": 4
+      },
+      "lineNbr": 82,
+      "author": {
+        "id": 1011781
+      },
+      "writtenOn": "2017-10-26T09:38:53Z",
+      "side": 1,
+      "message": "peut être qu\u0027il faudrait set viewControllerDisplayed ici",
+      "revId": "a74304b92fcef9b388990fcd1730410bfddbca9b",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    }
+  ]
+}
