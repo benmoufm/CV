@@ -1,0 +1,38 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "b3b266e7_9c260a02",
+        "filename": "CV/ExperienceTableViewDataSource.swift",
+        "patchSetId": 3
+      },
+      "lineNbr": 50,
+      "author": {
+        "id": 1011781
+      },
+      "writtenOn": "2017-10-26T09:50:15Z",
+      "side": 1,
+      "message": "quand tu écris un TODO écris ce que tu compte faire dedans sinon c\u0027est pas facile de comprendre ce que tu veux faire",
+      "revId": "413cdf330428c4641fd439b71d8906a55959616c",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "c511236f_6a71119f",
+        "filename": "CV/ExperienceViewController.swift",
+        "patchSetId": 3
+      },
+      "lineNbr": 17,
+      "author": {
+        "id": 1011781
+      },
+      "writtenOn": "2017-10-26T09:50:15Z",
+      "side": 1,
+      "message": "lazy",
+      "revId": "413cdf330428c4641fd439b71d8906a55959616c",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    }
+  ]
+}
