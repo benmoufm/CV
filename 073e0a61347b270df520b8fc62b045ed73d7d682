@@ -1,0 +1,73 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "52d8d3b6_f21aba34",
+        "filename": "CV/Skill.swift",
+        "patchSetId": 2
+      },
+      "lineNbr": 12,
+      "author": {
+        "id": 1011781
+      },
+      "writtenOn": "2017-10-26T09:53:30Z",
+      "side": 1,
+      "message": "CustomStringConvertible",
+      "range": {
+        "startLine": 11,
+        "startChar": 0,
+        "endLine": 12,
+        "endChar": 20
+      },
+      "revId": "073e0a61347b270df520b8fc62b045ed73d7d682",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "1278aaa9_c11d29bf",
+        "filename": "CV/Skill.swift",
+        "patchSetId": 2
+      },
+      "lineNbr": 14,
+      "author": {
+        "id": 1011781
+      },
+      "writtenOn": "2017-10-26T09:53:30Z",
+      "side": 1,
+      "message": "evaluation",
+      "range": {
+        "startLine": 14,
+        "startChar": 8,
+        "endLine": 14,
+        "endChar": 12
+      },
+      "revId": "073e0a61347b270df520b8fc62b045ed73d7d682",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "81486d65_b885cd74",
+        "filename": "CV/SkillCategory.swift",
+        "patchSetId": 2
+      },
+      "lineNbr": 13,
+      "author": {
+        "id": 1011781
+      },
+      "writtenOn": "2017-10-26T09:53:30Z",
+      "side": 1,
+      "message": "utilise le protocol customStringConvertible",
+      "range": {
+        "startLine": 12,
+        "startChar": 0,
+        "endLine": 13,
+        "endChar": 20
+      },
+      "revId": "073e0a61347b270df520b8fc62b045ed73d7d682",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    }
+  ]
+}
