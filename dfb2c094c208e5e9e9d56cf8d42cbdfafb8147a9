@@ -1,0 +1,44 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "ff99dfbf_1b16a5e6",
+        "filename": "CV/SwitchContainerViewController.swift",
+        "patchSetId": 5
+      },
+      "lineNbr": 36,
+      "author": {
+        "id": 1011781
+      },
+      "writtenOn": "2017-10-29T19:42:24Z",
+      "side": 1,
+      "message": "avant l\u0027appel précédent",
+      "range": {
+        "startLine": 36,
+        "startChar": 8,
+        "endLine": 36,
+        "endChar": 69
+      },
+      "revId": "dfb2c094c208e5e9e9d56cf8d42cbdfafb8147a9",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "b2bdf516_318fc54f",
+        "filename": "CV/SwitchContainerViewController.swift",
+        "patchSetId": 5
+      },
+      "lineNbr": 83,
+      "author": {
+        "id": 1011781
+      },
+      "writtenOn": "2017-10-29T19:42:24Z",
+      "side": 1,
+      "message": "peut être qu\u0027il faudrait set viewControllerDisplayed ici",
+      "revId": "dfb2c094c208e5e9e9d56cf8d42cbdfafb8147a9",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    }
+  ]
+}
