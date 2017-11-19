@@ -7,6 +7,7 @@ target 'CV' do
 
   # Pods for CV
   pod 'Alamofire', '~> 4.5'
+  pod 'SwiftyJSON', '~> 4.0'
 
 end
 
