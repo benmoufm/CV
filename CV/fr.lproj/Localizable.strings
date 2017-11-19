@@ -71,3 +71,6 @@
 "mail_error_title_popup" = "Envoi mail";
 "linkedin_error_title_popup" = "Erreur ouverture LinkedIn";
 "linkedin_error_popup" = "Impossible d'ouvrir l'application LinkedIn";
+
+// GENERAL
+"error_cannot_open_url" = "Erreur. Impossible d'ouvrir l'URL.";
