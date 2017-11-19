@@ -15,6 +15,7 @@ enum CVError: LocalizedError {
     case mailEncodingTemplateError
     case mailEncodingUrlError
     case mailOpenUrlError
+    case competenceSkillAccessDenied
 
     public var errorDescription: String? {
         switch self {
@@ -30,6 +31,8 @@ enum CVError: LocalizedError {
             return "mail_error_url".localized
         case .mailOpenUrlError:
             return "mail_error_cannot_open_url".localized
+        case .competenceSkillAccessDenied:
+            return "competence_skills_access_denied".localized
         }
     }
 }
