@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "dedda7f6_f550c5c7",
+        "filename": "CV/SwitchContainerViewController.swift",
+        "patchSetId": 6
+      },
+      "lineNbr": 36,
+      "author": {
+        "id": 1011781
+      },
+      "writtenOn": "2017-11-19T19:00:04Z",
+      "side": 1,
+      "message": "pas corrigé du coup",
+      "range": {
+        "startLine": 36,
+        "startChar": 0,
+        "endLine": 36,
+        "endChar": 69
+      },
+      "revId": "18a348c7ae4f934efb288abe34b6cee34ec7f516",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    }
+  ]
+}
