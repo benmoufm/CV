@@ -72,6 +72,7 @@
 		867FF32C1F6C3BED0085A80D /* UICollectionView+Registerable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 867FF32B1F6C3BED0085A80D /* UICollectionView+Registerable.swift */; };
 		869F91F41F9E934D00C05DEF /* Skill.swift in Sources */ = {isa = PBXBuildFile; fileRef = 869F91F31F9E934D00C05DEF /* Skill.swift */; };
 		869F91F61F9E949000C05DEF /* SkillCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 869F91F51F9E949000C05DEF /* SkillCategory.swift */; };
+		86A1DCFF1FC22E4900AC1A5D /* HttpRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86A1DCFE1FC22E4900AC1A5D /* HttpRequest.swift */; };
 		86B29C491F79277F00C63902 /* Loadable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86B29C481F79277F00C63902 /* Loadable.swift */; };
 		86BDE6B51FA634E600CA970E /* ExperienceTableViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86BDE6AF1FA634E600CA970E /* ExperienceTableViewDataSource.swift */; };
 		86BDE6B61FA634E600CA970E /* ExperienceCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86BDE6B01FA634E600CA970E /* ExperienceCellViewModel.swift */; };
@@ -172,6 +173,7 @@
 		867FF32B1F6C3BED0085A80D /* UICollectionView+Registerable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UICollectionView+Registerable.swift"; sourceTree = "<group>"; };
 		869F91F31F9E934D00C05DEF /* Skill.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Skill.swift; sourceTree = "<group>"; };
 		869F91F51F9E949000C05DEF /* SkillCategory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SkillCategory.swift; sourceTree = "<group>"; };
+		86A1DCFE1FC22E4900AC1A5D /* HttpRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HttpRequest.swift; sourceTree = "<group>"; };
 		86B29C481F79277F00C63902 /* Loadable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Loadable.swift; sourceTree = "<group>"; };
 		86BDE6AF1FA634E600CA970E /* ExperienceTableViewDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExperienceTableViewDataSource.swift; sourceTree = "<group>"; };
 		86BDE6B01FA634E600CA970E /* ExperienceCellViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExperienceCellViewModel.swift; sourceTree = "<group>"; };
@@ -674,6 +676,7 @@
 			children = (
 				869F91F21F9E926A00C05DEF /* Entities */,
 				867DA5191F5C9711000C5AC2 /* Repositories */,
+				86A1DCFE1FC22E4900AC1A5D /* HttpRequest.swift */,
 			);
 			name = Core;
 			sourceTree = "<group>";
@@ -1020,6 +1023,7 @@
 				867FF3211F6C34680085A80D /* FormationCollectionViewModelMapper.swift in Sources */,
 				8600EA981F7BAEFF0037AFD3 /* PresentationPresenterImplementation.swift in Sources */,
 				864F5ECB1F71512D001E7064 /* FormationDetailControllerViewModel.swift in Sources */,
+				86A1DCFF1FC22E4900AC1A5D /* HttpRequest.swift in Sources */,
 				867DA5221F5D57CF000C5AC2 /* MailRepository.swift in Sources */,
 				862D56771F83E1B80090BA0B /* SwitchContainerViewController.swift in Sources */,
 				860AE2A41F574305004B9F65 /* ContactControllerViewModelMapper.swift in Sources */,
