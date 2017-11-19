@@ -53,6 +53,7 @@
 "special_skills_category" = "Autres compétences";
 "competence_violin" = "Violon";
 "competence_drawing" = "Dessin";
+"competence_skills_access_denied" = "Erreur. Accès au backend impossible.";
 
 // CONTACT
 "contact_navigation_title_text" = "Contact";
