@@ -42,6 +42,7 @@
 		8639DB601F9A477600BFC0BC /* CompetenceTableViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8639DB591F9A477600BFC0BC /* CompetenceTableViewModel.swift */; };
 		8639DB611F9A477600BFC0BC /* CompetenceTableViewModelMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8639DB5A1F9A477600BFC0BC /* CompetenceTableViewModelMapper.swift */; };
 		8639DB621F9A477600BFC0BC /* XPCompetenceCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8639DB5B1F9A477600BFC0BC /* XPCompetenceCoordinator.swift */; };
+		863D07E71FC1FC13004BDA19 /* HttpManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 863D07E61FC1FC13004BDA19 /* HttpManager.swift */; };
 		863ECEA11F69378700817C6D /* Results.swift in Sources */ = {isa = PBXBuildFile; fileRef = 863ECEA01F69378700817C6D /* Results.swift */; };
 		863ECEA31F69645500817C6D /* CVError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 863ECEA21F69645500817C6D /* CVError.swift */; };
 		864F5EBA1F714131001E7064 /* FormationCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 864F5EB91F714131001E7064 /* FormationCoordinator.swift */; };
@@ -143,6 +144,7 @@
 		8639DB591F9A477600BFC0BC /* CompetenceTableViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CompetenceTableViewModel.swift; sourceTree = "<group>"; };
 		8639DB5A1F9A477600BFC0BC /* CompetenceTableViewModelMapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CompetenceTableViewModelMapper.swift; sourceTree = "<group>"; };
 		8639DB5B1F9A477600BFC0BC /* XPCompetenceCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XPCompetenceCoordinator.swift; sourceTree = "<group>"; };
+		863D07E61FC1FC13004BDA19 /* HttpManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HttpManager.swift; sourceTree = "<group>"; };
 		863ECEA01F69378700817C6D /* Results.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Results.swift; sourceTree = "<group>"; };
 		863ECEA21F69645500817C6D /* CVError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CVError.swift; sourceTree = "<group>"; };
 		864F5EB91F714131001E7064 /* FormationCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FormationCoordinator.swift; sourceTree = "<group>"; };
@@ -677,6 +679,7 @@
 				869F91F21F9E926A00C05DEF /* Entities */,
 				867DA5191F5C9711000C5AC2 /* Repositories */,
 				86A1DCFE1FC22E4900AC1A5D /* HttpRequest.swift */,
+				863D07E61FC1FC13004BDA19 /* HttpManager.swift */,
 			);
 			name = Core;
 			sourceTree = "<group>";
@@ -1074,6 +1077,7 @@
 				864F5ECF1F71512D001E7064 /* FormationDetailViewContract.swift in Sources */,
 				863ECEA11F69378700817C6D /* Results.swift in Sources */,
 				8639DB5D1F9A477600BFC0BC /* CompetenceCellViewModelMapper.swift in Sources */,
+				863D07E71FC1FC13004BDA19 /* HttpManager.swift in Sources */,
 				8639DB5F1F9A477600BFC0BC /* CompetenceTableViewDataSource.swift in Sources */,
 				86E4402B1F4A0FE70040BD55 /* MainCoordinator.swift in Sources */,
 				86E440411F4A163F0040BD55 /* HomeViewController.swift in Sources */,
