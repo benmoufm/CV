@@ -25,6 +25,8 @@
 		860AE2B41F59A258004B9F65 /* ContactCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 860AE2B31F59A258004B9F65 /* ContactCellViewModel.swift */; };
 		860AE2B61F59B3A1004B9F65 /* ContactTableViewModelMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 860AE2B51F59B3A1004B9F65 /* ContactTableViewModelMapper.swift */; };
 		860AE2B81F59B40D004B9F65 /* ContactCellViewModelMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 860AE2B71F59B40D004B9F65 /* ContactCellViewModelMapper.swift */; };
+		860B87141FC454A500FF848D /* JSONParsingRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 860B87131FC454A500FF848D /* JSONParsingRepository.swift */; };
+		860B87161FC47FAC00FF848D /* SkillsRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 860B87151FC47FAC00FF848D /* SkillsRepository.swift */; };
 		862095BF1F4D7DB8005B1C7C /* ViewRounded.swift in Sources */ = {isa = PBXBuildFile; fileRef = 862095BE1F4D7DB8005B1C7C /* ViewRounded.swift */; };
 		862095C11F545E41005B1C7C /* StringLocalized.swift in Sources */ = {isa = PBXBuildFile; fileRef = 862095C01F545E41005B1C7C /* StringLocalized.swift */; };
 		8622BBD51F7904E2000642E8 /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8622BBD41F7904E2000642E8 /* LoadingView.swift */; };
@@ -127,6 +129,8 @@
 		860AE2B31F59A258004B9F65 /* ContactCellViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactCellViewModel.swift; sourceTree = "<group>"; };
 		860AE2B51F59B3A1004B9F65 /* ContactTableViewModelMapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactTableViewModelMapper.swift; sourceTree = "<group>"; };
 		860AE2B71F59B40D004B9F65 /* ContactCellViewModelMapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactCellViewModelMapper.swift; sourceTree = "<group>"; };
+		860B87131FC454A500FF848D /* JSONParsingRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSONParsingRepository.swift; sourceTree = "<group>"; };
+		860B87151FC47FAC00FF848D /* SkillsRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SkillsRepository.swift; sourceTree = "<group>"; };
 		862095BE1F4D7DB8005B1C7C /* ViewRounded.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewRounded.swift; sourceTree = "<group>"; };
 		862095C01F545E41005B1C7C /* StringLocalized.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringLocalized.swift; sourceTree = "<group>"; };
 		8622BBD41F7904E2000642E8 /* LoadingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
@@ -574,6 +578,7 @@
 			children = (
 				867DA51A1F5C9743000C5AC2 /* ContactRepository.swift */,
 				867DA5201F5D57CF000C5AC2 /* MailRepository.swift */,
+				860B87131FC454A500FF848D /* JSONParsingRepository.swift */,
 			);
 			name = Repositories;
 			sourceTree = "<group>";
@@ -669,6 +674,7 @@
 			children = (
 				867DA51B1F5C9743000C5AC2 /* LocalContactRepository.swift */,
 				867DA5211F5D57CF000C5AC2 /* TemplateMailRepository.swift */,
+				860B87151FC47FAC00FF848D /* SkillsRepository.swift */,
 			);
 			name = Data;
 			sourceTree = "<group>";
@@ -1044,6 +1050,7 @@
 				864F5ECC1F71512D001E7064 /* FormationDetailControllerViewModelMapper.swift in Sources */,
 				86F1A5A01F94D21D00D8D1BF /* ExperienceControllerViewModel.swift in Sources */,
 				860AE2B11F599DE5004B9F65 /* ContactTableViewCell.swift in Sources */,
+				860B87141FC454A500FF848D /* JSONParsingRepository.swift in Sources */,
 				867FF3281F6C39DD0085A80D /* FormationCollectionViewCell.swift in Sources */,
 				86E440401F4A163F0040BD55 /* HomeViewContract.swift in Sources */,
 				86F1A5A31F94D21D00D8D1BF /* ExperiencePresenterImplementation.swift in Sources */,
@@ -1106,6 +1113,7 @@
 				86BDE6B61FA634E600CA970E /* ExperienceCellViewModel.swift in Sources */,
 				8622BBD51F7904E2000642E8 /* LoadingView.swift in Sources */,
 				86E440461F4A1A050040BD55 /* ViewControllerFactory.swift in Sources */,
+				860B87161FC47FAC00FF848D /* SkillsRepository.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
