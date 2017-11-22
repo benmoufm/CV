@@ -16,6 +16,7 @@ enum CVError: LocalizedError {
     case mailEncodingUrlError
     case mailOpenUrlError
     case unexpectedJSONFormat
+    case urlFormatError
 
     public var errorDescription: String? {
         switch self {
@@ -33,6 +34,8 @@ enum CVError: LocalizedError {
             return "mail_error_cannot_open_url".localized
         case .unexpectedJSONFormat:
             return "competence_error_unexpected_json_format".localized
+        case .urlFormatError:
+            return "competence_error_cannot_open_skills_url".localized
         }
     }
 }
