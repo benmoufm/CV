@@ -54,6 +54,7 @@
 "competence_violin" = "Violon";
 "competence_drawing" = "Dessin";
 "competence_error_unexpected_json_format" = "Erreur. Format incorrect du JSON.";
+"competence_error_json_url" = "Erreur. Impossible d'accéder à l'URL du JSON.";
 
 // CONTACT
 "contact_navigation_title_text" = "Contact";
