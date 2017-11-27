@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "042e298b_edbe9af0",
+        "filename": "CV/HttpManager.swift",
+        "patchSetId": 6
+      },
+      "lineNbr": 34,
+      "author": {
+        "id": 1011781
+      },
+      "writtenOn": "2017-11-27T11:21:38Z",
+      "side": 1,
+      "message": "fait un switch sur ton result plutôt",
+      "range": {
+        "startLine": 29,
+        "startChar": 16,
+        "endLine": 34,
+        "endChar": 17
+      },
+      "revId": "d2ece820011b1f437a5d9ae6af3df378c4233773",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    }
+  ]
+}
