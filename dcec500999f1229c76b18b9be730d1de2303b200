@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "0d166ec4_b14d9d51",
+        "filename": "CV/HttpRequest.swift",
+        "patchSetId": 3
+      },
+      "lineNbr": 20,
+      "author": {
+        "id": 1011781
+      },
+      "writtenOn": "2017-11-27T11:14:14Z",
+      "side": 1,
+      "message": "C\u0027est bien ça tu peux faire encore mieux si tu fait un initializer avec des default value, parce que tu vas vite en avoir marre de spécifier que tu as pas de parametre ou l\u0027encoding qui ne change quasiement jamais",
+      "range": {
+        "startLine": 12,
+        "startChar": 0,
+        "endLine": 20,
+        "endChar": 1
+      },
+      "revId": "dcec500999f1229c76b18b9be730d1de2303b200",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    }
+  ]
+}
