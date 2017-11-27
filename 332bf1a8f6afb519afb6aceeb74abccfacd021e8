@@ -1,0 +1,96 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "ba385852_2d3ffe35",
+        "filename": "CV/HttpManager.swift",
+        "patchSetId": 5
+      },
+      "lineNbr": 21,
+      "author": {
+        "id": 1011781
+      },
+      "writtenOn": "2017-11-27T07:29:41Z",
+      "side": 1,
+      "message": "ta fonction devrait avoir un nom qui correspond plus à ce qu\u0027elle fait du genre execute(request: HTTPRequest, _ completion ...)",
+      "range": {
+        "startLine": 21,
+        "startChar": 9,
+        "endLine": 21,
+        "endChar": 24
+      },
+      "revId": "332bf1a8f6afb519afb6aceeb74abccfacd021e8",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "e2c6ad26_24378a52",
+        "filename": "CV/HttpManager.swift",
+        "patchSetId": 5
+      },
+      "lineNbr": 23,
+      "author": {
+        "id": 1011781
+      },
+      "writtenOn": "2017-11-27T07:29:41Z",
+      "side": 1,
+      "message": "retourne à la ligne à chaque paramètre ou à aucun, ici chaque parametre c\u0027est bien que n\u0027aies pas une ligne de 5000 characters",
+      "range": {
+        "startLine": 23,
+        "startChar": 54,
+        "endLine": 23,
+        "endChar": 75
+      },
+      "revId": "332bf1a8f6afb519afb6aceeb74abccfacd021e8",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "4aae0bb6_119556d1",
+        "filename": "CV/HttpManager.swift",
+        "patchSetId": 5
+      },
+      "lineNbr": 30,
+      "author": {
+        "id": 1011781
+      },
+      "writtenOn": "2017-11-27T07:29:41Z",
+      "side": 1,
+      "message": "garde l\u0027erreur qu\u0027il te donne lui. d\u0027autant plus que ton HTTPManager doit effectuer des tâche indépendament de qui l\u0027appelle: si plus tard tu as un  autre répository qui l\u0027appelle tu as pas envie d\u0027avoir comme erreur un competenceSkillAccessDenied",
+      "range": {
+        "startLine": 30,
+        "startChar": 0,
+        "endLine": 30,
+        "endChar": 83
+      },
+      "revId": "332bf1a8f6afb519afb6aceeb74abccfacd021e8",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "c6bdcb8b_2706b576",
+        "filename": "CV/fr.lproj/Localizable.strings",
+        "patchSetId": 5
+      },
+      "lineNbr": 56,
+      "author": {
+        "id": 1011781
+      },
+      "writtenOn": "2017-11-27T07:29:41Z",
+      "side": 1,
+      "message": "En soit c\u0027est bien d\u0027avoir une erreur comme ça si ton backend est pas dispo mais le nom de ton erreur n\u0027est pas coérrent ici",
+      "range": {
+        "startLine": 56,
+        "startChar": 0,
+        "endLine": 56,
+        "endChar": 75
+      },
+      "revId": "332bf1a8f6afb519afb6aceeb74abccfacd021e8",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    }
+  ]
+}
