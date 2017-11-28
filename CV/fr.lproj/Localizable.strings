@@ -53,6 +53,7 @@
 "special_skills_category" = "Autres compétences";
 "competence_violin" = "Violon";
 "competence_drawing" = "Dessin";
+"competence_error_unexpected_json_format" = "Erreur. Format incorrect du JSON.";
 
 // CONTACT
 "contact_navigation_title_text" = "Contact";
