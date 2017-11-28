@@ -1,0 +1,44 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "9462d7a3_b3275770",
+        "filename": "CV/RestSkill.swift",
+        "patchSetId": 1
+      },
+      "lineNbr": 18,
+      "author": {
+        "id": 1011781
+      },
+      "writtenOn": "2017-11-28T20:33:04Z",
+      "side": 1,
+      "message": "ce qu\u0027il faudrait c\u0027est que tu aies une erreur du type CVError.unexpectedJsonFormat et que tu la throw quand tu n\u0027arrive pas à parser à l\u0027initialisation\nparce que là tu savais pas trop quoi throw alors tu as throw le premier truc qui te venais sous la main, sauf que json[\"id\"].error est pas garranti d\u0027exister du coup ça pourrait faire crasher ton appli",
+      "revId": "02b7cc3aee427afee2b569c555243c1f3546de94",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "57b75b9c_e8f62c79",
+        "filename": "CV/RestSkill.swift",
+        "patchSetId": 1
+      },
+      "lineNbr": 34,
+      "author": {
+        "id": 1011781
+      },
+      "writtenOn": "2017-11-28T20:33:04Z",
+      "side": 1,
+      "message": "et du coup comme tu throw qu\u0027une erreur tu pourrait tout verifier d\u0027un coup :\n\nguard \n     let id \u003d json[\"id\"].int,\n     let .....\n     else { throw CVError.monError }\nself.id \u003d id\nself....",
+      "range": {
+        "startLine": 20,
+        "startChar": 8,
+        "endLine": 34,
+        "endChar": 9
+      },
+      "revId": "02b7cc3aee427afee2b569c555243c1f3546de94",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    }
+  ]
+}
