@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "4e2eb183_286954e3",
+        "filename": "CV/SkillMapper.swift",
+        "patchSetId": 1
+      },
+      "lineNbr": 17,
+      "author": {
+        "id": 1011781
+      },
+      "writtenOn": "2017-11-28T20:35:46Z",
+      "side": 1,
+      "message": "ce qu\u0027il faudrait c\u0027est que tu test ça dans ton RestSkill : au lieu d\u0027avoir un   categoryId de type Int on dit qu\u0027il est de type SkillCategory et du coup dans ton rest object tu vérifie que SkillCategory(json[\"categoryId\"].int) ça existe bien.\nEt ici tu n\u0027auras plus le problème de l\u0027optional",
+      "range": {
+        "startLine": 17,
+        "startChar": 22,
+        "endLine": 17,
+        "endChar": 68
+      },
+      "revId": "baab2d8cd9cefc1d1e7bbaf11773c1930303182c",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    }
+  ]
+}
