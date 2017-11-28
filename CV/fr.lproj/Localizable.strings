@@ -53,6 +53,8 @@
 "special_skills_category" = "Autres compétences";
 "competence_violin" = "Violon";
 "competence_drawing" = "Dessin";
+"competence_error_unexpected_json_format" = "Erreur. Impossible de récupérer les compétences, format des données incorrect.";
+"competence_error_cannot_open_url" = "Erreur. Impossible d'ouvrir l'URL.";
 
 // CONTACT
 "contact_navigation_title_text" = "Contact";
