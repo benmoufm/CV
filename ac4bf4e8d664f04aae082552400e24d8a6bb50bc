@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "983b059f_ac7a44de",
+        "filename": "CV/HttpManager.swift",
+        "patchSetId": 7
+      },
+      "lineNbr": 31,
+      "author": {
+        "id": 1011781
+      },
+      "writtenOn": "2017-11-28T20:02:36Z",
+      "side": 1,
+      "message": "tu peux juste mettre .value(JSON(data)) ici",
+      "range": {
+        "startLine": 31,
+        "startChar": 29,
+        "endLine": 31,
+        "endChar": 53
+      },
+      "revId": "ac4bf4e8d664f04aae082552400e24d8a6bb50bc",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    }
+  ]
+}
