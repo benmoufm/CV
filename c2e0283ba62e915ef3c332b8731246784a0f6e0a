@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "f557ae41_d47391e4",
+        "filename": "CV/HttpRequest.swift",
+        "patchSetId": 4
+      },
+      "lineNbr": 20,
+      "author": {
+        "id": 1011781
+      },
+      "writtenOn": "2017-11-28T20:12:31Z",
+      "side": 1,
+      "message": "Là tes paramètre par défault il ne sont pas changeable :\nquand tu fait une methode avec des parametre par défault il faut l\u0027écrire comme ça :\n\ninit(param1: Type1 \u003d value1,\n       param2: Type2 \u003d value2, \n       param3: Type3 \u003d value3)\n\nA priori ici il n\u0027y a que l\u0027url pour laquelle tu ne peux pas donner de paramètre par défaults les header tu peux les mettre vides par défault et la methode peut être un GET par default",
+      "range": {
+        "startLine": 14,
+        "startChar": 4,
+        "endLine": 20,
+        "endChar": 5
+      },
+      "revId": "c2e0283ba62e915ef3c332b8731246784a0f6e0a",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    }
+  ]
+}
