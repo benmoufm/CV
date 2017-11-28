@@ -1,0 +1,107 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "d12795e9_1945dbda",
+        "filename": "CV/SkillsRepository.swift",
+        "patchSetId": 5
+      },
+      "lineNbr": 14,
+      "author": {
+        "id": 1011781
+      },
+      "writtenOn": "2017-11-28T20:21:58Z",
+      "side": 1,
+      "message": "Ces paramètre là on ne les veux pas (c\u0027est comment ton repository fait pour récupérer les Skills et ça ça dépend de l\u0027implémentation de ton répository)",
+      "range": {
+        "startLine": 14,
+        "startChar": 19,
+        "endLine": 14,
+        "endChar": 74
+      },
+      "revId": "63451b63c688203e80f9b8afb2e8173f05510150",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "5d661ae1_f9b26f3a",
+        "filename": "CV/SkillsRepositoryImplementation.swift",
+        "patchSetId": 5
+      },
+      "lineNbr": 13,
+      "author": {
+        "id": 1011781
+      },
+      "writtenOn": "2017-11-28T20:21:58Z",
+      "side": 1,
+      "message": "du coup ici :\nlet httpManager créé à l\u0027initialisation",
+      "revId": "63451b63c688203e80f9b8afb2e8173f05510150",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "42f5a3dc_d2db7099",
+        "filename": "CV/SkillsRepositoryImplementation.swift",
+        "patchSetId": 5
+      },
+      "lineNbr": 15,
+      "author": {
+        "id": 1011781
+      },
+      "writtenOn": "2017-11-28T20:21:58Z",
+      "side": 1,
+      "message": "la requete elle va être créée ici dans ta méthode : parce que le contenu de ta méthode est intemment liée à l\u0027URL que tu fournit, la méthode ou les paramaètre ect, donc intimment liée à ta requette",
+      "revId": "63451b63c688203e80f9b8afb2e8173f05510150",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "11aa714c_992533e9",
+        "filename": "CV/SkillsRepositoryImplementation.swift",
+        "patchSetId": 5
+      },
+      "lineNbr": 31,
+      "author": {
+        "id": 1011781
+      },
+      "writtenOn": "2017-11-28T20:21:58Z",
+      "side": 1,
+      "message": "essaye de le faire en faisant\n\nskills \u003d json[\"skills\"].arrayValue.map {\n      ...\n}\n\nPour t\u0027habituer au concept et tu verra que ton implem sera un peu plus simple. et si ça t\u0027intéresse je pourrais te montrer comment l\u0027écrire en très très simple mais ça demande de la gymnastique avec les map (au début c\u0027est un compliqué mais après c\u0027est vachement plus clair quand on prend un peu l\u0027habitude)",
+      "range": {
+        "startLine": 21,
+        "startChar": 16,
+        "endLine": 31,
+        "endChar": 17
+      },
+      "revId": "63451b63c688203e80f9b8afb2e8173f05510150",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "7dcaa3d2_4f873957",
+        "filename": "CV/SkillsRepositoryImplementation.swift",
+        "patchSetId": 5
+      },
+      "lineNbr": 37,
+      "author": {
+        "id": 1011781
+      },
+      "writtenOn": "2017-11-28T20:21:58Z",
+      "side": 1,
+      "message": "C\u0027est au mauvais endroit, une ligne plus haut et c\u0027est bon",
+      "range": {
+        "startLine": 37,
+        "startChar": 8,
+        "endLine": 37,
+        "endChar": 33
+      },
+      "revId": "63451b63c688203e80f9b8afb2e8173f05510150",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    }
+  ]
+}
