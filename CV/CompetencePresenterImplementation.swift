@@ -10,12 +10,15 @@ import Foundation
 
 class CompetencePresenterImplementation: CompetencePresenter {
 
-    private weak var viewContract: CompetenceViewContract?
+    private var viewContract: CompetenceViewContract
+    private let skillsRepository: SkillsRepository
 
     // MARK: LifeCycle
 
-    init(viewContract: CompetenceViewContract) {
+    init(viewContract: CompetenceViewContract,
+         skillsRepository: SkillsRepository) {
         self.viewContract = viewContract
+        self.skillsRepository = skillsRepository
     }
 
     // MARK: - Startable
@@ -33,8 +36,14 @@ class CompetencePresenterImplementation: CompetencePresenter {
     }
 
     private func computeAndDisplayViewModel() {
-        // TODO: (Mélodie Benmouffek) 03/10/2017 Guard let required properties
-        let viewModel = CompetenceControllerViewModelMapper().map()
-        viewContract?.configure(with: viewModel)
+        skillsRepository.getSkillCategories() { result -> Void in
+            switch result {
+            case .value(let skillCategories):
+                let viewModel = CompetenceControllerViewModelMapper(skillCategories: skillCategories).map()
+                self.viewContract.configure(with: viewModel)
+            case .error(let error):
+                self.viewContract.displayAlert("competence_error_title_popup".localized, error.localizedDescription)
+            }
+        }
     }
 }

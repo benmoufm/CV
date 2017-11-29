@@ -24,7 +24,7 @@ class CompetenceTableViewCell: UITableViewCell {
     // MARK: - CompetenceTableViewCell
 
     func configure(with viewModel: CompetenceCellViewModel) {
-        textLabel?.text = viewModel.label
+        textLabel?.text = viewModel.name
         if viewModel.isTitleCell {
             selectionStyle = .none
             textLabel?.backgroundColor = UIColor.secondaryColor
