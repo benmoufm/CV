@@ -45,6 +45,7 @@ class SkillsRepositoryImplementation: SkillsRepository {
                 completion?(resultSkills)
             }
         }
+        completion?(resultSkills)
     }
 
 }
