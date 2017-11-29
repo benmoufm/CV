@@ -49,7 +49,10 @@ final class ViewControllerFactory {
 
     func competenceViewController() -> CompetenceViewController {
         let competenceViewController = CompetenceViewController()
-        let presenter = CompetencePresenterImplementation(viewContract: competenceViewController)
+        let presenter = CompetencePresenterImplementation(
+            viewContract: competenceViewController,
+            skillsRepository: RepositoryFactory.sharedInstance.skillsRepository
+        )
         competenceViewController.presenter = presenter
         return competenceViewController
     }
