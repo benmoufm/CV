@@ -1,0 +1,50 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "5d5673f6_b59365b6",
+        "filename": "CV/HttpRequest.swift",
+        "patchSetId": 5
+      },
+      "lineNbr": 16,
+      "author": {
+        "id": 1011781
+      },
+      "writtenOn": "2017-11-29T11:27:12Z",
+      "side": 1,
+      "message": "HTTPHeaders()",
+      "range": {
+        "startLine": 16,
+        "startChar": 32,
+        "endLine": 16,
+        "endChar": 50
+      },
+      "revId": "23302e30cad28f2576f9c2b479a0339b0704e254",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "f4fcffc5_f9046233",
+        "filename": "CV/HttpRequest.swift",
+        "patchSetId": 5
+      },
+      "lineNbr": 18,
+      "author": {
+        "id": 1011781
+      },
+      "writtenOn": "2017-11-29T11:27:12Z",
+      "side": 1,
+      "message": "écris juste [:] tu n\u0027as pas besoin d\u0027allourdir la syntaxe",
+      "range": {
+        "startLine": 18,
+        "startChar": 38,
+        "endLine": 18,
+        "endChar": 52
+      },
+      "revId": "23302e30cad28f2576f9c2b479a0339b0704e254",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    }
+  ]
+}
