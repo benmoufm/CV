@@ -9,9 +9,11 @@
 import Foundation
 
 struct CompetenceControllerViewModelMapper {
+    let skills: [Skill]
 
     func map() -> CompetenceControllerViewModel {
-        return CompetenceControllerViewModel(tableView: CompetenceTableViewModelMapper().map())
+        let competenceTableViewModelMapper = CompetenceTableViewModelMapper(skills: skills)
+        return CompetenceControllerViewModel(tableView: competenceTableViewModelMapper.map())
     }
 
 }

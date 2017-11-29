@@ -9,6 +9,9 @@
 import Foundation
 
 struct CompetenceCellViewModel {
-    let label: String
+    let name: String
     let isTitleCell: Bool
+    let category: String
+    let evaluation: Int
+    let description: String
 }

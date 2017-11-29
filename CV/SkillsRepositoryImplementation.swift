@@ -43,8 +43,8 @@ class SkillsRepositoryImplementation: SkillsRepository {
                         resultSkills = .error(error as NSError)
                 }
             }
-            completion?(resultSkills)
         }
+        completion?(resultSkills)
     }
 
 }
