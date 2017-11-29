@@ -1,0 +1,50 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "5e1e2c34_44712f43",
+        "filename": "CV/RestSkill.swift",
+        "patchSetId": 2
+      },
+      "lineNbr": 28,
+      "author": {
+        "id": 1011781
+      },
+      "writtenOn": "2017-11-29T11:35:44Z",
+      "side": 1,
+      "message": "met ton { au bout de ton else ce sera plus lisible",
+      "range": {
+        "startLine": 27,
+        "startChar": 0,
+        "endLine": 28,
+        "endChar": 9
+      },
+      "revId": "41a81b8288735fed80664725712273e4a062f517",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "8ed28d45_afa7b579",
+        "filename": "CV/fr.lproj/Localizable.strings",
+        "patchSetId": 2
+      },
+      "lineNbr": 56,
+      "author": {
+        "id": 1011781
+      },
+      "writtenOn": "2017-11-29T11:35:44Z",
+      "side": 1,
+      "message": "même remarque que le commit précédent",
+      "range": {
+        "startLine": 56,
+        "startChar": 73,
+        "endLine": 56,
+        "endChar": 77
+      },
+      "revId": "41a81b8288735fed80664725712273e4a062f517",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    }
+  ]
+}
