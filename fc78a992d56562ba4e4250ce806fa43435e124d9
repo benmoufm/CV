@@ -1,0 +1,142 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "e0816e48_f6213c77",
+        "filename": "CV/CVError.swift",
+        "patchSetId": 7
+      },
+      "lineNbr": 19,
+      "author": {
+        "id": 1011781
+      },
+      "writtenOn": "2017-11-29T13:42:46Z",
+      "side": 1,
+      "message": "c\u0027est un peu chelou je trouve d\u0027appeler ça openURL parce que dans l\u0027absolu ces erreur là vont être des erreur de parsing",
+      "range": {
+        "startLine": 19,
+        "startChar": 19,
+        "endLine": 19,
+        "endChar": 32
+      },
+      "revId": "fc78a992d56562ba4e4250ce806fa43435e124d9",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "1f41074f_ff8aba75",
+        "filename": "CV/SkillsRepositoryImplementation.swift",
+        "patchSetId": 7
+      },
+      "lineNbr": 25,
+      "author": {
+        "id": 1011781
+      },
+      "writtenOn": "2017-11-29T13:42:46Z",
+      "side": 1,
+      "message": "guard plutot que if ça t\u0027évite d\u0027agrandir l\u0027indentation",
+      "range": {
+        "startLine": 25,
+        "startChar": 8,
+        "endLine": 25,
+        "endChar": 76
+      },
+      "revId": "fc78a992d56562ba4e4250ce806fa43435e124d9",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "880803e3_2fd96ade",
+        "filename": "CV/SkillsRepositoryImplementation.swift",
+        "patchSetId": 7
+      },
+      "lineNbr": 32,
+      "author": {
+        "id": 1011781
+      },
+      "writtenOn": "2017-11-29T13:42:46Z",
+      "side": 1,
+      "message": "pas besoin de ça",
+      "range": {
+        "startLine": 32,
+        "startChar": 20,
+        "endLine": 32,
+        "endChar": 42
+      },
+      "revId": "fc78a992d56562ba4e4250ce806fa43435e124d9",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "9d575360_9e523a7c",
+        "filename": "CV/SkillsRepositoryImplementation.swift",
+        "patchSetId": 7
+      },
+      "lineNbr": 34,
+      "author": {
+        "id": 1011781
+      },
+      "writtenOn": "2017-11-29T13:42:46Z",
+      "side": 1,
+      "message": "initialise directement let skills \u003d  try...\net en dessous resultSkills \u003d .value(skills)",
+      "range": {
+        "startLine": 34,
+        "startChar": 24,
+        "endLine": 34,
+        "endChar": 32
+      },
+      "revId": "fc78a992d56562ba4e4250ce806fa43435e124d9",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "9aa30cb7_ac993bcc",
+        "filename": "CV/SkillsRepositoryImplementation.swift",
+        "patchSetId": 7
+      },
+      "lineNbr": 46,
+      "author": {
+        "id": 1011781
+      },
+      "writtenOn": "2017-11-29T13:42:46Z",
+      "side": 1,
+      "message": "UrlFormatError plutôt ou un truc du genre",
+      "range": {
+        "startLine": 46,
+        "startChar": 42,
+        "endLine": 46,
+        "endChar": 70
+      },
+      "revId": "fc78a992d56562ba4e4250ce806fa43435e124d9",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "bc595b3b_fa5a07b8",
+        "filename": "CV/fr.lproj/Localizable.strings",
+        "patchSetId": 7
+      },
+      "lineNbr": 56,
+      "author": {
+        "id": 1011781
+      },
+      "writtenOn": "2017-11-29T13:42:46Z",
+      "side": 1,
+      "message": "mieux :)",
+      "range": {
+        "startLine": 56,
+        "startChar": 36,
+        "endLine": 56,
+        "endChar": 122
+      },
+      "revId": "fc78a992d56562ba4e4250ce806fa43435e124d9",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    }
+  ]
+}
