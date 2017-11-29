@@ -68,6 +68,29 @@
       "revId": "4996f3769b4620414311b0616afc247c075cc513",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "0971c1a2_7ac0c354",
+        "filename": "CV/fr.lproj/Localizable.strings",
+        "patchSetId": 6
+      },
+      "lineNbr": 57,
+      "author": {
+        "id": 1011781
+      },
+      "writtenOn": "2017-11-29T11:34:17Z",
+      "side": 1,
+      "message": "Pense que tes message d\u0027erreur ça va être des choses que tu affiche à l\u0027utilisateur du coup t\u0027a pas envie de parler de JSON par exemple, c\u0027est pas une info que tu veux partager à l\u0027utilisateur que tu utilise des JSON",
+      "range": {
+        "startLine": 57,
+        "startChar": 0,
+        "endLine": 57,
+        "endChar": 78
+      },
+      "revId": "4996f3769b4620414311b0616afc247c075cc513",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
     }
   ]
 }
