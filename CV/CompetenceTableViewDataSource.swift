@@ -33,15 +33,27 @@ class CompetenceTableViewDataSource: NSObject,
 
     // MARK: - UITableViewDataSource
 
+    func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+        return viewModel.tableCells[section].name
+    }
+
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return viewModel.tableCells[section].skills.count
+    }
+
+    func numberOfSections(in tableView: UITableView) -> Int {
         return viewModel.tableCells.count
     }
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell: CompetenceTableViewCell = tableView.dequeueCell(at: indexPath)
-        cell.configure(with: viewModel.tableCells[indexPath.row])
+        cell.configure(with: viewModel.tableCells[indexPath.section].skills[indexPath.row])
         return cell
 
+    }
+
+    func tableView(_ tableView: UITableView, willDisplayHeaderView view: UIView, forSection section: Int) {
+        view.tintColor = UIColor.mainColor.withAlphaComponent(0.5)
     }
 
     // MARK: - UITableViewDelegate

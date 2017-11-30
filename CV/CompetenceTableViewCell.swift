@@ -11,6 +11,9 @@ import UIKit
 
 class CompetenceTableViewCell: UITableViewCell {
 
+    var evaluation: Int = 0
+    var usageDescription: String = ""
+
     // MARK: - Lifecycle
 
     override init(style: UITableViewCellStyle, reuseIdentifier: String?) {
@@ -23,20 +26,14 @@ class CompetenceTableViewCell: UITableViewCell {
 
     // MARK: - CompetenceTableViewCell
 
-    func configure(with viewModel: CompetenceCellViewModel) {
+    func configure(with viewModel: Skill) {
         textLabel?.text = viewModel.name
-        if viewModel.isTitleCell {
-            selectionStyle = .none
-            textLabel?.backgroundColor = UIColor.secondaryColor
-            textLabel?.textAlignment = .center
-            textLabel?.font = UIFont.boldSystemFont(ofSize: 15.0)
-            textLabel?.textColor = UIColor.mainColor
-        } else {
-            selectionStyle = .gray
-            textLabel?.backgroundColor = UIColor.backgroundColor
-            textLabel?.textAlignment = .natural
-            textLabel?.font = UIFont.systemFont(ofSize: 13.0)
-            textLabel?.textColor = UIColor.textColor
-        }
+        evaluation = viewModel.evaluation
+        usageDescription = viewModel.usageDescription
+        selectionStyle = .gray
+        textLabel?.backgroundColor = UIColor.backgroundColor
+        textLabel?.textAlignment = .natural
+        textLabel?.font = UIFont.systemFont(ofSize: 13.0)
+        textLabel?.textColor = UIColor.textColor
     }
 }
