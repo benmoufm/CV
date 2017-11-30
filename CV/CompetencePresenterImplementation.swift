@@ -44,8 +44,8 @@ class CompetencePresenterImplementation: CompetencePresenter {
             case .error(let error):
                 self.viewContract.displayPopup("competence_error_title_popup".localized, error.localizedDescription)
             }
+            let viewModel = CompetenceControllerViewModelMapper(skills: skills).map()
+            self.viewContract.configure(with: viewModel)
         }
-        let viewModel = CompetenceControllerViewModelMapper(skills: skills).map()
-        viewContract.configure(with: viewModel)
     }
 }

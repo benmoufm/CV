@@ -11,6 +11,10 @@ import UIKit
 
 class CompetenceTableViewCell: UITableViewCell {
 
+    var category: String = ""
+    var evaluation: Int = 0
+    var usageDescription: String = ""
+
     // MARK: - Lifecycle
 
     override init(style: UITableViewCellStyle, reuseIdentifier: String?) {
@@ -32,6 +36,9 @@ class CompetenceTableViewCell: UITableViewCell {
             textLabel?.font = UIFont.boldSystemFont(ofSize: 15.0)
             textLabel?.textColor = UIColor.mainColor
         } else {
+            category = viewModel.category
+            evaluation = viewModel.evaluation
+            usageDescription = viewModel.description
             selectionStyle = .gray
             textLabel?.backgroundColor = UIColor.backgroundColor
             textLabel?.textAlignment = .natural

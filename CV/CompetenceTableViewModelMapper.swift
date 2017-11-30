@@ -17,6 +17,15 @@ struct CompetenceTableViewModelMapper {
     }
 
     func map() -> CompetenceTableViewModel {
-        return CompetenceTableViewModel(tableCells: [])
+        // Mapping of skills array
+        let result = skills.map { item -> CompetenceCellViewModel in
+            return CompetenceCellViewModelMapper(name: item.name,
+                                          isTitleCell: item.isCategory,
+                                          category: item.category.description,
+                                          evaluation: item.evaluation,
+                                          description: item.usageDescription).map()
+        }
+
+        return CompetenceTableViewModel(tableCells: result)
     }
 }

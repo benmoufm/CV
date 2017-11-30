@@ -10,7 +10,6 @@ import Foundation
 import SwiftyJSON
 
 struct RestSkill {
-    let id: Int
     let name: String
     let isCategory: Bool
     let category: SkillCategory
@@ -19,7 +18,6 @@ struct RestSkill {
 
     init(json: JSON) throws {
         guard
-            let id = json["id"].int,
             let name = json["name"].string,
             let isCategory = json["is_category"].bool,
             let categoryID = json["skill_category_id"].int,
@@ -30,7 +28,6 @@ struct RestSkill {
             throw CVError.unexpectedJSONFormat
         }
 
-        self.id = id
         self.name = name
         self.isCategory = isCategory
         self.category = category
