@@ -1,0 +1,50 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "c0879bcb_08c024c2",
+        "filename": "CV/SkillsRepositoryImplementation.swift",
+        "patchSetId": 9
+      },
+      "lineNbr": 36,
+      "author": {
+        "id": 1011781
+      },
+      "writtenOn": "2017-11-30T13:33:58Z",
+      "side": 1,
+      "message": "c\u0027est un peu bof parce que si tu reçoit un JSON qui  n\u0027a pas de champs skills il te donne un tableau vide et au lieu d\u0027une erreur tu a une liste de skills vides",
+      "range": {
+        "startLine": 36,
+        "startChar": 52,
+        "endLine": 36,
+        "endChar": 62
+      },
+      "revId": "b3cf0adc1190d9c8ccbf36c2ec987d8c6f3d9207",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "7d64a4ca_313bd004",
+        "filename": "CV/SkillsRepositoryImplementation.swift",
+        "patchSetId": 9
+      },
+      "lineNbr": 39,
+      "author": {
+        "id": 1011781
+      },
+      "writtenOn": "2017-11-30T13:33:58Z",
+      "side": 1,
+      "message": "pas besoin de if ici si effectivement tu as une erreur tu ne passera pas dans ce case",
+      "range": {
+        "startLine": 39,
+        "startChar": 0,
+        "endLine": 39,
+        "endChar": 50
+      },
+      "revId": "b3cf0adc1190d9c8ccbf36c2ec987d8c6f3d9207",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    }
+  ]
+}
