@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "b6a7fc83_03e35033",
+        "filename": "CV/RestSkill.swift",
+        "patchSetId": 2
+      },
+      "lineNbr": 13,
+      "author": {
+        "id": 1011781
+      },
+      "writtenOn": "2017-11-30T13:44:24Z",
+      "side": 0,
+      "message": "Pourquoi tu enlève les id c\u0027est important d\u0027avoir des id dans tes entités",
+      "range": {
+        "startLine": 13,
+        "startChar": 12,
+        "endLine": 13,
+        "endChar": 15
+      },
+      "revId": "d1daf294497aa065176a97ecd0086ecba6de5a17",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    }
+  ]
+}

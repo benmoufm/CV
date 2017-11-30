@@ -1,0 +1,96 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "d81390dc_f15d2b29",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 2
+      },
+      "lineNbr": 7,
+      "author": {
+        "id": 1011781
+      },
+      "writtenOn": "2017-11-30T13:44:24Z",
+      "side": 1,
+      "message": "La règle c\u0027est pas de commencer tout tes message de commit par add\n\nMap skills to xxxViewModel\nImplement xxxxMapper",
+      "range": {
+        "startLine": 7,
+        "startChar": 0,
+        "endLine": 7,
+        "endChar": 18
+      },
+      "revId": "8ec984a3737287606b06087b40253b87c7b0c944",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "580bff89_7ca53033",
+        "filename": "CV/CompetencePresenterImplementation.swift",
+        "patchSetId": 2
+      },
+      "lineNbr": 49,
+      "author": {
+        "id": 1011781
+      },
+      "writtenOn": "2017-11-30T13:44:24Z",
+      "side": 1,
+      "message": "tu aurais pu le corriger dans le commit ou l\u0027erreur a été faite",
+      "range": {
+        "startLine": 47,
+        "startChar": 0,
+        "endLine": 49,
+        "endChar": 9
+      },
+      "revId": "8ec984a3737287606b06087b40253b87c7b0c944",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "f353ed1d_02a75b2a",
+        "filename": "CV/CompetenceTableViewModelMapper.swift",
+        "patchSetId": 2
+      },
+      "lineNbr": 20,
+      "author": {
+        "id": 1011781
+      },
+      "writtenOn": "2017-11-30T13:44:24Z",
+      "side": 1,
+      "message": "Commentaire inutile",
+      "range": {
+        "startLine": 20,
+        "startChar": 0,
+        "endLine": 20,
+        "endChar": 34
+      },
+      "revId": "8ec984a3737287606b06087b40253b87c7b0c944",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "9787d307_6e9f26bf",
+        "filename": "CV/CompetenceTableViewModelMapper.swift",
+        "patchSetId": 2
+      },
+      "lineNbr": 21,
+      "author": {
+        "id": 1011781
+      },
+      "writtenOn": "2017-11-30T13:44:24Z",
+      "side": 1,
+      "message": "elle contient quoi ta variable? \u003d\u003d\u003e mauvais naming",
+      "range": {
+        "startLine": 21,
+        "startChar": 12,
+        "endLine": 21,
+        "endChar": 18
+      },
+      "revId": "8ec984a3737287606b06087b40253b87c7b0c944",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    }
+  ]
+}
