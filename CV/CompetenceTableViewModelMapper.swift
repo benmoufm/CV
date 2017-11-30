@@ -13,6 +13,11 @@ struct CompetenceTableViewModelMapper {
     let skillCategories: [SkillCategory]
 
     func map() -> CompetenceTableViewModel {
-        return CompetenceTableViewModel(tableCells: [])
+        let skillsCellViewModel = skillCategories.map { item -> CompetenceCellViewModel in
+            return CompetenceCellViewModelMapper(name: item.name,
+                                                 skills: item.skills).map()
+        }
+
+        return CompetenceTableViewModel(tableCells: skillsCellViewModel)
     }
 }

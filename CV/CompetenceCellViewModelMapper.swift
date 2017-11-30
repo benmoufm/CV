@@ -11,16 +11,12 @@ import Foundation
 struct CompetenceCellViewModelMapper {
 
     let name: String
-    let isTitleCell: Bool
-    let category: String
-    let evaluation: Int
-    let description: String
+    let skills: [Skill]
 
     func map() -> CompetenceCellViewModel {
-        return CompetenceCellViewModel(name: name,
-                                       isTitleCell: isTitleCell,
-                                       category: category,
-                                       evaluation: evaluation,
-                                       description: description)
+        return CompetenceCellViewModel(
+            name: name,
+            cells: skills.map { SkillCellViewModelMapper(skill: $0).map() }
+        )
     }
 }
