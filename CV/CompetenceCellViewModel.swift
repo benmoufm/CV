@@ -10,8 +10,5 @@ import Foundation
 
 struct CompetenceCellViewModel {
     let name: String
-    let isTitleCell: Bool
-    let category: String
-    let evaluation: Int
-    let description: String
+    let cells: [SkillCellViewModel]
 }

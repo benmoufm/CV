@@ -109,6 +109,8 @@
 		86F1A5A21F94D21D00D8D1BF /* ExperiencePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86F1A59D1F94D21D00D8D1BF /* ExperiencePresenter.swift */; };
 		86F1A5A31F94D21D00D8D1BF /* ExperiencePresenterImplementation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86F1A59E1F94D21D00D8D1BF /* ExperiencePresenterImplementation.swift */; };
 		86F1A5A41F94D21D00D8D1BF /* ExperienceViewContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86F1A59F1F94D21D00D8D1BF /* ExperienceViewContract.swift */; };
+		86F95E6A1FD53A9100E80B23 /* SkillCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86F95E691FD53A9100E80B23 /* SkillCellViewModel.swift */; };
+		86F95E6C1FD53AC200E80B23 /* SkillCellViewModelMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86F95E6B1FD53AC200E80B23 /* SkillCellViewModelMapper.swift */; };
 		923E443F1C6249BB78E634CB /* Pods_CV.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0FC4EFE5BB5FE11B463C650F /* Pods_CV.framework */; };
 /* End PBXBuildFile section */
 
@@ -219,6 +221,8 @@
 		86F1A59D1F94D21D00D8D1BF /* ExperiencePresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExperiencePresenter.swift; sourceTree = "<group>"; };
 		86F1A59E1F94D21D00D8D1BF /* ExperiencePresenterImplementation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExperiencePresenterImplementation.swift; sourceTree = "<group>"; };
 		86F1A59F1F94D21D00D8D1BF /* ExperienceViewContract.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExperienceViewContract.swift; sourceTree = "<group>"; };
+		86F95E691FD53A9100E80B23 /* SkillCellViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SkillCellViewModel.swift; sourceTree = "<group>"; };
+		86F95E6B1FD53AC200E80B23 /* SkillCellViewModelMapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SkillCellViewModelMapper.swift; sourceTree = "<group>"; };
 		9981037A025B7EBCA6DC8DB3 /* Pods-CV.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CV.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CV/Pods-CV.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -412,6 +416,7 @@
 		862D56691F83E14A0090BA0B /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				86F95E691FD53A9100E80B23 /* SkillCellViewModel.swift */,
 				8639DB551F9A477600BFC0BC /* CompetenceCellViewModel.swift */,
 				8639DB591F9A477600BFC0BC /* CompetenceTableViewModel.swift */,
 				862D566C1F83E1B80090BA0B /* CompetenceControllerViewModel.swift */,
@@ -422,6 +427,7 @@
 		862D566A1F83E1590090BA0B /* Mapper */ = {
 			isa = PBXGroup;
 			children = (
+				86F95E6B1FD53AC200E80B23 /* SkillCellViewModelMapper.swift */,
 				8639DB561F9A477600BFC0BC /* CompetenceCellViewModelMapper.swift */,
 				8639DB5A1F9A477600BFC0BC /* CompetenceTableViewModelMapper.swift */,
 				862D566D1F83E1B80090BA0B /* CompetenceControllerViewModelMapper.swift */,
@@ -1049,6 +1055,7 @@
 				862D56771F83E1B80090BA0B /* SwitchContainerViewController.swift in Sources */,
 				860AE2A41F574305004B9F65 /* ContactControllerViewModelMapper.swift in Sources */,
 				86F1A5A21F94D21D00D8D1BF /* ExperiencePresenter.swift in Sources */,
+				86F95E6C1FD53AC200E80B23 /* SkillCellViewModelMapper.swift in Sources */,
 				8600EA961F7BAEFF0037AFD3 /* PresentationControllerViewModelMapper.swift in Sources */,
 				8604FF781FCDAE8800F2F99F /* SkillMapper.swift in Sources */,
 				86E4403C1F4A163F0040BD55 /* HomeControllerViewModel.swift in Sources */,
@@ -1109,6 +1116,7 @@
 				862D56741F83E1B80090BA0B /* CompetencePresenter.swift in Sources */,
 				867DA5181F59DC0F000C5AC2 /* UITableView+Registerable.swift in Sources */,
 				86F1A5A41F94D21D00D8D1BF /* ExperienceViewContract.swift in Sources */,
+				86F95E6A1FD53A9100E80B23 /* SkillCellViewModel.swift in Sources */,
 				8639DB601F9A477600BFC0BC /* CompetenceTableViewModel.swift in Sources */,
 				8600EA971F7BAEFF0037AFD3 /* PresentationPresenter.swift in Sources */,
 				862095BF1F4D7DB8005B1C7C /* ViewRounded.swift in Sources */,
