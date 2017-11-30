@@ -1,0 +1,142 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "122f061e_51b2e38a",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 2
+      },
+      "lineNbr": 7,
+      "author": {
+        "id": 1011781
+      },
+      "writtenOn": "2017-11-30T13:40:06Z",
+      "side": 1,
+      "message": "Fetch skills from repository in presenter (which one?)",
+      "range": {
+        "startLine": 7,
+        "startChar": 0,
+        "endLine": 7,
+        "endChar": 39
+      },
+      "revId": "d1daf294497aa065176a97ecd0086ecba6de5a17",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "9494e928_dbf73df0",
+        "filename": "CV/CompetenceTableViewModelMapper.swift",
+        "patchSetId": 2
+      },
+      "lineNbr": 17,
+      "author": {
+        "id": 1011781
+      },
+      "writtenOn": "2017-11-30T13:40:06Z",
+      "side": 1,
+      "message": "tu a pas besoin d\u0027écricre l\u0027init c\u0027est auto généré pour une struct",
+      "range": {
+        "startLine": 15,
+        "startChar": 0,
+        "endLine": 17,
+        "endChar": 5
+      },
+      "revId": "d1daf294497aa065176a97ecd0086ecba6de5a17",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "a8ee653c_185620b8",
+        "filename": "CV/CompetenceViewContract.swift",
+        "patchSetId": 2
+      },
+      "lineNbr": 14,
+      "author": {
+        "id": 1011781
+      },
+      "writtenOn": "2017-11-30T13:40:06Z",
+      "side": 1,
+      "message": "dans un autre commit",
+      "range": {
+        "startLine": 14,
+        "startChar": 0,
+        "endLine": 14,
+        "endChar": 57
+      },
+      "revId": "d1daf294497aa065176a97ecd0086ecba6de5a17",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "aa178b10_5e5db99b",
+        "filename": "CV/CompetenceViewController.swift",
+        "patchSetId": 2
+      },
+      "lineNbr": 50,
+      "author": {
+        "id": 1011781
+      },
+      "writtenOn": "2017-11-30T13:40:06Z",
+      "side": 1,
+      "message": "dans un autre commit",
+      "range": {
+        "startLine": 43,
+        "startChar": 3,
+        "endLine": 50,
+        "endChar": 5
+      },
+      "revId": "d1daf294497aa065176a97ecd0086ecba6de5a17",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "2030af31_8f95c5d2",
+        "filename": "CV/SkillsRepositoryImplementation.swift",
+        "patchSetId": 2
+      },
+      "lineNbr": 45,
+      "author": {
+        "id": 1011781
+      },
+      "writtenOn": "2017-11-30T13:40:06Z",
+      "side": 1,
+      "message": "pas au bon endroit non plus",
+      "range": {
+        "startLine": 45,
+        "startChar": 0,
+        "endLine": 45,
+        "endChar": 41
+      },
+      "revId": "d1daf294497aa065176a97ecd0086ecba6de5a17",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "8dd2a243_6e72fb2a",
+        "filename": "CV/SkillsRepositoryImplementation.swift",
+        "patchSetId": 2
+      },
+      "lineNbr": 48,
+      "author": {
+        "id": 1011781
+      },
+      "writtenOn": "2017-11-30T13:40:06Z",
+      "side": 1,
+      "message": "pas au bon endroit",
+      "range": {
+        "startLine": 48,
+        "startChar": 0,
+        "endLine": 48,
+        "endChar": 33
+      },
+      "revId": "d1daf294497aa065176a97ecd0086ecba6de5a17",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    }
+  ]
+}
