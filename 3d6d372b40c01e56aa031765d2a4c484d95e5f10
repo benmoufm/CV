@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "d3c36b69_c10b730b",
+        "filename": "CV/SkillMapper.swift",
+        "patchSetId": 4
+      },
+      "lineNbr": 17,
+      "author": {
+        "id": 1011781
+      },
+      "writtenOn": "2017-11-30T13:48:15Z",
+      "side": 1,
+      "message": "Un skill et une category sont pas les même concept ils ne devraient pas être géré via la même entité",
+      "range": {
+        "startLine": 17,
+        "startChar": 0,
+        "endLine": 17,
+        "endChar": 45
+      },
+      "revId": "3d6d372b40c01e56aa031765d2a4c484d95e5f10",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    }
+  ]
+}
