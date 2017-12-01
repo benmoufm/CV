@@ -14,6 +14,7 @@
 		8600EA991F7BAEFF0037AFD3 /* PresentationViewContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8600EA931F7BAEFF0037AFD3 /* PresentationViewContract.swift */; };
 		8600EA9A1F7BAEFF0037AFD3 /* PresentationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8600EA941F7BAEFF0037AFD3 /* PresentationViewController.swift */; };
 		8601E0A51FD1528300C6F25A /* RestSkillCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8601E0A41FD1528300C6F25A /* RestSkillCategory.swift */; };
+		8601E0A71FD1591D00C6F25A /* SkillCategoryMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8601E0A61FD1591D00C6F25A /* SkillCategoryMapper.swift */; };
 		8604FF761FCDA4D900F2F99F /* RestSkill.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8604FF751FCDA4D900F2F99F /* RestSkill.swift */; };
 		8604FF781FCDAE8800F2F99F /* SkillMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8604FF771FCDAE8800F2F99F /* SkillMapper.swift */; };
 		860AE2A31F574305004B9F65 /* ContactControllerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 860AE29D1F574305004B9F65 /* ContactControllerViewModel.swift */; };
@@ -119,6 +120,7 @@
 		8600EA931F7BAEFF0037AFD3 /* PresentationViewContract.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PresentationViewContract.swift; sourceTree = "<group>"; };
 		8600EA941F7BAEFF0037AFD3 /* PresentationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PresentationViewController.swift; sourceTree = "<group>"; };
 		8601E0A41FD1528300C6F25A /* RestSkillCategory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RestSkillCategory.swift; sourceTree = "<group>"; };
+		8601E0A61FD1591D00C6F25A /* SkillCategoryMapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SkillCategoryMapper.swift; sourceTree = "<group>"; };
 		8604FF751FCDA4D900F2F99F /* RestSkill.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RestSkill.swift; sourceTree = "<group>"; };
 		8604FF771FCDAE8800F2F99F /* SkillMapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SkillMapper.swift; sourceTree = "<group>"; };
 		860AE29D1F574305004B9F65 /* ContactControllerViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactControllerViewModel.swift; sourceTree = "<group>"; };
@@ -678,6 +680,7 @@
 				8604FF751FCDA4D900F2F99F /* RestSkill.swift */,
 				8604FF771FCDAE8800F2F99F /* SkillMapper.swift */,
 				8601E0A41FD1528300C6F25A /* RestSkillCategory.swift */,
+				8601E0A61FD1591D00C6F25A /* SkillCategoryMapper.swift */,
 			);
 			name = Data;
 			sourceTree = "<group>";
@@ -1076,6 +1079,7 @@
 				8639DB5C1F9A477600BFC0BC /* CompetenceCellViewModel.swift in Sources */,
 				86BDE6B71FA634E600CA970E /* ExperienceCellViewModelMapper.swift in Sources */,
 				86F1A59A1F94CC9500D8D1BF /* ExperienceViewController.swift in Sources */,
+				8601E0A71FD1591D00C6F25A /* SkillCategoryMapper.swift in Sources */,
 				862D56751F83E1B80090BA0B /* CompetencePresenterImplementation.swift in Sources */,
 				86BDE6B91FA634E600CA970E /* ExperienceTableViewModel.swift in Sources */,
 				860AE2B81F59B40D004B9F65 /* ContactCellViewModelMapper.swift in Sources */,
