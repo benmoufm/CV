@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "4231a3a1_f6907a7b",
+        "filename": "CV/CompetenceViewController.swift",
+        "patchSetId": 1
+      },
+      "lineNbr": 46,
+      "author": {
+        "id": 1011781
+      },
+      "writtenOn": "2017-12-02T15:46:45Z",
+      "side": 1,
+      "message": "displayAlert comme ça la methode indiique le style de ton alertController",
+      "range": {
+        "startLine": 43,
+        "startChar": 4,
+        "endLine": 46,
+        "endChar": 82
+      },
+      "revId": "f655a310b5a653c36bfc0ce9e1eaa2ff042fda4c",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    }
+  ]
+}
