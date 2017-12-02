@@ -1,0 +1,96 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "a86d0655_e9bfdf56",
+        "filename": "CV/CompetenceCellViewModel.swift",
+        "patchSetId": 4
+      },
+      "lineNbr": 13,
+      "author": {
+        "id": 1011781
+      },
+      "writtenOn": "2017-12-02T15:53:46Z",
+      "side": 1,
+      "message": "non.\nDans un viewModel tu ne dois pas avoir d\u0027entité : le principe du viewModel est de séparer la logique et l\u0027affichage",
+      "range": {
+        "startLine": 13,
+        "startChar": 4,
+        "endLine": 13,
+        "endChar": 23
+      },
+      "revId": "07bb8b3a1cdac4f6f41affb306259d67844baf6b",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "f667d8b3_57dca3d2",
+        "filename": "CV/CompetencePresenterImplementation.swift",
+        "patchSetId": 4
+      },
+      "lineNbr": 48,
+      "author": {
+        "id": 1011781
+      },
+      "writtenOn": "2017-12-02T15:53:46Z",
+      "side": 1,
+      "message": "à mettre dans le case .value",
+      "range": {
+        "startLine": 47,
+        "startChar": 12,
+        "endLine": 48,
+        "endChar": 56
+      },
+      "revId": "07bb8b3a1cdac4f6f41affb306259d67844baf6b",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "9823351a_d939133c",
+        "filename": "CV/CompetenceTableViewCell.swift",
+        "patchSetId": 4
+      },
+      "lineNbr": 15,
+      "author": {
+        "id": 1011781
+      },
+      "writtenOn": "2017-12-02T15:53:46Z",
+      "side": 1,
+      "message": "pas utile",
+      "range": {
+        "startLine": 14,
+        "startChar": 4,
+        "endLine": 15,
+        "endChar": 37
+      },
+      "revId": "07bb8b3a1cdac4f6f41affb306259d67844baf6b",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "36ecd974_52005ab5",
+        "filename": "CV/CompetenceTableViewCell.swift",
+        "patchSetId": 4
+      },
+      "lineNbr": 29,
+      "author": {
+        "id": 1011781
+      },
+      "writtenOn": "2017-12-02T15:53:46Z",
+      "side": 1,
+      "message": "noooooooope",
+      "range": {
+        "startLine": 29,
+        "startChar": 35,
+        "endLine": 29,
+        "endChar": 40
+      },
+      "revId": "07bb8b3a1cdac4f6f41affb306259d67844baf6b",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    }
+  ]
+}
