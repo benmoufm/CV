@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "bd727583_2cc2b765",
+        "filename": "CV/RestSkillCategory.swift",
+        "patchSetId": 1
+      },
+      "lineNbr": 30,
+      "author": {
+        "id": 1011781
+      },
+      "writtenOn": "2017-12-02T15:43:06Z",
+      "side": 1,
+      "message": "cas d\u0027abscence de la clé skills non géré",
+      "range": {
+        "startLine": 26,
+        "startChar": 11,
+        "endLine": 30,
+        "endChar": 13
+      },
+      "revId": "c186436ac1d5738c46d8b74c66c3cac5d2b6cc71",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    }
+  ]
+}
