@@ -1,0 +1,67 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "f7f4c0e0_dfb48f12",
+        "filename": "CV/CompetencePresenterImplementation.swift",
+        "patchSetId": 3
+      },
+      "lineNbr": 39,
+      "author": {
+        "id": 1011781
+      },
+      "writtenOn": "2017-12-02T15:39:19Z",
+      "side": 1,
+      "message": "à enlever",
+      "range": {
+        "startLine": 39,
+        "startChar": 8,
+        "endLine": 39,
+        "endChar": 49
+      },
+      "revId": "d8a2e8a2a3fa96f87b1fe8c8e529759045b92918",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "9ffd776e_7a7b2c0f",
+        "filename": "CV/CompetencePresenterImplementation.swift",
+        "patchSetId": 3
+      },
+      "lineNbr": 42,
+      "author": {
+        "id": 1011781
+      },
+      "writtenOn": "2017-12-02T15:39:19Z",
+      "side": 1,
+      "message": "a renomer ça n\u0027a pas de sens de nommer une variable data dans ce contexte",
+      "range": {
+        "startLine": 42,
+        "startChar": 28,
+        "endLine": 42,
+        "endChar": 32
+      },
+      "revId": "d8a2e8a2a3fa96f87b1fe8c8e529759045b92918",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "2e35995d_7741e9c8",
+        "filename": "CV/SkillsRepositoryImplementation.swift",
+        "patchSetId": 3
+      },
+      "lineNbr": 39,
+      "author": {
+        "id": 1011781
+      },
+      "writtenOn": "2017-12-02T15:39:19Z",
+      "side": 1,
+      "message": "crée une variable intermediaire pour l\u0027ecrire sur 2 ligne au lieux d\u0027une que ce soit plus lisible",
+      "revId": "d8a2e8a2a3fa96f87b1fe8c8e529759045b92918",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    }
+  ]
+}
