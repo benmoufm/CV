@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "773a3a46_58bc0679",
+        "filename": "CV/SkillCategoryMapper.swift",
+        "patchSetId": 1
+      },
+      "lineNbr": 18,
+      "author": {
+        "id": 1011781
+      },
+      "writtenOn": "2017-12-02T15:44:52Z",
+      "side": 1,
+      "message": "erreur de type Rest dans Rest",
+      "range": {
+        "startLine": 18,
+        "startChar": 38,
+        "endLine": 18,
+        "endChar": 44
+      },
+      "revId": "81d8d7dc6c1ed090b2cf8afe10771f033c1931d6",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    }
+  ]
+}
