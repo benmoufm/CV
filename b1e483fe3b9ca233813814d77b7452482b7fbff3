@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "f54aa92d_b5a475d5",
+        "filename": "CV/SkillsRepository.swift",
+        "patchSetId": 10
+      },
+      "lineNbr": 16,
+      "author": {
+        "id": 1011781
+      },
+      "writtenOn": "2017-12-02T15:25:21Z",
+      "side": 1,
+      "message": "pas logique soit ta methode s\u0027appelle getSkillCategories soit tu renvoie des Skills",
+      "range": {
+        "startLine": 16,
+        "startChar": 9,
+        "endLine": 16,
+        "endChar": 54
+      },
+      "revId": "b1e483fe3b9ca233813814d77b7452482b7fbff3",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    }
+  ]
+}
