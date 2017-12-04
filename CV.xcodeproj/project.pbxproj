@@ -111,6 +111,12 @@
 		86F1A5A41F94D21D00D8D1BF /* ExperienceViewContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86F1A59F1F94D21D00D8D1BF /* ExperienceViewContract.swift */; };
 		86F95E6A1FD53A9100E80B23 /* SkillCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86F95E691FD53A9100E80B23 /* SkillCellViewModel.swift */; };
 		86F95E6C1FD53AC200E80B23 /* SkillCellViewModelMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86F95E6B1FD53AC200E80B23 /* SkillCellViewModelMapper.swift */; };
+		86F95E741FD5582A00E80B23 /* CompetenceDetailControllerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86F95E6E1FD5582A00E80B23 /* CompetenceDetailControllerViewModel.swift */; };
+		86F95E751FD5582A00E80B23 /* CompetenceDetailControllerViewModelMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86F95E6F1FD5582A00E80B23 /* CompetenceDetailControllerViewModelMapper.swift */; };
+		86F95E761FD5582A00E80B23 /* CompetenceDetailPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86F95E701FD5582A00E80B23 /* CompetenceDetailPresenter.swift */; };
+		86F95E771FD5582A00E80B23 /* CompetenceDetailPresenterImplementation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86F95E711FD5582A00E80B23 /* CompetenceDetailPresenterImplementation.swift */; };
+		86F95E781FD5582A00E80B23 /* CompetenceDetailViewContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86F95E721FD5582A00E80B23 /* CompetenceDetailViewContract.swift */; };
+		86F95E791FD5582A00E80B23 /* CompetenceDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86F95E731FD5582A00E80B23 /* CompetenceDetailViewController.swift */; };
 		923E443F1C6249BB78E634CB /* Pods_CV.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0FC4EFE5BB5FE11B463C650F /* Pods_CV.framework */; };
 /* End PBXBuildFile section */
 
@@ -223,6 +229,12 @@
 		86F1A59F1F94D21D00D8D1BF /* ExperienceViewContract.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExperienceViewContract.swift; sourceTree = "<group>"; };
 		86F95E691FD53A9100E80B23 /* SkillCellViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SkillCellViewModel.swift; sourceTree = "<group>"; };
 		86F95E6B1FD53AC200E80B23 /* SkillCellViewModelMapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SkillCellViewModelMapper.swift; sourceTree = "<group>"; };
+		86F95E6E1FD5582A00E80B23 /* CompetenceDetailControllerViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CompetenceDetailControllerViewModel.swift; sourceTree = "<group>"; };
+		86F95E6F1FD5582A00E80B23 /* CompetenceDetailControllerViewModelMapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CompetenceDetailControllerViewModelMapper.swift; sourceTree = "<group>"; };
+		86F95E701FD5582A00E80B23 /* CompetenceDetailPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CompetenceDetailPresenter.swift; sourceTree = "<group>"; };
+		86F95E711FD5582A00E80B23 /* CompetenceDetailPresenterImplementation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CompetenceDetailPresenterImplementation.swift; sourceTree = "<group>"; };
+		86F95E721FD5582A00E80B23 /* CompetenceDetailViewContract.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CompetenceDetailViewContract.swift; sourceTree = "<group>"; };
+		86F95E731FD5582A00E80B23 /* CompetenceDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CompetenceDetailViewController.swift; sourceTree = "<group>"; };
 		9981037A025B7EBCA6DC8DB3 /* Pods-CV.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CV.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CV/Pods-CV.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -717,6 +729,7 @@
 				865F30E91F6A74CC00F41B5C /* Formation */,
 				864F5EBE1F7150CE001E7064 /* FormationDetail */,
 				862D56651F83E11F0090BA0B /* Competence */,
+				86F95E6D1FD557BF00E80B23 /* CompetenceDetail */,
 				86F1A5A51F94D24D00D8D1BF /* Experience */,
 				860AE2961F5741BC004B9F65 /* Contact */,
 			);
@@ -904,6 +917,67 @@
 			name = ViewController;
 			sourceTree = "<group>";
 		};
+		86F95E6D1FD557BF00E80B23 /* CompetenceDetail */ = {
+			isa = PBXGroup;
+			children = (
+				86F95E7A1FD5583E00E80B23 /* Model */,
+				86F95E7C1FD5585100E80B23 /* UI */,
+				86F95E721FD5582A00E80B23 /* CompetenceDetailViewContract.swift */,
+				86F95E7B1FD5584400E80B23 /* Presenter */,
+			);
+			name = CompetenceDetail;
+			sourceTree = "<group>";
+		};
+		86F95E7A1FD5583E00E80B23 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				86F95E7E1FD5586B00E80B23 /* Mapper */,
+				86F95E7D1FD5585D00E80B23 /* ViewModel */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		86F95E7B1FD5584400E80B23 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				86F95E701FD5582A00E80B23 /* CompetenceDetailPresenter.swift */,
+				86F95E711FD5582A00E80B23 /* CompetenceDetailPresenterImplementation.swift */,
+			);
+			name = Presenter;
+			sourceTree = "<group>";
+		};
+		86F95E7C1FD5585100E80B23 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				86F95E7F1FD5587200E80B23 /* ViewController */,
+			);
+			name = UI;
+			sourceTree = "<group>";
+		};
+		86F95E7D1FD5585D00E80B23 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				86F95E6E1FD5582A00E80B23 /* CompetenceDetailControllerViewModel.swift */,
+			);
+			name = ViewModel;
+			sourceTree = "<group>";
+		};
+		86F95E7E1FD5586B00E80B23 /* Mapper */ = {
+			isa = PBXGroup;
+			children = (
+				86F95E6F1FD5582A00E80B23 /* CompetenceDetailControllerViewModelMapper.swift */,
+			);
+			name = Mapper;
+			sourceTree = "<group>";
+		};
+		86F95E7F1FD5587200E80B23 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				86F95E731FD5582A00E80B23 /* CompetenceDetailViewController.swift */,
+			);
+			name = ViewController;
+			sourceTree = "<group>";
+		};
 		A496D05A7785EC12DC5FE040 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -1040,11 +1114,13 @@
 				862D56731F83E1B80090BA0B /* CompetenceControllerViewModelMapper.swift in Sources */,
 				867FF31F1F6C33AB0085A80D /* FormationCellViewModel.swift in Sources */,
 				86E440441F4A16A40040BD55 /* Startable.swift in Sources */,
+				86F95E771FD5582A00E80B23 /* CompetenceDetailPresenterImplementation.swift in Sources */,
 				869F91F61F9E949000C05DEF /* SkillCategory.swift in Sources */,
 				86CE0CA71F1BC64D00DA0916 /* AppDelegate.swift in Sources */,
 				86BDE6BA1FA634E600CA970E /* ExperienceTableViewModelMapper.swift in Sources */,
 				8639DB621F9A477600BFC0BC /* XPCompetenceCoordinator.swift in Sources */,
 				86BDE6B81FA634E600CA970E /* ExperienceTableViewCell.swift in Sources */,
+				86F95E761FD5582A00E80B23 /* CompetenceDetailPresenter.swift in Sources */,
 				867DA5231F5D57CF000C5AC2 /* TemplateMailRepository.swift in Sources */,
 				860AE2A51F574305004B9F65 /* ContactPresenter.swift in Sources */,
 				867FF3211F6C34680085A80D /* FormationCollectionViewModelMapper.swift in Sources */,
@@ -1067,6 +1143,7 @@
 				86E4403F1F4A163F0040BD55 /* HomePresenterImplementation.swift in Sources */,
 				862D56721F83E1B80090BA0B /* CompetenceControllerViewModel.swift in Sources */,
 				865F30F81F6A75F400F41B5C /* FormationPresenter.swift in Sources */,
+				86F95E741FD5582A00E80B23 /* CompetenceDetailControllerViewModel.swift in Sources */,
 				864F5ECC1F71512D001E7064 /* FormationDetailControllerViewModelMapper.swift in Sources */,
 				86F1A5A01F94D21D00D8D1BF /* ExperienceControllerViewModel.swift in Sources */,
 				860AE2B11F599DE5004B9F65 /* ContactTableViewCell.swift in Sources */,
@@ -1086,6 +1163,7 @@
 				865F30FB1F6A75F400F41B5C /* FormationViewController.swift in Sources */,
 				8601E0A51FD1528300C6F25A /* RestSkillCategory.swift in Sources */,
 				867DA51F1F5CA536000C5AC2 /* RepositoryFactory.swift in Sources */,
+				86F95E791FD5582A00E80B23 /* CompetenceDetailViewController.swift in Sources */,
 				860AE2A71F574305004B9F65 /* ContactViewContract.swift in Sources */,
 				865F30F91F6A75F400F41B5C /* FormationPresenterImplementation.swift in Sources */,
 				867FF3251F6C38E70085A80D /* FormationCollectionViewDataSource.swift in Sources */,
@@ -1094,6 +1172,7 @@
 				86BDE6B71FA634E600CA970E /* ExperienceCellViewModelMapper.swift in Sources */,
 				86F1A59A1F94CC9500D8D1BF /* ExperienceViewController.swift in Sources */,
 				8601E0A71FD1591D00C6F25A /* SkillCategoryMapper.swift in Sources */,
+				86F95E751FD5582A00E80B23 /* CompetenceDetailControllerViewModelMapper.swift in Sources */,
 				862D56751F83E1B80090BA0B /* CompetencePresenterImplementation.swift in Sources */,
 				86BDE6B91FA634E600CA970E /* ExperienceTableViewModel.swift in Sources */,
 				860AE2B81F59B40D004B9F65 /* ContactCellViewModelMapper.swift in Sources */,
@@ -1113,6 +1192,7 @@
 				8600EA991F7BAEFF0037AFD3 /* PresentationViewContract.swift in Sources */,
 				867DA51D1F5C9743000C5AC2 /* LocalContactRepository.swift in Sources */,
 				86E4403E1F4A163F0040BD55 /* HomePresenter.swift in Sources */,
+				86F95E781FD5582A00E80B23 /* CompetenceDetailViewContract.swift in Sources */,
 				862D56741F83E1B80090BA0B /* CompetencePresenter.swift in Sources */,
 				867DA5181F59DC0F000C5AC2 /* UITableView+Registerable.swift in Sources */,
 				86F1A5A41F94D21D00D8D1BF /* ExperienceViewContract.swift in Sources */,
