@@ -1,0 +1,50 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "73e10a9d_799c75f4",
+        "filename": "CV/RestSkillCategory.swift",
+        "patchSetId": 2
+      },
+      "lineNbr": 26,
+      "author": {
+        "id": 1011781
+      },
+      "writtenOn": "2017-12-05T19:21:48Z",
+      "side": 1,
+      "message": "tu peux le faire au même endroit que ton premier guard",
+      "range": {
+        "startLine": 25,
+        "startChar": 13,
+        "endLine": 26,
+        "endChar": 16
+      },
+      "revId": "96b0d049e6379d0bfb15733c064eb54127ed195b",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "2ec7e511_c34fbf21",
+        "filename": "CV/RestSkillCategory.swift",
+        "patchSetId": 2
+      },
+      "lineNbr": 32,
+      "author": {
+        "id": 1011781
+      },
+      "writtenOn": "2017-12-05T19:21:48Z",
+      "side": 1,
+      "message": "tu as pas besoin de do catch vu que tu fait rien de l\u0027erreur tu peu juste faire un try",
+      "range": {
+        "startLine": 28,
+        "startChar": 8,
+        "endLine": 32,
+        "endChar": 9
+      },
+      "revId": "96b0d049e6379d0bfb15733c064eb54127ed195b",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    }
+  ]
+}
