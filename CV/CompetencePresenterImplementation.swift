@@ -12,13 +12,16 @@ class CompetencePresenterImplementation: CompetencePresenter {
 
     private var viewContract: CompetenceViewContract
     private let skillsRepository: SkillsRepository
+    let delegate: CompetencePresenterDelegate
 
     // MARK: LifeCycle
 
     init(viewContract: CompetenceViewContract,
-         skillsRepository: SkillsRepository) {
+         skillsRepository: SkillsRepository,
+         delegate: CompetencePresenterDelegate) {
         self.viewContract = viewContract
         self.skillsRepository = skillsRepository
+        self.delegate = delegate
     }
 
     // MARK: - Startable

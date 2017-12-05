@@ -10,7 +10,7 @@ import Foundation
 import UIKit
 
 protocol CompetenceTableViewDataSourceDelegate: class {
-
+    func competenceTableViewDataSource(_ dataSource: CompetenceTableViewDataSource, requestSkill id: Int)
 }
 
 class CompetenceTableViewDataSource: NSObject,
@@ -59,7 +59,8 @@ class CompetenceTableViewDataSource: NSObject,
     // MARK: - UITableViewDelegate
 
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        // TODO
+        let id = viewModel.tableCells[indexPath.section].skills[indexPath.row].id
+        delegate?.competenceTableViewDataSource(self, requestSkill: id)
     }
 
 }
