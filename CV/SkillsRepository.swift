@@ -14,4 +14,5 @@ protocol SkillsRepository {
     var httpManager: HttpManager { get }
 
     func getSkillCategories(completion: ((Result<[SkillCategory]>) -> Void)?)
+    func getSkill(_ id: Int, completion: ((Result<Skill>) -> Void)?)
 }

@@ -13,4 +13,11 @@ struct Skill {
     let name: String
     let evaluation: Int
     let usageDescription: String
+
+    init(id: Int, name: String, evaluation: Int, usageDescription: String) {
+        self.id = id
+        self.name = name
+        self.evaluation = evaluation
+        self.usageDescription = usageDescription
+    }
 }

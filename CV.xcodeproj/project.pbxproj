@@ -51,7 +51,6 @@
 		863D07E71FC1FC13004BDA19 /* HttpManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 863D07E61FC1FC13004BDA19 /* HttpManager.swift */; };
 		863ECEA11F69378700817C6D /* Results.swift in Sources */ = {isa = PBXBuildFile; fileRef = 863ECEA01F69378700817C6D /* Results.swift */; };
 		863ECEA31F69645500817C6D /* CVError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 863ECEA21F69645500817C6D /* CVError.swift */; };
-		864B45221FD6AA2900866CA9 /* CompetenceCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 864B45211FD6AA2900866CA9 /* CompetenceCoordinator.swift */; };
 		864F5EBA1F714131001E7064 /* FormationCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 864F5EB91F714131001E7064 /* FormationCoordinator.swift */; };
 		864F5ECB1F71512D001E7064 /* FormationDetailControllerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 864F5EC51F71512D001E7064 /* FormationDetailControllerViewModel.swift */; };
 		864F5ECC1F71512D001E7064 /* FormationDetailControllerViewModelMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 864F5EC61F71512D001E7064 /* FormationDetailControllerViewModelMapper.swift */; };
@@ -91,6 +90,7 @@
 		86CE0CA71F1BC64D00DA0916 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86CE0CA61F1BC64D00DA0916 /* AppDelegate.swift */; };
 		86CE0CAE1F1BC64E00DA0916 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 86CE0CAD1F1BC64E00DA0916 /* Assets.xcassets */; };
 		86CE0CB11F1BC64E00DA0916 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 86CE0CAF1F1BC64E00DA0916 /* LaunchScreen.storyboard */; };
+		86DD2C46202A07E4001D6F51 /* CompetenceCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86DD2C45202A07E4001D6F51 /* CompetenceCoordinator.swift */; };
 		86E4402B1F4A0FE70040BD55 /* MainCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86E4402A1F4A0FE70040BD55 /* MainCoordinator.swift */; };
 		86E4402E1F4A10DF0040BD55 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86E4402D1F4A10DF0040BD55 /* Coordinator.swift */; };
 		86E4403C1F4A163F0040BD55 /* HomeControllerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86E440361F4A163F0040BD55 /* HomeControllerViewModel.swift */; };
@@ -168,7 +168,6 @@
 		863D07E61FC1FC13004BDA19 /* HttpManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HttpManager.swift; sourceTree = "<group>"; };
 		863ECEA01F69378700817C6D /* Results.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Results.swift; sourceTree = "<group>"; };
 		863ECEA21F69645500817C6D /* CVError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CVError.swift; sourceTree = "<group>"; };
-		864B45211FD6AA2900866CA9 /* CompetenceCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CompetenceCoordinator.swift; sourceTree = "<group>"; };
 		864F5EB91F714131001E7064 /* FormationCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FormationCoordinator.swift; sourceTree = "<group>"; };
 		864F5EC51F71512D001E7064 /* FormationDetailControllerViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FormationDetailControllerViewModel.swift; sourceTree = "<group>"; };
 		864F5EC61F71512D001E7064 /* FormationDetailControllerViewModelMapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FormationDetailControllerViewModelMapper.swift; sourceTree = "<group>"; };
@@ -211,6 +210,7 @@
 		86CE0CB01F1BC64E00DA0916 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		86CE0CB21F1BC64E00DA0916 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		86CEFA7F1F4B30DC00CC18D3 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/Localizable.strings; sourceTree = "<group>"; };
+		86DD2C45202A07E4001D6F51 /* CompetenceCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CompetenceCoordinator.swift; sourceTree = "<group>"; };
 		86E4402A1F4A0FE70040BD55 /* MainCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainCoordinator.swift; sourceTree = "<group>"; };
 		86E4402D1F4A10DF0040BD55 /* Coordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
 		86E440361F4A163F0040BD55 /* HomeControllerViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeControllerViewModel.swift; sourceTree = "<group>"; };
@@ -745,7 +745,7 @@
 				86E4402A1F4A0FE70040BD55 /* MainCoordinator.swift */,
 				864F5EB91F714131001E7064 /* FormationCoordinator.swift */,
 				8639DB5B1F9A477600BFC0BC /* XPCompetenceCoordinator.swift */,
-				864B45211FD6AA2900866CA9 /* CompetenceCoordinator.swift */,
+				86DD2C45202A07E4001D6F51 /* CompetenceCoordinator.swift */,
 			);
 			name = Coordinator;
 			sourceTree = "<group>";
@@ -1171,7 +1171,7 @@
 				865F30F91F6A75F400F41B5C /* FormationPresenterImplementation.swift in Sources */,
 				867FF3251F6C38E70085A80D /* FormationCollectionViewDataSource.swift in Sources */,
 				864F5ECD1F71512D001E7064 /* FormationDetailPresenter.swift in Sources */,
-				864B45221FD6AA2900866CA9 /* CompetenceCoordinator.swift in Sources */,
+				86DD2C46202A07E4001D6F51 /* CompetenceCoordinator.swift in Sources */,
 				8639DB5C1F9A477600BFC0BC /* CompetenceCellViewModel.swift in Sources */,
 				86BDE6B71FA634E600CA970E /* ExperienceCellViewModelMapper.swift in Sources */,
 				86F1A59A1F94CC9500D8D1BF /* ExperienceViewController.swift in Sources */,
