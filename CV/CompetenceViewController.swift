@@ -13,6 +13,7 @@ class CompetenceViewController: UIViewController,
     CompetenceViewContract,
     CompetenceTableViewDataSourceDelegate {
 
+    var switchViewController = UIViewController()
     var presenter: CompetencePresenter?
     var tableView = UITableView()
     let dataSource = CompetenceTableViewDataSource()
@@ -47,6 +48,12 @@ class CompetenceViewController: UIViewController,
         alert.addAction(UIAlertAction(title: "ok".localized,
                                       style: UIAlertActionStyle.default, handler: nil))
         present(alert, animated: true, completion: nil)
+    }
+
+    // MARK: - CompetenceTableViewDataSourceDelegate
+
+    func competenceTableViewDataSource(_ dataSource: CompetenceTableViewDataSource, requestSkill: Int) {
+        presenter?.delegate.presentSkill(id: requestSkill)
     }
 
     // MARK: - Private methods

@@ -7,7 +7,12 @@
 //
 
 import Foundation
+import UIKit
+
+protocol CompetencePresenterDelegate {
+    func presentSkill(id: Int)
+}
 
 protocol CompetencePresenter: Startable {
-
+    var delegate: CompetencePresenterDelegate { get }
 }
