@@ -47,14 +47,22 @@ final class ViewControllerFactory {
         return containerViewController
     }
 
-    func competenceViewController() -> CompetenceViewController {
+    func competenceViewController(_ delegate: CompetencePresenterDelegate) -> CompetenceViewController {
         let competenceViewController = CompetenceViewController()
         let presenter = CompetencePresenterImplementation(
             viewContract: competenceViewController,
-            skillsRepository: RepositoryFactory.sharedInstance.skillsRepository
+            skillsRepository: RepositoryFactory.sharedInstance.skillsRepository,
+            delegate: delegate
         )
         competenceViewController.presenter = presenter
         return competenceViewController
+    }
+
+    func competenceDetailViewController() -> CompetenceDetailViewController {
+        let competenceDetailViewController = CompetenceDetailViewController()
+        let presenter = CompetenceDetailPresenterImplementation(viewContract: competenceDetailViewController)
+        competenceDetailViewController.presenter = presenter
+        return competenceDetailViewController
     }
 
     func experienceViewController() -> ExperienceViewController {

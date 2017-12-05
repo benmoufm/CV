@@ -26,13 +26,15 @@ class MainCoordinator: Coordinator {
         addChild(formationCoordinator)
         formationCoordinator.start()
         let formationNavigationController = formationCoordinator.navigationController
-        let containerViewController = ViewControllerFactory.sharedInstance.containerViewController()
-        let containerCoordinator = XPCompetenceCoordinator(switchContainerViewController: containerViewController)
-        addChild(containerCoordinator)
-        containerCoordinator.start()
+        let competenceCoordinator = CompetenceCoordinator(UINavigationController())
+        addChild(competenceCoordinator)
+        competenceCoordinator.start()
+        let containerNavigationController = competenceCoordinator.navigationController
         let contactViewController = ViewControllerFactory.sharedInstance.contactViewController()
-        tabBarController.viewControllers = [homeViewController, presentationViewController,
-                                            formationNavigationController, containerViewController,
+        tabBarController.viewControllers = [homeViewController,
+                                            presentationViewController,
+                                            formationNavigationController,
+                                            containerNavigationController,
                                             contactViewController]
         window.rootViewController = tabBarController
     }
