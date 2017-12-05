@@ -9,9 +9,12 @@
 import Foundation
 
 struct CompetenceDetailControllerViewModelMapper {
+    let skill: Skill
 
     func map() -> CompetenceDetailControllerViewModel {
-        return CompetenceDetailControllerViewModel()
+        return CompetenceDetailControllerViewModel(title: skill.name,
+                                                   evaluation: skill.evaluation,
+                                                   description: skill.usageDescription)
     }
 
 }
