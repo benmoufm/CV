@@ -35,4 +35,22 @@ class SkillsRepositoryImplementation: SkillsRepository {
         }
     }
 
+    func getSkill(with id: Int, completion: ((Result<Skill>) -> Void)?) {
+        let httpRequest = HttpRequest(endPoint: "skills")
+        httpManager.execute(httpRequest: httpRequest) { result in
+            let resultSkill = result.map({ (json) -> Skill in
+                if let jsonCategories = json["categories"].array {
+                    let skill = try jsonCategories
+                        .map { try RestSkillCategory(json: $0) }
+                        .map { SkillCategoryMapper(restSkillCategory: $0).map() }
+                        .map { $0.skills.filter { $0.id == id } }
+                        .flatMap{ $0 }
+                    guard let uniqueSkill = skill.first else { throw CVError.unknownSkillId }
+                    return uniqueSkill
+                } else { throw CVError.unexpectedJSONFormat }
+            })
+            completion?(resultSkill)
+        }
+    }
+
 }
