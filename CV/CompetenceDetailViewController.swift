@@ -39,7 +39,8 @@ class CompetenceDetailViewController: UIViewController,
     // MARK: - CompetenceDetailViewContract
 
     func configure(with viewModel: CompetenceDetailControllerViewModel) {
-        // TODO: (Mélodie Benmouffek) 04/12/2017 Configure view
+        titleLabel.text = viewModel.title
+        usageDescriptionLabel.text = viewModel.description
     }
 
     func displayAlert(_ title: String, _ message: String) {

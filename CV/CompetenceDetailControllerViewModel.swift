@@ -9,5 +9,7 @@
 import Foundation
 
 struct CompetenceDetailControllerViewModel {
-
+    let title: String
+    let evaluation: Int
+    let description: String
 }
