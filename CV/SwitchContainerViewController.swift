@@ -50,9 +50,8 @@ class SwitchContainerViewController: UIViewController, CompetencePresenterDelega
     // MARK: - CompetencePresenterDelegate
 
     func presentForId(_ presenter: CompetencePresenter, id: Int) {
-        // TODO : Fetch competence detail view controller with skill id
         let competenceDetailViewController =
-            ViewControllerFactory.sharedInstance.competenceDetailViewController()
+            ViewControllerFactory.sharedInstance.competenceDetailViewController(id: id)
         navigationController?.pushViewController(competenceDetailViewController, animated: true)
     }
 
