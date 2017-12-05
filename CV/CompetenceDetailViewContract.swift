@@ -11,4 +11,5 @@ import Foundation
 protocol CompetenceDetailViewContract: class {
 
     func configure(with viewModel: CompetenceDetailControllerViewModel)
+    func displayAlert(_ title: String, _ message: String)
 }
