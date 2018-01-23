@@ -13,12 +13,14 @@ class CompetenceDetailViewController: UIViewController,
     CompetenceDetailViewContract {
 
     var presenter: CompetenceDetailPresenter?
-    let titleLabel = UILabel()
-    let evaluationFrame = UIView()
-    let evaluationValueFrame = UIView()
-    let usageDescriptionLabel = UILabel()
+    private let titleLabel = UILabel()
+    private let evaluationFrame = UIView()
+    private let evaluationValueFrame = UIView()
+    private let usageDescriptionLabel = UILabel()
+    private var evaluationValueFrameWidthConstraint: NSLayoutConstraint
 
     override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?) {
+        evaluationValueFrameWidthConstraint = evaluationValueFrame.widthAnchor.constraint(equalToConstant: 0)
         super.init(nibName: nil, bundle: nil)
         navigationItem.title = "container_competence_segment".localized
     }
@@ -32,8 +34,8 @@ class CompetenceDetailViewController: UIViewController,
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        setup()
         presenter?.start()
+        setup()
     }
 
     // MARK: - CompetenceDetailViewContract
@@ -41,6 +43,7 @@ class CompetenceDetailViewController: UIViewController,
     func configure(with viewModel: CompetenceDetailControllerViewModel) {
         titleLabel.text = viewModel.title
         usageDescriptionLabel.text = viewModel.description
+        animateEvaluation(toValue: viewModel.evaluation)
     }
 
     func displayAlert(_ title: String, _ message: String) {
@@ -58,6 +61,18 @@ class CompetenceDetailViewController: UIViewController,
     }
 
     // MARK: - Private methods
+
+    private func animateEvaluation(toValue value: Int) {
+        let multiplier = CGFloat(value) / 5
+        evaluationValueFrameWidthConstraint.isActive = false
+        evaluationValueFrame.widthAnchor.constraint(
+            equalTo: self.evaluationFrame.widthAnchor,
+            multiplier: multiplier
+            ).isActive = true
+        UIView.animate(withDuration: 0.5) {
+            self.view.layoutIfNeeded()
+        }
+    }
 
     private func setupNavigationBar() {
         navigationController?.navigationBar.barTintColor = UIColor.mainColor
@@ -102,16 +117,16 @@ class CompetenceDetailViewController: UIViewController,
         titleLabel.topAnchor.constraint(equalTo: view.topAnchor, constant: 100.0).isActive = true
 
         evaluationFrame.translatesAutoresizingMaskIntoConstraints = false
-        evaluationFrame.rightAnchor.constraint(equalTo: view.rightAnchor, constant: -30.0).isActive = true
-        evaluationFrame.leftAnchor.constraint(equalTo: view.leftAnchor, constant: 30.0).isActive = true
+        evaluationFrame.rightAnchor.constraint(equalTo: view.rightAnchor, constant: -50.0).isActive = true
+        evaluationFrame.leftAnchor.constraint(equalTo: view.leftAnchor, constant: 50.0).isActive = true
         evaluationFrame.topAnchor.constraint(equalTo: titleLabel.bottomAnchor, constant: 20.0).isActive = true
         evaluationFrame.heightAnchor.constraint(equalToConstant: 50.0).isActive = true
 
         evaluationValueFrame.translatesAutoresizingMaskIntoConstraints = false
-        evaluationValueFrame.rightAnchor.constraint(equalTo: evaluationFrame.rightAnchor, constant: -50.0).isActive = true
         evaluationValueFrame.leftAnchor.constraint(equalTo: evaluationFrame.leftAnchor).isActive = true
-        evaluationValueFrame.topAnchor.constraint(equalTo: evaluationFrame.topAnchor).isActive = true
         evaluationValueFrame.bottomAnchor.constraint(equalTo: evaluationFrame.bottomAnchor).isActive = true
+        evaluationValueFrame.topAnchor.constraint(equalTo: evaluationFrame.topAnchor).isActive = true
+        evaluationValueFrameWidthConstraint.isActive = true
 
         usageDescriptionLabel.translatesAutoresizingMaskIntoConstraints = false
         usageDescriptionLabel.rightAnchor.constraint(equalTo: view.rightAnchor, constant: -20.0).isActive = true
