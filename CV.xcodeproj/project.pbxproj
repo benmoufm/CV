@@ -69,6 +69,8 @@
 		867428042017A71F006E501E /* ExperienceCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 867428032017A71F006E501E /* ExperienceCategory.swift */; };
 		8674280A2017AEE1006E501E /* RestExperience.swift in Sources */ = {isa = PBXBuildFile; fileRef = 867428092017AEE1006E501E /* RestExperience.swift */; };
 		8674280C2017B181006E501E /* ExperienceMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8674280B2017B181006E501E /* ExperienceMapper.swift */; };
+		8674280E2017B98F006E501E /* RestExperienceCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8674280D2017B98F006E501E /* RestExperienceCategory.swift */; };
+		867428102017B99E006E501E /* ExperienceCategoryMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8674280F2017B99E006E501E /* ExperienceCategoryMapper.swift */; };
 		867DA5181F59DC0F000C5AC2 /* UITableView+Registerable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 867DA5171F59DC0F000C5AC2 /* UITableView+Registerable.swift */; };
 		867DA51C1F5C9743000C5AC2 /* ContactRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 867DA51A1F5C9743000C5AC2 /* ContactRepository.swift */; };
 		867DA51D1F5C9743000C5AC2 /* LocalContactRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 867DA51B1F5C9743000C5AC2 /* LocalContactRepository.swift */; };
@@ -191,6 +193,8 @@
 		867428032017A71F006E501E /* ExperienceCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExperienceCategory.swift; sourceTree = "<group>"; };
 		867428092017AEE1006E501E /* RestExperience.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestExperience.swift; sourceTree = "<group>"; };
 		8674280B2017B181006E501E /* ExperienceMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExperienceMapper.swift; sourceTree = "<group>"; };
+		8674280D2017B98F006E501E /* RestExperienceCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestExperienceCategory.swift; sourceTree = "<group>"; };
+		8674280F2017B99E006E501E /* ExperienceCategoryMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExperienceCategoryMapper.swift; sourceTree = "<group>"; };
 		867DA5171F59DC0F000C5AC2 /* UITableView+Registerable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITableView+Registerable.swift"; sourceTree = "<group>"; };
 		867DA51A1F5C9743000C5AC2 /* ContactRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactRepository.swift; sourceTree = "<group>"; };
 		867DA51B1F5C9743000C5AC2 /* LocalContactRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocalContactRepository.swift; sourceTree = "<group>"; };
@@ -721,6 +725,8 @@
 				8601E0A61FD1591D00C6F25A /* SkillCategoryMapper.swift */,
 				867428092017AEE1006E501E /* RestExperience.swift */,
 				8674280B2017B181006E501E /* ExperienceMapper.swift */,
+				8674280D2017B98F006E501E /* RestExperienceCategory.swift */,
+				8674280F2017B99E006E501E /* ExperienceCategoryMapper.swift */,
 			);
 			name = Data;
 			sourceTree = "<group>";
@@ -1131,6 +1137,7 @@
 			files = (
 				862D56731F83E1B80090BA0B /* CompetenceControllerViewModelMapper.swift in Sources */,
 				867FF31F1F6C33AB0085A80D /* FormationCellViewModel.swift in Sources */,
+				867428102017B99E006E501E /* ExperienceCategoryMapper.swift in Sources */,
 				86E440441F4A16A40040BD55 /* Startable.swift in Sources */,
 				86F95E771FD5582A00E80B23 /* CompetenceDetailPresenterImplementation.swift in Sources */,
 				869F91F61F9E949000C05DEF /* SkillCategory.swift in Sources */,
@@ -1219,6 +1226,7 @@
 				862D56741F83E1B80090BA0B /* CompetencePresenter.swift in Sources */,
 				867DA5181F59DC0F000C5AC2 /* UITableView+Registerable.swift in Sources */,
 				86F1A5A41F94D21D00D8D1BF /* ExperienceViewContract.swift in Sources */,
+				8674280E2017B98F006E501E /* RestExperienceCategory.swift in Sources */,
 				86F95E6A1FD53A9100E80B23 /* SkillCellViewModel.swift in Sources */,
 				8639DB601F9A477600BFC0BC /* CompetenceTableViewModel.swift in Sources */,
 				8600EA971F7BAEFF0037AFD3 /* PresentationPresenter.swift in Sources */,
