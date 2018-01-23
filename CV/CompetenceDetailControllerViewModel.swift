@@ -6,10 +6,10 @@
 //  Copyright © 2017 Mélodie Benmouffek. All rights reserved.
 //
 
-import Foundation
+import UIKit
 
 struct CompetenceDetailControllerViewModel {
     let title: String
-    let evaluation: Int
+    let evaluation: CGFloat
     let description: String
 }
