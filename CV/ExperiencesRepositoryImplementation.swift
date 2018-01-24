@@ -33,6 +33,21 @@ class ExperiencesRepositoryImplementation: ExperiencesRepository {
     }
 
     func getExperienceById(_ id: Int, completion: ((Result<Experience>) -> Void)?) {
-        //TODO
+        let httpRequest = HttpRequest(domain: "experience")
+        httpManager.execute(httpRequest: httpRequest) { result in
+            let resultExperience = result.map({ (json) -> Experience in
+                guard let jsonCategories = json["categories"].array
+                    else { throw CVError.unexpectedJSONFormat }
+                let experience = try jsonCategories
+                    .map { try RestExperienceCategory(json: $0) }
+                    .map { ExperienceCategoryMapper(restExperienceCategory: $0).map() }
+                    .map { $0.experiences.filter { $0.id == id } }
+                    .flatMap{ $0 }
+                guard let uniqueExperience = experience.first
+                    else { throw CVError.unknownExperienceId }
+                return uniqueExperience
+            })
+            completion?(resultExperience)
+        }
     }
 }
