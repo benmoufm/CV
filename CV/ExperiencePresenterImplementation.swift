@@ -10,7 +10,7 @@ import Foundation
 
 class ExperiencePresenterImplementation: ExperiencePresenter {
 
-    private weak var viewContract: ExperienceViewContract?
+    private var viewContract: ExperienceViewContract
     private let experiencesRepository: ExperiencesRepository
 
     // MARK: LifeCycle
@@ -32,6 +32,14 @@ class ExperiencePresenterImplementation: ExperiencePresenter {
     // MARK: - private methods
 
     private func computeAndDisplayViewModel() {
-        // TODO: (Mélodie Benmouffek) 16/10/2017 Guard let required properties
+        experiencesRepository.getExperienceCategories() { result -> Void in
+            switch result {
+            case .value(let experienceCategories):
+                let viewModel = ExperienceControllerViewModelMapper(experienceCategories: experienceCategories).map()
+                self.viewContract.configure(with: viewModel)
+            case .error(let error):
+                self.viewContract.displayAlert("experience_error_title_popup".localized, error.localizedDescription)
+            }
+        }
     }
 }
