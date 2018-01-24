@@ -33,15 +33,27 @@ class ExperienceTableViewDataSource: NSObject,
 
     // MARK: - UITableViewDataSource
 
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+        return viewModel.tableCells[section].name
+    }
+
+    func numberOfSections(in tableView: UITableView) -> Int {
         return viewModel.tableCells.count
+    }
+
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return viewModel.tableCells[section].experiences.count
     }
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell: ExperienceTableViewCell = tableView.dequeueCell(at: indexPath)
-        cell.configure(with: viewModel.tableCells[indexPath.row])
+        cell.configure(with: viewModel.tableCells[indexPath.section].experiences[indexPath.row])
         return cell
 
+    }
+
+    func tableView(_ tableView: UITableView, willDisplayHeaderView view: UIView, forSection section: Int) {
+        view.tintColor = UIColor.mainColor
     }
 
     // MARK: - UITableViewDelegate
