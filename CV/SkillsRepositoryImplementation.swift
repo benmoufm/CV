@@ -12,12 +12,10 @@ import Alamofire
 
 class SkillsRepositoryImplementation: SkillsRepository {
 
-    let httpManager: HttpManager
+    var httpManager: HttpManager
 
-    init() {
-        let configuration = URLSessionConfiguration.default
-        let sessionManager = Alamofire.SessionManager(configuration: configuration)
-        httpManager = HttpManager(sessionManager: sessionManager)
+    init(httpManager: HttpManager) {
+        self.httpManager = httpManager
     }
 
     func getSkillCategories(completion: ((Result<[SkillCategory]>) -> Void)?) {
