@@ -18,6 +18,7 @@ enum CVError: LocalizedError {
     case unexpectedJSONFormat
     case urlFormatError
     case unknownSkillId
+    case unknownExperienceId
 
     public var errorDescription: String? {
         switch self {
@@ -39,6 +40,8 @@ enum CVError: LocalizedError {
             return "error_cannot_open_url".localized
         case .unknownSkillId:
             return "competence_error_unknown_skill_id".localized
+        case .unknownExperienceId:
+            return "experience_error_unknown_experience_id".localized
         }
     }
 }
