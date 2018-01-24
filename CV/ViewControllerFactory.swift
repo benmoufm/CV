@@ -51,7 +51,7 @@ final class ViewControllerFactory {
         let competenceViewController = CompetenceViewController()
         let presenter = CompetencePresenterImplementation(
             viewContract: competenceViewController,
-            skillsRepository: RepositoryFactory.sharedInstance.skillsRepository,
+            skillsRepository: RepositoryFactory.sharedInstance.skillsRepository(),
             delegate: delegate
         )
         competenceViewController.presenter = presenter
@@ -62,7 +62,7 @@ final class ViewControllerFactory {
         let competenceDetailViewController = CompetenceDetailViewController()
         let presenter = CompetenceDetailPresenterImplementation(
             viewContract: competenceDetailViewController,
-            skillsRepository: RepositoryFactory.sharedInstance.skillsRepository,
+            skillsRepository: RepositoryFactory.sharedInstance.skillsRepository(),
             skillId: id
         )
         competenceDetailViewController.presenter = presenter
@@ -71,7 +71,10 @@ final class ViewControllerFactory {
 
     func experienceViewController() -> ExperienceViewController {
         let experienceViewController = ExperienceViewController()
-        let presenter = ExperiencePresenterImplementation(viewContract: experienceViewController)
+        let presenter = ExperiencePresenterImplementation(
+            viewContract: experienceViewController,
+            experiencesRepository: RepositoryFactory.sharedInstance.experiencesRepository()
+        )
         experienceViewController.presenter = presenter
         return experienceViewController
     }

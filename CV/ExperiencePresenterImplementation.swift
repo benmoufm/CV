@@ -11,11 +11,14 @@ import Foundation
 class ExperiencePresenterImplementation: ExperiencePresenter {
 
     private weak var viewContract: ExperienceViewContract?
+    private let experiencesRepository: ExperiencesRepository
 
     // MARK: LifeCycle
 
-    init(viewContract: ExperienceViewContract) {
+    init(viewContract: ExperienceViewContract,
+         experiencesRepository: ExperiencesRepository) {
         self.viewContract = viewContract
+        self.experiencesRepository = experiencesRepository
     }
 
     // MARK: - Startable
