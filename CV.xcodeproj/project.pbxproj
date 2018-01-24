@@ -66,12 +66,14 @@
 		865F30FB1F6A75F400F41B5C /* FormationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 865F30F51F6A75F400F41B5C /* FormationViewController.swift */; };
 		867428022017A61A006E501E /* Experience.swift in Sources */ = {isa = PBXBuildFile; fileRef = 867428012017A61A006E501E /* Experience.swift */; };
 		867428042017A71F006E501E /* ExperienceCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 867428032017A71F006E501E /* ExperienceCategory.swift */; };
+		867428062017A81F006E501E /* ExperiencesRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 867428052017A81F006E501E /* ExperiencesRepository.swift */; };
+		867428082017A986006E501E /* ExperiencesRepositoryImplementation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 867428072017A986006E501E /* ExperiencesRepositoryImplementation.swift */; };
 		8674280A2017AEE1006E501E /* RestExperience.swift in Sources */ = {isa = PBXBuildFile; fileRef = 867428092017AEE1006E501E /* RestExperience.swift */; };
 		8674280C2017B181006E501E /* ExperienceMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8674280B2017B181006E501E /* ExperienceMapper.swift */; };
 		8674280E2017B98F006E501E /* RestExperienceCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8674280D2017B98F006E501E /* RestExperienceCategory.swift */; };
 		867428102017B99E006E501E /* ExperienceCategoryMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8674280F2017B99E006E501E /* ExperienceCategoryMapper.swift */; };
-		867428062017A81F006E501E /* ExperiencesRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 867428052017A81F006E501E /* ExperiencesRepository.swift */; };
-		867428082017A986006E501E /* ExperiencesRepositoryImplementation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 867428072017A986006E501E /* ExperiencesRepositoryImplementation.swift */; };
+		8674281220188242006E501E /* XPCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8674281120188242006E501E /* XPCellViewModel.swift */; };
+		86742814201882C9006E501E /* XPCellViewModelMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86742813201882C9006E501E /* XPCellViewModelMapper.swift */; };
 		867DA5181F59DC0F000C5AC2 /* UITableView+Registerable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 867DA5171F59DC0F000C5AC2 /* UITableView+Registerable.swift */; };
 		867DA51C1F5C9743000C5AC2 /* ContactRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 867DA51A1F5C9743000C5AC2 /* ContactRepository.swift */; };
 		867DA51D1F5C9743000C5AC2 /* LocalContactRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 867DA51B1F5C9743000C5AC2 /* LocalContactRepository.swift */; };
@@ -192,12 +194,14 @@
 		865F30F51F6A75F400F41B5C /* FormationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FormationViewController.swift; sourceTree = "<group>"; };
 		867428012017A61A006E501E /* Experience.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Experience.swift; sourceTree = "<group>"; };
 		867428032017A71F006E501E /* ExperienceCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExperienceCategory.swift; sourceTree = "<group>"; };
+		867428052017A81F006E501E /* ExperiencesRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExperiencesRepository.swift; sourceTree = "<group>"; };
+		867428072017A986006E501E /* ExperiencesRepositoryImplementation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExperiencesRepositoryImplementation.swift; sourceTree = "<group>"; };
 		867428092017AEE1006E501E /* RestExperience.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestExperience.swift; sourceTree = "<group>"; };
 		8674280B2017B181006E501E /* ExperienceMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExperienceMapper.swift; sourceTree = "<group>"; };
 		8674280D2017B98F006E501E /* RestExperienceCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestExperienceCategory.swift; sourceTree = "<group>"; };
 		8674280F2017B99E006E501E /* ExperienceCategoryMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExperienceCategoryMapper.swift; sourceTree = "<group>"; };
-		867428052017A81F006E501E /* ExperiencesRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExperiencesRepository.swift; sourceTree = "<group>"; };
-		867428072017A986006E501E /* ExperiencesRepositoryImplementation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExperiencesRepositoryImplementation.swift; sourceTree = "<group>"; };
+		8674281120188242006E501E /* XPCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XPCellViewModel.swift; sourceTree = "<group>"; };
+		86742813201882C9006E501E /* XPCellViewModelMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XPCellViewModelMapper.swift; sourceTree = "<group>"; };
 		867DA5171F59DC0F000C5AC2 /* UITableView+Registerable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITableView+Registerable.swift"; sourceTree = "<group>"; };
 		867DA51A1F5C9743000C5AC2 /* ContactRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactRepository.swift; sourceTree = "<group>"; };
 		867DA51B1F5C9743000C5AC2 /* LocalContactRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocalContactRepository.swift; sourceTree = "<group>"; };
@@ -922,6 +926,7 @@
 		86F1A5AA1F94D2CD00D8D1BF /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				8674281120188242006E501E /* XPCellViewModel.swift */,
 				86BDE6B01FA634E600CA970E /* ExperienceCellViewModel.swift */,
 				86BDE6B31FA634E600CA970E /* ExperienceTableViewModel.swift */,
 				86F1A59B1F94D21D00D8D1BF /* ExperienceControllerViewModel.swift */,
@@ -932,6 +937,7 @@
 		86F1A5AB1F94D2D300D8D1BF /* Mapper */ = {
 			isa = PBXGroup;
 			children = (
+				86742813201882C9006E501E /* XPCellViewModelMapper.swift */,
 				86BDE6B11FA634E600CA970E /* ExperienceCellViewModelMapper.swift */,
 				86BDE6B41FA634E600CA970E /* ExperienceTableViewModelMapper.swift */,
 				86F1A59C1F94D21D00D8D1BF /* ExperienceControllerViewModelMapper.swift */,
@@ -1157,6 +1163,7 @@
 				860AE2A51F574305004B9F65 /* ContactPresenter.swift in Sources */,
 				867FF3211F6C34680085A80D /* FormationCollectionViewModelMapper.swift in Sources */,
 				8600EA981F7BAEFF0037AFD3 /* PresentationPresenterImplementation.swift in Sources */,
+				86742814201882C9006E501E /* XPCellViewModelMapper.swift in Sources */,
 				864F5ECB1F71512D001E7064 /* FormationDetailControllerViewModel.swift in Sources */,
 				86A1DCFF1FC22E4900AC1A5D /* HttpRequest.swift in Sources */,
 				867DA5221F5D57CF000C5AC2 /* MailRepository.swift in Sources */,
@@ -1188,6 +1195,7 @@
 				8600EA9A1F7BAEFF0037AFD3 /* PresentationViewController.swift in Sources */,
 				8639DB611F9A477600BFC0BC /* CompetenceTableViewModelMapper.swift in Sources */,
 				860AE2A61F574305004B9F65 /* ContactPresenterImplementation.swift in Sources */,
+				8674281220188242006E501E /* XPCellViewModel.swift in Sources */,
 				864F5ED01F71512D001E7064 /* FormationDetailViewController.swift in Sources */,
 				860AE2AF1F599D56004B9F65 /* ContactTableViewDataSource.swift in Sources */,
 				862D56511F826D360090BA0B /* Animation.swift in Sources */,

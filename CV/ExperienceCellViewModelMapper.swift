@@ -7,13 +7,15 @@
 //
 
 import Foundation
-import UIKit
 
 struct ExperienceCellViewModelMapper {
-    let icon: UIImage
-    let label: String
+    let name: String
+    let experiences: [Experience]
 
     func map() -> ExperienceCellViewModel {
-        return ExperienceCellViewModel(icon: icon, label: label)
+        return ExperienceCellViewModel(
+            name: name,
+            cells: experiences.map { XPCellViewModelMapper(experience: $0).map() }
+        )
     }
 }
