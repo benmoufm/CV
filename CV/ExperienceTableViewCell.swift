@@ -23,7 +23,7 @@ class ExperienceTableViewCell: UITableViewCell {
 
     // MARK: - ExperienceTableViewCell
 
-    func configure(with viewModel: ExperienceCellViewModel) {
+    func configure(with viewModel: XPCellViewModel) {
 
     }
 }
