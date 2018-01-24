@@ -10,7 +10,14 @@ import Foundation
 
 struct ExperienceTableViewModelMapper {
 
+    let experienceCategories: [ExperienceCategory]
+
     func map() -> ExperienceTableViewModel {
-        return ExperienceTableViewModel(tableCells: [])
+        let experiencesCellViewModel = experienceCategories.map { item -> ExperienceCellViewModel in
+            return ExperienceCellViewModelMapper(name: item.name,
+                                                 experiences: item.experiences).map()
+        }
+
+        return ExperienceTableViewModel(tableCells: experiencesCellViewModel)
     }
 }
