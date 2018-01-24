@@ -24,6 +24,11 @@ class ExperienceTableViewCell: UITableViewCell {
     // MARK: - ExperienceTableViewCell
 
     func configure(with viewModel: XPCellViewModel) {
-
+        textLabel?.text = viewModel.name
+        selectionStyle = .gray
+        textLabel?.backgroundColor = UIColor.backgroundColor
+        textLabel?.textAlignment = .natural
+        textLabel?.font = UIFont.systemFont(ofSize: 13.0)
+        textLabel?.textColor = UIColor.textColor
     }
 }
