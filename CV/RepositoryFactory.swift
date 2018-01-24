@@ -14,6 +14,7 @@ final class RepositoryFactory {
     private(set) lazy var contactRepository: ContactRepository = LocalContactRepository()
     private(set) lazy var mailRepository: MailRepository = TemplateMailRepository()
     private(set) lazy var skillsRepository: SkillsRepository = SkillsRepositoryImplementation()
+    private(set) lazy var experiencesRepository: ExperiencesRepository = ExperiencesRepositoryImplementation()
 
     private init() {}
 

@@ -70,7 +70,10 @@ final class ViewControllerFactory {
 
     func experienceViewController() -> ExperienceViewController {
         let experienceViewController = ExperienceViewController()
-        let presenter = ExperiencePresenterImplementation(viewContract: experienceViewController)
+        let presenter = ExperiencePresenterImplementation(
+            viewContract: experienceViewController,
+            experiencesRepository: RepositoryFactory.sharedInstance.experiencesRepository
+        )
         experienceViewController.presenter = presenter
         return experienceViewController
     }
