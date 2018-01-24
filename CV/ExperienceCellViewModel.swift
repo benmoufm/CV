@@ -7,9 +7,8 @@
 //
 
 import Foundation
-import UIKit
 
 struct ExperienceCellViewModel {
-    let icon: UIImage
-    let label: String
+    let name: String
+    let cells: [XPCellViewModel]
 }
