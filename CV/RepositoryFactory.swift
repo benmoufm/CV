@@ -7,14 +7,27 @@
 //
 
 import Foundation
+import Alamofire
 
 final class RepositoryFactory {
 
     static let sharedInstance = RepositoryFactory()
+    private var httpManager: HttpManager
     private(set) lazy var contactRepository: ContactRepository = LocalContactRepository()
     private(set) lazy var mailRepository: MailRepository = TemplateMailRepository()
-    private(set) lazy var skillsRepository: SkillsRepository = SkillsRepositoryImplementation()
 
-    private init() {}
+    private init() {
+        let configuration = URLSessionConfiguration.default
+        let sessionManager = Alamofire.SessionManager(configuration: configuration)
+        self.httpManager = HttpManager(sessionManager: sessionManager)
+    }
+
+    func skillsRepository() -> SkillsRepository {
+        return SkillsRepositoryImplementation(httpManager: httpManager)
+    }
+
+    func experiencesRepository() -> ExperiencesRepository {
+        return ExperiencesRepositoryImplementation(httpManager: httpManager)
+    }
 
 }

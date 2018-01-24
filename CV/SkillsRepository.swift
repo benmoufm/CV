@@ -10,9 +10,6 @@ import Foundation
 import Alamofire
 
 protocol SkillsRepository {
-
-    var httpManager: HttpManager { get }
-
     func getSkillCategories(completion: ((Result<[SkillCategory]>) -> Void)?)
     func getSkill(with id: Int, completion: ((Result<Skill>) -> Void)?)
 }
