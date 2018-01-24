@@ -9,9 +9,10 @@
 import Foundation
 
 struct ExperienceControllerViewModelMapper {
+    let experienceCategories: [ExperienceCategory]
 
     func map() -> ExperienceControllerViewModel {
-        return ExperienceControllerViewModel(tableView: ExperienceTableViewModelMapper().map())
+        let experienceTableViewModelMapper = ExperienceTableViewModelMapper(experienceCategories: experienceCategories)
+        return ExperienceControllerViewModel(tableView: experienceTableViewModelMapper.map())
     }
-
 }
