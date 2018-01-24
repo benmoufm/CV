@@ -50,6 +50,36 @@ class ExperiencesRepositoryImplementation: ExperiencesRepository {
     }
 
     func getExperienceById(_ id: Int, completion: ((Result<Experience>) -> Void)?) {
-
+        var resultExperience = Result<Experience>(Experience())
+        guard let url = URL(string: "https://demo6086858.mockable.io/experience") else {
+            resultExperience = .error(CVError.urlFormatError as NSError)
+            completion?(resultExperience)
+            return
+        }
+        let httpRequest = HttpRequest(url: url)
+        httpManager.execute(httpRequest: httpRequest) { result in
+            switch result {
+            case .error(let error):
+                resultExperience = .error(error as NSError)
+            case .value(let json):
+                do {
+                    if let jsonCategories = json["categories"].array {
+                        let experience = try jsonCategories
+                            .map { try RestExperienceCategory(json: $0) }
+                            .map { ExperienceCategoryMapper(restExperienceCategory: $0).map() }
+                            .map { $0.experiences.filter { $0.id == id } }
+                            .flatMap{ $0 }
+                        if let uniqueExperience = experience.first {
+                            resultExperience = .value(uniqueExperience)
+                        } else {
+                            resultExperience = .error(CVError.unknownExperienceId as NSError)
+                        }
+                    }
+                } catch {
+                    resultExperience = .error(error as NSError)
+                }
+            }
+            completion?(resultExperience)
+        }
     }
 }

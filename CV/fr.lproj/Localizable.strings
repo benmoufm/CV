@@ -57,6 +57,7 @@
 "competence_error_cannot_open_skills_url" = "Erreur. Impossible de récupérer les compétences, impossible d'ouvrir l'URL.";
 "competence_error_title_popup" = "Liste compétences";
 "competence_error_unknown_skill_id" = "Erreur. Impossible d'afficher la compétence à cet ID";
+"experience_error_unknown_experience_id" = "Erreur. Impossible d'afficher la compétence à cet ID";
 
 // CONTACT
 "contact_navigation_title_text" = "Contact";
