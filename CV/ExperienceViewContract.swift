@@ -11,4 +11,5 @@ import Foundation
 protocol ExperienceViewContract: class {
 
     func configure(with viewModel: ExperienceControllerViewModel)
+    func displayAlert(_ title: String, _ message: String)
 }
