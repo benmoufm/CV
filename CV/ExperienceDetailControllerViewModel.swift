@@ -9,5 +9,7 @@
 import Foundation
 
 struct ExperienceDetailControllerViewModel {
-
+    let title: String
+    let date: String
+    let description: String
 }
