@@ -12,15 +12,18 @@ class ExperienceDetailPresenterImplementation: ExperienceDetailPresenter {
 
     private weak var viewContract: ExperienceDetailViewContract?
     private let experienceRepository: ExperiencesRepository
+    private let skillRepository: SkillsRepository
     private let experienceId: Int
 
     // MARK: LifeCycle
 
     init(viewContract: ExperienceDetailViewContract,
          experienceRepository: ExperiencesRepository,
+         skillRepository: SkillsRepository,
          experienceId: Int) {
         self.viewContract = viewContract
         self.experienceRepository = experienceRepository
+        self.skillRepository = skillRepository
         self.experienceId = experienceId
     }
 
@@ -42,9 +45,15 @@ class ExperienceDetailPresenterImplementation: ExperienceDetailPresenter {
         experienceRepository.getExperienceById(experienceId) { (result) in
             switch result {
             case .value(let experience):
-                let skills = [Skill]()
-                let viewModel = ExperienceDetailControllerViewModelMapper(experience: experience, skills: skills).map()
-                self.viewContract?.configure(with: viewModel)
+                self.skillRepository.getSkillsByIds(experience.skillsID, completion: { (result) in
+                    switch result {
+                    case .value(let skills):
+                        let viewModel = ExperienceDetailControllerViewModelMapper(experience: experience, skills: skills).map()
+                        self.viewContract?.configure(with: viewModel)
+                    case .error(let error):
+                        self.viewContract?.displayAlert("experience_error_title_popup".localized, error.localizedDescription)
+                    }
+                })
             case .error(let error):
                 self.viewContract?.displayAlert("experience_error_title_popup".localized, error.localizedDescription)
             }

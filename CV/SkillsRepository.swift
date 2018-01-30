@@ -15,4 +15,5 @@ protocol SkillsRepository {
 
     func getSkillCategories(completion: ((Result<[SkillCategory]>) -> Void)?)
     func getSkillById(_ id: Int, completion: ((Result<Skill>) -> Void)?)
+    func getSkillsByIds(_ ids: [Int], completion: ((Result<[Skill]>) -> Void)?)
 }

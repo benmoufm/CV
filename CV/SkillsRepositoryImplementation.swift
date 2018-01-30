@@ -84,4 +84,44 @@ class SkillsRepositoryImplementation: SkillsRepository {
         }
     }
 
+    func getSkillsByIds(_ ids: [Int], completion: ((Result<[Skill]>) -> Void)?) {
+        var resultSkills = Result<[Skill]>([Skill]())
+        var resultSkillsArray = [Skill]()
+        guard let url = URL(string: "https://demo6086858.mockable.io/skills") else {
+            resultSkills = .error(CVError.urlFormatError as NSError)
+            completion?(resultSkills)
+            return
+        }
+        let httpRequest = HttpRequest(url: url)
+        httpManager.execute(httpRequest: httpRequest) { (result) in
+            switch result {
+            case .error(let error):
+                resultSkills = .error(error as NSError)
+            case .value(let json):
+                do {
+                    if let jsonCategories = json["categories"].array {
+                        let skills = try jsonCategories
+                            .map { try RestSkillCategory(json: $0) }
+                            .map { SkillCategoryMapper(restSkillCategory: $0).map() }
+                        resultSkillsArray = ids.map { id -> Skill in
+                            let skill = skills.map { $0.skills.filter { $0.id == id } }
+                                .flatMap{ $0 }
+                            if let uniqueSkill = skill.first {
+                                return uniqueSkill
+                            } else {
+                                resultSkills = .error(CVError.unknownSkillId as NSError)
+                                return Skill()
+                            }
+                        }
+                        if resultSkills.error == nil {
+                            resultSkills = .value(resultSkillsArray)
+                        }
+                    }
+                } catch {
+                    resultSkills = .error(error as NSError)
+                }
+            }
+            completion?(resultSkills)
+        }
+    }
 }
