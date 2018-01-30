@@ -38,7 +38,9 @@ class ExperienceDetailViewController: UIViewController,
     // MARK: - ExperienceDetailViewContract
 
     func configure(with viewModel: ExperienceDetailControllerViewModel) {
-        // TODO: (Mélodie Benmouffek) 30/01/2018 Configure view
+        titleLabel.text = viewModel.title
+        dateLabel.text = viewModel.date
+        descriptionLabel.text = viewModel.description
     }
 
     func displayAlert(_ title: String, _ message: String) {
