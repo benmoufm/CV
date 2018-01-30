@@ -39,6 +39,14 @@ class ExperienceDetailPresenterImplementation: ExperienceDetailPresenter {
     }
 
     private func computeAndDisplayViewModel() {
-        //TODO
+        experienceRepository.getExperienceById(experienceId) { (result) in
+            switch result {
+            case .value(let experience):
+                let viewModel = ExperienceDetailControllerViewModelMapper(experience: experience).map()
+                self.viewContract?.configure(with: viewModel)
+            case .error(let error):
+                self.viewContract?.displayAlert("experience_error_title_popup".localized, error.localizedDescription)
+            }
+        }
     }
 }
