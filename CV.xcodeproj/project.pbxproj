@@ -39,6 +39,7 @@
 		862106202020CA210052045B /* ExperienceDetailPresenterImplementation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8621061A2020CA210052045B /* ExperienceDetailPresenterImplementation.swift */; };
 		862106212020CA210052045B /* ExperienceDetailViewContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8621061B2020CA210052045B /* ExperienceDetailViewContract.swift */; };
 		862106222020CA210052045B /* ExperienceDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8621061C2020CA210052045B /* ExperienceDetailViewController.swift */; };
+		862106242020E6250052045B /* ExperienceDetailCollectionViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 862106232020E6250052045B /* ExperienceDetailCollectionViewDataSource.swift */; };
 		8622BBD51F7904E2000642E8 /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8622BBD41F7904E2000642E8 /* LoadingView.swift */; };
 		862D56511F826D360090BA0B /* Animation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 862D56501F826D360090BA0B /* Animation.swift */; };
 		862D56721F83E1B80090BA0B /* CompetenceControllerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 862D566C1F83E1B80090BA0B /* CompetenceControllerViewModel.swift */; };
@@ -180,6 +181,7 @@
 		8621061A2020CA210052045B /* ExperienceDetailPresenterImplementation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExperienceDetailPresenterImplementation.swift; sourceTree = "<group>"; };
 		8621061B2020CA210052045B /* ExperienceDetailViewContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExperienceDetailViewContract.swift; sourceTree = "<group>"; };
 		8621061C2020CA210052045B /* ExperienceDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExperienceDetailViewController.swift; sourceTree = "<group>"; };
+		862106232020E6250052045B /* ExperienceDetailCollectionViewDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExperienceDetailCollectionViewDataSource.swift; sourceTree = "<group>"; };
 		8622BBD41F7904E2000642E8 /* LoadingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
 		862D56501F826D360090BA0B /* Animation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Animation.swift; sourceTree = "<group>"; };
 		862D566C1F83E1B80090BA0B /* CompetenceControllerViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CompetenceControllerViewModel.swift; sourceTree = "<group>"; };
@@ -469,6 +471,7 @@
 			children = (
 				862106142020C9FD0052045B /* Mapper */,
 				862106132020C9F60052045B /* ViewModel */,
+				862106232020E6250052045B /* ExperienceDetailCollectionViewDataSource.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -1333,6 +1336,7 @@
 				862D56751F83E1B80090BA0B /* CompetencePresenterImplementation.swift in Sources */,
 				86BDE6B91FA634E600CA970E /* ExperienceTableViewModel.swift in Sources */,
 				867428062017A81F006E501E /* ExperiencesRepository.swift in Sources */,
+				862106242020E6250052045B /* ExperienceDetailCollectionViewDataSource.swift in Sources */,
 				860AE2B81F59B40D004B9F65 /* ContactCellViewModelMapper.swift in Sources */,
 				860AE2A81F574305004B9F65 /* ContactViewController.swift in Sources */,
 				86E4404B1F4AE7810040BD55 /* Color.swift in Sources */,
