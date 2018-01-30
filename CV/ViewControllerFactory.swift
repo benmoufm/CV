@@ -84,6 +84,7 @@ final class ViewControllerFactory {
         let presenter = ExperienceDetailPresenterImplementation(
             viewContract: experienceDetailViewController,
             experienceRepository: RepositoryFactory.sharedInstance.experiencesRepository,
+            skillRepository: RepositoryFactory.sharedInstance.skillsRepository,
             experienceId: id)
         experienceDetailViewController.presenter = presenter
         return experienceDetailViewController
