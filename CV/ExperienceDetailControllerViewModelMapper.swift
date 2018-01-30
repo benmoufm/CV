@@ -9,9 +9,12 @@
 import Foundation
 
 struct ExperienceDetailControllerViewModelMapper {
+    let experience: Experience
 
     func map() -> ExperienceDetailControllerViewModel {
-        return ExperienceDetailControllerViewModel()
+        return ExperienceDetailControllerViewModel(title: experience.name,
+                                                   date: experience.timeStamp,
+                                                   description: experience.description)
     }
 
 }
