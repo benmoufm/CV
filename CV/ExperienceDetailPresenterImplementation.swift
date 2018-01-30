@@ -42,7 +42,8 @@ class ExperienceDetailPresenterImplementation: ExperienceDetailPresenter {
         experienceRepository.getExperienceById(experienceId) { (result) in
             switch result {
             case .value(let experience):
-                let viewModel = ExperienceDetailControllerViewModelMapper(experience: experience).map()
+                let skills = [Skill]()
+                let viewModel = ExperienceDetailControllerViewModelMapper(experience: experience, skills: skills).map()
                 self.viewContract?.configure(with: viewModel)
             case .error(let error):
                 self.viewContract?.displayAlert("experience_error_title_popup".localized, error.localizedDescription)

@@ -11,5 +11,6 @@ import Foundation
 struct ExperienceDetailControllerViewModel {
     let title: String
     let date: String
+    let skills: ExperienceDetailCollectionViewModel
     let description: String
 }

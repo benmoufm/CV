@@ -40,6 +40,10 @@
 		862106212020CA210052045B /* ExperienceDetailViewContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8621061B2020CA210052045B /* ExperienceDetailViewContract.swift */; };
 		862106222020CA210052045B /* ExperienceDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8621061C2020CA210052045B /* ExperienceDetailViewController.swift */; };
 		862106242020E6250052045B /* ExperienceDetailCollectionViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 862106232020E6250052045B /* ExperienceDetailCollectionViewDataSource.swift */; };
+		862106262020E7560052045B /* ExperienceDetailCollectionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 862106252020E7560052045B /* ExperienceDetailCollectionViewModel.swift */; };
+		862106282020E7A00052045B /* ExperienceDetailCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 862106272020E7A00052045B /* ExperienceDetailCellViewModel.swift */; };
+		8621062A2020E7F20052045B /* ExperienceDetailCollectionViewModelMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 862106292020E7F20052045B /* ExperienceDetailCollectionViewModelMapper.swift */; };
+		8621062C2020E8010052045B /* ExperienceDetailCellViewModelMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8621062B2020E8010052045B /* ExperienceDetailCellViewModelMapper.swift */; };
 		8622BBD51F7904E2000642E8 /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8622BBD41F7904E2000642E8 /* LoadingView.swift */; };
 		862D56511F826D360090BA0B /* Animation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 862D56501F826D360090BA0B /* Animation.swift */; };
 		862D56721F83E1B80090BA0B /* CompetenceControllerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 862D566C1F83E1B80090BA0B /* CompetenceControllerViewModel.swift */; };
@@ -182,6 +186,10 @@
 		8621061B2020CA210052045B /* ExperienceDetailViewContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExperienceDetailViewContract.swift; sourceTree = "<group>"; };
 		8621061C2020CA210052045B /* ExperienceDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExperienceDetailViewController.swift; sourceTree = "<group>"; };
 		862106232020E6250052045B /* ExperienceDetailCollectionViewDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExperienceDetailCollectionViewDataSource.swift; sourceTree = "<group>"; };
+		862106252020E7560052045B /* ExperienceDetailCollectionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExperienceDetailCollectionViewModel.swift; sourceTree = "<group>"; };
+		862106272020E7A00052045B /* ExperienceDetailCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExperienceDetailCellViewModel.swift; sourceTree = "<group>"; };
+		862106292020E7F20052045B /* ExperienceDetailCollectionViewModelMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExperienceDetailCollectionViewModelMapper.swift; sourceTree = "<group>"; };
+		8621062B2020E8010052045B /* ExperienceDetailCellViewModelMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExperienceDetailCellViewModelMapper.swift; sourceTree = "<group>"; };
 		8622BBD41F7904E2000642E8 /* LoadingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
 		862D56501F826D360090BA0B /* Animation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Animation.swift; sourceTree = "<group>"; };
 		862D566C1F83E1B80090BA0B /* CompetenceControllerViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CompetenceControllerViewModel.swift; sourceTree = "<group>"; };
@@ -480,6 +488,8 @@
 			isa = PBXGroup;
 			children = (
 				862106172020CA210052045B /* ExperienceDetailControllerViewModel.swift */,
+				862106252020E7560052045B /* ExperienceDetailCollectionViewModel.swift */,
+				862106272020E7A00052045B /* ExperienceDetailCellViewModel.swift */,
 			);
 			name = ViewModel;
 			sourceTree = "<group>";
@@ -488,6 +498,8 @@
 			isa = PBXGroup;
 			children = (
 				862106182020CA210052045B /* ExperienceDetailControllerViewModelMapper.swift */,
+				862106292020E7F20052045B /* ExperienceDetailCollectionViewModelMapper.swift */,
+				8621062B2020E8010052045B /* ExperienceDetailCellViewModelMapper.swift */,
 			);
 			name = Mapper;
 			sourceTree = "<group>";
@@ -1267,12 +1279,15 @@
 				86F95E761FD5582A00E80B23 /* CompetenceDetailPresenter.swift in Sources */,
 				867DA5231F5D57CF000C5AC2 /* TemplateMailRepository.swift in Sources */,
 				860AE2A51F574305004B9F65 /* ContactPresenter.swift in Sources */,
+				862106262020E7560052045B /* ExperienceDetailCollectionViewModel.swift in Sources */,
 				867FF3211F6C34680085A80D /* FormationCollectionViewModelMapper.swift in Sources */,
 				8600EA981F7BAEFF0037AFD3 /* PresentationPresenterImplementation.swift in Sources */,
 				86742814201882C9006E501E /* XPCellViewModelMapper.swift in Sources */,
 				864F5ECB1F71512D001E7064 /* FormationDetailControllerViewModel.swift in Sources */,
 				86A1DCFF1FC22E4900AC1A5D /* HttpRequest.swift in Sources */,
 				8621061E2020CA210052045B /* ExperienceDetailControllerViewModelMapper.swift in Sources */,
+				862106282020E7A00052045B /* ExperienceDetailCellViewModel.swift in Sources */,
+				8621062C2020E8010052045B /* ExperienceDetailCellViewModelMapper.swift in Sources */,
 				867DA5221F5D57CF000C5AC2 /* MailRepository.swift in Sources */,
 				862D56771F83E1B80090BA0B /* SwitchContainerViewController.swift in Sources */,
 				860AE2A41F574305004B9F65 /* ContactControllerViewModelMapper.swift in Sources */,
@@ -1356,6 +1371,7 @@
 				867DA51D1F5C9743000C5AC2 /* LocalContactRepository.swift in Sources */,
 				86E4403E1F4A163F0040BD55 /* HomePresenter.swift in Sources */,
 				867428082017A986006E501E /* ExperiencesRepositoryImplementation.swift in Sources */,
+				8621062A2020E7F20052045B /* ExperienceDetailCollectionViewModelMapper.swift in Sources */,
 				86F95E781FD5582A00E80B23 /* CompetenceDetailViewContract.swift in Sources */,
 				862D56741F83E1B80090BA0B /* CompetencePresenter.swift in Sources */,
 				867DA5181F59DC0F000C5AC2 /* UITableView+Registerable.swift in Sources */,
