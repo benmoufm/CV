@@ -16,6 +16,7 @@ class ExperienceDetailViewController: UIViewController,
 
     override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?) {
         super.init(nibName: nil, bundle: nil)
+        navigationItem.title = "container_experience_segment".localized
     }
 
     @available(*, unavailable)
@@ -39,7 +40,15 @@ class ExperienceDetailViewController: UIViewController,
 
     // MARK: - Private methods
 
+    private func setupNavigationBar() {
+        navigationController?.navigationBar.barTintColor = UIColor.mainColor
+        navigationController?.navigationBar.tintColor = UIColor.navigationTitleTextColor
+        navigationController?.navigationBar.titleTextAttributes =
+            [NSForegroundColorAttributeName: UIColor.navigationTitleTextColor]
+    }
+
     private func setup() {
-        // TODO: (Mélodie Benmouffek) 30/01/2018 Setup subviews
+        view.backgroundColor = UIColor.backgroundColor
+        setupNavigationBar()
     }
 }
