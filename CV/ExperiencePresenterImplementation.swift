@@ -12,13 +12,16 @@ class ExperiencePresenterImplementation: ExperiencePresenter {
 
     private var viewContract: ExperienceViewContract
     private let experiencesRepository: ExperiencesRepository
+    let delegate: ExperiencePresenterDelegate
 
     // MARK: LifeCycle
 
     init(viewContract: ExperienceViewContract,
-         experiencesRepository: ExperiencesRepository) {
+         experiencesRepository: ExperiencesRepository,
+         delegate: ExperiencePresenterDelegate) {
         self.viewContract = viewContract
         self.experiencesRepository = experiencesRepository
+        self.delegate = delegate
     }
 
     // MARK: - Startable

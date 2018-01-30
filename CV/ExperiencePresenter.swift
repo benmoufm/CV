@@ -8,6 +8,10 @@
 
 import Foundation
 
-protocol ExperiencePresenter: Startable {
+protocol ExperiencePresenterDelegate {
+    func presentForId(_ presenter: ExperiencePresenter, id: Int)
+}
 
+protocol ExperiencePresenter: Startable {
+    var delegate: ExperiencePresenterDelegate { get }
 }
