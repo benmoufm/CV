@@ -10,7 +10,7 @@ import Foundation
 import UIKit
 
 protocol ExperienceTableViewDataSourceDelegate: class {
-
+    func experienceTableViewDataSource(_ dataSource: ExperienceTableViewDataSource, requestXP id: Int)
 }
 
 class ExperienceTableViewDataSource: NSObject,
@@ -59,7 +59,8 @@ class ExperienceTableViewDataSource: NSObject,
     // MARK: - UITableViewDelegate
 
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        // TODO : Add action when cells clicked
+        let id = viewModel.tableCells[indexPath.section].experiences[indexPath.row].id
+        delegate?.experienceTableViewDataSource(self, requestXP: id)
     }
 
 }

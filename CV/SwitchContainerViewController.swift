@@ -9,7 +9,7 @@
 import Foundation
 import UIKit
 
-class SwitchContainerViewController: UIViewController, CompetencePresenterDelegate {
+class SwitchContainerViewController: UIViewController, CompetencePresenterDelegate, ExperiencePresenterDelegate {
 
     private lazy var navigationBar = UINavigationBar()
     private let segmentedControl = UISegmentedControl()
@@ -53,6 +53,14 @@ class SwitchContainerViewController: UIViewController, CompetencePresenterDelega
         let competenceDetailViewController =
             ViewControllerFactory.sharedInstance.competenceDetailViewController(id: id)
         navigationController?.pushViewController(competenceDetailViewController, animated: true)
+    }
+
+    // MARK: - ExperiencePresenterDelegate
+
+    func presentExperience(id: Int) {
+        let experienceDetailViewController =
+            ViewControllerFactory.sharedInstance.experienceDetailViewController(id: id)
+        navigationController?.pushViewController(experienceDetailViewController, animated: true)
     }
 
     // MARK: - Private methods

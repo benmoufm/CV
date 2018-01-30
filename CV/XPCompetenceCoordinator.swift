@@ -13,8 +13,7 @@ class XPCompetenceCoordinator: Coordinator {
 
     let switchContainerViewController: SwitchContainerViewController
     private var competenceViewController: CompetenceViewController
-    private lazy var experienceViewController: ExperienceViewController =
-        ViewControllerFactory.sharedInstance.experienceViewController()
+    private var experienceViewController: ExperienceViewController
 
     // MARK: - LifeCycle
 
@@ -22,6 +21,8 @@ class XPCompetenceCoordinator: Coordinator {
         self.switchContainerViewController = switchContainerViewController
         self.competenceViewController =
             ViewControllerFactory.sharedInstance.competenceViewController(switchContainerViewController)
+        self.experienceViewController =
+            ViewControllerFactory.sharedInstance.experienceViewController(switchContainerViewController)
     }
 
     // MARK: - XP

@@ -49,6 +49,12 @@ class ExperienceViewController: UIViewController,
         present(alert, animated: true, completion: nil)
     }
 
+    // MARK: - CompetenceTableViewDataSourceDelegate
+
+    func experienceTableViewDataSource(_ dataSource: ExperienceTableViewDataSource, requestXP: Int) {
+        presenter?.delegate.presentExperience(id: requestXP)
+    }
+
     // MARK: - Private methods
 
     private func setupTableView() {
