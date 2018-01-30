@@ -33,8 +33,7 @@ class ExperienceDetailPresenterImplementation: ExperienceDetailPresenter {
     }
 
     private func computeAndDisplayViewModel() {
-        // TODO: (Mélodie Benmouffek) 30/01/2018 Guard let required properties
-        let viewModel = ExperienceDetailControllerViewModelMapper().map()
+        let viewModel = ExperienceDetailControllerViewModelMapper(experience: Experience()).map()
         viewContract?.configure(with: viewModel)
     }
 }
