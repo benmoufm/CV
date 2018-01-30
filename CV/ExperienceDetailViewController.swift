@@ -41,6 +41,15 @@ class ExperienceDetailViewController: UIViewController,
         // TODO: (Mélodie Benmouffek) 30/01/2018 Configure view
     }
 
+    func displayAlert(_ title: String, _ message: String) {
+        let alert = UIAlertController(title: title,
+                                      message: message,
+                                      preferredStyle: UIAlertControllerStyle.alert)
+        alert.addAction(UIAlertAction(title: "ok".localized,
+                                      style: UIAlertActionStyle.default, handler: nil))
+        present(alert, animated: true, completion: nil)
+    }
+
     // MARK: - Private methods
 
     private func setupNavigationBar() {
