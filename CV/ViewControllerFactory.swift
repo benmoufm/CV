@@ -69,14 +69,22 @@ final class ViewControllerFactory {
         return competenceDetailViewController
     }
 
-    func experienceViewController() -> ExperienceViewController {
+    func experienceViewController(_ delegate: ExperiencePresenterDelegate) -> ExperienceViewController {
         let experienceViewController = ExperienceViewController()
         let presenter = ExperiencePresenterImplementation(
             viewContract: experienceViewController,
-            experiencesRepository: RepositoryFactory.sharedInstance.experiencesRepository()
+            experiencesRepository: RepositoryFactory.sharedInstance.experiencesRepository(),
+            delegate: delegate
         )
         experienceViewController.presenter = presenter
         return experienceViewController
+    }
+
+    func experienceDetailViewController(id: Int) -> ExperienceDetailViewController {
+        let experienceDetailViewController = ExperienceDetailViewController()
+        let presenter = ExperienceDetailPresenterImplementation(viewContract: experienceDetailViewController)
+        experienceDetailViewController.presenter = presenter
+        return experienceDetailViewController
     }
 
     func contactViewController() -> ContactViewController {
