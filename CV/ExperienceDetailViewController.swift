@@ -15,6 +15,9 @@ class ExperienceDetailViewController: UIViewController,
     var presenter: ExperienceDetailPresenter?
     let titleLabel = UILabel()
     let dateLabel = UILabel()
+    let layout = UICollectionViewFlowLayout()
+    lazy var collectionView = UICollectionView(frame: .zero, collectionViewLayout: self.layout)
+    let dataSource = ExperienceDetailCollectionViewDataSource()
     let descriptionLabel = UILabel()
 
     override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?) {
@@ -40,6 +43,8 @@ class ExperienceDetailViewController: UIViewController,
     func configure(with viewModel: ExperienceDetailControllerViewModel) {
         titleLabel.text = viewModel.title
         dateLabel.text = viewModel.date
+        dataSource.update(with: viewModel.skills)
+        collectionView.reloadData()
         descriptionLabel.text = viewModel.description
     }
 
@@ -75,6 +80,15 @@ class ExperienceDetailViewController: UIViewController,
         dateLabel.font = UIFont.systemFont(ofSize: 12.0)
     }
 
+    private func setupCollectionView() {
+        layout.sectionInset = UIEdgeInsets(top: 10, left: 10, bottom: 10, right: 10)
+        layout.itemSize = CGSize(width: 90, height: 40)
+        collectionView.backgroundColor = UIColor.backgroundColor
+        dataSource.configure(collectionView)
+        collectionView.delegate = dataSource
+        collectionView.dataSource = dataSource
+    }
+
     private func setupDescriptionLabel() {
         descriptionLabel.numberOfLines = 0
         descriptionLabel.textColor = UIColor.textColor
@@ -83,6 +97,7 @@ class ExperienceDetailViewController: UIViewController,
     private func setupLayout() {
         view.addSubview(titleLabel)
         view.addSubview(dateLabel)
+        view.addSubview(collectionView)
         view.addSubview(descriptionLabel)
 
         titleLabel.translatesAutoresizingMaskIntoConstraints = false
@@ -97,10 +112,16 @@ class ExperienceDetailViewController: UIViewController,
         dateLabel.topAnchor.constraint(equalTo: titleLabel.bottomAnchor).isActive = true
         dateLabel.heightAnchor.constraint(equalToConstant: 20.0).isActive = true
 
+        collectionView.translatesAutoresizingMaskIntoConstraints = false
+        collectionView.topAnchor.constraint(equalTo: dateLabel.bottomAnchor).isActive = true
+        collectionView.rightAnchor.constraint(equalTo: view.rightAnchor, constant: -40.0).isActive = true
+        collectionView.leftAnchor.constraint(equalTo: view.leftAnchor, constant: 40.0).isActive = true
+
         descriptionLabel.translatesAutoresizingMaskIntoConstraints = false
         descriptionLabel.rightAnchor.constraint(equalTo: view.rightAnchor, constant: -40.0).isActive = true
         descriptionLabel.leftAnchor.constraint(equalTo: view.leftAnchor, constant: 40.0).isActive = true
-        descriptionLabel.topAnchor.constraint(equalTo: dateLabel.bottomAnchor, constant: 50.0).isActive = true
+        descriptionLabel.topAnchor.constraint(equalTo: collectionView.bottomAnchor).isActive = true
+        descriptionLabel.bottomAnchor.constraint(equalTo: view.bottomAnchor).isActive = true
     }
 
     private func setup() {
@@ -108,6 +129,7 @@ class ExperienceDetailViewController: UIViewController,
         setupNavigationBar()
         setupTitleLabel()
         setupDateLabel()
+        setupCollectionView()
         setupDescriptionLabel()
         setupLayout()
     }
