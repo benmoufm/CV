@@ -13,4 +13,5 @@ extension UIFont {
     static let titleFont = UIFont.boldSystemFont(ofSize: 25.0)
     static let paragraphFont = UIFont.systemFont(ofSize: 15.0)
     static let captionFont = UIFont.italicSystemFont(ofSize: 13.0)
+    static let highlightFont = UIFont.boldSystemFont(ofSize: 15.0)
 }
