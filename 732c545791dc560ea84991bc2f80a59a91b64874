@@ -1,0 +1,113 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "90497530_242ab9d3",
+        "filename": "CV/ExperiencesRepositoryImplementation.swift",
+        "patchSetId": 1
+      },
+      "lineNbr": 20,
+      "author": {
+        "id": 1011781
+      },
+      "writtenOn": "2018-02-01T18:22:05Z",
+      "side": 1,
+      "message": "init(httpManager: HttpManager) {\n    self.httpManager \u003d httpManager\n}\n\ntout le reste se passe dans ton injection de dépendance d\u0027autant plus que là ça veut dire que tu va avoir un httpManager par repository c\u0027est pas très intéressant et ça bouffe de la mémoire",
+      "range": {
+        "startLine": 16,
+        "startChar": 4,
+        "endLine": 20,
+        "endChar": 5
+      },
+      "revId": "732c545791dc560ea84991bc2f80a59a91b64874",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "5a48cda9_ceffd61c",
+        "filename": "CV/ExperiencesRepositoryImplementation.swift",
+        "patchSetId": 1
+      },
+      "lineNbr": 24,
+      "author": {
+        "id": 1011781
+      },
+      "writtenOn": "2018-02-01T18:22:05Z",
+      "side": 1,
+      "message": "même remarque pour les endpoint",
+      "range": {
+        "startLine": 24,
+        "startChar": 7,
+        "endLine": 24,
+        "endChar": 81
+      },
+      "revId": "732c545791dc560ea84991bc2f80a59a91b64874",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "ba624c2e_32eabea6",
+        "filename": "CV/ExperiencesRepositoryImplementation.swift",
+        "patchSetId": 1
+      },
+      "lineNbr": 34,
+      "author": {
+        "id": 1011781
+      },
+      "writtenOn": "2018-02-01T18:22:05Z",
+      "side": 1,
+      "message": "map/flatMap pour pas avoir à faire de switch ni de do catch....",
+      "range": {
+        "startLine": 31,
+        "startChar": 12,
+        "endLine": 34,
+        "endChar": 34
+      },
+      "revId": "732c545791dc560ea84991bc2f80a59a91b64874",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "b45eef50_9acbb2de",
+        "filename": "CV/ExperiencesRepositoryImplementation.swift",
+        "patchSetId": 1
+      },
+      "lineNbr": 43,
+      "author": {
+        "id": 1011781
+      },
+      "writtenOn": "2018-02-01T18:22:05Z",
+      "side": 1,
+      "message": "guard let .... else throw",
+      "range": {
+        "startLine": 36,
+        "startChar": 20,
+        "endLine": 43,
+        "endChar": 21
+      },
+      "revId": "732c545791dc560ea84991bc2f80a59a91b64874",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "27e0d605_d0765236",
+        "filename": "CV/ExperiencesRepositoryImplementation.swift",
+        "patchSetId": 1
+      },
+      "lineNbr": 53,
+      "author": {
+        "id": 1011781
+      },
+      "writtenOn": "2018-02-01T18:22:05Z",
+      "side": 1,
+      "message": "TODO?",
+      "revId": "732c545791dc560ea84991bc2f80a59a91b64874",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    }
+  ]
+}
