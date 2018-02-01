@@ -1,0 +1,142 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "8f3cd958_dad851a6",
+        "filename": "CV/Skill.swift",
+        "patchSetId": 2
+      },
+      "lineNbr": 18,
+      "author": {
+        "id": 1011781
+      },
+      "writtenOn": "2018-02-01T17:44:05Z",
+      "side": 1,
+      "message": "pourquoi?",
+      "range": {
+        "startLine": 13,
+        "startChar": 0,
+        "endLine": 18,
+        "endChar": 5
+      },
+      "revId": "2666ceea5ed357aaea50cd2ae37cfc22ff681740",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "60b161bf_359ee13b",
+        "filename": "CV/Skill.swift",
+        "patchSetId": 2
+      },
+      "lineNbr": 25,
+      "author": {
+        "id": 1011781
+      },
+      "writtenOn": "2018-02-01T17:44:05Z",
+      "side": 1,
+      "message": "les méthodes c\u0027est après les properties",
+      "range": {
+        "startLine": 20,
+        "startChar": 0,
+        "endLine": 25,
+        "endChar": 5
+      },
+      "revId": "2666ceea5ed357aaea50cd2ae37cfc22ff681740",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "52df3851_52a07675",
+        "filename": "CV/SkillsRepository.swift",
+        "patchSetId": 2
+      },
+      "lineNbr": 17,
+      "author": {
+        "id": 1011781
+      },
+      "writtenOn": "2018-02-01T17:44:05Z",
+      "side": 1,
+      "message": "getSkill(with id: Int,.....)",
+      "range": {
+        "startLine": 17,
+        "startChar": 9,
+        "endLine": 17,
+        "endChar": 28
+      },
+      "revId": "2666ceea5ed357aaea50cd2ae37cfc22ff681740",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "16c5565f_172a8cf5",
+        "filename": "CV/SkillsRepositoryImplementation.swift",
+        "patchSetId": 2
+      },
+      "lineNbr": 55,
+      "author": {
+        "id": 1011781
+      },
+      "writtenOn": "2018-02-01T17:44:05Z",
+      "side": 1,
+      "message": "ce serait bien que ton HttpManager gère l\u0027url et que toi tu lui donne juste l\u0027endPoint : tu lui donne \"skills\" qu\u0027il concatène au bout sa baseUrl",
+      "range": {
+        "startLine": 55,
+        "startChar": 36,
+        "endLine": 55,
+        "endChar": 69
+      },
+      "revId": "2666ceea5ed357aaea50cd2ae37cfc22ff681740",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "421aacc2_3438c5c3",
+        "filename": "CV/SkillsRepositoryImplementation.swift",
+        "patchSetId": 2
+      },
+      "lineNbr": 77,
+      "author": {
+        "id": 1011781
+      },
+      "writtenOn": "2018-02-01T17:44:05Z",
+      "side": 1,
+      "message": "tu peux faire un guard let else throw ce sera rattrapé par ton catch",
+      "range": {
+        "startLine": 73,
+        "startChar": 24,
+        "endLine": 77,
+        "endChar": 25
+      },
+      "revId": "2666ceea5ed357aaea50cd2ae37cfc22ff681740",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "e7f04c64_16af1738",
+        "filename": "CV/SkillsRepositoryImplementation.swift",
+        "patchSetId": 2
+      },
+      "lineNbr": 82,
+      "author": {
+        "id": 1011781
+      },
+      "writtenOn": "2018-02-01T17:44:05Z",
+      "side": 1,
+      "message": "au lieu de faire un switch fait des map\nil faut que tu regarde des blogPost et des vidéos de gens qui expliquent ça et après une fois que tu aura compris tu rearde l\u0027implementation de Result et tu verra c\u0027est assez cool.\nMais c\u0027est pas le plus urgent dans l\u0027absolu ton implem elle fonctionne bien elle pourrait juste être plus courte et plus jolie",
+      "range": {
+        "startLine": 63,
+        "startChar": 12,
+        "endLine": 82,
+        "endChar": 13
+      },
+      "revId": "2666ceea5ed357aaea50cd2ae37cfc22ff681740",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    }
+  ]
+}
