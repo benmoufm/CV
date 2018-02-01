@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "315e58bd_f840f45f",
+        "filename": "CV/ExperiencesRepository.swift",
+        "patchSetId": 1
+      },
+      "lineNbr": 12,
+      "author": {
+        "id": 1011781
+      },
+      "writtenOn": "2018-02-01T18:18:29Z",
+      "side": 1,
+      "message": "c\u0027est l\u0027implementation qui en a besoin mais ton protocol dois pas le demander ici",
+      "range": {
+        "startLine": 12,
+        "startChar": 1,
+        "endLine": 12,
+        "endChar": 40
+      },
+      "revId": "8fa78117271f4a84af8add26df5681eaaf65208e",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    }
+  ]
+}
