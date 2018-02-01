@@ -1,0 +1,73 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "15dc92e0_642355de",
+        "filename": "CV/Experience.swift",
+        "patchSetId": 1
+      },
+      "lineNbr": 14,
+      "author": {
+        "id": 1011781
+      },
+      "writtenOn": "2018-02-01T17:56:42Z",
+      "side": 1,
+      "message": "pourquoi ton time stamp c\u0027est une string et pas une date?",
+      "range": {
+        "startLine": 14,
+        "startChar": 8,
+        "endLine": 14,
+        "endChar": 25
+      },
+      "revId": "6a3e919311bf71614ea7e7887ed2ed9ddad5374b",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "40eba532_91ee516a",
+        "filename": "CV/Experience.swift",
+        "patchSetId": 1
+      },
+      "lineNbr": 15,
+      "author": {
+        "id": 1011781
+      },
+      "writtenOn": "2018-02-01T17:56:42Z",
+      "side": 1,
+      "message": "essaie d\u0027avoir un naming cohérent : au dessus c\u0027est un id alors ici c\u0027est un somethingId et pas un somethingID",
+      "range": {
+        "startLine": 15,
+        "startChar": 14,
+        "endLine": 15,
+        "endChar": 16
+      },
+      "revId": "6a3e919311bf71614ea7e7887ed2ed9ddad5374b",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "7abb43a2_a4daf95f",
+        "filename": "CV/Experience.swift",
+        "patchSetId": 1
+      },
+      "lineNbr": 24,
+      "author": {
+        "id": 1011781
+      },
+      "writtenOn": "2018-02-01T17:56:42Z",
+      "side": 1,
+      "message": "pourquoi ?",
+      "range": {
+        "startLine": 18,
+        "startChar": 0,
+        "endLine": 24,
+        "endChar": 5
+      },
+      "revId": "6a3e919311bf71614ea7e7887ed2ed9ddad5374b",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    }
+  ]
+}
