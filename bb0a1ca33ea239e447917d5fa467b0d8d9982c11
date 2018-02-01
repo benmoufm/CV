@@ -1,0 +1,73 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "d0d143d4_f0f75f92",
+        "filename": "CV/CompetenceDetailViewController.swift",
+        "patchSetId": 2
+      },
+      "lineNbr": 48,
+      "author": {
+        "id": 1011781
+      },
+      "writtenOn": "2018-02-01T17:46:58Z",
+      "side": 1,
+      "message": "fait un retour à la ligne après ton ouverture de parenthèse et avant la fermture",
+      "range": {
+        "startLine": 46,
+        "startChar": 20,
+        "endLine": 48,
+        "endChar": 83
+      },
+      "revId": "bb0a1ca33ea239e447917d5fa467b0d8d9982c11",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "1fe3676c_f71d2b0a",
+        "filename": "CV/CompetenceDetailViewController.swift",
+        "patchSetId": 2
+      },
+      "lineNbr": 50,
+      "author": {
+        "id": 1011781
+      },
+      "writtenOn": "2018-02-01T17:46:58Z",
+      "side": 1,
+      "message": "crée une variable intermédiaire et même chose qu\u0027au dessus",
+      "range": {
+        "startLine": 49,
+        "startChar": 24,
+        "endLine": 50,
+        "endChar": 86
+      },
+      "revId": "bb0a1ca33ea239e447917d5fa467b0d8d9982c11",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "7cfbd047_dbd37b76",
+        "filename": "CV/CompetenceDetailViewController.swift",
+        "patchSetId": 2
+      },
+      "lineNbr": 51,
+      "author": {
+        "id": 1011781
+      },
+      "writtenOn": "2018-02-01T17:46:58Z",
+      "side": 1,
+      "message": "pas besoin de ça il va savoir tout seul que c\u0027est nil si tu lui donne rien",
+      "range": {
+        "startLine": 51,
+        "startChar": 37,
+        "endLine": 51,
+        "endChar": 54
+      },
+      "revId": "bb0a1ca33ea239e447917d5fa467b0d8d9982c11",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    }
+  ]
+}
