@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "36cc9290_b342833e",
+        "filename": "CV/CompetenceDetailViewController.swift",
+        "patchSetId": 3
+      },
+      "lineNbr": 58,
+      "author": {
+        "id": 1011781
+      },
+      "writtenOn": "2018-02-01T17:24:07Z",
+      "side": 1,
+      "message": "idéalement il faudrait que tu fasse comme pour les couleur que tu aies une extension ou tu as tes font pour pouvoir changer toute les font de l\u0027appli en changeant juste à un endroit",
+      "range": {
+        "startLine": 58,
+        "startChar": 26,
+        "endLine": 58,
+        "endChar": 61
+      },
+      "revId": "f8beb59ecec2f9e043e3d01e7c722149769c500e",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    }
+  ]
+}
