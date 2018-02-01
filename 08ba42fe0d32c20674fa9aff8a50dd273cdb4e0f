@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "0ddd4df3_6cf3e1c1",
+        "filename": "CV/CompetenceCellViewModel.swift",
+        "patchSetId": 7
+      },
+      "lineNbr": 13,
+      "author": {
+        "id": 1011781
+      },
+      "writtenOn": "2018-02-01T17:18:55Z",
+      "side": 1,
+      "message": "le viewModel c\u0027est le model de la view donc les nom dans la mesure du possible doivent caractériser des elements de vue : ie ici ta propriété devrait s\u0027appeler cells plutot que skils\n\nsi tu venais à utiliser cette même vue pour présenter des \"projects\" tu voudrait pas que ça s\u0027appelle skills",
+      "range": {
+        "startLine": 13,
+        "startChar": 8,
+        "endLine": 13,
+        "endChar": 14
+      },
+      "revId": "08ba42fe0d32c20674fa9aff8a50dd273cdb4e0f",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    }
+  ]
+}
