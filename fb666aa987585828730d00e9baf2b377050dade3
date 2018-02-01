@@ -1,0 +1,73 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "8cab51ca_091c8ad3",
+        "filename": "CV/ExperienceCategoryMapper.swift",
+        "patchSetId": 1
+      },
+      "lineNbr": 17,
+      "author": {
+        "id": 1011781
+      },
+      "writtenOn": "2018-02-01T18:17:28Z",
+      "side": 1,
+      "message": "il manque une parenthèse fermante\n\nfait des retour à la ligne après l\u0027ouverture et avant la fermeture de ta parenthèse",
+      "range": {
+        "startLine": 15,
+        "startChar": 1,
+        "endLine": 17,
+        "endChar": 132
+      },
+      "revId": "fb666aa987585828730d00e9baf2b377050dade3",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "e0b8e556_6af76310",
+        "filename": "CV/RestExperienceCategory.swift",
+        "patchSetId": 1
+      },
+      "lineNbr": 24,
+      "author": {
+        "id": 1011781
+      },
+      "writtenOn": "2018-02-01T18:17:28Z",
+      "side": 1,
+      "message": "sur une seule ligne",
+      "range": {
+        "startLine": 22,
+        "startChar": 0,
+        "endLine": 24,
+        "endChar": 9
+      },
+      "revId": "fb666aa987585828730d00e9baf2b377050dade3",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "d1e7ad85_0d3b963a",
+        "filename": "CV/RestExperienceCategory.swift",
+        "patchSetId": 1
+      },
+      "lineNbr": 26,
+      "author": {
+        "id": 1011781
+      },
+      "writtenOn": "2018-02-01T18:17:28Z",
+      "side": 1,
+      "message": "à enlever",
+      "range": {
+        "startLine": 25,
+        "startChar": 48,
+        "endLine": 26,
+        "endChar": 25
+      },
+      "revId": "fb666aa987585828730d00e9baf2b377050dade3",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    }
+  ]
+}
