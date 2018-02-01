@@ -1,0 +1,142 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "c615354b_69b72b7b",
+        "filename": "CV/CompetenceDetailViewController.swift",
+        "patchSetId": 1
+      },
+      "lineNbr": 20,
+      "author": {
+        "id": 1011781
+      },
+      "writtenOn": "2018-02-01T17:55:00Z",
+      "side": 1,
+      "message": "pas besoin de ça si ton animateEvaluation prend un paramètre",
+      "range": {
+        "startLine": 20,
+        "startChar": 3,
+        "endLine": 20,
+        "endChar": 22
+      },
+      "revId": "7e2a1e1f434bac85f1037ac7256d6abff9eb11e0",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "98e82c28_c5cb3322",
+        "filename": "CV/CompetenceDetailViewController.swift",
+        "patchSetId": 1
+      },
+      "lineNbr": 20,
+      "author": {
+        "id": 1011781
+      },
+      "writtenOn": "2018-02-01T17:55:00Z",
+      "side": 1,
+      "message": "private",
+      "range": {
+        "startLine": 16,
+        "startChar": 0,
+        "endLine": 20,
+        "endChar": 22
+      },
+      "revId": "7e2a1e1f434bac85f1037ac7256d6abff9eb11e0",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "e985d501_b5cdfc12",
+        "filename": "CV/CompetenceDetailViewController.swift",
+        "patchSetId": 1
+      },
+      "lineNbr": 46,
+      "author": {
+        "id": 1011781
+      },
+      "writtenOn": "2018-02-01T17:55:00Z",
+      "side": 1,
+      "message": "fait plutot animateEvaluation(to value)",
+      "range": {
+        "startLine": 46,
+        "startChar": 8,
+        "endLine": 46,
+        "endChar": 27
+      },
+      "revId": "7e2a1e1f434bac85f1037ac7256d6abff9eb11e0",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "55c8a11e_a4fcd162",
+        "filename": "CV/CompetenceDetailViewController.swift",
+        "patchSetId": 1
+      },
+      "lineNbr": 61,
+      "author": {
+        "id": 1011781
+      },
+      "writtenOn": "2018-02-01T17:55:00Z",
+      "side": 1,
+      "message": "à enlever",
+      "range": {
+        "startLine": 61,
+        "startChar": 8,
+        "endLine": 61,
+        "endChar": 25
+      },
+      "revId": "7e2a1e1f434bac85f1037ac7256d6abff9eb11e0",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "3b01a608_7fe96e9d",
+        "filename": "CV/CompetenceDetailViewController.swift",
+        "patchSetId": 1
+      },
+      "lineNbr": 63,
+      "author": {
+        "id": 1011781
+      },
+      "writtenOn": "2018-02-01T17:55:00Z",
+      "side": 1,
+      "message": "pas très lisible au fait une variable intermédiaire",
+      "range": {
+        "startLine": 63,
+        "startChar": 64,
+        "endLine": 63,
+        "endChar": 90
+      },
+      "revId": "7e2a1e1f434bac85f1037ac7256d6abff9eb11e0",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "09b81245_b58cad12",
+        "filename": "CV/CompetenceDetailViewController.swift",
+        "patchSetId": 1
+      },
+      "lineNbr": 64,
+      "author": {
+        "id": 1011781
+      },
+      "writtenOn": "2018-02-01T17:55:00Z",
+      "side": 1,
+      "message": "attention à chaque passage dans la fonction tu recrée une contrainte ce serait mieux d\u0027en avoir une que tu modifie ou sinon de suprimer la précédente pour la remplacer avec une nouvelle\n\ntu verras d\u0027ailleurs que tu peux pas modifier le multiplier du coup si tu garde la même contrainte que tu modifie il faudra le faire via une constant que tu modifie en fonction de la taille ect, sinon il faudra remplacer tes contraintes à chaque changement",
+      "range": {
+        "startLine": 60,
+        "startChar": 4,
+        "endLine": 64,
+        "endChar": 28
+      },
+      "revId": "7e2a1e1f434bac85f1037ac7256d6abff9eb11e0",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    }
+  ]
+}
