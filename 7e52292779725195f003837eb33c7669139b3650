@@ -1,0 +1,165 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "e451f32c_3dbadd96",
+        "filename": "CV/ExperienceMapper.swift",
+        "patchSetId": 1
+      },
+      "lineNbr": 19,
+      "author": {
+        "id": 1011781
+      },
+      "writtenOn": "2018-02-01T18:12:43Z",
+      "side": 1,
+      "message": "saut de ligne parenthèses",
+      "range": {
+        "startLine": 15,
+        "startChar": 24,
+        "endLine": 19,
+        "endChar": 66
+      },
+      "revId": "7e52292779725195f003837eb33c7669139b3650",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "c2071331_1ca5052e",
+        "filename": "CV/RestExperience.swift",
+        "patchSetId": 1
+      },
+      "lineNbr": 15,
+      "author": {
+        "id": 1011781
+      },
+      "writtenOn": "2018-02-01T18:12:43Z",
+      "side": 1,
+      "message": "date?",
+      "range": {
+        "startLine": 15,
+        "startChar": 4,
+        "endLine": 15,
+        "endChar": 25
+      },
+      "revId": "7e52292779725195f003837eb33c7669139b3650",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "b4ff2e95_c325cca9",
+        "filename": "CV/RestExperience.swift",
+        "patchSetId": 1
+      },
+      "lineNbr": 16,
+      "author": {
+        "id": 1011781
+      },
+      "writtenOn": "2018-02-01T18:12:43Z",
+      "side": 1,
+      "message": "skillIds plutot que skillsId non en tout cas c\u0027est au moin skillsId et pas skillsID",
+      "range": {
+        "startLine": 16,
+        "startChar": 13,
+        "endLine": 16,
+        "endChar": 17
+      },
+      "revId": "7e52292779725195f003837eb33c7669139b3650",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "0af214a1_b07d895c",
+        "filename": "CV/RestExperience.swift",
+        "patchSetId": 1
+      },
+      "lineNbr": 27,
+      "author": {
+        "id": 1011781
+      },
+      "writtenOn": "2018-02-01T18:12:43Z",
+      "side": 1,
+      "message": "tu peux mettre tout ça sur la même ligne",
+      "range": {
+        "startLine": 25,
+        "startChar": 0,
+        "endLine": 27,
+        "endChar": 9
+      },
+      "revId": "7e52292779725195f003837eb33c7669139b3650",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "e6421580_2ec0307a",
+        "filename": "CV/RestExperience.swift",
+        "patchSetId": 1
+      },
+      "lineNbr": 37,
+      "author": {
+        "id": 1011781
+      },
+      "writtenOn": "2018-02-01T18:12:43Z",
+      "side": 1,
+      "message": "met sur la même ligne",
+      "range": {
+        "startLine": 35,
+        "startChar": 0,
+        "endLine": 37,
+        "endChar": 13
+      },
+      "revId": "7e52292779725195f003837eb33c7669139b3650",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "3170a460_cdb4124b",
+        "filename": "CV/RestExperience.swift",
+        "patchSetId": 1
+      },
+      "lineNbr": 38,
+      "author": {
+        "id": 1011781
+      },
+      "writtenOn": "2018-02-01T18:12:43Z",
+      "side": 1,
+      "message": "ça c\u0027est de l\u0027affichage tu fais ça dans un mapper de viewModel pas ici",
+      "range": {
+        "startLine": 38,
+        "startChar": 12,
+        "endLine": 38,
+        "endChar": 51
+      },
+      "revId": "7e52292779725195f003837eb33c7669139b3650",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "1d6475df_e42697e5",
+        "filename": "CV/RestExperience.swift",
+        "patchSetId": 1
+      },
+      "lineNbr": 41,
+      "author": {
+        "id": 1011781
+      },
+      "writtenOn": "2018-02-01T18:12:43Z",
+      "side": 1,
+      "message": "c\u0027est pas idéal intValue ça veut dire que tu aura des 0 si il y a des erreurs dans ton back end",
+      "range": {
+        "startLine": 41,
+        "startChar": 19,
+        "endLine": 41,
+        "endChar": 49
+      },
+      "revId": "7e52292779725195f003837eb33c7669139b3650",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    }
+  ]
+}
