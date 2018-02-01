@@ -1,0 +1,165 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "b90dd5de_d63aa6d8",
+        "filename": "CV/CompetenceCoordinator.swift",
+        "patchSetId": 3
+      },
+      "lineNbr": 17,
+      "author": {
+        "id": 1011781
+      },
+      "writtenOn": "2018-02-01T17:32:59Z",
+      "side": 1,
+      "message": "trailing space",
+      "range": {
+        "startLine": 17,
+        "startChar": 0,
+        "endLine": 17,
+        "endChar": 4
+      },
+      "revId": "ba6e5c7ee6e11b73ac9fe2ccb6dc9ad1d5e86442",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "e5fc82f3_9d7d7ea0",
+        "filename": "CV/CompetenceCoordinator.swift",
+        "patchSetId": 3
+      },
+      "lineNbr": 28,
+      "author": {
+        "id": 1011781
+      },
+      "writtenOn": "2018-02-01T17:32:59Z",
+      "side": 1,
+      "message": "C\u0027est sur que tu le veut animé au start?",
+      "range": {
+        "startLine": 28,
+        "startChar": 83,
+        "endLine": 28,
+        "endChar": 87
+      },
+      "revId": "ba6e5c7ee6e11b73ac9fe2ccb6dc9ad1d5e86442",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "91dc351e_1f14f5bf",
+        "filename": "CV/CompetencePresenter.swift",
+        "patchSetId": 3
+      },
+      "lineNbr": 13,
+      "author": {
+        "id": 1011781
+      },
+      "writtenOn": "2018-02-01T17:32:59Z",
+      "side": 1,
+      "message": "quand tu as une méthode délégué c\u0027est bien que tu aies un parametere ou tu passe ton objet que si le délégué est délégué pour plusieurs instances il sache de quoi on lui parle",
+      "range": {
+        "startLine": 13,
+        "startChar": 9,
+        "endLine": 13,
+        "endChar": 21
+      },
+      "revId": "ba6e5c7ee6e11b73ac9fe2ccb6dc9ad1d5e86442",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "9e4b74a4_27ffeb6d",
+        "filename": "CV/CompetencePresenterImplementation.swift",
+        "patchSetId": 3
+      },
+      "lineNbr": 15,
+      "author": {
+        "id": 1011781
+      },
+      "writtenOn": "2018-02-01T17:32:59Z",
+      "side": 1,
+      "message": "retain cycle tu doit avoir une référence weak sur ton délégué",
+      "range": {
+        "startLine": 15,
+        "startChar": 18,
+        "endLine": 15,
+        "endChar": 45
+      },
+      "revId": "ba6e5c7ee6e11b73ac9fe2ccb6dc9ad1d5e86442",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "ba461025_951fca57",
+        "filename": "CV/CompetenceTableViewDataSource.swift",
+        "patchSetId": 3
+      },
+      "lineNbr": 63,
+      "author": {
+        "id": 1011781
+      },
+      "writtenOn": "2018-02-01T17:32:59Z",
+      "side": 1,
+      "message": "lui son taff c\u0027est de rapporter un évènement pas l\u0027action qui lui est associée : si tu décide de ne plus faire ça au touch de ta cellule tu vas être obligé de tout renomer pour que ton naming de fonction soit cohérent",
+      "range": {
+        "startLine": 63,
+        "startChar": 54,
+        "endLine": 63,
+        "endChar": 66
+      },
+      "revId": "ba6e5c7ee6e11b73ac9fe2ccb6dc9ad1d5e86442",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "5e910de5_4500a112",
+        "filename": "CV/CompetenceViewController.swift",
+        "patchSetId": 3
+      },
+      "lineNbr": 56,
+      "author": {
+        "id": 1011781
+      },
+      "writtenOn": "2018-02-01T17:32:59Z",
+      "side": 1,
+      "message": "pareil ici",
+      "range": {
+        "startLine": 56,
+        "startChar": 28,
+        "endLine": 56,
+        "endChar": 40
+      },
+      "revId": "ba6e5c7ee6e11b73ac9fe2ccb6dc9ad1d5e86442",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "03fbcd40_9a2ed8a8",
+        "filename": "CV/XPCompetenceCoordinator.swift",
+        "patchSetId": 3
+      },
+      "lineNbr": 24,
+      "author": {
+        "id": 1011781
+      },
+      "writtenOn": "2018-02-01T17:32:59Z",
+      "side": 1,
+      "message": "il est chelou ton retour à la ligne",
+      "range": {
+        "startLine": 23,
+        "startChar": 38,
+        "endLine": 24,
+        "endChar": 25
+      },
+      "revId": "ba6e5c7ee6e11b73ac9fe2ccb6dc9ad1d5e86442",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    }
+  ]
+}
