@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "3f4792d9_051963d8",
+        "filename": "CV/ExperiencesRepositoryImplementation.swift",
+        "patchSetId": 1
+      },
+      "lineNbr": 83,
+      "author": {
+        "id": 1011781
+      },
+      "writtenOn": "2018-02-01T18:24:16Z",
+      "side": 1,
+      "message": "même remarques que sur tes commits précédents",
+      "range": {
+        "startLine": 53,
+        "startChar": 0,
+        "endLine": 83,
+        "endChar": 9
+      },
+      "revId": "fd78e2597ba59fa0069415d5d689249cbb188dec",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    }
+  ]
+}
