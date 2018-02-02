@@ -85,7 +85,7 @@ class CompetenceDetailViewController: UIViewController,
         titleLabel.numberOfLines = 0
         titleLabel.textAlignment = .center
         titleLabel.textColor = UIColor.mainColorWithAlpha
-        titleLabel.font = UIFont.boldSystemFont(ofSize: 25.0)
+        titleLabel.font = UIFont.titleFont
     }
 
     private func setupEvaluationFrame() {

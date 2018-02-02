@@ -63,7 +63,7 @@ class FormationDetailViewController: UIViewController,
         titleLabel.numberOfLines = 0
         titleLabel.textAlignment = .center
         titleLabel.textColor = UIColor.mainColor
-        titleLabel.font = UIFont.boldSystemFont(ofSize: 25.0)
+        titleLabel.font = UIFont.titleFont
     }
 
     private func setupSchoolImageView() {
@@ -74,7 +74,7 @@ class FormationDetailViewController: UIViewController,
         informationLabel.numberOfLines = 0
         informationLabel.textAlignment = .center
         informationLabel.textColor = UIColor.textColor
-        informationLabel.font = UIFont.italicSystemFont(ofSize: 15.0)
+        informationLabel.font = UIFont.captionFont
     }
 
     private func setupHistoryLabel() {
