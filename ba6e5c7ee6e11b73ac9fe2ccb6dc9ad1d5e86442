@@ -94,6 +94,30 @@
     },
     {
       "key": {
+        "uuid": "fafc3473_4ee42e66",
+        "filename": "CV/CompetencePresenterImplementation.swift",
+        "patchSetId": 3
+      },
+      "lineNbr": 15,
+      "author": {
+        "id": 1011762
+      },
+      "writtenOn": "2018-02-02T09:39:47Z",
+      "side": 1,
+      "message": "\u0027weak\u0027 may not be applied to non-class-bound \u0027CompetencePresenterDelegate\u0027; consider adding a protocol conformance that has a class bound",
+      "parentUuid": "9e4b74a4_27ffeb6d",
+      "range": {
+        "startLine": 15,
+        "startChar": 18,
+        "endLine": 15,
+        "endChar": 45
+      },
+      "revId": "ba6e5c7ee6e11b73ac9fe2ccb6dc9ad1d5e86442",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "ba461025_951fca57",
         "filename": "CV/CompetenceTableViewDataSource.swift",
         "patchSetId": 3
