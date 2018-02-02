@@ -28,7 +28,7 @@ class CompetenceTableViewCell: UITableViewCell {
         selectionStyle = .gray
         textLabel?.backgroundColor = UIColor.backgroundColor
         textLabel?.textAlignment = .natural
-        textLabel?.font = UIFont.systemFont(ofSize: 13.0)
+        textLabel?.font = UIFont.paragraphFont
         textLabel?.textColor = UIColor.textColor
     }
 }

@@ -78,6 +78,7 @@
 		867FF3251F6C38E70085A80D /* FormationCollectionViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 867FF3241F6C38E70085A80D /* FormationCollectionViewDataSource.swift */; };
 		867FF3281F6C39DD0085A80D /* FormationCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 867FF3271F6C39DD0085A80D /* FormationCollectionViewCell.swift */; };
 		867FF32C1F6C3BED0085A80D /* UICollectionView+Registerable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 867FF32B1F6C3BED0085A80D /* UICollectionView+Registerable.swift */; };
+		868A1CB72024A8EB00F2434E /* Fonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 868A1CB62024A8EB00F2434E /* Fonts.swift */; };
 		869F91F41F9E934D00C05DEF /* Skill.swift in Sources */ = {isa = PBXBuildFile; fileRef = 869F91F31F9E934D00C05DEF /* Skill.swift */; };
 		869F91F61F9E949000C05DEF /* SkillCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 869F91F51F9E949000C05DEF /* SkillCategory.swift */; };
 		86A1DCFF1FC22E4900AC1A5D /* HttpRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86A1DCFE1FC22E4900AC1A5D /* HttpRequest.swift */; };
@@ -195,6 +196,7 @@
 		867FF3241F6C38E70085A80D /* FormationCollectionViewDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FormationCollectionViewDataSource.swift; sourceTree = "<group>"; };
 		867FF3271F6C39DD0085A80D /* FormationCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FormationCollectionViewCell.swift; sourceTree = "<group>"; };
 		867FF32B1F6C3BED0085A80D /* UICollectionView+Registerable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UICollectionView+Registerable.swift"; sourceTree = "<group>"; };
+		868A1CB62024A8EB00F2434E /* Fonts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fonts.swift; sourceTree = "<group>"; };
 		869F91F31F9E934D00C05DEF /* Skill.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Skill.swift; sourceTree = "<group>"; };
 		869F91F51F9E949000C05DEF /* SkillCategory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SkillCategory.swift; sourceTree = "<group>"; };
 		86A1DCFE1FC22E4900AC1A5D /* HttpRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HttpRequest.swift; sourceTree = "<group>"; };
@@ -841,6 +843,7 @@
 				86B29C481F79277F00C63902 /* Loadable.swift */,
 				867FF32B1F6C3BED0085A80D /* UICollectionView+Registerable.swift */,
 				862D56501F826D360090BA0B /* Animation.swift */,
+				868A1CB62024A8EB00F2434E /* Fonts.swift */,
 			);
 			name = Categories;
 			sourceTree = "<group>";
@@ -1119,6 +1122,7 @@
 				86E440441F4A16A40040BD55 /* Startable.swift in Sources */,
 				86F95E771FD5582A00E80B23 /* CompetenceDetailPresenterImplementation.swift in Sources */,
 				869F91F61F9E949000C05DEF /* SkillCategory.swift in Sources */,
+				868A1CB72024A8EB00F2434E /* Fonts.swift in Sources */,
 				86CE0CA71F1BC64D00DA0916 /* AppDelegate.swift in Sources */,
 				86BDE6BA1FA634E600CA970E /* ExperienceTableViewModelMapper.swift in Sources */,
 				8639DB621F9A477600BFC0BC /* XPCompetenceCoordinator.swift in Sources */,
