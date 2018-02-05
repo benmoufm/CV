@@ -1,0 +1,50 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "6ea8abeb_6a296f1f",
+        "filename": "CV/HttpManager.swift",
+        "patchSetId": 12
+      },
+      "lineNbr": 26,
+      "author": {
+        "id": 1011781
+      },
+      "writtenOn": "2018-02-05T11:58:15Z",
+      "side": 1,
+      "message": "tu as pas vraiment besoin de gerer le cas d\u0027erreur alamofire le fait pour toi\nle premier argument dans ton call sessionManager.request c\u0027est un URLConvertible du coup tu peux juste lui renvoyer une string et lui fait le boulot\n\nidéalement il faudrait que ton url soit injectée : dans ton init tu as un paramètre baseUrlString qui te sert à initialiser une property et quand tu fait ta requete tu fait \nsessionManager.request( baseUrlString + httpRequest.endPoint,\n                                            method: ......",
+      "range": {
+        "startLine": 22,
+        "startChar": 0,
+        "endLine": 26,
+        "endChar": 9
+      },
+      "revId": "2df588e8b8cb04af2752fc30277b5badec45f7de",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "6231da81_c9d3ca26",
+        "filename": "CV/fr.lproj/Localizable.strings",
+        "patchSetId": 12
+      },
+      "lineNbr": 56,
+      "author": {
+        "id": 1011781
+      },
+      "writtenOn": "2018-02-05T11:58:15Z",
+      "side": 1,
+      "message": "Pourquoi compétence: c\u0027est ultra générique puisque tu utilise ça dans ton HttpManager",
+      "range": {
+        "startLine": 56,
+        "startChar": 1,
+        "endLine": 56,
+        "endChar": 12
+      },
+      "revId": "2df588e8b8cb04af2752fc30277b5badec45f7de",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    }
+  ]
+}
