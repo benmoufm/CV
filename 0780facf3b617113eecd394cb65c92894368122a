@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "22de6307_eadd6a82",
+        "filename": "CV/HttpRequest.swift",
+        "patchSetId": 9
+      },
+      "lineNbr": 14,
+      "author": {
+        "id": 1011781
+      },
+      "writtenOn": "2018-02-05T11:59:28Z",
+      "side": 1,
+      "message": "appele le endpoint plutot, le domain c\u0027est plus ce que tu as enregistré dans ton HttpManager",
+      "range": {
+        "startLine": 14,
+        "startChar": 9,
+        "endLine": 14,
+        "endChar": 15
+      },
+      "revId": "0780facf3b617113eecd394cb65c92894368122a",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    }
+  ]
+}
