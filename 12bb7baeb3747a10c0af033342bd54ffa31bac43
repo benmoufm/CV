@@ -1,0 +1,96 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "b9bd6e3b_a3a0d3d0",
+        "filename": "CV/CompetenceDetailViewController.swift",
+        "patchSetId": 3
+      },
+      "lineNbr": 18,
+      "author": {
+        "id": 1011781
+      },
+      "writtenOn": "2018-02-06T19:11:32Z",
+      "side": 1,
+      "message": "bizarre que tes vues s\u0027appelle *frame",
+      "range": {
+        "startLine": 17,
+        "startChar": 16,
+        "endLine": 18,
+        "endChar": 35
+      },
+      "revId": "12bb7baeb3747a10c0af033342bd54ffa31bac43",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "7d26e163_301212ea",
+        "filename": "CV/CompetenceDetailViewController.swift",
+        "patchSetId": 3
+      },
+      "lineNbr": 20,
+      "author": {
+        "id": 1011781
+      },
+      "writtenOn": "2018-02-06T19:11:32Z",
+      "side": 1,
+      "message": "fais en une lazy var tu pourra la déclarer ici plutot que dans ton init",
+      "range": {
+        "startLine": 20,
+        "startChar": 4,
+        "endLine": 20,
+        "endChar": 71
+      },
+      "revId": "12bb7baeb3747a10c0af033342bd54ffa31bac43",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "e5c57d3e_ea6706d1",
+        "filename": "CV/CompetenceDetailViewController.swift",
+        "patchSetId": 3
+      },
+      "lineNbr": 66,
+      "author": {
+        "id": 1011781
+      },
+      "writtenOn": "2018-02-06T19:11:32Z",
+      "side": 1,
+      "message": "je dirais que c\u0027est ton mapper qui doit faire le calcul de ton ratio\net toi ici tu récupère ce ratio sans poser de question",
+      "range": {
+        "startLine": 66,
+        "startChar": 8,
+        "endLine": 66,
+        "endChar": 43
+      },
+      "revId": "12bb7baeb3747a10c0af033342bd54ffa31bac43",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "a769ea9a_25b700a5",
+        "filename": "CV/CompetenceDetailViewController.swift",
+        "patchSetId": 3
+      },
+      "lineNbr": 74,
+      "author": {
+        "id": 1011781
+      },
+      "writtenOn": "2018-02-06T19:11:32Z",
+      "side": 1,
+      "message": "si tu appelle plusieurs fois la fonction ça ne va pas marcher : si tu veux faire comme ça il faut que \n1. tu enlève la constraint (peut être que isActive \u003d false suffit mais je suis pas sur) view.removeConstraint(constraint)\n2. tu recrée une nouvelle constrainte que tu stock pour pouvoir la remplacer à nouveau plus tard si besoin (cette là manque)\n3. active ta nouvelle contrainte (ça c\u0027est bien fait)",
+      "range": {
+        "startLine": 67,
+        "startChar": 8,
+        "endLine": 74,
+        "endChar": 9
+      },
+      "revId": "12bb7baeb3747a10c0af033342bd54ffa31bac43",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    }
+  ]
+}
