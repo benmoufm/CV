@@ -1,0 +1,96 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "b06b8df4_a912a64e",
+        "filename": "CV/ExperiencesRepositoryImplementation.swift",
+        "patchSetId": 3
+      },
+      "lineNbr": 23,
+      "author": {
+        "id": 1011781
+      },
+      "writtenOn": "2018-02-06T19:20:45Z",
+      "side": 1,
+      "message": "pas besoin",
+      "range": {
+        "startLine": 23,
+        "startChar": 55,
+        "endLine": 23,
+        "endChar": 56
+      },
+      "revId": "9c30707f44246dcd674921ebce854da26f745467",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "f7c502b2_366bf458",
+        "filename": "CV/ExperiencesRepositoryImplementation.swift",
+        "patchSetId": 3
+      },
+      "lineNbr": 30,
+      "author": {
+        "id": 1011781
+      },
+      "writtenOn": "2018-02-06T19:20:45Z",
+      "side": 1,
+      "message": "pas besoin",
+      "range": {
+        "startLine": 30,
+        "startChar": 13,
+        "endLine": 30,
+        "endChar": 14
+      },
+      "revId": "9c30707f44246dcd674921ebce854da26f745467",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "0baf8f69_204a83ff",
+        "filename": "CV/ExperiencesRepositoryImplementation.swift",
+        "patchSetId": 3
+      },
+      "lineNbr": 38,
+      "author": {
+        "id": 1011781
+      },
+      "writtenOn": "2018-02-06T19:20:45Z",
+      "side": 1,
+      "message": "pas besoin",
+      "range": {
+        "startLine": 38,
+        "startChar": 45,
+        "endLine": 38,
+        "endChar": 46
+      },
+      "revId": "9c30707f44246dcd674921ebce854da26f745467",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "ddb5603f_1fb2b842",
+        "filename": "CV/ExperiencesRepositoryImplementation.swift",
+        "patchSetId": 3
+      },
+      "lineNbr": 49,
+      "author": {
+        "id": 1011781
+      },
+      "writtenOn": "2018-02-06T19:20:45Z",
+      "side": 1,
+      "message": "pas besoin",
+      "range": {
+        "startLine": 49,
+        "startChar": 13,
+        "endLine": 49,
+        "endChar": 14
+      },
+      "revId": "9c30707f44246dcd674921ebce854da26f745467",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    }
+  ]
+}
