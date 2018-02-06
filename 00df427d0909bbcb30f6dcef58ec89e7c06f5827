@@ -1,0 +1,61 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "d6e52766_ad1831b8",
+        "filename": "CV/ExperienceDetailCollectionViewCell.swift",
+        "patchSetId": 3
+      },
+      "lineNbr": 12,
+      "author": {
+        "id": 1011781
+      },
+      "writtenOn": "2018-02-06T19:26:29Z",
+      "side": 1,
+      "message": "private",
+      "range": {
+        "startLine": 12,
+        "startChar": 0,
+        "endLine": 12,
+        "endChar": 25
+      },
+      "revId": "00df427d0909bbcb30f6dcef58ec89e7c06f5827",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "05d7a4e3_f2695b36",
+        "filename": "CV/ExperienceDetailCollectionViewCell.swift",
+        "patchSetId": 3
+      },
+      "lineNbr": 23,
+      "author": {
+        "id": 1011781
+      },
+      "writtenOn": "2018-02-06T19:26:29Z",
+      "side": 1,
+      "message": "MARK: - ...",
+      "revId": "00df427d0909bbcb30f6dcef58ec89e7c06f5827",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "35e46096_577bbbbe",
+        "filename": "CV/ExperienceDetailCollectionViewCell.swift",
+        "patchSetId": 3
+      },
+      "lineNbr": 27,
+      "author": {
+        "id": 1011781
+      },
+      "writtenOn": "2018-02-06T19:26:29Z",
+      "side": 1,
+      "message": "MARK: - ....",
+      "revId": "00df427d0909bbcb30f6dcef58ec89e7c06f5827",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    }
+  ]
+}
