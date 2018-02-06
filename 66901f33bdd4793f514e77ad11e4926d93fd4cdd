@@ -1,0 +1,50 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "ce18e7b9_70fe5d30",
+        "filename": "CV/ExperiencesRepositoryImplementation.swift",
+        "patchSetId": 3
+      },
+      "lineNbr": 23,
+      "author": {
+        "id": 1011781
+      },
+      "writtenOn": "2018-02-06T19:19:42Z",
+      "side": 1,
+      "message": "pas besoin",
+      "range": {
+        "startLine": 23,
+        "startChar": 55,
+        "endLine": 23,
+        "endChar": 56
+      },
+      "revId": "66901f33bdd4793f514e77ad11e4926d93fd4cdd",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "1abbd0e4_284bcd1b",
+        "filename": "CV/ExperiencesRepositoryImplementation.swift",
+        "patchSetId": 3
+      },
+      "lineNbr": 30,
+      "author": {
+        "id": 1011781
+      },
+      "writtenOn": "2018-02-06T19:19:42Z",
+      "side": 1,
+      "message": "pas besoin",
+      "range": {
+        "startLine": 30,
+        "startChar": 13,
+        "endLine": 30,
+        "endChar": 14
+      },
+      "revId": "66901f33bdd4793f514e77ad11e4926d93fd4cdd",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    }
+  ]
+}
