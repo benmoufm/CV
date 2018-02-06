@@ -1,0 +1,142 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "1167dc3c_3afcfc53",
+        "filename": "CV/SkillsRepository.swift",
+        "patchSetId": 4
+      },
+      "lineNbr": 17,
+      "author": {
+        "id": 1011781
+      },
+      "writtenOn": "2018-02-06T19:00:35Z",
+      "side": 1,
+      "message": "getSkill(_ id: Int ...)\n\ndésolé j\u0027y ai pas pensé lors de la dernière review :no_mouth:",
+      "range": {
+        "startLine": 17,
+        "startChar": 18,
+        "endLine": 17,
+        "endChar": 22
+      },
+      "revId": "49cfb641026a1b9e43793ffea7e87a14a446f6b0",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "acca4bb7_9346a368",
+        "filename": "CV/SkillsRepositoryImplementation.swift",
+        "patchSetId": 4
+      },
+      "lineNbr": 26,
+      "author": {
+        "id": 1011781
+      },
+      "writtenOn": "2018-02-06T19:00:35Z",
+      "side": 1,
+      "message": "pas besoin des parenthèses pour ton map",
+      "range": {
+        "startLine": 26,
+        "startChar": 49,
+        "endLine": 26,
+        "endChar": 51
+      },
+      "revId": "49cfb641026a1b9e43793ffea7e87a14a446f6b0",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "9fba0749_33f9c102",
+        "filename": "CV/SkillsRepositoryImplementation.swift",
+        "patchSetId": 4
+      },
+      "lineNbr": 33,
+      "author": {
+        "id": 1011781
+      },
+      "writtenOn": "2018-02-06T19:00:35Z",
+      "side": 1,
+      "message": "pas besoin des parenthèses pour ton map",
+      "range": {
+        "startLine": 33,
+        "startChar": 13,
+        "endLine": 33,
+        "endChar": 14
+      },
+      "revId": "49cfb641026a1b9e43793ffea7e87a14a446f6b0",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "1025721d_2acf665b",
+        "filename": "CV/SkillsRepositoryImplementation.swift",
+        "patchSetId": 4
+      },
+      "lineNbr": 41,
+      "author": {
+        "id": 1011781
+      },
+      "writtenOn": "2018-02-06T19:00:35Z",
+      "side": 1,
+      "message": "pas besoin des parenthèses pour ton map",
+      "range": {
+        "startLine": 41,
+        "startChar": 40,
+        "endLine": 41,
+        "endChar": 41
+      },
+      "revId": "49cfb641026a1b9e43793ffea7e87a14a446f6b0",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "1073069c_7a4e2e97",
+        "filename": "CV/SkillsRepositoryImplementation.swift",
+        "patchSetId": 4
+      },
+      "lineNbr": 47,
+      "author": {
+        "id": 1011781
+      },
+      "writtenOn": "2018-02-06T19:00:35Z",
+      "side": 1,
+      "message": "tu peux faire first where ici",
+      "range": {
+        "startLine": 46,
+        "startChar": 39,
+        "endLine": 47,
+        "endChar": 38
+      },
+      "revId": "49cfb641026a1b9e43793ffea7e87a14a446f6b0",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "4b4693ab_8b38faa4",
+        "filename": "CV/SkillsRepositoryImplementation.swift",
+        "patchSetId": 4
+      },
+      "lineNbr": 51,
+      "author": {
+        "id": 1011781
+      },
+      "writtenOn": "2018-02-06T19:00:35Z",
+      "side": 1,
+      "message": "pas besoin des parenthèses pour ton map",
+      "range": {
+        "startLine": 51,
+        "startChar": 13,
+        "endLine": 51,
+        "endChar": 14
+      },
+      "revId": "49cfb641026a1b9e43793ffea7e87a14a446f6b0",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    }
+  ]
+}
