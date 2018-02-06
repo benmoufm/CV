@@ -1,0 +1,50 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "2f9191fb_8cc43a04",
+        "filename": "CV/ExperienceDetailViewController.swift",
+        "patchSetId": 5
+      },
+      "lineNbr": 21,
+      "author": {
+        "id": 1011781
+      },
+      "writtenOn": "2018-02-06T19:24:58Z",
+      "side": 1,
+      "message": "private",
+      "range": {
+        "startLine": 16,
+        "startChar": 4,
+        "endLine": 21,
+        "endChar": 25
+      },
+      "revId": "2055324a4cb399a43c26cf99bae377fb7b926160",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "b6c6b1ab_2107f6bf",
+        "filename": "CV/ExperienceDetailViewController.swift",
+        "patchSetId": 5
+      },
+      "lineNbr": 118,
+      "author": {
+        "id": 1011781
+      },
+      "writtenOn": "2018-02-06T19:24:58Z",
+      "side": 1,
+      "message": "tu l\u0027utilises partout ta constante met la dans un variable locale : si tu décide que 40 c\u0027est pas bien et 20 c\u0027est mieux tu aura pas à penser à la changer à 20 endroits différents",
+      "range": {
+        "startLine": 118,
+        "startChar": 81,
+        "endLine": 118,
+        "endChar": 85
+      },
+      "revId": "2055324a4cb399a43c26cf99bae377fb7b926160",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    }
+  ]
+}
