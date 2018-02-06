@@ -1,0 +1,50 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "1ae12007_237bc297",
+        "filename": "CV/Experience.swift",
+        "patchSetId": 3
+      },
+      "lineNbr": 14,
+      "author": {
+        "id": 1011781
+      },
+      "writtenOn": "2018-02-06T19:13:37Z",
+      "side": 1,
+      "message": "timeStamp c\u0027est bizarre que ce soit une string et pas une date",
+      "range": {
+        "startLine": 14,
+        "startChar": 4,
+        "endLine": 14,
+        "endChar": 25
+      },
+      "revId": "c68ec2090a6d77c6ff31f4e61fbeb3f95d0ed4ad",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "147cce19_f1c2aece",
+        "filename": "CV/Experience.swift",
+        "patchSetId": 3
+      },
+      "lineNbr": 18,
+      "author": {
+        "id": 1011781
+      },
+      "writtenOn": "2018-02-06T19:13:37Z",
+      "side": 1,
+      "message": "quand tu as beaucoup de paramètres comme ça même si ça dépasse pas en bout de ligne fait des retour à la ligne entre chaque que ce soit plus lisible",
+      "range": {
+        "startLine": 18,
+        "startChar": 9,
+        "endLine": 18,
+        "endChar": 86
+      },
+      "revId": "c68ec2090a6d77c6ff31f4e61fbeb3f95d0ed4ad",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    }
+  ]
+}
