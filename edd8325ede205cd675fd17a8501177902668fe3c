@@ -1,0 +1,96 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "3afea0e6_3f4417a4",
+        "filename": "CV/RestExperience.swift",
+        "patchSetId": 3
+      },
+      "lineNbr": 15,
+      "author": {
+        "id": 1011781
+      },
+      "writtenOn": "2018-02-06T19:16:45Z",
+      "side": 1,
+      "message": "date?",
+      "range": {
+        "startLine": 15,
+        "startChar": 4,
+        "endLine": 15,
+        "endChar": 25
+      },
+      "revId": "edd8325ede205cd675fd17a8501177902668fe3c",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "87b6fb8b_e373e182",
+        "filename": "CV/RestExperience.swift",
+        "patchSetId": 3
+      },
+      "lineNbr": 36,
+      "author": {
+        "id": 1011781
+      },
+      "writtenOn": "2018-02-06T19:16:45Z",
+      "side": 1,
+      "message": "pas besoin",
+      "range": {
+        "startLine": 36,
+        "startChar": 44,
+        "endLine": 36,
+        "endChar": 61
+      },
+      "revId": "edd8325ede205cd675fd17a8501177902668fe3c",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "e7c02e42_75838926",
+        "filename": "CV/RestExperience.swift",
+        "patchSetId": 3
+      },
+      "lineNbr": 37,
+      "author": {
+        "id": 1011781
+      },
+      "writtenOn": "2018-02-06T19:16:45Z",
+      "side": 1,
+      "message": "$0",
+      "range": {
+        "startLine": 37,
+        "startChar": 27,
+        "endLine": 37,
+        "endChar": 34
+      },
+      "revId": "edd8325ede205cd675fd17a8501177902668fe3c",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "c9a23b8e_4cd82041",
+        "filename": "CV/RestExperience.swift",
+        "patchSetId": 3
+      },
+      "lineNbr": 38,
+      "author": {
+        "id": 1011781
+      },
+      "writtenOn": "2018-02-06T19:16:45Z",
+      "side": 1,
+      "message": "sur une ligne",
+      "range": {
+        "startLine": 37,
+        "startChar": 12,
+        "endLine": 38,
+        "endChar": 59
+      },
+      "revId": "edd8325ede205cd675fd17a8501177902668fe3c",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    }
+  ]
+}
