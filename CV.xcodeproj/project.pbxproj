@@ -61,6 +61,10 @@
 		8658E86720307362004AFC32 /* StarRaterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8658E86420307362004AFC32 /* StarRaterView.swift */; };
 		8658E86820307362004AFC32 /* StarRaterViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8658E86520307362004AFC32 /* StarRaterViewModel.swift */; };
 		8658E86920307362004AFC32 /* StarRaterViewModelMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8658E86620307362004AFC32 /* StarRaterViewModelMapper.swift */; };
+		8658E86D203094C7004AFC32 /* StarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8658E86A203094C7004AFC32 /* StarView.swift */; };
+		8658E86E203094C7004AFC32 /* StarViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8658E86B203094C7004AFC32 /* StarViewModel.swift */; };
+		8658E86F203094C7004AFC32 /* StarViewModelMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8658E86C203094C7004AFC32 /* StarViewModelMapper.swift */; };
+		8658E87120309535004AFC32 /* UIView+Constraints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8658E87020309535004AFC32 /* UIView+Constraints.swift */; };
 		865F30F61F6A75F400F41B5C /* FormationControllerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 865F30F01F6A75F400F41B5C /* FormationControllerViewModel.swift */; };
 		865F30F71F6A75F400F41B5C /* FormationControllerViewModelMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 865F30F11F6A75F400F41B5C /* FormationControllerViewModelMapper.swift */; };
 		865F30F81F6A75F400F41B5C /* FormationPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 865F30F21F6A75F400F41B5C /* FormationPresenter.swift */; };
@@ -182,6 +186,10 @@
 		8658E86420307362004AFC32 /* StarRaterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarRaterView.swift; sourceTree = "<group>"; };
 		8658E86520307362004AFC32 /* StarRaterViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarRaterViewModel.swift; sourceTree = "<group>"; };
 		8658E86620307362004AFC32 /* StarRaterViewModelMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarRaterViewModelMapper.swift; sourceTree = "<group>"; };
+		8658E86A203094C7004AFC32 /* StarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarView.swift; sourceTree = "<group>"; };
+		8658E86B203094C7004AFC32 /* StarViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarViewModel.swift; sourceTree = "<group>"; };
+		8658E86C203094C7004AFC32 /* StarViewModelMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarViewModelMapper.swift; sourceTree = "<group>"; };
+		8658E87020309535004AFC32 /* UIView+Constraints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Constraints.swift"; sourceTree = "<group>"; };
 		865F30F01F6A75F400F41B5C /* FormationControllerViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FormationControllerViewModel.swift; sourceTree = "<group>"; };
 		865F30F11F6A75F400F41B5C /* FormationControllerViewModelMapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FormationControllerViewModelMapper.swift; sourceTree = "<group>"; };
 		865F30F21F6A75F400F41B5C /* FormationPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FormationPresenter.swift; sourceTree = "<group>"; };
@@ -538,6 +546,7 @@
 			isa = PBXGroup;
 			children = (
 				8658E86420307362004AFC32 /* StarRaterView.swift */,
+				8658E86A203094C7004AFC32 /* StarView.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -858,6 +867,7 @@
 				867FF32B1F6C3BED0085A80D /* UICollectionView+Registerable.swift */,
 				862D56501F826D360090BA0B /* Animation.swift */,
 				868A1CB62024A8EB00F2434E /* Fonts.swift */,
+				8658E87020309535004AFC32 /* UIView+Constraints.swift */,
 			);
 			name = Categories;
 			sourceTree = "<group>";
@@ -978,6 +988,7 @@
 		86F95E7D1FD5585D00E80B23 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				8658E86B203094C7004AFC32 /* StarViewModel.swift */,
 				8658E86520307362004AFC32 /* StarRaterViewModel.swift */,
 				86F95E6E1FD5582A00E80B23 /* CompetenceDetailControllerViewModel.swift */,
 			);
@@ -987,6 +998,7 @@
 		86F95E7E1FD5586B00E80B23 /* Mapper */ = {
 			isa = PBXGroup;
 			children = (
+				8658E86C203094C7004AFC32 /* StarViewModelMapper.swift */,
 				8658E86620307362004AFC32 /* StarRaterViewModelMapper.swift */,
 				86F95E6F1FD5582A00E80B23 /* CompetenceDetailControllerViewModelMapper.swift */,
 			);
@@ -1173,6 +1185,7 @@
 				860AE2B11F599DE5004B9F65 /* ContactTableViewCell.swift in Sources */,
 				8658E86720307362004AFC32 /* StarRaterView.swift in Sources */,
 				867FF3281F6C39DD0085A80D /* FormationCollectionViewCell.swift in Sources */,
+				8658E87120309535004AFC32 /* UIView+Constraints.swift in Sources */,
 				86E440401F4A163F0040BD55 /* HomeViewContract.swift in Sources */,
 				86F1A5A31F94D21D00D8D1BF /* ExperiencePresenterImplementation.swift in Sources */,
 				8604FF721FCD8E0900F2F99F /* SkillsRepository.swift in Sources */,
@@ -1180,6 +1193,7 @@
 				8600EA9A1F7BAEFF0037AFD3 /* PresentationViewController.swift in Sources */,
 				8639DB611F9A477600BFC0BC /* CompetenceTableViewModelMapper.swift in Sources */,
 				860AE2A61F574305004B9F65 /* ContactPresenterImplementation.swift in Sources */,
+				8658E86F203094C7004AFC32 /* StarViewModelMapper.swift in Sources */,
 				864F5ED01F71512D001E7064 /* FormationDetailViewController.swift in Sources */,
 				860AE2AF1F599D56004B9F65 /* ContactTableViewDataSource.swift in Sources */,
 				862D56511F826D360090BA0B /* Animation.swift in Sources */,
@@ -1196,6 +1210,7 @@
 				864F5ECD1F71512D001E7064 /* FormationDetailPresenter.swift in Sources */,
 				86DD2C46202A07E4001D6F51 /* CompetenceCoordinator.swift in Sources */,
 				8639DB5C1F9A477600BFC0BC /* CompetenceCellViewModel.swift in Sources */,
+				8658E86E203094C7004AFC32 /* StarViewModel.swift in Sources */,
 				86BDE6B71FA634E600CA970E /* ExperienceCellViewModelMapper.swift in Sources */,
 				86F1A59A1F94CC9500D8D1BF /* ExperienceViewController.swift in Sources */,
 				8601E0A71FD1591D00C6F25A /* SkillCategoryMapper.swift in Sources */,
@@ -1245,6 +1260,7 @@
 				86BDE6B61FA634E600CA970E /* ExperienceCellViewModel.swift in Sources */,
 				8622BBD51F7904E2000642E8 /* LoadingView.swift in Sources */,
 				86E440461F4A1A050040BD55 /* ViewControllerFactory.swift in Sources */,
+				8658E86D203094C7004AFC32 /* StarView.swift in Sources */,
 				8604FF741FCD8E1400F2F99F /* SkillsRepositoryImplementation.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
