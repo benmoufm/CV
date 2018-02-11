@@ -12,14 +12,14 @@ import SwiftyJSON
 struct RestSkill {
     let id: Int
     let name: String
-    let evaluation: Int
+    let evaluation: Float
     let usageDescription: String
 
     init(json: JSON) throws {
         guard
             let id = json["id"].int,
             let name = json["name"].string,
-            let evaluation = json["value"].int,
+            let evaluation = json["value"].float,
             let usageDescription = json["description"].string
         else {
             throw CVError.unexpectedJSONFormat

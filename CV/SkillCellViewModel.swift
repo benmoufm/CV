@@ -11,6 +11,6 @@ import Foundation
 struct SkillCellViewModel {
     let id: Int
     let name: String
-    let evaluation: Int
+    let evaluation: Float
     let usageDescription: String
 }

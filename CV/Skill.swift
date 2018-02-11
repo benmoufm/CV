@@ -11,10 +11,10 @@ import Foundation
 struct Skill {
     let id: Int
     let name: String
-    let evaluation: Int
+    let evaluation: Float
     let usageDescription: String
 
-    init(id: Int, name: String, evaluation: Int, usageDescription: String) {
+    init(id: Int, name: String, evaluation: Float, usageDescription: String) {
         self.id = id
         self.name = name
         self.evaluation = evaluation
