@@ -14,11 +14,8 @@ class CompetenceDetailViewController: UIViewController,
 
     var presenter: CompetenceDetailPresenter?
     private let titleLabel = UILabel()
-    private let evaluationView = UIView()
-    private let evaluationValueView = UIView()
+    private let starRaterView = StarRaterView()
     private let usageDescriptionLabel = UILabel()
-    private lazy var evaluationValueViewInitialWidthConstraint = self.evaluationValueView.widthAnchor.constraint(equalToConstant: 0)
-    private var evaluationValueViewWidthConstraint = NSLayoutConstraint()
 
     override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?) {
         super.init(nibName: nil, bundle: nil)
@@ -43,7 +40,7 @@ class CompetenceDetailViewController: UIViewController,
     func configure(with viewModel: CompetenceDetailControllerViewModel) {
         titleLabel.text = viewModel.title
         usageDescriptionLabel.text = viewModel.description
-        animateEvaluation(withValue: viewModel.evaluation)
+        starRaterView.configure(with: viewModel.stars)
     }
 
     func displayAlert(_ title: String, _ message: String) {
@@ -62,18 +59,6 @@ class CompetenceDetailViewController: UIViewController,
 
     // MARK: - Private methods
 
-    private func animateEvaluation(withValue multiplier: CGFloat) {
-        view.removeConstraint(evaluationValueViewInitialWidthConstraint)
-        evaluationValueViewWidthConstraint = evaluationValueView.widthAnchor.constraint(
-            equalTo: self.evaluationView.widthAnchor,
-            multiplier: multiplier
-        )
-        evaluationValueViewWidthConstraint.isActive = true
-        UIView.animate(withDuration: 0.5) {
-            self.view.layoutIfNeeded()
-        }
-    }
-
     private func setupNavigationBar() {
         navigationController?.navigationBar.barTintColor = UIColor.mainColor
         navigationController?.navigationBar.tintColor = UIColor.navigationTitleTextColor
@@ -88,16 +73,6 @@ class CompetenceDetailViewController: UIViewController,
         titleLabel.font = UIFont.titleFont
     }
 
-    private func setupEvaluationView() {
-        evaluationView.backgroundColor = UIColor.transparentBackgroundColor
-        evaluationView.layer.cornerRadius = 10.0
-    }
-
-    private func setupEvaluationValueView() {
-        evaluationValueView.backgroundColor = UIColor.highlightColor
-        evaluationValueView.layer.cornerRadius = 10.0
-    }
-
     private func setupUsageDescriptionLabel() {
         usageDescriptionLabel.numberOfLines = 0
         usageDescriptionLabel.textAlignment = .left
@@ -106,8 +81,7 @@ class CompetenceDetailViewController: UIViewController,
 
     private func setupLayout() {
         view.addSubview(titleLabel)
-        view.addSubview(evaluationView)
-        view.addSubview(evaluationValueView)
+        view.addSubview(starRaterView)
         view.addSubview(usageDescriptionLabel)
 
         titleLabel.translatesAutoresizingMaskIntoConstraints = false
@@ -116,22 +90,16 @@ class CompetenceDetailViewController: UIViewController,
         titleLabel.heightAnchor.constraint(equalToConstant: 50.0).isActive = true
         titleLabel.topAnchor.constraint(equalTo: view.topAnchor, constant: 100.0).isActive = true
 
-        evaluationView.translatesAutoresizingMaskIntoConstraints = false
-        evaluationView.rightAnchor.constraint(equalTo: view.rightAnchor, constant: -50.0).isActive = true
-        evaluationView.leftAnchor.constraint(equalTo: view.leftAnchor, constant: 50.0).isActive = true
-        evaluationView.topAnchor.constraint(equalTo: titleLabel.bottomAnchor, constant: 20.0).isActive = true
-        evaluationView.heightAnchor.constraint(equalToConstant: 50.0).isActive = true
-
-        evaluationValueView.translatesAutoresizingMaskIntoConstraints = false
-        evaluationValueView.leftAnchor.constraint(equalTo: evaluationView.leftAnchor).isActive = true
-        evaluationValueView.bottomAnchor.constraint(equalTo: evaluationView.bottomAnchor).isActive = true
-        evaluationValueView.topAnchor.constraint(equalTo: evaluationView.topAnchor).isActive = true
-        evaluationValueViewInitialWidthConstraint.isActive = true
+        starRaterView.translatesAutoresizingMaskIntoConstraints = false
+        starRaterView.rightAnchor.constraint(equalTo: view.rightAnchor, constant: -50.0).isActive = true
+        starRaterView.leftAnchor.constraint(equalTo: view.leftAnchor, constant: 50.0).isActive = true
+        starRaterView.topAnchor.constraint(equalTo: titleLabel.bottomAnchor, constant: 20.0).isActive = true
+        starRaterView.heightAnchor.constraint(equalToConstant: 50.0).isActive = true
 
         usageDescriptionLabel.translatesAutoresizingMaskIntoConstraints = false
         usageDescriptionLabel.rightAnchor.constraint(equalTo: view.rightAnchor, constant: -20.0).isActive = true
         usageDescriptionLabel.leftAnchor.constraint(equalTo: view.leftAnchor, constant: 20.0).isActive = true
-        usageDescriptionLabel.topAnchor.constraint(equalTo: evaluationView.bottomAnchor, constant: 50.0).isActive = true
+        usageDescriptionLabel.topAnchor.constraint(equalTo: starRaterView.bottomAnchor, constant: 50.0).isActive = true
         usageDescriptionLabel.bottomAnchor.constraint(equalTo: view.bottomAnchor).isActive = true
     }
 
@@ -139,8 +107,6 @@ class CompetenceDetailViewController: UIViewController,
         view.backgroundColor = UIColor.backgroundColor
         setupNavigationBar()
         setupTitleLabel()
-        setupEvaluationView()
-        setupEvaluationValueView()
         setupUsageDescriptionLabel()
         setupLayout()
     }

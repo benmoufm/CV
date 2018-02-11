@@ -14,7 +14,7 @@ struct CompetenceDetailControllerViewModelMapper {
     func map() -> CompetenceDetailControllerViewModel {
         return CompetenceDetailControllerViewModel(
             title: skill.name,
-            evaluation: CGFloat(skill.evaluation) / 5,
+            stars: StarRaterViewModelMapper(starNumber: 5, rating: skill.evaluation).map(),
             description: skill.usageDescription
         )
     }

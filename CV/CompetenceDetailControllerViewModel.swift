@@ -10,6 +10,6 @@ import UIKit
 
 struct CompetenceDetailControllerViewModel {
     let title: String
-    let evaluation: CGFloat
+    let stars: StarRaterViewModel
     let description: String
 }
