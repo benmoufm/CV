@@ -13,7 +13,7 @@ class StarRaterView: UIView {
 
     private var starNumber: Int = 0
     private var rating: Float = 0.0
-    private var starImageViews: [UIImageView] = []
+    private var starImageViews: [StarView] = []
     private let stackView = UIStackView()
 
     override init(frame: CGRect) {
@@ -43,12 +43,14 @@ class StarRaterView: UIView {
             .forEach { starImageViews.append($0) }
     }
 
-    private func generateStar(_ index: Int) -> UIImageView {
+    private func generateStar(_ index: Int) -> StarView {
         let rating = Int(floorf(self.rating))
-        let starImageView = UIImageView()
-        starImageView.image = index < rating ? #imageLiteral(resourceName: "fullStarIcon") : #imageLiteral(resourceName: "emptyStarIcon")
-        starImageView.tintColor = UIColor.highlightColor
-        return starImageView
+        var ratio = index < rating ? 1 : self.rating - Float(rating)
+        ratio = index > rating ? 0 : ratio
+        let starViewModel = StarViewModelMapper(fillingRatio: CGFloat(ratio)).map()
+        let starView = StarView()
+        starView.configure(with: starViewModel)
+        return starView
     }
 
     private func updateStarViews() {
