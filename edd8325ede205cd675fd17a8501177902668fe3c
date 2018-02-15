@@ -48,6 +48,30 @@
     },
     {
       "key": {
+        "uuid": "199c7d75_49f479ea",
+        "filename": "CV/RestExperience.swift",
+        "patchSetId": 3
+      },
+      "lineNbr": 36,
+      "author": {
+        "id": 1011762
+      },
+      "writtenOn": "2018-02-15T10:06:20Z",
+      "side": 1,
+      "message": "Quand je l\u0027enlève il me met une erreur comme quoi il arrive pas à infer le complex return type",
+      "parentUuid": "87b6fb8b_e373e182",
+      "range": {
+        "startLine": 36,
+        "startChar": 44,
+        "endLine": 36,
+        "endChar": 61
+      },
+      "revId": "edd8325ede205cd675fd17a8501177902668fe3c",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "e7c02e42_75838926",
         "filename": "CV/RestExperience.swift",
         "patchSetId": 3
