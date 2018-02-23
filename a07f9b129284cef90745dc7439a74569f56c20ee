@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "9a9bf993_bbeb2e9b",
+        "filename": "CV/Experience.swift",
+        "patchSetId": 4
+      },
+      "lineNbr": 14,
+      "author": {
+        "id": 1011781
+      },
+      "writtenOn": "2018-02-23T18:09:00Z",
+      "side": 1,
+      "message": ":no_mouth:",
+      "range": {
+        "startLine": 14,
+        "startChar": 0,
+        "endLine": 14,
+        "endChar": 25
+      },
+      "revId": "a07f9b129284cef90745dc7439a74569f56c20ee",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    }
+  ]
+}
