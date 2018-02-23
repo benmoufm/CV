@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "57125891_bbe85cb0",
+        "filename": "CV/UIView+Constraints.swift",
+        "patchSetId": 1
+      },
+      "lineNbr": 21,
+      "author": {
+        "id": 1011781
+      },
+      "writtenOn": "2018-02-23T18:27:34Z",
+      "side": 1,
+      "message": "C\u0027est bien, tu peux faire encore mieux en rajoutant un paramètre edges  et un paramètre insets avec des valeurs par default",
+      "range": {
+        "startLine": 14,
+        "startChar": 4,
+        "endLine": 21,
+        "endChar": 5
+      },
+      "revId": "e27bec41b14b7bf815d33420e453874cc1d28ec5",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    }
+  ]
+}
